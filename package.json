@@ -1,24 +1,18 @@
 {
-  "homepage": "https://github.com/soltonanna/soltonanna.github.io",
+  "homepage": "https://soltonanna.github.io",
   "name": "anahit_cv-portfolio",
   "version": "1.0.0",
   "description": "Main CV and Portfolio webpage for Sultanova Anahit",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "start": "set NODE_ENV=development&&webpack serve",
     "build-dev": "set NODE_ENV=development&&webpack",
     "build-prod": "set NODE_ENV=production&&webpack",
     "clean": "rd /s /q dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soltonanna/soltonanna.github.io.git"
-  },
   "author": "Sultanova Anahit",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soltonanna/soltonanna.github.io/issues"
-  },
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
