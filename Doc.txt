@@ -19,3 +19,5 @@
 16. ** npm install -D babel-loader @babel/core @babel/preset-env **
 17. ** npm install --save @babel/polyfill **
 18. ** npm install image-webpack-loader --save-dev **
+
+19. ** npm install -D gh-pages **
