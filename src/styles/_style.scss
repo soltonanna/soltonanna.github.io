@@ -1,0 +1,13 @@
+body {
+  color: $text;
+  background-color: $background;
+  user-select: none;
+  font-family: 'Amsterdam';
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-image: url('media/books.jpg');
+}
