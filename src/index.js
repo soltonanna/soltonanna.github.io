@@ -1,8 +1,10 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 import '../public/index.html';
 import './index.scss';
-import { mult, sum } from './modules/math';
 
+import App from './App';
 
-
-console.log(mult(2,4));
-console.log(sum(2,4));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
