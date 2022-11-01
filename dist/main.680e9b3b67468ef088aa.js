@@ -54,8 +54,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Header.jsx */ "./src/components/Header.jsx");
-/* harmony import */ var _components_About_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/About.jsx */ "./src/components/About.jsx");
-/* harmony import */ var _components_WhatIDo_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/WhatIDo.jsx */ "./src/components/WhatIDo.jsx");
+/* harmony import */ var _components_MainInfo_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/MainInfo.jsx */ "./src/components/MainInfo.jsx");
+/* harmony import */ var _components_About_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/About.jsx */ "./src/components/About.jsx");
 /* harmony import */ var _components_Skills_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Skills.jsx */ "./src/components/Skills.jsx");
 /* harmony import */ var _components_Experience_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Experience.jsx */ "./src/components/Experience.jsx");
 /* harmony import */ var _components_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Portfolio.jsx */ "./src/components/Portfolio.jsx");
@@ -73,7 +73,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const App = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_About_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_WhatIDo_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Skills_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Experience_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Reviews_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    id: "main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_MainInfo_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_About_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Skills_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Experience_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Reviews_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
     id: "footer"
   }));
 };
@@ -94,11 +96,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container.jsx */ "./src/modules/Container.jsx");
+
 
 const About = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "about"
-  }, "About");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "main__about"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "about"
+  }, "About me"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
 
@@ -117,11 +123,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container.jsx */ "./src/modules/Container.jsx");
+
 
 const Contact = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "contact"
-  }, "Contact");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "main__contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "contact"
+  }, "Contact Me"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
 
@@ -140,11 +150,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container.jsx */ "./src/modules/Container.jsx");
+
 
 function Experience() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "experience"
-  }, "Experience");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "main__experience"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "experience"
+  }, "Experience"));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Experience);
 
@@ -190,7 +204,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container.jsx */ "./src/modules/Container.jsx");
 /* harmony import */ var _modules_Title_Desc_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/Title_Desc.jsx */ "./src/modules/Title_Desc.jsx");
-/* harmony import */ var _Navbar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Navbar.jsx */ "./src/components/Navbar.jsx");
+/* harmony import */ var _MainInfo_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MainInfo.jsx */ "./src/components/MainInfo.jsx");
+/* harmony import */ var _Navbar_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Navbar.jsx */ "./src/components/Navbar.jsx");
+
 
 
 
@@ -198,12 +214,41 @@ __webpack_require__.r(__webpack_exports__);
 const Header = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Title_Desc_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+
+/***/ }),
+
+/***/ "./src/components/MainInfo.jsx":
+/*!*************************************!*\
+  !*** ./src/components/MainInfo.jsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container */ "./src/modules/Container.jsx");
+/* harmony import */ var _modules_Title_Desc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/Title_Desc */ "./src/modules/Title_Desc.jsx");
+
+
+
+const MainInfo = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "main__main-info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "main-info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Title_Desc__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Sultanova Anahit",
     desc: "Web developer"
   })));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MainInfo);
 
 /***/ }),
 
@@ -249,76 +294,67 @@ const Navbar = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/",
+    to: "main__main-info",
     spy: true,
     smooth: true,
-    offset: 50,
+    offset: -50,
     duration: 500,
     onClick: closeMenu
-  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " Home ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "about",
+    to: "main__about",
     spy: true,
     smooth: true,
-    offset: 50,
+    offset: -70,
     duration: 500,
     onClick: closeMenu
   }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "what-i-do",
+    to: "main__skills",
     spy: true,
     smooth: true,
-    offset: 50,
+    offset: -70,
     duration: 500,
     onClick: closeMenu
-  }, "What I do")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " Skills ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "skills",
+    to: "main__experience",
     spy: true,
     smooth: true,
-    offset: 50,
+    offset: -70,
     duration: 500,
     onClick: closeMenu
-  }, "Skills")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " Experience ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "experience",
+    to: "main__portfolio",
     spy: true,
     smooth: true,
-    offset: 50,
+    offset: -70,
     duration: 500,
     onClick: closeMenu
-  }, "Experience")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " Portfolio")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "portfolio",
+    to: "main__reviews",
     spy: true,
     smooth: true,
-    offset: 50,
+    offset: -70,
     duration: 500,
     onClick: closeMenu
-  }, "Portfolio")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " Reviews")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "reviews",
+    to: "main__contact",
     spy: true,
     smooth: true,
-    offset: 50,
+    offset: -70,
     duration: 500,
     onClick: closeMenu
-  }, "Reviews")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "contact",
-    spy: true,
-    smooth: true,
-    offset: 50,
-    duration: 500,
-    onClick: closeMenu
-  }, "Contact"))));
+  }, " Contact"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
 
@@ -337,11 +373,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container.jsx */ "./src/modules/Container.jsx");
+
 
 const Portfolio = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "portfolio"
-  }, "Portfolio");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "main__portfolio"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    class: "portfolio"
+  }, "Portfolio"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Portfolio);
 
@@ -360,11 +400,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container.jsx */ "./src/modules/Container.jsx");
+
 
 function Reviews() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "reviews"
-  }, "Reviews");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "main__reviews"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "reviews"
+  }, "Reviews"));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Reviews);
 
@@ -383,36 +427,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/Container.jsx */ "./src/modules/Container.jsx");
+
 
 const Skills = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "skills"
-  }, "Skills");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "main__skills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "skills"
+  }, "Skills"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Skills);
-
-/***/ }),
-
-/***/ "./src/components/WhatIDo.jsx":
-/*!************************************!*\
-  !*** ./src/components/WhatIDo.jsx ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-const WhatIDo = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "what-i-do"
-  }, "WhatIDo");
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WhatIDo);
 
 /***/ }),
 
@@ -9552,7 +9577,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes moveInLeft {\n  0% {\n    opacity: 0;\n    transform: translateX(-10rem);\n  }\n  80% {\n    transform: translateX(1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInRight {\n  0% {\n    opacity: 0;\n    transform: translateX(10rem);\n  }\n  80% {\n    transform: translateX(-1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInBottom {\n  0% {\n    opacity: 0;\n    transform: translateY(3rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@font-face {\n  font-family: \"Amsterdam\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\");\n}\n/*\n0 - 600px:      Phone\n600 - 900px:    Tablet portrait\n900 - 1200px:   Tablet landscape\n[1200 - 1800] is where our normal styles apply\n1800px + :      Big desktop\n\n$breakpoint arguement choices:\n- phone\n- tab-port\n- tab-land\n- big-desktop\n\nORDER: Base + typography > general layout + grid > page layout > components\n\n1em = 16px\n*/\n/* Colors */\n/* Sizes */\n*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n}\n\nhtml {\n  font-size: 62.5%;\n}\n@media only screen and (max-width: 75em) {\n  html {\n    font-size: 56.25%;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  html {\n    font-size: 50%;\n  }\n}\n@media only screen and (min-width: 112.5em) {\n  html {\n    font-size: 75%;\n  }\n}\n\nbody {\n  box-sizing: border-box;\n}\n\n#root {\n  height: 100vh;\n}\n\n/* Header */\nheader {\n  height: 90vh;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\n  background-size: cover;\n  position: relative;\n  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n          clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n}\nheader:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.8);\n  opacity: 1;\n  z-index: 0;\n}\n\n.container {\n  position: relative;\n  margin: 0 auto;\n  z-index: 1;\n  width: 70vw;\n  border: 1px dotted #5abca1;\n}\n@media only screen and (max-width: 75em) {\n  .container {\n    width: 80vw;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  .container {\n    width: 100%;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/_animations.scss","webpack://./src/index.scss","webpack://./src/styles/_fonts.scss","webpack://./src/styles/_mixins.scss","webpack://./src/styles/_variables.scss","webpack://./src/styles/_style.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;IACA,6BAAA;ECCN;EDEE;IACI,2BAAA;ECAN;EDGE;IACI,UAAA;IACA,uBAAA;ECDN;AACF;ADIA;EACI;IACI,UAAA;IACA,4BAAA;ECFN;EDKE;IACI,4BAAA;ECHN;EDME;IACI,UAAA;IACA,uBAAA;ECJN;AACF;ADOA;EACI;IACI,UAAA;IACA,2BAAA;ECLN;EDQE;IACI,UAAA;IACA,uBAAA;ECNN;AACF;ACnCA;EACI,wBAAA;EACA,4DAAA;ADqCJ;AEtCA;;;;;;;;;;;;;;;;CAAA;ACDA,WAAA;AAKA,UAAA;ACLA;;;EAGI,SAAA;EACA,UAAA;EACA,mBAAA;AJ4DJ;;AIxDA;EACE,gBAAA;AJ2DF;AE3CQ;EEjBR;IAIM,iBAAA;EJ4DJ;AACF;AEnDQ;EEdR;IAQM,cAAA;EJ6DJ;AACF;AElDQ;EEpBR;IAYM,cAAA;EJ8DJ;AACF;;AI3DA;EACE,sBAAA;AJ8DF;;AI3DA;EACI,aAAA;AJ8DJ;;AI3DA,WAAA;AACA;EACI,YAAA;EACA,2EAAA;EACA,sBAAA;EACA,kBAAA;EACA,2DAAA;UAAA,mDAAA;AJ8DJ;AIzDI;EACI,WAAA;EACA,kBAAA;EACA,WAAA;EAAa,YAAA;EACb,MAAA;EAAO,OAAA;EACP,8BAAA;EACA,UAAA;EACA,UAAA;AJ6DR;;AIzDA;EACI,kBAAA;EACA,cAAA;EACA,UAAA;EACA,WAAA;EAOA,0BAAA;AJsDJ;AE9FQ;EE6BR;IAMQ,WAAA;EJ+DN;AACF;AEtGQ;EEgCR;IASQ,WAAA;EJiEN;AACF","sourcesContent":["@keyframes moveInLeft {\n    0% {\n        opacity: 0;\n        transform: translateX(-10rem);\n    }\n\n    80% {\n        transform: translateX(1rem);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translate(0);\n    }\n}\n\n@keyframes moveInRight {\n    0% {\n        opacity: 0;\n        transform: translateX(10rem);\n    }\n\n    80% {\n        transform: translateX(-1rem);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translate(0);\n    }\n}\n\n@keyframes moveInBottom {\n    0% {\n        opacity: 0;\n        transform: translateY(3rem);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translate(0);\n    }\n}","@keyframes moveInLeft {\n  0% {\n    opacity: 0;\n    transform: translateX(-10rem);\n  }\n  80% {\n    transform: translateX(1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInRight {\n  0% {\n    opacity: 0;\n    transform: translateX(10rem);\n  }\n  80% {\n    transform: translateX(-1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInBottom {\n  0% {\n    opacity: 0;\n    transform: translateY(3rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@font-face {\n  font-family: \"Amsterdam\";\n  src: url(\"fonts/Amsterdam.woff2\") format(\"woff2\");\n}\n/*\n0 - 600px:      Phone\n600 - 900px:    Tablet portrait\n900 - 1200px:   Tablet landscape\n[1200 - 1800] is where our normal styles apply\n1800px + :      Big desktop\n\n$breakpoint arguement choices:\n- phone\n- tab-port\n- tab-land\n- big-desktop\n\nORDER: Base + typography > general layout + grid > page layout > components\n\n1em = 16px\n*/\n/* Colors */\n/* Sizes */\n*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n}\n\nhtml {\n  font-size: 62.5%;\n}\n@media only screen and (max-width: 75em) {\n  html {\n    font-size: 56.25%;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  html {\n    font-size: 50%;\n  }\n}\n@media only screen and (min-width: 112.5em) {\n  html {\n    font-size: 75%;\n  }\n}\n\nbody {\n  box-sizing: border-box;\n}\n\n#root {\n  height: 100vh;\n}\n\n/* Header */\nheader {\n  height: 90vh;\n  background: url(\"./media/Homepage_back_1.jpg\") no-repeat center center;\n  background-size: cover;\n  position: relative;\n  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n}\nheader:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.8);\n  opacity: 1;\n  z-index: 0;\n}\n\n.container {\n  position: relative;\n  margin: 0 auto;\n  z-index: 1;\n  width: 70vw;\n  border: 1px dotted #5abca1;\n}\n@media only screen and (max-width: 75em) {\n  .container {\n    width: 80vw;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  .container {\n    width: 100%;\n  }\n}","@font-face {\n    font-family: 'Amsterdam';\n    src: url('fonts/Amsterdam.woff2') format('woff2');\n}","// MEDIA QUERY MANAGER\n/*\n0 - 600px:      Phone\n600 - 900px:    Tablet portrait\n900 - 1200px:   Tablet landscape\n[1200 - 1800] is where our normal styles apply\n1800px + :      Big desktop\n\n$breakpoint arguement choices:\n- phone\n- tab-port\n- tab-land\n- big-desktop\n\nORDER: Base + typography > general layout + grid > page layout > components\n\n1em = 16px\n*/\n@mixin respond($breakpoint) {\n    @if $breakpoint == phone {\n        @media only screen and (max-width: 37.5em) { @content };    //600px\n    }\n    @if $breakpoint == tab-port {\n        @media only screen and (max-width: 56.25em) { @content };     //900px\n    }\n    @if $breakpoint == tab-land {\n        @media only screen and (max-width: 75em) { @content };    //1200px\n    }\n    @if $breakpoint == big-desktop {\n        @media only screen and (min-width: 112.5em) { @content };    //1800\n    }\n}\n\n@mixin absCenter {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n}\n@mixin clearfix {\n    &::after {\n        content: \"\";\n        display: table;\n        clear: both;\n    }\n}\n@mixin displayFlex($flDirextion, $flWrap, $flAContent, $flJContent, $flAAtimes, ) {\n    display: flex;\n    flex-direction: $flDirextion;\n    flex-wrap: $flWrap;\n    align-content: $flAContent;\n    justify-content: $flJContent;\n    align-items: $flAAtimes;\n}","/* Colors */\n$main-dark-color: #1e1e25;\n$main-light-color: #5abca1;\n$text-color: #ffffff;\n\n/* Sizes */\n$title-font-size: 1.6rem;\n$desc-font-size: 1.2rem;\n$button-font-size: 1.3rem;\n","*,\n*::after,\n*::before {\n    margin: 0;\n    padding: 0;\n    box-sizing: inherit;\n    // transition: all 1.5s;\n}\n\nhtml {\n  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%\n\n  @include respond(tab-land) { // width < 1200?\n      font-size: 56.25%; //1 rem = 9px, 9/16 = 50%\n  }\n\n  @include respond(tab-port) { // width < 900?\n      font-size: 50%; //1 rem = 8px, 8/16 = 50%\n  }\n  \n  @include respond(big-desktop) {\n      font-size: 75%; //1rem = 12, 12/16\n  }\n}\n\nbody {\n  box-sizing: border-box;\n}\n\n#root {\n    height: 100vh;\n}\n\n/* Header */\nheader {\n    height: 90vh;\n    background: url('./media/Homepage_back_1.jpg') no-repeat center center;\n    background-size: cover;\n    position: relative;\n    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n    \n    // &:hover {\n    //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);\n    // } \n    &:after {\n        content: '';\n        position: absolute;\n        width: 100%; height:100%;\n        top:0; left:0;\n        background:rgba(0,0,0,0.8);\n        opacity: 1;\n        z-index: 0;\n    }\n}\n\n.container {\n    position: relative;\n    margin: 0 auto;\n    z-index: 1;\n    width: 70vw;\n    @include respond(tab-land) {\n        width: 80vw;\n    }\n    @include respond(tab-port) {\n        width: 100%;\n    }\n    border: 1px dotted $main-light-color;\n\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes moveInLeft {\n  0% {\n    opacity: 0;\n    transform: translateX(-10rem);\n  }\n  80% {\n    transform: translateX(1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInRight {\n  0% {\n    opacity: 0;\n    transform: translateX(10rem);\n  }\n  80% {\n    transform: translateX(-1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInBottom {\n  0% {\n    opacity: 0;\n    transform: translateY(3rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@font-face {\n  font-family: \"Amsterdam\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\");\n}\n/*\n0 - 600px:      Phone\n600 - 900px:    Tablet portrait\n900 - 1200px:   Tablet landscape\n[1200 - 1800] is where our normal styles apply\n1800px + :      Big desktop\n\n$breakpoint arguement choices:\n- phone\n- tab-port\n- tab-land\n- big-desktop\n\nORDER: Base + typography > general layout + grid > page layout > components\n\n1em = 16px\n*/\n/* Colors */\n/* Sizes */\n/* Other */\n*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n}\n\nhtml {\n  font-size: 62.5%;\n}\n@media only screen and (max-width: 75em) {\n  html {\n    font-size: 56.25%;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  html {\n    font-size: 50%;\n  }\n}\n@media only screen and (min-width: 112.5em) {\n  html {\n    font-size: 75%;\n  }\n}\n\nbody {\n  box-sizing: border-box;\n}\n\n#root {\n  height: 100vh;\n}\n\n.container {\n  position: relative;\n  margin: 0 auto;\n  z-index: 1;\n  width: 70vw;\n}\n@media only screen and (max-width: 75em) {\n  .container {\n    width: 80vw;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  .container {\n    width: 100%;\n  }\n}\n\n/* Header; Navbar */\nheader {\n  position: fixed;\n  width: 100%;\n  top: 0;\n  left: 0;\n  z-index: 10;\n  transition: 0.3s ease-in;\n  overflow: hidden;\n  background-color: rgba(0, 0, 0, 0.9);\n  /* Navbar */\n}\n@media only screen and (max-width: 56.25em) {\n  header {\n    max-width: 100%;\n    background-color: rgba(0, 0, 0, 0.9);\n  }\n}\nheader .navbar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 10px auto;\n  height: 100%;\n  padding: 0 1rem;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar {\n    max-width: 100%;\n  }\n}\nheader .navbar .nav-menu {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  list-style: none;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar .nav-menu {\n    position: fixed;\n    left: -100%;\n    top: 90px;\n    flex-direction: column;\n    background-color: rgba(0, 0, 0, 0.9);\n    height: 90vh;\n    z-index: 999;\n    text-align: center;\n    transition: 0.3s;\n  }\n  header .navbar .nav-menu.active {\n    left: 0;\n    top: 50px;\n  }\n}\nheader .navbar .nav-menu .nav-item {\n  padding: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar .nav-menu .nav-item {\n    margin: 1.5rem 0;\n  }\n}\nheader .navbar .nav-menu .nav-item a {\n  color: #ffffff;\n  font-size: 1.6rem;\n  text-decoration: none;\n}\nheader .navbar .nav-menu .nav-item a.active, header .navbar .nav-menu .nav-item:hover a {\n  padding-bottom: 12px;\n  border-bottom: 3px solid #5abca1;\n}\nheader .navbar .hamburger {\n  display: none;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar .hamburger {\n    display: block;\n  }\n}\n\n/* Main block with */\n#main__main-info {\n  height: 90vh;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\n  background-size: cover;\n  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n          clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n}\n@media only screen and (max-width: 56.25em) {\n  #main__main-info {\n    -webkit-clip-path: none;\n            clip-path: none;\n    height: 50vh;\n  }\n}\n#main__main-info:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.8);\n  opacity: 1;\n  z-index: 0;\n}\n#main__about {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__skills {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__experience {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__portfolio {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__reviews {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__contact {\n  background-color: #f0efef;\n  height: 400px;\n}", "",{"version":3,"sources":["webpack://./src/styles/_animations.scss","webpack://./src/index.scss","webpack://./src/styles/_fonts.scss","webpack://./src/styles/_mixins.scss","webpack://./src/styles/_variables.scss","webpack://./src/styles/_style.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;IACA,6BAAA;ECCN;EDEE;IACI,2BAAA;ECAN;EDGE;IACI,UAAA;IACA,uBAAA;ECDN;AACF;ADIA;EACI;IACI,UAAA;IACA,4BAAA;ECFN;EDKE;IACI,4BAAA;ECHN;EDME;IACI,UAAA;IACA,uBAAA;ECJN;AACF;ADOA;EACI;IACI,UAAA;IACA,2BAAA;ECLN;EDQE;IACI,UAAA;IACA,uBAAA;ECNN;AACF;ACnCA;EACI,wBAAA;EACA,4DAAA;ADqCJ;AEtCA;;;;;;;;;;;;;;;;CAAA;ACDA,WAAA;AAKA,UAAA;AAKA,UAAA;ACVA;;;EAGI,SAAA;EACA,UAAA;EACA,mBAAA;AJ6DJ;;AI1DA;EACE,gBAAA;AJ6DF;AE5CQ;EElBR;IAIM,iBAAA;EJ8DJ;AACF;AEpDQ;EEfR;IAQM,cAAA;EJ+DJ;AACF;AEnDQ;EErBR;IAYM,cAAA;EJgEJ;AACF;;AI7DA;EACE,sBAAA;AJgEF;;AI7DA;EACI,aAAA;AJgEJ;;AI7DA;EACI,kBAAA;EACA,cAAA;EACA,UAAA;EACA,WAAA;AJgEJ;AE1EQ;EEMR;IAOQ,WAAA;EJiEN;AACF;AElFQ;EESR;IAWQ,WAAA;EJkEN;AACF;;AI/DA,mBAAA;AACA;EACI,eAAA;EACA,WAAA;EACA,MAAA;EAAQ,OAAA;EACR,WAAA;EACA,wBAAA;EACA,gBAAA;EACA,oCD5CgB;ECmDhB,WAAA;AJ6DJ;AEpGQ;EEyBR;IAUQ,eAAA;IACA,oCDhDY;EHqHlB;AACF;AIlEI;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;AJoER;AElHQ;EEwCJ;IASQ,eAAA;EJqEV;AACF;AInEQ;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,gBAAA;AJqEZ;AE7HQ;EEoDA;IAOQ,eAAA;IACA,WAAA;IAAa,SAAA;IACb,sBAAA;IACA,oCAAA;IACA,YAAA;IACA,YAAA;IACA,kBAAA;IACA,gBAAA;EJuEd;EIrEc;IACI,OAAA;IAAS,SAAA;EJwE3B;AACF;AIrEY;EACI,aAAA;EACA,gBAAA;EACA,eAAA;AJuEhB;AEnJQ;EEyEI;IAMQ,gBAAA;EJwElB;AACF;AIvEgB;EACI,cAAA;EACA,iBDpGF;ECqGE,qBAAA;AJyEpB;AIvEgB;EAEI,oBAAA;EACA,gCAAA;AJwEpB;AIpEQ;EACI,aAAA;AJsEZ;AEpKQ;EE6FA;IAGQ,cAAA;EJwEd;AACF;;AInEA,oBAAA;AAEI;EACI,YAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,2EAAA;EACA,sBAAA;EACA,2DAAA;UAAA,mDAAA;AJqER;AErLQ;EEwGJ;IAWQ,uBAAA;YAAA,eAAA;IACA,YAAA;EJsEV;AACF;AIlEQ;EACI,WAAA;EACA,kBAAA;EACA,WAAA;EAAa,YAAA;EACb,MAAA;EAAO,OAAA;EACP,8BDzIQ;EC0IR,UAAA;EACA,UAAA;AJsEZ;AInEI;EACI,yBAAA;EACA,aAAA;AJqER;AInEI;EACI,yBAAA;EACA,aAAA;AJqER;AInEI;EACI,yBAAA;EACA,aAAA;AJqER;AInEI;EACI,yBAAA;EACA,aAAA;AJqER;AInEI;EACI,yBAAA;EACA,aAAA;AJqER;AInEI;EACI,yBAAA;EACA,aAAA;AJqER","sourcesContent":["@keyframes moveInLeft {\n    0% {\n        opacity: 0;\n        transform: translateX(-10rem);\n    }\n\n    80% {\n        transform: translateX(1rem);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translate(0);\n    }\n}\n\n@keyframes moveInRight {\n    0% {\n        opacity: 0;\n        transform: translateX(10rem);\n    }\n\n    80% {\n        transform: translateX(-1rem);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translate(0);\n    }\n}\n\n@keyframes moveInBottom {\n    0% {\n        opacity: 0;\n        transform: translateY(3rem);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translate(0);\n    }\n}","@keyframes moveInLeft {\n  0% {\n    opacity: 0;\n    transform: translateX(-10rem);\n  }\n  80% {\n    transform: translateX(1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInRight {\n  0% {\n    opacity: 0;\n    transform: translateX(10rem);\n  }\n  80% {\n    transform: translateX(-1rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@keyframes moveInBottom {\n  0% {\n    opacity: 0;\n    transform: translateY(3rem);\n  }\n  100% {\n    opacity: 1;\n    transform: translate(0);\n  }\n}\n@font-face {\n  font-family: \"Amsterdam\";\n  src: url(\"fonts/Amsterdam.woff2\") format(\"woff2\");\n}\n/*\n0 - 600px:      Phone\n600 - 900px:    Tablet portrait\n900 - 1200px:   Tablet landscape\n[1200 - 1800] is where our normal styles apply\n1800px + :      Big desktop\n\n$breakpoint arguement choices:\n- phone\n- tab-port\n- tab-land\n- big-desktop\n\nORDER: Base + typography > general layout + grid > page layout > components\n\n1em = 16px\n*/\n/* Colors */\n/* Sizes */\n/* Other */\n*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  box-sizing: inherit;\n}\n\nhtml {\n  font-size: 62.5%;\n}\n@media only screen and (max-width: 75em) {\n  html {\n    font-size: 56.25%;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  html {\n    font-size: 50%;\n  }\n}\n@media only screen and (min-width: 112.5em) {\n  html {\n    font-size: 75%;\n  }\n}\n\nbody {\n  box-sizing: border-box;\n}\n\n#root {\n  height: 100vh;\n}\n\n.container {\n  position: relative;\n  margin: 0 auto;\n  z-index: 1;\n  width: 70vw;\n}\n@media only screen and (max-width: 75em) {\n  .container {\n    width: 80vw;\n  }\n}\n@media only screen and (max-width: 56.25em) {\n  .container {\n    width: 100%;\n  }\n}\n\n/* Header; Navbar */\nheader {\n  position: fixed;\n  width: 100%;\n  top: 0;\n  left: 0;\n  z-index: 10;\n  transition: 0.3s ease-in;\n  overflow: hidden;\n  background-color: rgba(0, 0, 0, 0.9);\n  /* Navbar */\n}\n@media only screen and (max-width: 56.25em) {\n  header {\n    max-width: 100%;\n    background-color: rgba(0, 0, 0, 0.9);\n  }\n}\nheader .navbar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 10px auto;\n  height: 100%;\n  padding: 0 1rem;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar {\n    max-width: 100%;\n  }\n}\nheader .navbar .nav-menu {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  list-style: none;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar .nav-menu {\n    position: fixed;\n    left: -100%;\n    top: 90px;\n    flex-direction: column;\n    background-color: rgba(0, 0, 0, 0.9);\n    height: 90vh;\n    z-index: 999;\n    text-align: center;\n    transition: 0.3s;\n  }\n  header .navbar .nav-menu.active {\n    left: 0;\n    top: 50px;\n  }\n}\nheader .navbar .nav-menu .nav-item {\n  padding: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar .nav-menu .nav-item {\n    margin: 1.5rem 0;\n  }\n}\nheader .navbar .nav-menu .nav-item a {\n  color: #ffffff;\n  font-size: 1.6rem;\n  text-decoration: none;\n}\nheader .navbar .nav-menu .nav-item a.active, header .navbar .nav-menu .nav-item:hover a {\n  padding-bottom: 12px;\n  border-bottom: 3px solid #5abca1;\n}\nheader .navbar .hamburger {\n  display: none;\n}\n@media only screen and (max-width: 56.25em) {\n  header .navbar .hamburger {\n    display: block;\n  }\n}\n\n/* Main block with */\n#main__main-info {\n  height: 90vh;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: url(\"./media/Homepage_back_1.jpg\") no-repeat center center;\n  background-size: cover;\n  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n}\n@media only screen and (max-width: 56.25em) {\n  #main__main-info {\n    clip-path: none;\n    height: 50vh;\n  }\n}\n#main__main-info:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.8);\n  opacity: 1;\n  z-index: 0;\n}\n#main__about {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__skills {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__experience {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__portfolio {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__reviews {\n  background-color: #f0efef;\n  height: 400px;\n}\n#main__contact {\n  background-color: #f0efef;\n  height: 400px;\n}","@font-face {\n    font-family: 'Amsterdam';\n    src: url('fonts/Amsterdam.woff2') format('woff2');\n}","// MEDIA QUERY MANAGER\n/*\n0 - 600px:      Phone\n600 - 900px:    Tablet portrait\n900 - 1200px:   Tablet landscape\n[1200 - 1800] is where our normal styles apply\n1800px + :      Big desktop\n\n$breakpoint arguement choices:\n- phone\n- tab-port\n- tab-land\n- big-desktop\n\nORDER: Base + typography > general layout + grid > page layout > components\n\n1em = 16px\n*/\n@mixin respond($breakpoint) {\n    @if $breakpoint == phone {\n        @media only screen and (max-width: 37.5em) { @content };    //600px\n    }\n    @if $breakpoint == tab-port {\n        @media only screen and (max-width: 56.25em) { @content };     //900px\n    }\n    @if $breakpoint == tab-land {\n        @media only screen and (max-width: 75em) { @content };    //1200px\n    }\n    @if $breakpoint == big-desktop {\n        @media only screen and (min-width: 112.5em) { @content };    //1800\n    }\n}\n\n@mixin absCenter {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n}\n@mixin clearfix {\n    &::after {\n        content: \"\";\n        display: table;\n        clear: both;\n    }\n}\n@mixin displayFlex($flDirextion, $flWrap, $flAContent, $flJContent, $flAAtimes, ) {\n    display: flex;\n    flex-direction: $flDirextion;\n    flex-wrap: $flWrap;\n    align-content: $flAContent;\n    justify-content: $flJContent;\n    align-items: $flAAtimes;\n}","/* Colors */\n$main-dark-color: #1e1e25;\n$main-light-color: #5abca1;\n$text-color: #ffffff;\n\n/* Sizes */\n$title-font-size: 1.6rem;\n$desc-font-size: 1.2rem;\n$button-font-size: 1.3rem;\n\n/* Other */\n$dark-transparant9: rgba(0, 0, 0, .9);\n$dark-transparant8: rgba(0, 0, 0, .8);\n$dark-transparant7: rgba(0, 0, 0, .7);\n\n$light-transparant9: rgba(255, 255, 255, .9);\n$light-transparant8: rgba(255, 255, 255, .8);\n$light-transparant7: rgba(255, 255, 255, .7);\n","*,\n*::after,\n*::before {\n    margin: 0;\n    padding: 0;\n    box-sizing: inherit;\n}\n\nhtml {\n  font-size: 62.5%;\n\n  @include respond(tab-land) {\n      font-size: 56.25%;\n  }\n\n  @include respond(tab-port) {\n      font-size: 50%; \n  }\n  \n  @include respond(big-desktop) {\n      font-size: 75%;\n  }\n}\n\nbody {\n  box-sizing: border-box;\n}\n\n#root {\n    height: 100vh;\n}\n\n.container {\n    position: relative;\n    margin: 0 auto;\n    z-index: 1;\n    width: 70vw;\n\n    @include respond(tab-land) {\n        width: 80vw;\n    }\n\n    @include respond(tab-port) {\n        width: 100%;\n    }\n}\n\n/* Header; Navbar */\nheader {\n    position: fixed;\n    width: 100%;\n    top: 0; left: 0;\n    z-index: 10;\n    transition: .3s ease-in;\n    overflow: hidden;\n    background-color: $dark-transparant9;\n\n    @include respond(tab-port) {\n        max-width: 100%;\n        background-color: $dark-transparant9;\n    }\n    \n    /* Navbar */\n    .navbar {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        margin: 10px auto;\n        height: 100%;\n        padding: 0 1rem;\n\n        @include respond(tab-port) {\n            max-width: 100%;\n        }\n\n        .nav-menu {\n            width: 100%; \n            display: flex;\n            justify-content: space-between;\n            list-style: none;\n            \n            @include respond(tab-port) {\n                position: fixed;\n                left: -100%; top: 90px;\n                flex-direction: column;\n                background-color: rgba(0,0,0,.9);\n                height: 90vh;\n                z-index: 999;\n                text-align: center;\n                transition: .3s;\n                \n                &.active {\n                    left: 0; top: 50px;\n                }\n            }\n\n            .nav-item {\n                padding: 1rem;\n                font-weight: 500;\n                cursor: pointer;\n\n                @include respond(tab-port) {\n                    margin: 1.5rem 0;\n                }\n                a {\n                    color:#ffffff;\n                    font-size: $title-font-size;\n                    text-decoration: none;\n                }\n                a.active,\n                &:hover a {\n                    padding-bottom: 12px;\n                    border-bottom: 3px solid $main-light-color;\n                }\n            }\n        }\n        .hamburger {\n            display: none;\n            @include respond(tab-port) {\n                display: block;\n            }\n        } \n    }   \n}\n\n/* Main block with */\n#main {\n    &__main-info {\n        height: 90vh;\n        position: relative;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        background: url('./media/Homepage_back_1.jpg') no-repeat center center;\n        background-size: cover;\n        clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);\n        \n        @include respond(tab-port) {\n            clip-path: none;\n            height: 50vh;\n        }\n        // &:hover {\n        //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);\n        // } \n        &:after {\n            content: '';\n            position: absolute;\n            width: 100%; height:100%;\n            top:0; left:0;\n            background: $dark-transparant8;\n            opacity: 1;\n            z-index: 0;\n        }\n    }\n    &__about {\n        background-color: #f0efef;\n        height: 400px;\n    }\n    &__skills {\n        background-color: #f0efef;\n        height: 400px;\n    }\n    &__experience {\n        background-color: #f0efef;\n        height: 400px;\n    }\n    &__portfolio {\n        background-color: #f0efef;\n        height: 400px;\n    }\n    &__reviews {\n        background-color: #f0efef;\n        height: 400px;\n    }\n    &__contact {\n        background-color: #f0efef;\n        height: 400px;\n    }\n}\n\nfooter {\n\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -54807,4 +54832,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.d5835fb0aca296822b1a.js.map
+//# sourceMappingURL=main.680e9b3b67468ef088aa.js.map

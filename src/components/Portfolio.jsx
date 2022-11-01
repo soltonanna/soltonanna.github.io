@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Container from '../modules/Container.jsx';
 
 const Portfolio = () => {
   return (
-    <div id='portfolio'>Portfolio</div>
+    <section id='main__portfolio'>
+      <Container class="portfolio">
+        Portfolio
+      </Container>
+    </section>
   )
 }
 

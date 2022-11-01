@@ -4,22 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    // transition: all 1.5s;
 }
 
 html {
-  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  font-size: 62.5%;
 
-  @include respond(tab-land) { // width < 1200?
-      font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  @include respond(tab-land) {
+      font-size: 56.25%;
   }
 
-  @include respond(tab-port) { // width < 900?
-      font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  @include respond(tab-port) {
+      font-size: 50%; 
   }
   
   @include respond(big-desktop) {
-      font-size: 75%; //1rem = 12, 12/16
+      font-size: 75%;
   }
 }
 
@@ -31,39 +30,154 @@ body {
     height: 100vh;
 }
 
-/* Header */
-header {
-    height: 90vh;
-    background: url('./media/Homepage_back_1.jpg') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
-    
-    // &:hover {
-    //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-    // } 
-    &:after {
-        content: '';
-        position: absolute;
-        width: 100%; height:100%;
-        top:0; left:0;
-        background:rgba(0,0,0,0.8);
-        opacity: 1;
-        z-index: 0;
-    }
-}
-
 .container {
     position: relative;
     margin: 0 auto;
     z-index: 1;
     width: 70vw;
+
     @include respond(tab-land) {
         width: 80vw;
     }
+
     @include respond(tab-port) {
         width: 100%;
     }
-    border: 1px dotted $main-light-color;
+}
+
+/* Header; Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0; left: 0;
+    z-index: 10;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: $dark-transparant9;
+
+    @include respond(tab-port) {
+        max-width: 100%;
+        background-color: $dark-transparant9;
+    }
+    
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+        height: 100%;
+        padding: 0 1rem;
+
+        @include respond(tab-port) {
+            max-width: 100%;
+        }
+
+        .nav-menu {
+            width: 100%; 
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            
+            @include respond(tab-port) {
+                position: fixed;
+                left: -100%; top: 90px;
+                flex-direction: column;
+                background-color: rgba(0,0,0,.9);
+                height: 90vh;
+                z-index: 999;
+                text-align: center;
+                transition: .3s;
+                
+                &.active {
+                    left: 0; top: 50px;
+                }
+            }
+
+            .nav-item {
+                padding: 1rem;
+                font-weight: 500;
+                cursor: pointer;
+
+                @include respond(tab-port) {
+                    margin: 1.5rem 0;
+                }
+                a {
+                    color:#ffffff;
+                    font-size: $title-font-size;
+                    text-decoration: none;
+                }
+                a.active,
+                &:hover a {
+                    padding-bottom: 12px;
+                    border-bottom: 3px solid $main-light-color;
+                }
+            }
+        }
+        .hamburger {
+            display: none;
+            @include respond(tab-port) {
+                display: block;
+            }
+        } 
+    }   
+}
+
+/* Main block with */
+#main {
+    &__main-info {
+        height: 90vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('./media/Homepage_back_1.jpg') no-repeat center center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+        
+        @include respond(tab-port) {
+            clip-path: none;
+            height: 50vh;
+        }
+        // &:hover {
+        //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        // } 
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%; height:100%;
+            top:0; left:0;
+            background: $dark-transparant8;
+            opacity: 1;
+            z-index: 0;
+        }
+    }
+    &__about {
+        background-color: #f0efef;
+        height: 400px;
+    }
+    &__skills {
+        background-color: #f0efef;
+        height: 400px;
+    }
+    &__experience {
+        background-color: #f0efef;
+        height: 400px;
+    }
+    &__portfolio {
+        background-color: #f0efef;
+        height: 400px;
+    }
+    &__reviews {
+        background-color: #f0efef;
+        height: 400px;
+    }
+    &__contact {
+        background-color: #f0efef;
+        height: 400px;
+    }
+}
+
+footer {
 
 }

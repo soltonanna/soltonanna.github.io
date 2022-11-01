@@ -1,8 +1,13 @@
 import React from 'react';
+import Container from '../modules/Container.jsx';
 
 const Contact = () => {
   return (
-    <div id='contact'>Contact</div>
+    <section id='main__contact'>
+        <Container className="contact">
+          Contact Me
+        </Container>
+    </section>
   )
 }
 
