@@ -24,6 +24,7 @@ html {
 
 body {
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #root {
@@ -34,7 +35,7 @@ body {
     position: relative;
     margin: 0 auto;
     z-index: 1;
-    width: 70vw;
+    width: 60vw;
 
     @include respond(tab-land) {
         width: 80vw;
@@ -45,7 +46,7 @@ body {
     }
 }
 
-/* Header; Navbar */
+/* Header, Navbar */
 header {
     position: fixed;
     width: 100%;
@@ -104,13 +105,12 @@ header {
                 }
                 a {
                     color:#ffffff;
-                    font-size: $title-font-size;
+                    font-size: $menu-font-size;
+                    font-family: Roboto;
+                    font-weight: 500;
                     text-decoration: none;
-                }
-                a.active,
-                &:hover a {
-                    padding-bottom: 12px;
-                    border-bottom: 3px solid $main-light-color;
+                    
+                    @include liner-gradient;
                 }
             }
         }
@@ -123,8 +123,9 @@ header {
     }   
 }
 
-/* Main block with */
+/* Main block with sections */
 #main {
+
     &__main-info {
         height: 90vh;
         position: relative;
@@ -133,6 +134,7 @@ header {
         justify-content: center;
         background: url('./media/Homepage_back_1.jpg') no-repeat center center;
         background-size: cover;
+        transition: all 1.5s;
         clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
         
         @include respond(tab-port) {
@@ -141,6 +143,7 @@ header {
         }
         // &:hover {
         //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        //     transform: scale(1.04);
         // } 
         &:after {
             content: '';
@@ -151,27 +154,111 @@ header {
             opacity: 1;
             z-index: 0;
         }
+        .main-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+
+            .chat-button {
+                background-color: $main-light-color;
+                font-size: $button-font-size;
+                display: inline-block;
+                margin: 0 auto 2rem;
+                color: #ffffff;
+                font-weight: 700;
+                padding: 10px 30px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 0px;
+            }
+
+            .title {
+                font-size: $title-font-size;
+                color: $text-color;
+                font-family: 'Cinzel';
+                font-weight: 800;
+                word-spacing: 22px;
+            }
+            
+            .description {
+                font-size: $desc-font-size;
+                color: $text-color;
+                font-family: 'Cinzel';
+                font-weight: 500;
+                word-spacing: 8px;
+            }
+
+            .contact-info {
+                margin: 2rem auto 0;
+
+                p {
+                    color: #ffffff;
+                    font-size: $menu-font-size;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    margin-bottom: 10px;
+
+                    &:hover svg {
+                        transition: color .5s;
+                        color: $main-light-color;
+                    }
+
+                    span {
+                        font-size: $menu-font-size;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .social-icons {
+                margin: 3rem 2.2rem 0;
+
+                a {
+                    color: #ffffff;
+                    margin-right: 1.5rem;
+                    transition: all 1s;
+
+                    &:hover {
+                        color: $main-light-color;
+                    }
+                }
+            }
+
+            .personal-image {
+                border-radius: 50%;
+                border: 15px solid $dark-transparant9;
+                width: 300px; height: 300px;
+                background: url('./media/personal_image.jpeg') 100% 50% no-repeat;
+                background-size: 110%;
+            }
+        }
+        
     }
+
     &__about {
         background-color: #f0efef;
         height: 400px;
     }
+
     &__skills {
         background-color: #f0efef;
         height: 400px;
     }
+
     &__experience {
         background-color: #f0efef;
         height: 400px;
     }
+
     &__portfolio {
         background-color: #f0efef;
         height: 400px;
     }
-    &__reviews {
-        background-color: #f0efef;
-        height: 400px;
-    }
+
     &__contact {
         background-color: #f0efef;
         height: 400px;

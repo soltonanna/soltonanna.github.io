@@ -19,7 +19,7 @@ const Navbar = () => {
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className='nav-item'>
-                    <Link to="main__main-info" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}> Home </Link>
+                    <Link to="main__main-info" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}> Main Info </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="main__about" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}>
@@ -34,9 +34,6 @@ const Navbar = () => {
                 </li>
                 <li className='nav-item'>
                     <Link to="main__portfolio" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Portfolio</Link>
-                </li>
-                <li className='nav-item'>
-                    <Link to="main__reviews" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Reviews</Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="main__contact" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Contact</Link>

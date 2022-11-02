@@ -52,3 +52,40 @@ ORDER: Base + typography > general layout + grid > page layout > components
     justify-content: $flJContent;
     align-items: $flAAtimes;
 }
+
+
+/* Hover Effect_1 (add under-border and change color of text */
+@mixin liner-gradient {
+    background-image: linear-gradient(
+        to right,
+        $main-light-color 20%,
+        $main-light-color 50%,
+        #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    
+    &:before {
+        content: '';
+        background: $main-light-color;
+        display: block;
+        position: absolute;
+        bottom: -3px; left: 0;
+        width: 0; height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+        
+    &:hover {
+        background-position: 0;
+
+        &::before {
+            width:100%;
+        }    
+    }
+}
