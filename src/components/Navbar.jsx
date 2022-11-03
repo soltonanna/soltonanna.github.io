@@ -22,18 +22,18 @@ const Navbar = () => {
                     <Link to="main__main-info" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}> Main Info </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__about" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}>
+                    <Link to="main__about" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
                         About
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__skills" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Skills </Link>
+                    <Link to="main__skills" spy={true} smooth={true} offset={-80} duration={500} onClick={closeMenu}> Skills </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__experience" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Experience </Link>
+                    <Link to="main__experience" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Experience </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__portfolio" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Portfolio</Link>
+                    <Link to="main__portfolio" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Portfolio</Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="main__contact" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Contact</Link>

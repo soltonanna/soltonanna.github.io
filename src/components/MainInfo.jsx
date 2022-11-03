@@ -9,7 +9,7 @@ const MainInfo = () => {
     <section id="main__main-info">
       <Container className="main-info">
         <div>
-          <div className='chat-button'>Hello I'm</div>
+          <div className='button chat-button'>Hello I'm</div>
           <Title_Desc 
             title="Sultanova Anahit"
             desc="Front-end Web developer"

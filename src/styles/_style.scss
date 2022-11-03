@@ -24,7 +24,8 @@ html {
 
 body {
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
+  background-color: #100e17;
 }
 
 #root {
@@ -36,7 +37,8 @@ body {
     margin: 0 auto;
     z-index: 1;
     width: 60vw;
-
+    // border: 1px dotted #dadada;
+    margin-bottom: 5px; 
     @include respond(tab-land) {
         width: 80vw;
     }
@@ -54,7 +56,7 @@ header {
     z-index: 10;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: $dark-transparant9;
+    background-color: #100e17;
 
     @include respond(tab-port) {
         max-width: 100%;
@@ -125,6 +127,31 @@ header {
 
 /* Main block with sections */
 #main {
+    .title {
+        font-size: $title-font-size;
+        color: $text-color;
+        font-family: 'Cinzel';
+        font-weight: 800;
+        word-spacing: 22px;
+    }
+    .description {
+        font-size: $desc-font-size;
+        font-family: Roboto;
+        color: $text-color;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    .button {
+        background-color: $main-light-color;
+        font-size: $button-font-size;
+        border: none;
+        display: inline-block;
+        margin: 0 auto 2rem;
+        color: #ffffff;
+        font-weight: 700;
+        padding: 10px 30px;
+    }
 
     &__main-info {
         height: 90vh;
@@ -161,13 +188,6 @@ header {
             flex-direction: row;
 
             .chat-button {
-                background-color: $main-light-color;
-                font-size: $button-font-size;
-                display: inline-block;
-                margin: 0 auto 2rem;
-                color: #ffffff;
-                font-weight: 700;
-                padding: 10px 30px;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
@@ -175,21 +195,15 @@ header {
             }
 
             .title {
-                font-size: $title-font-size;
-                color: $text-color;
-                font-family: 'Cinzel';
-                font-weight: 800;
-                word-spacing: 22px;
-            }
-            
-            .description {
-                font-size: $desc-font-size;
-                color: $text-color;
-                font-family: 'Cinzel';
-                font-weight: 500;
-                word-spacing: 8px;
+                font-size: $main-title-font-size;
             }
 
+            .description {
+                font-size: $main-desc-font-size;
+                font-family: 'Cinzel';
+                word-spacing: 8px;
+            }
+            
             .contact-info {
                 margin: 2rem auto 0;
 
@@ -240,17 +254,60 @@ header {
     }
 
     &__about {
-        background-color: #f0efef;
-        height: 400px;
+        .about {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .about-image {
+                background: url('./media/about_me_1.jpg') center no-repeat;
+                background-size: cover;
+                width: 500px; height: 500px;
+                margin-right: 3rem;
+            }
+
+            .about-text {
+                width: 55%;
+
+                .description {
+                    margin-bottom: 2rem;
+                }
+                .program-items {
+                    margin-bottom: 1.5rem;
+                }
+
+                .prog-item {
+                    border: 1px solid $main-light-color;
+                    font-size: $button-font-size;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin: 0 5px 15px 0;
+                    display: inline-block;
+                    color: #ffffff;
+
+                    // &:hover {
+                       
+                    // }
+                }
+
+                .downalod-cv {
+                    border-radius: 20px;
+                    
+                    // &:hover {
+                       
+                    // }
+                }
+            }
+        }
+        
     }
 
     &__skills {
-        background-color: #f0efef;
         height: 400px;
     }
 
     &__experience {
-        background-color: #f0efef;
         height: 400px;
     }
 

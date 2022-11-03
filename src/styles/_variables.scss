@@ -4,15 +4,19 @@ $main-light-color: #5abca1;
 $text-color: #ffffff;
 
 /* Sizes */
-$title-font-size: 5rem;
-$desc-font-size: 2.5rem;
+$main-title-font-size: 5rem;
+$main-desc-font-size: 2.5rem;
+
+$title-font-size: 3.5rem;
+$desc-font-size: 1.7rem;
+
 $button-font-size: 1.3rem;
 $menu-font-size: 1.5rem;
 
 /* Other */
-$dark-transparant9: rgba(0, 0, 0, .9);
-$dark-transparant8: rgba(0, 0, 0, .8);
-$dark-transparant7: rgba(0, 0, 0, .7);
+$dark-transparant9: rgba(16,14,23, .9);
+$dark-transparant8: rgba(16,14,23, .8);
+$dark-transparant7: rgba(16,14,23, .7);
 
 $light-transparant9: rgba(255, 255, 255, .9);
 $light-transparant8: rgba(255, 255, 255, .8);
