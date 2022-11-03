@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ProgItem = ({title}) => {
+const ProgItem = ({title, url}) => {
   return (
-    <div className='prog-item'>
-        {title}
-    </div>
+    url 
+      ? <a href={url} target="_blank" className='prog-item'> {title} </a> 
+      : <div className='prog-item'> {title} </div>
   )
 }
 

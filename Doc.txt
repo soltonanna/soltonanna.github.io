@@ -28,3 +28,9 @@
 
 21. ** npm install @babel/preset-react --save-dev **
 22  Create 'babel.config.js' file;
+
+
+
+
+
+npm uninstall --save-dev *package-name*

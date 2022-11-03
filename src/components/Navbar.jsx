@@ -27,7 +27,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__skills" spy={true} smooth={true} offset={-80} duration={500} onClick={closeMenu}> Skills </Link>
+                    <Link to="main__skills" spy={true} smooth={true} offset={-120} duration={500} onClick={closeMenu}> Skills </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="main__experience" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Experience </Link>

@@ -15,23 +15,63 @@ const About = () => {
               desc="Hello, I'm Anahit, front-end web developer with more than 7 years experience. I have experience in web site design & building and customization. Also I am good at"
           />
           <div className='program-items'>
-            <ProgItem title="HTML, HTML5" /> 
-            <ProgItem title="CSS, CSS3" /> 
-            <ProgItem title="JavaScript" />
-            <ProgItem title="jQuery" />
-            <ProgItem title="AJAX" />
-            <ProgItem title="React JS" />
-            <ProgItem title="Redux" />
-            <ProgItem title="TypeScript" />
-            <ProgItem title="RESTful API" />
-            <ProgItem title="WordPress" />
-            <ProgItem title="Joomla!" />
-            <ProgItem title="PHP" />
-            <ProgItem title="MySQL" />
-            <ProgItem title="GIT" />
-            <ProgItem title="Jira" />
-            <ProgItem title="Webpack" />
-            <ProgItem title="Figma" />
+            <ProgItem 
+              title="HTML, HTML5"
+              url="https://www.w3schools.com/html/" /> 
+            <ProgItem 
+              title="CSS, CSS3"
+              url="https://www.w3schools.com/css/" /> 
+            <ProgItem 
+              title="Sass, Less"
+              url="https://sass-lang.com/" /> 
+            <ProgItem 
+              title="Bootstrap"
+              url="https://getbootstrap.com/" />
+            <ProgItem 
+              title="JavaScript"
+              url="https://www.w3schools.com/js/" />
+            <ProgItem 
+              title="jQuery"
+              url="https://jquery.com/" />
+            <ProgItem 
+              title="AJAX"
+              url="https://www.w3schools.com/xml/ajax_intro.asp" />
+            <ProgItem 
+              title="React JS"
+              url="https://reactjs.org/" />
+            <ProgItem 
+              title="Redux"
+              url="https://redux.js.org/" />
+            <ProgItem 
+              title="TypeScript"
+              url="https://www.typescriptlang.org/" />
+            <ProgItem 
+              title="RESTful API"
+              url="https://aws.amazon.com/what-is/restful-api/" />
+            <ProgItem 
+              title="WordPress"
+              url="https://wordpress.org/download/" />
+            <ProgItem 
+              title="Joomla!"
+              url="https://www.joomla.org/" />
+            <ProgItem 
+              title="PHP"
+              url="https://www.php.net/" />
+            <ProgItem 
+              title="MySQL"
+              url="https://www.mysql.com/" />
+            <ProgItem 
+              title="Git, GitHub"
+              url="https://git-scm.com/" />
+            <ProgItem 
+              title="Jira"
+              url="https://www.atlassian.com/software/jira" />
+            <ProgItem 
+              title="Webpack"
+              url="https://webpack.js.org/" />
+            <ProgItem 
+              title="Figma"
+              url="https://www.figma.com/" />
           </div>
           <button className='button downalod-cv'> Download CV <FaDownload/> </button>
         </div>
