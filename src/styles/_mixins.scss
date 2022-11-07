@@ -37,6 +37,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 @mixin clearfix {
     &::after {
         content: "";
@@ -44,6 +45,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         clear: both;
     }
 }
+
 @mixin displayFlex($flDirextion, $flWrap, $flAContent, $flJContent, $flAAtimes, ) {
     display: flex;
     flex-direction: $flDirextion;
@@ -52,7 +54,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
     justify-content: $flJContent;
     align-items: $flAAtimes;
 }
-
 
 /* Hover Effect_1 (add under-border and change color of text */
 @mixin liner-gradient {

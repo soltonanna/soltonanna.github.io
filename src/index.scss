@@ -4,3 +4,11 @@
 @import './styles/mixins';
 @import './styles/variables';
 @import './styles/style';
+
+
+@import './styles/modules-styles/CardView.scss';
+@import './styles/modules-styles/Title_Desc.scss';
+@import './styles/modules-styles/ContactInfo.scss';
+@import './styles/modules-styles/RectProgressBar.scss';
+@import './styles/modules-styles/ProgItem.scss';
+@import './styles/modules-styles/InfoModal.scss';

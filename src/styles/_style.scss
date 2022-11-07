@@ -28,10 +28,6 @@ body {
   background-color: #100e17;
 }
 
-#root {
-    height: 100vh;
-}
-
 .container {
     position: relative;
     margin: 0 auto;
@@ -48,356 +44,246 @@ body {
     }
 }
 
-/* Header, Navbar */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0; left: 0;
-    z-index: 10;
-    transition: .3s ease-in;
-    overflow: hidden;
-    background-color: #100e17;
 
-    @include respond(tab-port) {
-        max-width: 100%;
-        background-color: $dark-transparant9;
-    }
-    
-    /* Navbar */
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px auto;
-        height: 100%;
-        padding: 0 1rem;
+#root {
+    height: 100vh;
+
+    /* Header, Navbar */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0; left: 0;
+        z-index: 10;
+        transition: .3s ease-in;
+        overflow: hidden;
+        background-color: #100e17;
 
         @include respond(tab-port) {
             max-width: 100%;
+            background-color: $dark-transparant9;
         }
-
-        .nav-menu {
-            width: 100%; 
+        
+        /* Navbar */
+        .navbar {
             display: flex;
             justify-content: space-between;
-            list-style: none;
-            
+            align-items: center;
+            margin: 10px auto;
+            height: 100%;
+            padding: 0 1rem;
+
             @include respond(tab-port) {
-                position: fixed;
-                left: -100%; top: 90px;
-                flex-direction: column;
-                background-color: rgba(0,0,0,.9);
-                height: 90vh;
-                z-index: 999;
-                text-align: center;
-                transition: .3s;
+                max-width: 100%;
+            }
+
+            .nav-menu {
+                width: 100%; 
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
                 
-                &.active {
-                    left: 0; top: 50px;
-                }
-            }
-
-            .nav-item {
-                padding: 1rem;
-                font-weight: 500;
-                cursor: pointer;
-
                 @include respond(tab-port) {
-                    margin: 1.5rem 0;
-                }
-                a {
-                    color:#ffffff;
-                    font-size: $menu-font-size;
-                    font-family: Roboto;
-                    font-weight: 500;
-                    text-decoration: none;
+                    position: fixed;
+                    left: -100%; top: 90px;
+                    flex-direction: column;
+                    background-color: rgba(0,0,0,.9);
+                    height: 90vh;
+                    z-index: 999;
+                    text-align: center;
+                    transition: .3s;
                     
-                    @include liner-gradient;
-                }
-            }
-        }
-        .hamburger {
-            display: none;
-            @include respond(tab-port) {
-                display: block;
-            }
-        } 
-    }   
-}
-
-/* Main block with sections */
-#main {
-    .title {
-        font-size: $title-font-size;
-        color: $text-color;
-        font-family: 'Cinzel';
-        font-weight: 800;
-        word-spacing: 22px;
-    }
-
-    .description {
-        font-size: $desc-font-size;
-        font-family: Roboto;
-        color: $text-color;
-        font-weight: 500;
-        line-height: 27px;
-    }
-
-    .button {
-        background-color: $main-light-color;
-        font-size: $button-font-size;
-        border: none;
-        display: inline-block;
-        margin: 0 auto 2rem;
-        color: #ffffff;
-        font-weight: 700;
-        padding: 10px 30px;
-    }
-
-    /* Separate Sections */
-    &__main-info {
-        height: 90vh;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: url('./media/Homepage_back_1.jpg') no-repeat center center;
-        background-size: cover;
-        transition: all 1.5s;
-        clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
-        
-        @include respond(tab-port) {
-            clip-path: none;
-            height: 50vh;
-        }
-        // &:hover {
-        //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-        //     transform: scale(1.04);
-        // } 
-
-        &:after {
-            content: '';
-            position: absolute;
-            width: 100%; height:100%;
-            top:0; left:0;
-            background: $dark-transparant8;
-            opacity: 1;
-            z-index: 0;
-        }
-
-        .main-info {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-direction: row;
-
-            .chat-button {
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                border-bottom-right-radius: 20px;
-                border-bottom-left-radius: 0px;
-            }
-
-            .title {
-                font-size: $main-title-font-size;
-            }
-
-            .description {
-                font-size: $main-desc-font-size;
-                font-family: 'Cinzel';
-                word-spacing: 8px;
-            }
-            
-            .contact-info {
-                margin: 2rem auto 0;
-
-                p {
-                    color: #ffffff;
-                    font-size: $menu-font-size;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    flex-direction: row;
-                    margin-bottom: 10px;
-
-                    &:hover svg {
-                        transition: color .5s;
-                        color: $main-light-color;
+                    &.active {
+                        left: 0; top: 50px;
                     }
+                }
 
-                    span {
+                .nav-item {
+                    padding: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    @include respond(tab-port) {
+                        margin: 1.5rem 0;
+                    }
+                    a {
+                        color:#ffffff;
                         font-size: $menu-font-size;
-                        margin-left: 10px;
+                        font-family: Roboto;
+                        font-weight: 500;
+                        text-decoration: none;
+                        
+                        @include liner-gradient;
                     }
                 }
             }
-
-            .social-icons {
-                margin: 3rem 2.2rem 0;
-
-                a {
-                    color: #ffffff;
-                    margin-right: 1.5rem;
-                    transition: all 1s;
-
-                    &:hover {
-                        color: $main-light-color;
-                    }
+            .hamburger {
+                display: none;
+                @include respond(tab-port) {
+                    display: block;
                 }
-            }
-
-            .personal-image {
-                border-radius: 50%;
-                border: 15px solid $dark-transparant9;
-                width: 300px; height: 300px;
-                background: url('./media/personal_image.jpeg') 100% 50% no-repeat;
-                background-size: 110%;
-            }
-        }
-        
+            } 
+        }   
     }
 
-    &__about {
-        .about {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            margin-bottom: 8rem;
+    /* Main block with sections */
+    #main {
+        .button {
+            background-color: $main-light-color;
+            font-size: $button-font-size;
+            border: none;
+            display: inline-block;
+            margin: 0 auto 2rem;
+            color: #ffffff;
+            font-weight: 700;
+            padding: 10px 30px;
+        }
 
-            .about-image {
-                background: url('./media/about_me_1.webp') center no-repeat;
-                background-size: contain;
-                width: 500px; height: 500px;
-                margin-right: 3rem;
+        /* Separate Sections */
+        &__main-info {
+            @include displayFlex(row, nowrap, center, center, center);
+            height: 90vh;
+            position: relative;
+            background: url('./media/Homepage_back_1.jpg') no-repeat center center;
+            background-size: cover;
+            transition: all 1.5s;
+            clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+            
+            @include respond(tab-port) {
+                clip-path: none;
+                height: 50vh;
+            }
+            // &:hover {
+            //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            //     transform: scale(1.04);
+            // } 
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%; height:100%;
+                top:0; left:0;
+                background: $dark-transparant8;
+                opacity: 1; z-index: 0;
             }
 
-            .about-text {
-                width: 55%;
+            .main-info {
+                @include displayFlex(row, nowrap, center, space-around, center);
+                
+                .chat-button {
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    border-bottom-left-radius: 0px;
+                }
+
+                .title {
+                    font-size: $main-title-font-size;
+                }
 
                 .description {
-                    margin-bottom: 2rem;
+                    font-size: $main-desc-font-size;
+                    font-family: 'Cinzel';
+                    word-spacing: 8px;
                 }
-                .program-items {
-                    margin-bottom: 1.5rem;
-                }
-
-                .prog-item {
-                    border: 1px solid $main-light-color;
-                    font-size: $button-font-size;
-                    border-radius: 5px;
-                    padding: 10px;
-                    margin: 0 5px 15px 0;
-                    display: inline-block;
-                    color: #ffffff;
-                    text-decoration: none;
-
-                    // &:hover {
-                       
-                    // }
-                }
-
-                .downalod-cv {
-                    border-radius: 20px;
-                    
-                    // &:hover {
-                       
-                    // }
-                }
-            }
-        }
-        
-    }
-
-    &__skills {
-        .skills {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-between;
-            margin-bottom: 8rem;
-            
-            h2 {
-                font-weight: 400;
-                letter-spacing: 1px;
-                margin-top: 40px;
-                margin-bottom: 20px;
-                color: #ffffff;
-                font-size: 16px;
-            }
-            .progress-bar {
-                background-color: $main-dark-color;
-                width: 100%;
-                height: 10px;
-                border-radius: 5px;
                 
-                div {
-                    height: 10px;
-                    border-radius: 5px;
-                    width: 0%;
-                    background-color: $main-light-color;
-                    
-                    &.html,
-                    &.css,
-                    &.t-management { 
-                        animation: prog_90 1s linear forwards; 
-                    }
+                .social-icons {
+                    margin: 3rem 2.2rem 0;
 
-                    &.javascript,
-                    &.communication,
-                    &.d-oriented { 
-                        animation: prog_70 1s linear forwards; 
-                    }
-
-                    
-                    &.team-work { 
-                        animation: prog_60 1s linear forwards; 
-                    }
-
-                    &.react { 
-                        animation: prog_50 1s linear forwards; 
-                    }
-
-                    span {
-                        height: 40px;
-                        width: 40px;
-                        border-radius: 50%;
-                        background-color: #100e17;
-                        float: right;
-                        margin-top: -15px;
-                        margin-right: -20px;
+                    a {
                         color: #ffffff;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border: 1px solid $main-light-color;
+                        margin-right: 1.5rem;
+                        transition: all 1s;
+
+                        &:hover {
+                            color: $main-light-color;
+                        }
                     }
                 }
 
-                @keyframes prog_50 { 100% { width: 50%; } }
-                @keyframes prog_60 { 100% { width: 60%; } }
-                @keyframes prog_70 { 100% { width: 70%; } }
-                @keyframes prog_80 { 100% { width: 80%; } }
-                @keyframes prog_90 { 100% { width: 90%; } }
+                .personal-image {
+                    border-radius: 50%;
+                    border: 15px solid $dark-transparant9;
+                    width: 300px; height: 300px;
+                    background: url('./media/personal_image.jpeg') 100% 50% no-repeat;
+                    background-size: 110%;
+                }
             }
+            
+        }
+
+        &__about {
+            .about {
+                @include displayFlex(row, nowrap, center, flex-start, center);
+                margin-bottom: 8rem;
+
+                .about-image {
+                    background: url('./media/about_me_1.webp') center no-repeat;
+                    background-size: contain;
+                    width: 500px; height: 500px;
+                    margin-right: 3rem;
+                }
+
+                .about-text {
+                    width: 55%;
+
+                    .description {
+                        margin-bottom: 2rem;
+                    }
+
+                    .downalod-cv {
+                        border-radius: 20px;
+                        
+                        // &:hover {
+                        
+                        // }
+                    }
+                }
+            }
+            
+        }
+
+        &__skills {
+            .skills {
+                @include displayFlex(row, nowrap, center, space-between, flex-start);
+                margin-bottom: 8rem;
+                
+                h2 {
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    color: #ffffff;
+                    font-size: 16px;
+                }
+                
+            }
+        }
+
+        &__experience {
+            .experience {
+                @include displayFlex(column, nowrap, center, space-between, flex-start);
+                margin-bottom: 8rem;
+                .education,
+                .work-experience {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    .cards {
+                        @include displayFlex(row, wrap, center, space-between, flex-start);
+                    }
+                }
+            }
+        }
+
+        &__portfolio {
+            background-color: #f0efef;
+        }
+
+        &__contact {
+            background-color: #f0efef;
         }
     }
 
-    &__experience {
-        height: 400px;
+    footer {
+
     }
-
-    &__portfolio {
-        background-color: #f0efef;
-        height: 400px;
-    }
-
-    &__contact {
-        background-color: #f0efef;
-        height: 400px;
-    }
-}
-
-footer {
-
 }

@@ -1,0 +1,20 @@
+.contact-info {
+    margin: 2rem auto 0;
+
+    p {
+        @include displayFlex(row, nowrap, center, flex-start, center);
+        color: #ffffff;
+        font-size: $menu-font-size;
+        margin-bottom: 10px;
+
+        &:hover svg {
+            transition: color .5s;
+            color: $main-light-color;
+        }
+
+        span {
+            font-size: $menu-font-size;
+            margin-left: 10px;
+        }
+    }
+}

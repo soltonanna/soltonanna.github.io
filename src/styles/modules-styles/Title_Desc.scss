@@ -1,0 +1,15 @@
+.title {
+    font-size: $title-font-size;
+    color: $text-color;
+    font-family: 'Cinzel';
+    font-weight: 800;
+    word-spacing: 22px;
+}
+
+.description {
+    font-size: $desc-font-size;
+    font-family: 'Roboto';
+    color: $text-color;
+    font-weight: 500;
+    line-height: 27px;
+}

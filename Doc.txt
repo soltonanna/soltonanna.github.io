@@ -28,7 +28,7 @@
 
 21. ** npm install @babel/preset-react --save-dev **
 22  Create 'babel.config.js' file;
-
+23. ** npm install antd ** 
 
 
 

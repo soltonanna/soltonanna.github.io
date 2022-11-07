@@ -1,0 +1,18 @@
+.program-items {
+    margin-bottom: 1.5rem;
+
+    .prog-item {
+        border: 1px solid $main-light-color;
+        font-size: $button-font-size;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 5px 15px 0;
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+    
+        // &:hover {
+           
+        // }
+    }
+}
