@@ -12,7 +12,7 @@ const About = () => {
         <div className='about-text'>
           <Title_Desc 
               title="About me"
-              desc="Hello, I'm Anahit, front-end web developer with more than 7 years experience. I have experience in web site design & building and customization. Also I am good at"
+              desc="Hello, I'm Anahit, front-end web developer with more than 7 years experience. I have experience in web site design, building, testing and customization. Also I am good at"
           />
           <div className='program-items'>
             <ProgItem 
