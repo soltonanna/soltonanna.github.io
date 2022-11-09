@@ -33,8 +33,9 @@ body {
     margin: 0 auto;
     z-index: 1;
     width: 60vw;
-    // border: 1px dotted #dadada;
-    margin-bottom: 5px; 
+    border: 1px dotted #dadada;
+    margin-bottom: 5rem;
+
     @include respond(tab-land) {
         width: 80vw;
     }
@@ -57,72 +58,78 @@ body {
         transition: .3s ease-in;
         overflow: hidden;
         background-color: #100e17;
+        
 
         @include respond(tab-port) {
             max-width: 100%;
             background-color: $dark-transparant9;
         }
         
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 10px auto;
-            height: 100%;
-            padding: 0 1rem;
+        .header {
+            margin-bottom: 0;
 
-            @include respond(tab-port) {
-                max-width: 100%;
-            }
-
-            .nav-menu {
-                width: 100%; 
+            /* Navbar */
+            .navbar {
                 display: flex;
                 justify-content: space-between;
-                list-style: none;
-                
+                align-items: center;
+                margin: 10px auto;
+                height: 100%;
+                padding: 0 1rem;
+
                 @include respond(tab-port) {
-                    position: fixed;
-                    left: -100%; top: 90px;
-                    flex-direction: column;
-                    background-color: rgba(0,0,0,.9);
-                    height: 90vh;
-                    z-index: 999;
-                    text-align: center;
-                    transition: .3s;
+                    max-width: 100%;
+                }
+
+                .nav-menu {
+                    width: 100%; 
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
                     
-                    &.active {
-                        left: 0; top: 50px;
-                    }
-                }
-
-                .nav-item {
-                    padding: 1rem;
-                    font-weight: 500;
-                    cursor: pointer;
-
                     @include respond(tab-port) {
-                        margin: 1.5rem 0;
-                    }
-                    a {
-                        color:#ffffff;
-                        font-size: $menu-font-size;
-                        font-family: 'Roboto', sans-serif;
-                        font-weight: 500;
-                        text-decoration: none;
+                        position: fixed;
+                        left: -100%; top: 90px;
+                        flex-direction: column;
+                        background-color: rgba(0,0,0,.9);
+                        height: 90vh;
+                        z-index: 999;
+                        text-align: center;
+                        transition: .3s;
                         
-                        @include liner-gradient;
+                        &.active {
+                            left: 0; top: 50px;
+                        }
+                    }
+
+                    .nav-item {
+                        padding: 1rem;
+                        font-weight: 500;
+                        cursor: pointer;
+
+                        @include respond(tab-port) {
+                            margin: 1.5rem 0;
+                        }
+                        a {
+                            color:#ffffff;
+                            font-size: $menu-font-size;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 500;
+                            text-decoration: none;
+                            
+                            @include liner-gradient;
+                        }
                     }
                 }
-            }
-            .hamburger {
-                display: none;
-                @include respond(tab-port) {
-                    display: block;
-                }
+                .hamburger {
+                    display: none;
+                    @include respond(tab-port) {
+                        display: block;
+                    }
+                } 
             } 
-        }   
+        }
+          
     }
 
     /* Main block with sections */
@@ -168,7 +175,8 @@ body {
 
             .main-info {
                 @include displayFlex(row, nowrap, center, space-around, center);
-                
+                margin-bottom: 0;
+
                 .chat-button {
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
@@ -214,7 +222,6 @@ body {
         &__about {
             .about {
                 @include displayFlex(row, nowrap, center, flex-start, center);
-                margin-bottom: 8rem;
 
                 .about-image {
                     background: url('./media/about_me_1.webp') center no-repeat;
@@ -245,7 +252,6 @@ body {
         &__skills {
             .skills {
                 @include displayFlex(row, nowrap, center, space-between, flex-start);
-                margin-bottom: 8rem;
                 
                 h2 {
                     font-weight: 400;
@@ -262,7 +268,7 @@ body {
         &__experience {
             .experience {
                 @include displayFlex(column, nowrap, center, space-between, flex-start);
-                margin-bottom: 8rem;
+
                 .education,
                 .work-experience {
                     width: 100%;
@@ -276,8 +282,6 @@ body {
 
         &__portfolio {
             .portfolio {
-                margin-bottom: 8rem;
-
                 .react-tabs {
                     margin-top: 2rem;
                     
@@ -310,9 +314,42 @@ body {
             }
         }
 
-        &__contact {
-            background-color: #f0efef;
+        &__blog {
+            @include displayFlex(row, nowrap, center, flex-start, flex-start);
         }
+        
+        &__contact {
+            background: url('./media/map-color-overlay.png') no-repeat center;
+            background-size: contain;
+            padding-bottom: 5rem;
+
+            .contact {                  
+                &__block {
+                    @include displayFlex(row, nowrap, center, space-between, center); 
+                    
+                    .contact-info {
+                        @include displayFlex(row, nowrap, center, space-between, center); 
+                        width: 100%;
+
+                        p {
+                            background-color: $main-dark-color;
+                            margin-bottom: 20px;
+                            padding: 30px 20px;
+    
+                            svg {
+                                border: 1px solid $main-light-color;
+                                border-radius: 50%;
+                                padding: 25px;
+                                overflow: visible;
+                            }
+                        }
+                    }
+                   
+                }
+
+            }
+            
+         }
     }
 
     footer {

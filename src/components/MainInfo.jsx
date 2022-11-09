@@ -14,7 +14,7 @@ const MainInfo = () => {
             title="Sultanova Anahit"
             desc="Front-end Web developer"
           />
-          <ContactInfo />
+          <ContactInfo size='18' />
           <SocialIcons />
         </div>
         <div className='personal-image'></div>

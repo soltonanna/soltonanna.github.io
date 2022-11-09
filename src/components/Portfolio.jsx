@@ -4,8 +4,8 @@ import 'react-tabs/style/react-tabs.css';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
-import PortImg1 from '../media/Homepage_back_3.jpg';
-import PortImg2 from '../media/Homepage_back_2.jpg';
+import {PortfolioImg1, PortfolioImg2 } from '../utils/images.js';
+
 
 const Portfolio = () => {
   return (
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
           <TabPanel>
             <PortfolioItem 
-              imgUrl={PortImg1}
+              imgUrl={PortfolioImg1}
               title='Port 1'
               desc={
                 <>
@@ -36,7 +36,7 @@ const Portfolio = () => {
               }
             />
             <PortfolioItem 
-              imgUrl={PortImg2}
+              imgUrl={PortfolioImg2}
               title='Port 2'
               desc='Aute sunt ex ea nisi consequat labore. Ea commodo voluptate do ex cillum cillum proident ullamco deserunt laboris et. Sunt elit qui nisi laborum dolore deserunt nostrud voluptate laboris do pariatur veniam. Adipisicing sint laborum laboris qui aliquip proident est nostrud. Ut cupidatat aute laborum occaecat ex sint ullamco laborum do laborum. Do minim eiusmod et consequat ad.'
             />

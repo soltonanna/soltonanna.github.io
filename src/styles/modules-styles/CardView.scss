@@ -1,13 +1,15 @@
-.card-view {
+.card-view,
+.card-view-img {
     background-color: $main-dark-color;
     padding: 20px;
-    max-width: 550px;
-    min-width: 550px;
+    max-width: 49%;
+    min-width: 49%;
     min-height: 220px;
     margin-bottom: 2rem; 
+    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     border-radius: $border-radius;
-    transition: all .5s ease-in-out;;
+    transition: all .5s ease-in-out;
 
     &:hover {
         box-shadow: 2px 2px 10px #2d2d2d;
@@ -19,33 +21,40 @@
         border-bottom: 1px solid $main-light-color;
         font-size: $desc-font-size;
         margin-bottom: 10px;
+        padding: 0 0 12px;
         font-weight: 700;
-        min-height: 60px;
+        min-height: 65px;
 
         .cv-title {
             color:#ffffff;
             text-align: left;
         }
+        .cv-image {
+            width: 100%;
+            margin-bottom: 20px;
+        }
         .cv-place {
             text-align: right;
             a, span {
-                
                 color: $main-light-color;
                 text-decoration: none;
             }
         }
     }
+
     &__date {
         color: $main-light-color;
         font-size: calc($desc-font-size - 0.5rem);
         margin-bottom: 10px;
         font-weight: 700;
     }
+
     &__desc {
         color:#ffffff;
         line-height: 25px;
         font-size: calc($desc-font-size - 0.2rem);
     }
+
     button {
         border: none;
         background-color: transparent;
@@ -57,5 +66,16 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+.card-view-img {
+    max-width: 33%;
+    min-width: 33%;
+    min-height: 220px;
+    margin-top: 2.5rem;
+
+    &__header {
+        @include displayFlex(column, nowrap, center, space-between, center);
     }
 }
