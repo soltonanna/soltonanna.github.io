@@ -23,9 +23,9 @@ html {
 }
 
 body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  background-color: #100e17;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #100e17;
 }
 
 .container {
@@ -33,7 +33,6 @@ body {
     margin: 0 auto;
     z-index: 1;
     width: 60vw;
-    border: 1px dotted #dadada;
     margin-bottom: 5rem;
 
     @include respond(tab-land) {
@@ -45,6 +44,30 @@ body {
     }
 }
 
+.button {
+    background-color: $main-light-color;
+    font-size: $button-font-size;
+    border: none;
+    display: inline-block;
+    margin: 0 auto 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+
+.social-icons {
+    margin: 3rem 2.2rem 0;
+
+    a {
+        color: #ffffff;
+        margin-right: 1.5rem;
+        transition: all 1s;
+
+        &:hover {
+            color: $main-light-color;
+        }
+    }
+}
 
 #root {
     height: 100vh;
@@ -134,18 +157,6 @@ body {
 
     /* Main block with sections */
     #main {
-        .button {
-            background-color: $main-light-color;
-            font-size: $button-font-size;
-            border: none;
-            display: inline-block;
-            margin: 0 auto 2rem;
-            color: #ffffff;
-            font-weight: 700;
-            padding: 10px 30px;
-        }
-
-        /* Separate Sections */
         &__main-info {
             @include displayFlex(row, nowrap, center, center, center);
             height: 90vh;
@@ -194,20 +205,6 @@ body {
                     word-spacing: 8px;
                 }
                 
-                .social-icons {
-                    margin: 3rem 2.2rem 0;
-
-                    a {
-                        color: #ffffff;
-                        margin-right: 1.5rem;
-                        transition: all 1s;
-
-                        &:hover {
-                            color: $main-light-color;
-                        }
-                    }
-                }
-
                 .personal-image {
                     border-radius: 50%;
                     border: 15px solid $dark-transparant9;
@@ -349,10 +346,19 @@ body {
 
             }
             
-         }
+        }
     }
 
     footer {
-
+        .footer {
+            @include displayFlex(row, nowrap, center, space-between, center);
+            color: #ffffff;
+            font-size: $menu-font-size;
+            padding-bottom: 5rem;
+            
+            .social-icons {
+                margin-top: 0;
+            }
+        }
     }
 }
