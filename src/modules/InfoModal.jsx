@@ -10,7 +10,7 @@ const ModalBackdrop = (props) => {
         <div className='modal-back'> 
             <div>
                 <header >
-                    <h2> {  props.title } </h2>
+                    <h2> { props.title } </h2>
                 </header>
                 <main>
                     <p> { props.message } </p>

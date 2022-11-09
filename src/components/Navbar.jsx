@@ -33,7 +33,7 @@ const Navbar = () => {
                     <Link to="main__experience" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Experience </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__portfolio" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Portfolio</Link>
+                    <Link to="main__portfolio" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Portfolio</Link>
                 </li>
                 <li className='nav-item'>
                     <Link to="main__contact" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Contact</Link>
@@ -42,4 +42,4 @@ const Navbar = () => {
         </nav>
     )
 }
-export default Navbar
+export default Navbar;

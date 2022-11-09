@@ -5,7 +5,8 @@
     min-width: 550px;
     min-height: 220px;
     margin-bottom: 2rem; 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    border-radius: $border-radius;
     transition: all .5s ease-in-out;;
 
     &:hover {

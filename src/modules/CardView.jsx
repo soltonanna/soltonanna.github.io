@@ -13,7 +13,7 @@ const CardView = ({title, place, placeUrl, date, desc, moreDesc}) => {
   const infoModalHandler = (e) => {
     e.preventDefault();
     setInfoModal(false)
- }
+  }
   
   return (
     <div className='card-view'>

@@ -46,7 +46,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
 }
 
-@mixin displayFlex($flDirextion, $flWrap, $flAContent, $flJContent, $flAAtimes, ) {
+@mixin displayFlex($flDirextion, $flWrap, $flAContent, $flJContent, $flAAtimes ) {
     display: flex;
     flex-direction: $flDirextion;
     flex-wrap: $flWrap;

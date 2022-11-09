@@ -108,7 +108,7 @@ body {
                     a {
                         color:#ffffff;
                         font-size: $menu-font-size;
-                        font-family: Roboto;
+                        font-family: 'Roboto', sans-serif;
                         font-weight: 500;
                         text-decoration: none;
                         
@@ -230,8 +230,8 @@ body {
                         margin-bottom: 2rem;
                     }
 
-                    .downalod-cv {
-                        border-radius: 20px;
+                    .download-cv {
+                        border-radius: calc($border-radius + 10px);
                         
                         // &:hover {
                         
@@ -275,7 +275,39 @@ body {
         }
 
         &__portfolio {
-            background-color: #f0efef;
+            .portfolio {
+                margin-bottom: 8rem;
+
+                .react-tabs {
+                    margin-top: 2rem;
+                    
+                    .react-tabs__tab-list {
+                        @include displayFlex(row, nowrap, center, space-between, center);
+                        border: none;
+
+                        .react-tabs__tab {
+                            border: none;
+                            padding: 20px 15px;
+                            margin: 0 15px 0 0;
+                            color: #ffffff;
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: $desc-font-size;
+                            font-family: 'Roboto', sans-serif;
+                           
+                            
+                            &--selected {
+                                background-color: transparent;
+                                border-bottom: 2px solid $main-light-color;
+                            }
+                        }
+                    }
+                    .react-tabs__tab-panel {
+                        margin-top: 3rem;
+                        @include displayFlex(row, nowrap, center, flex-start, flex-start);
+                    }
+                }
+            }
         }
 
         &__contact {

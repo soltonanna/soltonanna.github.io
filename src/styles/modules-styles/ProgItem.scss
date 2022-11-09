@@ -4,7 +4,7 @@
     .prog-item {
         border: 1px solid $main-light-color;
         font-size: $button-font-size;
-        border-radius: 5px;
+        border-radius: $border-radius;
         padding: 10px;
         margin: 0 5px 15px 0;
         display: inline-block;

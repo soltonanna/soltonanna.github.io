@@ -5,7 +5,7 @@
     padding: 30px;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
-
+    border-radius: $border-radius;
     background-color: $main-dark-color;
 
     header {
@@ -50,6 +50,7 @@
             font-weight: 800;
             padding: 8px 18px;
             transition: all 0.5s;
+            border-radius: $border-radius;
 
             &:hover {
                 background-color: #ffffff;

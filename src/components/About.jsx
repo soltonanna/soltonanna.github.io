@@ -73,7 +73,7 @@ const About = () => {
               title="Figma"
               url="https://www.figma.com/" />
           </div>
-          <button className='button downalod-cv'> Download CV <FaDownload/> </button>
+          <button className='button download-cv'> Download CV <FaDownload/> </button>
         </div>
       </Container>
     </section>
