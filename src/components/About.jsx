@@ -3,8 +3,22 @@ import { FaDownload } from 'react-icons/fa';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import ProgItem from '../modules/ProgItem.jsx';
+import CV from '../media/SultanovaAnahit_cv.pdf';
 
 const About = () => {
+
+   const downloadCvHandler = () => {
+    fetch(CV).then(response => {
+        response.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob);
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Sultanova_Anahit_CV.pdf';
+            alink.click();
+        });
+    });
+}
+
   return (
     <section id='main__about'>
       <Container className="about">
@@ -73,7 +87,9 @@ const About = () => {
               title="Figma"
               url="https://www.figma.com/" />
           </div>
-          <button className='button download-cv'> Download CV <FaDownload/> </button>
+          <button onClick={downloadCvHandler}  className='button download-cv'>
+            Download PDF <FaDownload/>
+          </button>
         </div>
       </Container>
     </section>

@@ -33,14 +33,14 @@ function Experience() {
               title='Frontend Web Developer'
               place='BetInspire'
               placeUrl='https://www.betinspire.com/'
-              date='Apr 2022 - Aug 2022 · 4 mos'
+              date='Apr 2022 - Aug 2022 · 4 month'
               desc='Changing and improving of existing platform functionality, development web sites frontend, bug fixes, adding the new features.'
             />
             <CardView 
               title='Professional development'
               place='Career Break'
               placeUrl=''
-              date='Jan 2022 - Apr 2022 · 4 mos'
+              date='Jan 2022 - Apr 2022 · 4 month'
               desc='Continued improved front-end skills. Decided get deep knowledge exactly on front-end. Want to continue my career particular in JavaScript and React JS.'
               moreDesc={
                 <>
@@ -61,7 +61,7 @@ function Experience() {
               title='Full Stack Engineer'
               place='10Web.io'
               placeUrl='https://10web.io/'
-              date='Aug 2020 - Jan 2022 · 1 yr 6 mos'
+              date='Aug 2020 - Jan 2022 · 1 year 6 month'
               desc='Worked as full stack mid level developer with Wordpress. Developed, modified, tested and fixed plugins and services (worked remote / full day)'
               moreDesc={
                 <>
@@ -82,7 +82,7 @@ function Experience() {
               title='Maternity leave'
               place='Career Break'
               placeUrl=''
-              date='Aug 2019 - Aug 2020 · 1 yr'
+              date='Aug 2019 - Aug 2020 · 1 year'
               desc='Improved some front-end skills and built 3 web sites based on Wordpress.' 
               moreDesc={
                 <>
@@ -102,7 +102,7 @@ function Experience() {
               title='Tech Support specialist'
               place='10Web.io'
               placeUrl='https://10web.io/'
-              date='Dec 2017 - Aug 2019 · 1 yr 9 mos'
+              date='Dec 2017 - Aug 2019 · 1 year 9 month'
               desc='Worked as tech support specialist and team lead.'
               moreDesc={
                 <>
@@ -125,13 +125,13 @@ function Experience() {
               title='Full Stack Engineer'
               place='Web-Dorado'
               placeUrl='https://web-dorado.com/'
-              date='Jun 2014 - Dec 2017 · 3 yr 7 mos'
+              date='Jun 2014 - Dec 2017 · 3 year 7 month'
               desc='Worked full stack developer with Wordpress and Joomla. Developed, modified, tested and fixed plugins and themes.'
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Developed and modified themes and plugins for WordPress. <br/> The most famous plugins that  I've been the part developing are: <a href='https://wordpress.org/plugins/form-maker/' target='_blank'>'Form Maker'</a> and <a href='https://wordpress.org/plugins/photo-gallery/' target='_blank'>'Photo Gallery'</a>. Information about all plugins you can find <a href='https://10web.io/wordpress-plugins/' target='_blank'>here</a>. </li>
+                    <li>Developed and modified themes and plugins for WordPress. <br/> The montht famous plugins that  I've been the part developing are: <a href='https://wordpress.org/plugins/form-maker/' target='_blank'>'Form Maker'</a> and <a href='https://wordpress.org/plugins/photo-gallery/' target='_blank'>'Photo Gallery'</a>. Information about all plugins you can find <a href='https://10web.io/wordpress-plugins/' target='_blank'>here</a>. </li>
                     <li>Developed and modified templates and components for Joomla;</li>
                     <li>Worked closely with developers, designers, copywriters and other cross-functional teams to built more innovation plugins and services.</li>
                     <li>Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. </li>
@@ -148,14 +148,14 @@ function Experience() {
               title='Front-end web development teacher'
               place='Optimum IT Center'
               placeUrl='https://yellow.place/en/optimum-it-center-yerevan-armenia'
-              date='Oct 2015 - Jun 2016 · 9 mos'
+              date='Oct 2015 - Jun 2016 · 9 month'
               desc="Taught HTML, CSS and 'Javascript for beginners'. I had 2 groups with 6-8 members. Developed documentations and slides to teach mentioned technologies." 
             />
             <CardView 
               title='Software Testing Manager'
               place='VxSoft'
               placeUrl='https://www.vxsoft.com/am/'
-              date='Dec 2013 - Apr 2014 · 5 mos'
+              date='Dec 2013 - Apr 2014 · 5 month'
               desc='Worked as QA and customer support specialist.' 
               moreDesc={
                 <>

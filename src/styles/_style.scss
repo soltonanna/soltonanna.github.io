@@ -32,7 +32,7 @@ body {
     position: relative;
     margin: 0 auto;
     z-index: 1;
-    width: 60vw;
+    width: 65vw;
     margin-bottom: 5rem;
 
     @include respond(tab-land) {
@@ -250,6 +250,10 @@ body {
             .skills {
                 @include displayFlex(row, nowrap, center, space-between, flex-start);
                 
+                & > div {
+                    width: 46%;
+                }
+
                 h2 {
                     font-weight: 400;
                     letter-spacing: 1px;
@@ -270,8 +274,10 @@ body {
                 .work-experience {
                     width: 100%;
                     margin-bottom: 20px;
+
                     .cards {
                         @include displayFlex(row, wrap, center, space-between, flex-start);
+                        margin-top: 2rem;
                     }
                 }
             }

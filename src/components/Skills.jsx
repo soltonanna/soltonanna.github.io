@@ -8,18 +8,19 @@ const Skills = () => {
   return (
     <section id='main__skills'>
       <Container className="skills">
+          
           <div className='technical-skills'>
             <div>
               <Title_Desc title="Technical Skills" />
             </div>
             <div>
               <RectProgressBar 
-                label="HTML" 
+                label="HTML / HTML5" 
                 percent="90"
                 className="html"
               />
               <RectProgressBar 
-                label="CSS" 
+                label="CSS / CSS3 / Sass" 
                 percent="90"
                 className="css"
               />
@@ -36,6 +37,29 @@ const Skills = () => {
             </div>
           </div>
           
+          <div className='language-skills'>
+            <div>
+              <Title_Desc title="Language Skills" />
+            </div>
+            <div>
+              <RectProgressBar 
+                label="English / B1 Intermediate" 
+                percent="60"
+                className="eng"
+              />
+              <RectProgressBar 
+                label="Russian / Native" 
+                percent="95"
+                className="ru"
+              />
+              <RectProgressBar 
+                label="Armenian / Native" 
+                percent="95"
+                className="arm"
+              />
+            </div>
+          </div>
+          { /*
           <div className='professional-skills'>
             <div>
               <Title_Desc title="Professional Skills" />
@@ -63,7 +87,8 @@ const Skills = () => {
               />
             </div>
           </div>
-          
+          */
+          }
       </Container>
     </section>
   )
