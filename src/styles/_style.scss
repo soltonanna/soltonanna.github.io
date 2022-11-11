@@ -7,41 +7,30 @@
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 
-  @include respond(tab-land) {
-      font-size: 56.25%;
-  }
+    @include respond(tab-land) {
+        font-size: 56.25%; 
+    }
 
-  @include respond(tab-port) {
-      font-size: 50%; 
-  }
-  
-  @include respond(big-desktop) {
-      font-size: 75%;
-  }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; 
+    }
 }
 
 body {
     overflow-x: hidden;
     box-sizing: border-box;
     background-color: #100e17;
-}
+    color: $color-white;
 
-.container {
-    position: relative;
-    margin: 0 auto;
-    z-index: 1;
-    width: 65vw;
-    margin-bottom: 5rem;
-
-    @include respond(tab-land) {
-        width: 80vw;
-    }
-
-    @include respond(tab-port) {
-        width: 100%;
-    }
+    font-family: "Roboto", sans-serif;
+    font-size: $default-font-size;
+    font-weight: 400;
 }
 
 .button {
@@ -55,42 +44,27 @@ body {
     padding: 10px 30px;
 }
 
-.social-icons {
-    margin: 3rem 2.2rem 0;
-
-    a {
-        color: #ffffff;
-        margin-right: 1.5rem;
-        transition: all 1s;
-
-        &:hover {
-            color: $main-light-color;
-        }
-    }
-}
-
 #root {
     height: 100vh;
 
     /* Header, Navbar */
     header {
-        position: fixed;
         width: 100%;
+        position: fixed;
         top: 0; left: 0;
         z-index: 10;
-        transition: .3s ease-in;
         overflow: hidden;
+        transition: .3s ease-in;        
         background-color: #100e17;
         
 
         @include respond(tab-port) {
             max-width: 100%;
-            background-color: $dark-transparant9;
+            background-color: $dark-transparent9;
         }
         
         .header {
             margin-bottom: 0;
-
             /* Navbar */
             .navbar {
                 display: flex;
@@ -135,8 +109,6 @@ body {
                         }
                         a {
                             color:#ffffff;
-                            font-size: $menu-font-size;
-                            font-family: 'Roboto', sans-serif;
                             font-weight: 500;
                             text-decoration: none;
                             
@@ -157,9 +129,11 @@ body {
 
     /* Main block with sections */
     #main {
+
         &__main-info {
             @include displayFlex(row, nowrap, center, center, center);
-            height: 90vh;
+            
+            padding: 15rem 0;
             position: relative;
             background: url('./media/Homepage_back_1.jpg') no-repeat center center;
             background-size: cover;
@@ -170,23 +144,30 @@ body {
                 clip-path: none;
                 height: 50vh;
             }
-            // &:hover {
-            //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-            //     transform: scale(1.04);
-            // } 
+
+            @include respond(phone) {
+                height: 80vh;
+            }
 
             &:after {
                 content: '';
                 position: absolute;
                 width: 100%; height:100%;
                 top:0; left:0;
-                background: $dark-transparant8;
+                background: $dark-transparent8;
                 opacity: 1; z-index: 0;
             }
 
             .main-info {
                 @include displayFlex(row, nowrap, center, space-around, center);
-                margin-bottom: 0;
+
+                @include respond(phone) {
+                    @include displayFlex(column-reverse, nowrap, center, center, center);
+                }
+
+                & > div:nth-child(1) {
+                    width: 60%;
+                }
 
                 .chat-button {
                     border-top-left-radius: 20px;
@@ -195,22 +176,23 @@ body {
                     border-bottom-left-radius: 0px;
                 }
 
-                .title {
-                    font-size: $main-title-font-size;
-                }
-
                 .description {
-                    font-size: $main-desc-font-size;
                     font-family: 'Cinzel';
                     word-spacing: 8px;
+                    font-size: $main-desc-font-size;
                 }
                 
                 .personal-image {
                     border-radius: 50%;
-                    border: 15px solid $dark-transparant9;
+                    border: 15px solid $dark-transparent9;
                     width: 300px; height: 300px;
                     background: url('./media/personal_image.jpeg') 100% 50% no-repeat;
                     background-size: 110%;
+
+                    @include respond(tab-land) {
+                        width: 225px;
+                        height: 225px;
+                    }
                 }
             }
             
@@ -223,23 +205,31 @@ body {
                 .about-image {
                     background: url('./media/about_me_1.webp') center no-repeat;
                     background-size: contain;
-                    width: 500px; height: 500px;
+                    width: 50%; height: 500px;
                     margin-right: 3rem;
+
+                    @include respond(tab-land) {
+                        height: 350px;
+                    }
+
+                    @include respond(phone) {
+                        display: none;
+                    }
                 }
 
                 .about-text {
                     width: 55%;
 
+                    @include respond(phone) {
+                        width: 100%;
+                    }
+
                     .description {
-                        margin-bottom: 2rem;
+                       
                     }
 
                     .download-cv {
                         border-radius: calc($border-radius + 10px);
-                        
-                        // &:hover {
-                        
-                        // }
                     }
                 }
             }
@@ -250,17 +240,23 @@ body {
             .skills {
                 @include displayFlex(row, nowrap, center, space-between, flex-start);
                 
+                @include respond(phone) {
+                    @include displayFlex(column, nowrap, center, space-between, flex-start);
+                }
+
                 & > div {
                     width: 46%;
+
+                    @include respond(phone) {
+                        width: 100%;
+                    }
                 }
 
                 h2 {
                     font-weight: 400;
                     letter-spacing: 1px;
                     margin-top: 40px;
-                    margin-bottom: 20px;
                     color: #ffffff;
-                    font-size: 16px;
                 }
                 
             }
@@ -273,11 +269,14 @@ body {
                 .education,
                 .work-experience {
                     width: 100%;
-                    margin-bottom: 20px;
 
                     .cards {
                         @include displayFlex(row, wrap, center, space-between, flex-start);
                         margin-top: 2rem;
+
+                        @include respond(phone) {
+                            @include displayFlex(column, nowrap, center, space-between, center);
+                        }
                     }
                 }
             }
@@ -299,8 +298,6 @@ body {
                             color: #ffffff;
                             text-align: center;
                             font-weight: 500;
-                            font-size: $desc-font-size;
-                            font-family: 'Roboto', sans-serif;
                            
                             
                             &--selected {
@@ -324,7 +321,6 @@ body {
         &__contact {
             background: url('./media/map-color-overlay.png') no-repeat center;
             background-size: contain;
-            padding-bottom: 5rem;
 
             .contact {                  
                 &__block {
@@ -332,19 +328,36 @@ body {
                     
                     .contact-info {
                         @include displayFlex(row, nowrap, center, space-between, center); 
+                        position: relative;
                         width: 100%;
+
+                        @include respond(tab-land) {
+                            @include displayFlex(column, nowrap, center, space-between, center);
+                        }
 
                         p {
                             background-color: $main-dark-color;
-                            margin-bottom: 20px;
                             padding: 30px 20px;
     
+                            @include respond(tab-land) {
+                                width: 400px;
+                            }
+
                             svg {
                                 border: 1px solid $main-light-color;
                                 border-radius: 50%;
                                 padding: 25px;
                                 overflow: visible;
+
+                                @include respond(tab-land) {
+                                    padding: 20px;
+                                    width: 65px;
+                                    height: 65px;
+                                }
                             }
+                        }
+                        .copied {
+                            right: auto; left:33%; bottom: 120%;
                         }
                     }
                    
@@ -355,16 +368,11 @@ body {
         }
     }
 
+    /* Footer, Copyright*/
     footer {
         .footer {
             @include displayFlex(row, nowrap, center, space-between, center);
             color: #ffffff;
-            font-size: $menu-font-size;
-            padding-bottom: 5rem;
-            
-            .social-icons {
-                margin-top: 0;
-            }
         }
     }
 }

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { InfoModal } from '../modules/InfoModal.jsx';
-import {BlogImg1} from '../utils/images.js';
+import { BlogImg1 } from '../utils/media-files.js';
 
 const CardViewImg = ({title, place, placeUrl, date, desc, moreDesc}) => {
 

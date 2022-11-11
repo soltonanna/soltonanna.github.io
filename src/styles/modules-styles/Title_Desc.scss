@@ -1,15 +1,14 @@
 .title {
-    font-size: $title-font-size;
-    color: $text-color;
     font-family: 'Cinzel';
     font-weight: 800;
     word-spacing: 22px;
+    font-size: $title-font-size;
+    margin-bottom: $margin-bottom-small;
 }
 
 .description {
-    font-size: $desc-font-size;
-    font-family: 'Roboto', sans-serif;
-    color: $text-color;
     font-weight: 500;
-    line-height: 27px;
+    line-height: 25px;
+    font-size: $desc-font-size;
+    margin-bottom: $margin-bottom-big;
 }

@@ -1,0 +1,12 @@
+.social-icons {
+
+    a {
+        color: #ffffff;
+        margin-right: 1.5rem;
+        transition: all 1s;
+
+        &:hover {
+            color: $main-light-color;
+        }
+    }
+}

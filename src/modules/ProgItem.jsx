@@ -1,10 +1,19 @@
 import React from 'react';
+import { FaCertificate } from 'react-icons/fa';
 
-const ProgItem = ({title, url}) => {
+const ProgItem = ({title, url, star, starUrl}) => {
   return (
     url 
-      ? <a href={url} target="_blank" className='prog-item'> {title} </a> 
-      : <div className='prog-item'> {title} </div>
+      ? ( <div className='prog-item'>
+          <a href={url} target="_blank" > { title }</a> 
+          { star && <a href={starUrl} target="_blank"> <FaCertificate /> </a> }
+      </div> ) 
+      : (
+        <div className='prog-item'> 
+          {title} 
+          { star && <a href={starUrl} target="_blank"> <FaCertificate /> </a> }
+        </div>
+      )
   )
 }
 

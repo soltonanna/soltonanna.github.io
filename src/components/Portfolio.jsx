@@ -4,7 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
-import {PortfolioImg1, PortfolioImg2 } from '../utils/images.js';
+import { PortfolioImg1, PortfolioImg2 } from '../utils/media-files.js';
 
 
 const Portfolio = () => {

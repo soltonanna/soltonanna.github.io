@@ -1,11 +1,10 @@
 .contact-info {
-    margin: 2rem 0 0;
-
+    position: relative;
+    margin-bottom: $margin-bottom-medium;
     p {
         @include displayFlex(row, nowrap, center, flex-start, center);
+        margin-bottom: $margin-bottom-small;
         color: #ffffff;
-        font-size: $menu-font-size;
-        margin-bottom: 10px;
 
         &:hover svg {
             transition: color .5s;
@@ -13,8 +12,15 @@
         }
 
         span {
-            font-size: $menu-font-size;
             margin-left: 10px;
         }
+    }
+    .copied {
+        padding: 10px;
+        border-radius: $border-radius;
+        background-color: $dark-transparent7;
+        position: absolute;
+        left: 11%; bottom: -25px;
+        transform: translate(50%, 50%);
     }
 }

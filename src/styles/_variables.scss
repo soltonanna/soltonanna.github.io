@@ -1,9 +1,15 @@
 /* Colors */
 $main-dark-color: #1e1e25;
 $main-light-color: #5abca1;
-$text-color: #ffffff;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: #333333;
+$color-green:#067006;
 
 /* Sizes */
+$default-font-size: 1.6rem;
+
 $main-title-font-size: 5rem;
 $main-desc-font-size: 2.5rem;
 
@@ -13,13 +19,22 @@ $desc-font-size: 1.7rem;
 $button-font-size: 1.3rem;
 $menu-font-size: 1.5rem;
 
+
 /* Other */
-$dark-transparant9: rgba(16,14,23, .9);
-$dark-transparant8: rgba(16,14,23, .8);
-$dark-transparant7: rgba(16,14,23, .7);
+$dark-transparent9: rgba(16,14,23, .9);
+$dark-transparent8: rgba(16,14,23, .8);
+$dark-transparent7: rgba(16,14,23, .7);
 
-$light-transparant9: rgba(255, 255, 255, .9);
-$light-transparant8: rgba(255, 255, 255, .8);
-$light-transparant7: rgba(255, 255, 255, .7);
+$light-transparent9: rgba(255, 255, 255, .9);
+$light-transparent8: rgba(255, 255, 255, .8);
+$light-transparent7: rgba(255, 255, 255, .7);
 
-$border-radius: 10px;
+$border-radius: 1rem;
+
+$margin-bottom-big: 3rem;
+$margin-bottom-medium: 2rem;
+$margin-bottom-small: 1rem;
+
+$padding-bottom-big: 3rem;
+$padding-bottom-medium: 2rem;
+$padding-bottom-small: 1rem;

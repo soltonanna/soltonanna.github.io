@@ -3,12 +3,13 @@ import { FaDownload } from 'react-icons/fa';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import ProgItem from '../modules/ProgItem.jsx';
-import CV from '../media/SultanovaAnahit_cv.pdf';
+import CvPdf from '../media/pdf/SultanovaAnahit_cv.pdf';
+import { CssCertificate } from '../utils/media-files.js';
 
 const About = () => {
 
-   const downloadCvHandler = () => {
-    fetch(CV).then(response => {
+  const downloadCvHandler = () => {
+    fetch(CvPdf).then(response => {
         response.blob().then(blob => {
             const fileURL = window.URL.createObjectURL(blob);
             let alink = document.createElement('a');
@@ -17,7 +18,7 @@ const About = () => {
             alink.click();
         });
     });
-}
+  }
 
   return (
     <section id='main__about'>
@@ -34,7 +35,9 @@ const About = () => {
               url="https://www.w3schools.com/html/" /> 
             <ProgItem 
               title="CSS, CSS3"
-              url="https://www.w3schools.com/css/" /> 
+              url="https://www.w3schools.com/css/" 
+              star={true}
+              starUrl={CssCertificate} /> 
             <ProgItem 
               title="Sass, Less"
               url="https://sass-lang.com/" /> 
@@ -88,7 +91,7 @@ const About = () => {
               url="https://www.figma.com/" />
           </div>
           <button onClick={downloadCvHandler}  className='button download-cv'>
-            Download PDF <FaDownload/>
+            Download PDF <FaDownload />
           </button>
         </div>
       </Container>
