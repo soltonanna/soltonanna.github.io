@@ -32,12 +32,14 @@
         width: 100%;
 
         @include respond(tab-land) {
-            min-height: auto;
+            min-height: 40px;
         }
+        
 
         .cv-title {
             color:#ffffff;
             text-align: left;
+            padding: 1.5rem 0;
             font-size: calc($desc-font-size + 0.2rem);
         }
 

@@ -1,6 +1,7 @@
 .contact-info {
     position: relative;
     margin-bottom: $margin-bottom-medium;
+   
     p {
         @include displayFlex(row, nowrap, center, flex-start, center);
         margin-bottom: $margin-bottom-small;

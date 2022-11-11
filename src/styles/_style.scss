@@ -129,7 +129,12 @@ body {
 
     /* Main block with sections */
     #main {
-
+        @include respond(phone) {
+            section {
+                margin-bottom: $margin-bottom-medium;
+            }
+        }
+        
         &__main-info {
             @include displayFlex(row, nowrap, center, center, center);
             
@@ -146,7 +151,8 @@ body {
             }
 
             @include respond(phone) {
-                height: 80vh;
+                height: 85vh;
+                padding: 25rem 0 15rem;
             }
 
             &:after {
@@ -166,7 +172,7 @@ body {
                 }
 
                 & > div:nth-child(1) {
-                    width: 60%;
+                    width: 90%;
                 }
 
                 .chat-button {
@@ -248,7 +254,8 @@ body {
                     width: 46%;
 
                     @include respond(phone) {
-                        width: 100%;
+                        width: 90%;
+                        margin: 0 auto $margin-bottom-medium;
                     }
                 }
 
@@ -290,6 +297,10 @@ body {
                     .react-tabs__tab-list {
                         @include displayFlex(row, nowrap, center, space-between, center);
                         border: none;
+
+                        @include respond(phone) {
+                            @include displayFlex(column, nowrap, center, space-between, center);
+                        }
 
                         .react-tabs__tab {
                             border: none;
@@ -340,7 +351,7 @@ body {
                             padding: 30px 20px;
     
                             @include respond(tab-land) {
-                                width: 400px;
+                                width: 90%;
                             }
 
                             svg {

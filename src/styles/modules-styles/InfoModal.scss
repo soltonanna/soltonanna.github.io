@@ -1,5 +1,5 @@
 .modal-back {
-    width: 700px;
+    width: 50%;
     z-index: 999;
     position: fixed;
     padding: 30px;
@@ -8,12 +8,21 @@
     border-radius: $border-radius;
     background-color: $main-dark-color;
 
+    @include respond(tab-land) {
+        width: 70%;
+    }
+    @include respond(phone) {
+        width: 90%;
+    }
+
     header {
         color: $main-light-color;
+        margin-bottom: $margin-bottom-medium;
     }
 
     main {
         color: #ffffff;
+        margin-bottom: $margin-bottom-medium;
         
         ul, li {
             list-style-position: inside;

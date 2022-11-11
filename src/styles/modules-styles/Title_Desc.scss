@@ -4,6 +4,11 @@
     word-spacing: 22px;
     font-size: $title-font-size;
     margin-bottom: $margin-bottom-small;
+
+    @include respond(phone) {
+        word-spacing: 15px;
+        text-align: center;
+    }
 }
 
 .description {

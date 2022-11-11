@@ -6,6 +6,10 @@
     transition: all 0.5s;
     border-radius: $border-radius;
 
+    @include respond(phone) {
+        width: 48%;
+    }
+
     &__img {
         position: relative;
         display: block;
@@ -27,8 +31,6 @@
         
         svg,
         .item-title {
-            //font-size: $desc-font-size;
-            color: #ffffff;
             margin: 5px 0;
             cursor: pointer;
         }
