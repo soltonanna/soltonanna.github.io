@@ -1,36 +1,34 @@
-1.  Create 'public' and 'src' folders;
-2.  Create 'index.html' file in public folder and 'index.js' file in src folder;
-3.  Open terminal and > ** npm init **, which will create 'package.json' file;
-4.  ** npm install webpack webpack-cli --save-dev **;
+---/ create 'public' and 'src' folders /---
+---/ create 'index.html' file in public folder and 'index.js' file in src folder /---
+** npm init **
+** npm install webpack webpack-cli --save-dev **
 
-5.  Create 'webpack.config.js' file;
+---/ create 'webpack.config.js' file /---
 
-6.  ** npm install react react-dom **
-7.  ** npm install webpack-dev-server -D **
-8.  ** npm install --save-dev html-webpack-plugin **
+** npm install react react-dom **
+** npm install webpack-dev-server -D **
+** npm install --save-dev html-webpack-plugin **
 
-9.  ** npm install --save-dev html-loader **
+** npm install --save-dev html-loader **
 
-10. ** npm install --save-dev style-loader **
-11. ** npm install --save-dev css-loader **
-12. ** npm install sass-loader sass webpack --save-dev **
-13. ** npm install node-sass **
-14. ** npm install --save-dev mini-css-extract-plugin **
-15. ** npm install --save-dev postcss-loader postcss postcss-preset-env **
+** npm install --save-dev style-loader **
+** npm install --save-dev css-loader **
+** npm install sass-loader sass webpack --save-dev **
+** npm install node-sass **
+** npm install --save-dev mini-css-extract-plugin **
+** npm install --save-dev postcss-loader postcss postcss-preset-env **
 
-16. ** npm install -D babel-loader @babel/core @babel/preset-env **
-17. ** npm install --save @babel/polyfill **
-18. ** npm install image-webpack-loader --save-dev **
+** npm install -D babel-loader @babel/core @babel/preset-env **
+** npm install --save @babel/polyfill **
+** npm install image-webpack-loader --save-dev **
 
-19. ** npm install -D gh-pages **
+** npm install -D gh-pages **
 
-20. ** npm install -g typescript **
+** npm install -g typescript **
 
-21. ** npm install @babel/preset-react --save-dev **
-22  Create 'babel.config.js' file;
-23. ** npm install --save react-tabs ** 
-
-
+** npm install @babel/preset-react --save-dev **
+---/ create 'babel.config.js' file /---
+** npm install --save react-tabs ** 
 
 
-npm uninstall --save-dev *package-name*
+** npm uninstall --save-dev 'package-name' **

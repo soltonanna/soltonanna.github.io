@@ -78,6 +78,10 @@ const About = () => {
               title="MySQL"
               url="https://www.mysql.com/" />
             <ProgItem 
+              title="Figma"
+              url="https://www.figma.com/" />
+              <br/>
+            <ProgItem 
               title="Git (Git GUI, GitHub)"
               url="https://git-scm.com/" />
             <ProgItem 
@@ -87,8 +91,11 @@ const About = () => {
               title="Webpack"
               url="https://webpack.js.org/" />
             <ProgItem 
-              title="Figma"
-              url="https://www.figma.com/" />
+              title="Eslint"
+              url="https://eslint.org/" />
+            <ProgItem 
+              title="Airbnb"
+              url="https://airbnb.io/javascript/react/" />
           </div>
           <button onClick={downloadCvHandler}  className='button download-cv'>
             Download PDF <FaDownload />
