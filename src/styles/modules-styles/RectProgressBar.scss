@@ -41,7 +41,7 @@
             }
 
             span {
-                width: 40px; height: 40px;
+                width: 45px; height: 45px;
                 border-radius: 50%;
                 background-color: #100e17;
                 float: right;
@@ -51,7 +51,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid $main-light-color;
+                border: 2px solid $main-light-color;
+                font-size: calc($default-font-size - 0.4rem);
             }
         }
 

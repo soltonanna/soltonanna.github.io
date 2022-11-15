@@ -78,7 +78,7 @@ const About = () => {
               title="MySQL"
               url="https://www.mysql.com/" />
             <ProgItem 
-              title="Git, GitHub"
+              title="Git (Git GUI, GitHub)"
               url="https://git-scm.com/" />
             <ProgItem 
               title="Jira"

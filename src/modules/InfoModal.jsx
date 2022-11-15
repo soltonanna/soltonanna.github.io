@@ -13,7 +13,7 @@ const ModalBackdrop = (props) => {
                     <h2> { props.title } </h2>
                 </header>
                 <main>
-                    <p> { props.message } </p>
+                    <div> { props.message } </div>
                 </main>
                 <footer>
                     <button onClick = { props.onConfirm }>Ok</button>

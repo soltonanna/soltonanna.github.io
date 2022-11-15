@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { InfoModal } from '../modules/InfoModal.jsx';
 import { BlogImg1 } from '../utils/media-files.js';
 
-const CardViewImg = ({title, place, placeUrl, date, desc, moreDesc}) => {
+const CardViewImg = ({title, imageUrl, date, desc, moreDesc}) => {
 
   const [infoModal, setInfoModal] = useState(false);
 
@@ -19,10 +19,12 @@ const CardViewImg = ({title, place, placeUrl, date, desc, moreDesc}) => {
   return (
     <div className='card-view-img'>
         <div className='card-view-img__header'>
-            <img className='cv-image' src={BlogImg1} alt={title} />
+            <img className='cv-image' src={imageUrl} alt={title} />
             <p className='cv-title'> {title} </p>
         </div>
-        <div className='card-view-img__date'> {date} </div>
+        <div className='card-view-img__date'> 
+          Post on <span>{date}</span> by <span>S.Anahit</span> 
+        </div>
         <div className='card-view-img__desc'> {desc} </div>
         { moreDesc && <button onClick={showModalHandler}>Read More</button> }
         { infoModal && 

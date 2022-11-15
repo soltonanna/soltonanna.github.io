@@ -145,7 +145,7 @@ function Experience() {
               }
             />
             <CardView 
-              title='Front-end web development teacher'
+              title='Front-end development teacher'
               place='Optimum IT Center'
               placeUrl='https://yellow.place/en/optimum-it-center-yerevan-armenia'
               date='Oct 2015 - Jun 2016 · 9 month'
