@@ -27,11 +27,12 @@ const Portfolio = () => {
           <TabPanel>
             <PortfolioItem 
               imgUrl={PortfolioImg1}
-              title='Port 1'
+              title='Guess number'
               desc={
                 <>
-                  <p>Non exercitation enim ex officia nostrud qui nulla veniam dolor. Voluptate cillum elit consequat sit consequat voluptate voluptate culpa excepteur. Labore laboris labore laborum laborum incididunt elit duis amet.</p>
-                  <p> See code in <a href='https://github.com/soltonanna/ant-design' target='_blank'>GITHUB</a></p>
+                  <p>Try to guess the number between 1-20.</p>
+                  <p> See code in <a href='https://github.com/soltonanna/guess-my-number' target='_blank'>GITHUB</a></p>
+                  <p> See DEMO <a href='https://soltonanna.github.io/guess-my-number/'>here</a></p>
                 </>
               }
             />

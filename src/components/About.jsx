@@ -96,6 +96,9 @@ const About = () => {
             <ProgItem 
               title="Airbnb"
               url="https://airbnb.io/javascript/react/" />
+            <ProgItem 
+              title="Git Hooks (Husky)"
+              url="https://typicode.github.io/husky/#/" />  
           </div>
           <button onClick={downloadCvHandler}  className='button download-cv'>
             Download PDF <FaDownload />
