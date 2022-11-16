@@ -28,6 +28,8 @@
 
 ** npm install @babel/preset-react --save-dev **
 ---/ create 'babel.config.js' file /---
+
+
 ** npm install --save react-tabs ** 
 
 

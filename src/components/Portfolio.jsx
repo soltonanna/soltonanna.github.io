@@ -4,7 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
-import { GuessNumberGame, PigGame } from '../utils/media-files.js';
+import { GuessNumberGame, PigGame, MinesGame } from '../utils/media-files.js';
 
 
 const Portfolio = () => {
@@ -47,6 +47,17 @@ const Portfolio = () => {
                 </>
               }
             />
+            <PortfolioItem 
+              imgUrl={MinesGame}
+              title=' Mines'
+              desc={
+                <>
+                  <p> The aim of Mines is to clear the minefield without detonating any of the mines.</p>
+                  <p> See <a href='https://github.com/soltonanna/mines_game' target='_blank'>CODE</a></p>
+                  <p> See <a href='https://soltonanna.github.io/mines_game/' target='_blank'>DEMO</a></p>
+                </>
+              }
+            />
           </TabPanel>
           <TabPanel>
             <h2>Any content 2</h2>
@@ -60,6 +71,28 @@ const Portfolio = () => {
                     <p> The player must guess the secret number between 1 and 20!</p>
                     <p> See <a href='https://github.com/soltonanna/guess-my-number' target='_blank'>CODE</a></p>
                     <p> See <a href='https://soltonanna.github.io/guess-my-number/' target='_blank'>DEMO</a></p>
+                  </>
+                }
+              />
+              <PortfolioItem 
+                imgUrl={PigGame}
+                title='Pig Game'
+                desc={
+                  <>
+                    <p> The 2 players must roll dice! The first player who rich the 50 point in game will Win</p>
+                    <p> See <a href='https://github.com/soltonanna/pig_game' target='_blank'>CODE</a></p>
+                    <p> See <a href='https://soltonanna.github.io/pig_game/' target='_blank'>DEMO</a></p>
+                  </>
+                }
+              />
+              <PortfolioItem 
+                imgUrl={MinesGame}
+                title=' Mines'
+                desc={
+                  <>
+                    <p> The aim of Mines is to clear the minefield without detonating any of the mines.</p>
+                    <p> See <a href='https://github.com/soltonanna/mines_game' target='_blank'>CODE</a></p>
+                    <p> See <a href='https://soltonanna.github.io/mines_game/' target='_blank'>DEMO</a></p>
                   </>
                 }
               />
