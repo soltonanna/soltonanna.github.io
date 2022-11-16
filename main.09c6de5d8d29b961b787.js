@@ -92,16 +92,19 @@ const App = () => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_3__),
-/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_2__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_4__),
+/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_3__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
+/* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__)
 /* harmony export */ });
 /* harmony import */ var _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../media/portfolio/GuessNumberGame.png */ "./src/media/portfolio/GuessNumberGame.png");
 /* harmony import */ var _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../media/portfolio/PigGame.png */ "./src/media/portfolio/PigGame.png");
-/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../media/portfolio/MinesGame.png */ "./src/media/portfolio/MinesGame.png");
+/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /** Portfolio Images */
+
 
 
 
@@ -734,6 +737,16 @@ const Portfolio = () => {
       href: "https://soltonanna.github.io/pig_game/",
       target: "_blank"
     }, "DEMO")))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_PortfolioItem_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    imgUrl: _utils_media_files_js__WEBPACK_IMPORTED_MODULE_6__.MinesGame,
+    title: " Mines",
+    desc: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " The aim of Mines is to clear the minefield without detonating any of the mines."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://github.com/soltonanna/mines_game",
+      target: "_blank"
+    }, "CODE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://soltonanna.github.io/mines_game/",
+      target: "_blank"
+    }, "DEMO")))
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_tabs__WEBPACK_IMPORTED_MODULE_1__.TabPanel, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Any content 2")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_tabs__WEBPACK_IMPORTED_MODULE_1__.TabPanel, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_PortfolioItem_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
     imgUrl: _utils_media_files_js__WEBPACK_IMPORTED_MODULE_6__.GuessNumberGame,
     title: "Guess number",
@@ -742,6 +755,26 @@ const Portfolio = () => {
       target: "_blank"
     }, "CODE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
       href: "https://soltonanna.github.io/guess-my-number/",
+      target: "_blank"
+    }, "DEMO")))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_PortfolioItem_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    imgUrl: _utils_media_files_js__WEBPACK_IMPORTED_MODULE_6__.PigGame,
+    title: "Pig Game",
+    desc: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " The 2 players must roll dice! The first player who rich the 50 point in game will Win"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://github.com/soltonanna/pig_game",
+      target: "_blank"
+    }, "CODE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://soltonanna.github.io/pig_game/",
+      target: "_blank"
+    }, "DEMO")))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_PortfolioItem_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    imgUrl: _utils_media_files_js__WEBPACK_IMPORTED_MODULE_6__.MinesGame,
+    title: " Mines",
+    desc: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " The aim of Mines is to clear the minefield without detonating any of the mines."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://github.com/soltonanna/mines_game",
+      target: "_blank"
+    }, "CODE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://soltonanna.github.io/mines_game/",
       target: "_blank"
     }, "DEMO")))
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_tabs__WEBPACK_IMPORTED_MODULE_1__.TabPanel, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Any content 4")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_tabs__WEBPACK_IMPORTED_MODULE_1__.TabPanel, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Any content 5")))));
@@ -56081,6 +56114,17 @@ module.exports = __webpack_require__.p + "assets/GuessNumberGame.png";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/MinesGame.png":
+/*!*******************************************!*\
+  !*** ./src/media/portfolio/MinesGame.png ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/MinesGame.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/PigGame.png":
 /*!*****************************************!*\
   !*** ./src/media/portfolio/PigGame.png ***!
@@ -56306,4 +56350,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.738a1f49225b1ef81ff4.js.map
+//# sourceMappingURL=main.09c6de5d8d29b961b787.js.map
