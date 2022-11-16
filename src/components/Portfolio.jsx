@@ -4,7 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
-import { GuessNumberGame, PortfolioImg2 } from '../utils/media-files.js';
+import { GuessNumberGame, PigGame } from '../utils/media-files.js';
 
 
 const Portfolio = () => {
@@ -37,9 +37,15 @@ const Portfolio = () => {
               }
             />
             <PortfolioItem 
-              imgUrl={PortfolioImg2}
-              title='Port 2'
-              desc='Aute sunt ex ea nisi consequat labore. Ea commodo voluptate do ex cillum cillum proident ullamco deserunt laboris et. Sunt elit qui nisi laborum dolore deserunt nostrud voluptate laboris do pariatur veniam. Adipisicing sint laborum laboris qui aliquip proident est nostrud. Ut cupidatat aute laborum occaecat ex sint ullamco laborum do laborum. Do minim eiusmod et consequat ad.'
+              imgUrl={PigGame}
+              title='Pig Game'
+              desc={
+                <>
+                  <p> The 2 players must roll dice! The first player who rich the 50 point in game will Win</p>
+                  <p> See <a href='https://github.com/soltonanna/pig_game' target='_blank'>CODE</a></p>
+                  <p> See <a href='https://soltonanna.github.io/pig_game/' target='_blank'>DEMO</a></p>
+                </>
+              }
             />
           </TabPanel>
           <TabPanel>

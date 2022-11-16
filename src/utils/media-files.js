@@ -1,6 +1,6 @@
 /** Portfolio Images */
 import GuessNumberGame from '../media/portfolio/GuessNumberGame.png';
-import PortfolioImg2 from '../media/Homepage_back_2.jpg';
+import PigGame from '../media/portfolio/PigGame.png';
 
 
 /** Blog Images */
@@ -13,7 +13,7 @@ import CssCertificate from '../media/pdf/AdvancedCSS_Certificate.pdf';
 
 export {
     GuessNumberGame,
-    PortfolioImg2,
+    PigGame,
     GitIcon,
     CssCertificate,
 }
