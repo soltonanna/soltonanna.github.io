@@ -4,7 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
-import { PortfolioImg1, PortfolioImg2 } from '../utils/media-files.js';
+import { GuessNumberGame, PortfolioImg2 } from '../utils/media-files.js';
 
 
 const Portfolio = () => {
@@ -26,13 +26,13 @@ const Portfolio = () => {
 
           <TabPanel>
             <PortfolioItem 
-              imgUrl={PortfolioImg1}
+              imgUrl={GuessNumberGame}
               title='Guess number'
               desc={
                 <>
-                  <p>Try to guess the number between 1-20.</p>
-                  <p> See code in <a href='https://github.com/soltonanna/guess-my-number' target='_blank'>GITHUB</a></p>
-                  <p> See DEMO <a href='https://soltonanna.github.io/guess-my-number/'>here</a></p>
+                  <p> The player must guess the secret number between 1 and 20!</p>
+                  <p> See <a href='https://github.com/soltonanna/guess-my-number' target='_blank'>CODE</a></p>
+                  <p> See <a href='https://soltonanna.github.io/guess-my-number/' target='_blank'>DEMO</a></p>
                 </>
               }
             />
@@ -46,7 +46,17 @@ const Portfolio = () => {
             <h2>Any content 2</h2>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 3</h2>
+              <PortfolioItem 
+                imgUrl={GuessNumberGame}
+                title='Guess number'
+                desc={
+                  <>
+                    <p> The player must guess the secret number between 1 and 20!</p>
+                    <p> See <a href='https://github.com/soltonanna/guess-my-number' target='_blank'>CODE</a></p>
+                    <p> See <a href='https://soltonanna.github.io/guess-my-number/' target='_blank'>DEMO</a></p>
+                  </>
+                }
+              />
           </TabPanel>
           <TabPanel>
             <h2>Any content 4</h2>

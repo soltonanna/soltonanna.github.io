@@ -1,5 +1,5 @@
 /** Portfolio Images */
-import PortfolioImg1 from '../media/Homepage_back_3.jpg';
+import GuessNumberGame from '../media/portfolio/GuessNumberGame.png';
 import PortfolioImg2 from '../media/Homepage_back_2.jpg';
 
 
@@ -12,7 +12,7 @@ import CssCertificate from '../media/pdf/AdvancedCSS_Certificate.pdf';
 
 
 export {
-    PortfolioImg1,
+    GuessNumberGame,
     PortfolioImg2,
     GitIcon,
     CssCertificate,
