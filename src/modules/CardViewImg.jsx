@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { InfoModal } from '../modules/InfoModal.jsx';
-import { BlogImg1 } from '../utils/media-files.js';
 
-const CardViewImg = ({title, imageUrl, date, desc, moreDesc}) => {
+const CardViewImg = ({title, imgUrl, date, desc, moreDesc}) => {
 
   const [infoModal, setInfoModal] = useState(false);
 
@@ -19,7 +18,7 @@ const CardViewImg = ({title, imageUrl, date, desc, moreDesc}) => {
   return (
     <div className='card-view-img'>
         <div className='card-view-img__header'>
-            <img className='cv-image' src={imageUrl} alt={title} />
+            <img className='cv-image' src={imgUrl} alt={title} />
             <p className='cv-title'> {title} </p>
         </div>
         <div className='card-view-img__date'> 

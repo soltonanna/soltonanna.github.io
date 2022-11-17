@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { FaEye } from 'react-icons/fa';
 import { InfoModal} from '../modules/InfoModal.jsx';
 
-const PortfolioItem = ({imgUrl, title, desc, gitUrl}) => {
+const PortfolioItem = ({imgUrl, title, desc}) => {
 
   const [infoModal, setInfoModal] = useState(false);
 

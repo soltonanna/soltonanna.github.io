@@ -41,6 +41,7 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "react-loading": "^2.0.3",
     "react-scroll": "^1.8.8",
     "react-tabs": "^5.1.0"
   }

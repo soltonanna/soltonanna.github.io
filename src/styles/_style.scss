@@ -42,6 +42,7 @@ body {
     color: #ffffff;
     font-weight: 700;
     padding: 10px 30px;
+    cursor: pointer;
 }
 
 #root {
@@ -291,35 +292,22 @@ body {
 
         &__portfolio {
             .portfolio {
-                .react-tabs {
-                    margin-top: 2rem;
-                    
-                    .react-tabs__tab-list {
-                        @include displayFlex(row, nowrap, center, space-between, center);
-                        border: none;
+                .filter-block {
+                    @include displayFlex(row, nowrap, center, space-between, center);
+                    margin-bottom: $margin-bottom-medium;
 
-                        @include respond(phone) {
-                            @include displayFlex(column, nowrap, center, space-between, center);
-                        }
-
-                        .react-tabs__tab {
-                            border: none;
-                            padding: 20px 15px;
-                            margin: 0 15px 0 0;
-                            color: #ffffff;
-                            text-align: center;
-                            font-weight: 500;
-                           
-                            
-                            &--selected {
-                                background-color: transparent;
-                                border-bottom: 2px solid $main-light-color;
-                            }
-                        }
+                    button {
+                        padding: 15px 70px;
+                        border-radius: $border-radius;
                     }
-                    .react-tabs__tab-panel {
-                        margin-top: 3rem;
-                        @include displayFlex(row, nowrap, center, flex-start, flex-start);
+                }
+                .items-block {
+                    @include displayFlex(row, nowrap, center, flex-start, flex-start);
+                    
+                    p {
+                        text-align: center;
+                        font-size: $desc-font-size;
+                        width: 100%;
                     }
                 }
             }

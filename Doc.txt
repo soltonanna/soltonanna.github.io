@@ -25,6 +25,7 @@
 ** npm install -D gh-pages **
 
 ** npm install -g typescript **
+** npm i react-loading **
 
 ** npm install @babel/preset-react --save-dev **
 ---/ create 'babel.config.js' file /---
