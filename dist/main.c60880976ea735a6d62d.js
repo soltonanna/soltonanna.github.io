@@ -987,7 +987,7 @@ __webpack_require__.r(__webpack_exports__);
 const CardViewImg = _ref => {
   let {
     title,
-    imageUrl,
+    imgUrl,
     date,
     desc,
     moreDesc
@@ -1007,7 +1007,7 @@ const CardViewImg = _ref => {
     className: "card-view-img__header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "cv-image",
-    src: imageUrl,
+    src: imgUrl,
     alt: title
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "cv-title"
@@ -56188,4 +56188,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.e742fffa59de942d6637.js.map
+//# sourceMappingURL=main.c60880976ea735a6d62d.js.map
