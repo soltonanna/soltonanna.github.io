@@ -6,7 +6,7 @@
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     border-radius: $border-radius;
-    background-color: $main-dark-color;
+    background-color: $main-color-darker;
 
     @include respond(tab-land) {
         width: 70%;
@@ -19,13 +19,14 @@
         max-height: 500px;
         overflow-x: hidden;
         overflow-y: auto;
+
         &::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%); 
+            -webkit-box-shadow: inset 0 0 6px rgb($main-color-lighter, 0.2); 
             border-radius: 10px;
         }
         &::-webkit-scrollbar-thumb {
             border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 6px rgb(90 188 161 / 50%); 
+            -webkit-box-shadow: inset 0 0 6px rgba($main-color-light, 0.5); 
         }
         &::-webkit-scrollbar {
             width: 12px;
@@ -33,12 +34,12 @@
     }
 
     header {
-        color: $main-light-color;
+        color: $main-color-light;
         margin-bottom: $margin-bottom-medium;
     }
 
     main {
-        color: #ffffff;
+        color: $color-white;
         margin-bottom: $margin-bottom-medium;
         
         ul, li {
@@ -59,30 +60,18 @@
         }
 
         a {
-            color: $main-light-color;
-            text-decoration: none;
+            color: $main-color-lighter;
+            //text-decoration: none;
             
             &:hover {
-                color: #ffffff;
+                color: $color-white;
                 text-decoration: underline;
             }
         }
     }
     footer {
         button {
-            background-color: $main-light-color;
-            border: 1px solid $main-light-color;
-            color: #ffffff;
-            font-weight: 800;
-            padding: 8px 18px;
-            transition: all 0.5s;
-            border-radius: $border-radius;
-
-            &:hover {
-                background-color: #ffffff;
-                border: 1px solid $main-light-color;
-                color: $main-light-color;
-            }
+            background-color: rgba($main-color, .5);
         }
     }
 }

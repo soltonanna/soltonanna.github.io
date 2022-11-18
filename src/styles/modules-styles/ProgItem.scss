@@ -2,16 +2,16 @@
     margin-bottom: $margin-bottom-medium;
     
     .prog-item {
-        border: 1px solid $main-light-color;
-        border-radius: $border-radius;
         font-size: $button-font-size;
-        padding: 10px;
-        margin: 0 5px 15px 0;
         display: inline-block;
+        margin: 0 5px 15px 0;
+        transition: all 0.5s;
+        position: relative;
+        padding: 10px;
         
         a {
             text-decoration: none;
-            color: #ffffff;
+            color: $color-white;
         }
     }
 }

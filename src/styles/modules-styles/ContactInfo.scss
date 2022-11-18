@@ -5,23 +5,25 @@
     p {
         @include displayFlex(row, nowrap, center, flex-start, center);
         margin-bottom: $margin-bottom-small;
-        color: #ffffff;
+        color: $color-white;
 
         &:hover svg {
             transition: color .5s;
-            color: $main-light-color;
+            color: $main-color;
         }
 
         span {
             margin-left: 10px;
+            cursor: copy;
         }
     }
     .copied {
-        padding: 10px;
-        border-radius: $border-radius;
-        background-color: $dark-transparent7;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 7px 15px;
+        text-align: center;
         position: absolute;
-        left: 11%; bottom: -25px;
-        transform: translate(50%, 50%);
+        left: 0; top: -30px; right: 0;
+        background-color: rgba($main-color-darker, 0.4);
     }
 }

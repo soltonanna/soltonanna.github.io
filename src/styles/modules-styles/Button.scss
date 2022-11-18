@@ -1,0 +1,13 @@
+.button {
+    background-color: $main-color;
+    font-size: $button-font-size;
+    display: inline-block;
+    margin: 0 auto 2rem;
+    padding: 10px 30px;
+    color: $color-white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
+import Button from '../modules/Button.jsx';
 import ProgItem from '../modules/ProgItem.jsx';
 import CvPdf from '../media/pdf/SultanovaAnahit_cv.pdf';
 import { CssCertificate } from '../utils/media-files.js';
@@ -100,9 +101,9 @@ const About = () => {
               title="Git Hooks (Husky)"
               url="https://typicode.github.io/husky/#/" />  
           </div>
-          <button onClick={downloadCvHandler}  className='button download-cv'>
+          <Button onClick={downloadCvHandler}  className='download-cv btn-1'>
             Download PDF <FaDownload />
-          </button>
+          </Button>
         </div>
       </Container>
     </section>

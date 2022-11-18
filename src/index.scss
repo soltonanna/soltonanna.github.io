@@ -1,9 +1,9 @@
 //@import './libs/normalize';
-@import './styles/animations';
+@import './styles/variables';
 @import './styles/fonts';
 @import './styles/mixins';
-@import './styles/variables';
 @import './styles/style';
+@import './styles/animations';
 
 @import './styles/modules-styles/Container.scss';
 @import './styles/modules-styles/CardView.scss';
@@ -14,3 +14,4 @@
 @import './styles/modules-styles/InfoModal.scss';
 @import './styles/modules-styles/PortfolioItem.scss';
 @import './styles/modules-styles/SocialIcons.scss';
+@import './styles/modules-styles/Button.scss';

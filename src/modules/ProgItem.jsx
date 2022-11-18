@@ -5,8 +5,8 @@ const ProgItem = ({title, url, star, starUrl}) => {
   return (
     url 
       ? ( <div className='prog-item'>
-          <a href={url} target="_blank" > { title }</a> 
-          { star && <a href={starUrl} target="_blank"> <FaCertificate /> </a> }
+          <a href={url} target="_blank" className='btn-1' > { title }</a> 
+          { star && <a href={starUrl} target="_blank" > <FaCertificate /> </a> }
       </div> ) 
       : (
         <div className='prog-item'> 

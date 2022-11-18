@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { InfoModal } from '../modules/InfoModal.jsx';
+import Button from '../modules/Button.jsx';
 
 const CardViewImg = ({title, imgUrl, date, desc, moreDesc}) => {
 
@@ -25,7 +26,7 @@ const CardViewImg = ({title, imgUrl, date, desc, moreDesc}) => {
           Post on <span>{date}</span> by <span>S.Anahit</span> 
         </div>
         <div className='card-view-img__desc'> {desc} </div>
-        { moreDesc && <button onClick={showModalHandler}>Read More</button> }
+        { moreDesc && <Button onClick={showModalHandler}>Read More</Button> }
         { infoModal && 
             <InfoModal 
                title = {title} 

@@ -5,7 +5,7 @@
     min-width: 49%;
     min-height: 240px;
     overflow: hidden;
-    background-color: $main-dark-color;
+    background-color: rgba($main-color, 0.2);
     border-radius: $border-radius;
     transition: all .5s ease-in-out;
     margin-bottom: $margin-bottom-medium;
@@ -25,7 +25,7 @@
     &__header {
         @include displayFlex(row, nowrap, center, space-between, center);
         
-        border-bottom: 1px solid $main-light-color;
+        border-bottom: 1px solid $main-color;
         margin-bottom: $margin-bottom-small;
         font-weight: 700;
         min-height: 65px;
@@ -35,9 +35,8 @@
             min-height: 40px;
         }
         
-
         .cv-title {
-            color:#ffffff;
+            color: $color-white;
             text-align: left;
             padding: 1.5rem 0;
             font-size: calc($desc-font-size + 0.2rem);
@@ -52,7 +51,7 @@
             font-size: calc($desc-font-size + 0.2rem);
             
             a, span {
-                color: $main-light-color;
+                color: $main-color-light;
                 text-decoration: none;
             }
         }
@@ -61,29 +60,22 @@
     &__date {
         font-size: calc($desc-font-size - 0.5rem);
         margin-bottom: $margin-bottom-small;
-        color: $main-light-color;
+        color: $main-color-lighter;
         font-weight: 700;
     }
 
     &__desc {
-        color:#ffffff;
+        color: $color-white;
         line-height: 25px;
         font-size: $desc-font-size;
         margin-bottom: $margin-bottom-small;
     }
 
     button {
-        font-size: $button-font-size;
         background-color: transparent;
-        color: $main-light-color;
-        font-weight: 600;
-        margin: 10px 0 0;
-        border: none;
-        cursor: pointer;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        color: $main-color-light;
+        margin: 1rem 0;
+        padding: 0;
     }
 }
 

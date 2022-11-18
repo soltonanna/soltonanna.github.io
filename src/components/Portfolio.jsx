@@ -3,6 +3,7 @@ import 'react-tabs/style/react-tabs.css';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
+import Button from '../modules/Button.jsx';
 import { portfolioItems } from '../utils/portfolio-items.js';
 
 const Portfolio = () => {
@@ -34,10 +35,21 @@ const Portfolio = () => {
           desc="Let me present you some of my works, included Single page Applications (SPA), some simple projects, modules and games. You can see Demo versions and code on github repositories."
         />
         <div className='filter-block' >
-          <button onClick={handleCategoryChange} className='button' value='all' >All Categories</button>
-          <button onClick={handleCategoryChange} className='button' value='spa' >Single Page App</button>
-          <button onClick={handleCategoryChange} className='button' value='games'>Games</button>
-          <button onClick={handleCategoryChange} className='button' value='modules'>Modules</button>
+          <Button onClick={handleCategoryChange} value='all' className='btn-1'>
+              All Categories
+          </Button>
+          <Button onClick={handleCategoryChange} value='spa' className='btn-1'>
+            Single Page App
+          </Button>
+          <Button onClick={handleCategoryChange} value='games' className='btn-1'>
+            Games
+          </Button>
+          <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
+            Apps
+          </Button>
+          <Button onClick={handleCategoryChange} value='modules' className='btn-1'>
+            Modules
+          </Button>
         </div>
         
         <div className='items-block'>

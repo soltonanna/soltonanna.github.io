@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Button from './Button';
 
 const Backdrop = (props) => {
     return <div onClick = { props.onConfirm } className='backdrop'></div>;
@@ -16,7 +17,7 @@ const ModalBackdrop = (props) => {
                     <div> { props.message } </div>
                 </main>
                 <footer>
-                    <button onClick = { props.onConfirm }>Ok</button>
+                    <Button onClick = { props.onConfirm } className='btn-1'>Ok</Button>
                 </footer>
             </div>
         </div>
