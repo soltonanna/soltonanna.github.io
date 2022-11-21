@@ -22,7 +22,7 @@ const About = () => {
   }
 
   return (
-    <section id='main__about'>
+    <section id='about'>
       <Container className="about">
         <div className='about-image'></div>
         <div className='about-text'>

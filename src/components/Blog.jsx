@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React from 'react';
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import CardViewImg from '../modules/CardViewImg.jsx';
@@ -6,7 +6,7 @@ import { blogItems } from '../utils/blog-items.js';
 
 const Blog = () => {
   return (
-    <section id="main__blog" >
+    <section id="blog" >
       <Container className="blog">
         <Title_Desc 
             title='Blog'

@@ -28,7 +28,7 @@ const Portfolio = () => {
   var filteredList = useMemo(getFilteredList, [selectedCategory, portfolioList]);
 
   return (
-    <section id='main__portfolio'>
+    <section id='portfolio'>
       <Container className="portfolio">
         <Title_Desc 
           title="Portfolio"

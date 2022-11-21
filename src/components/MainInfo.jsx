@@ -6,7 +6,7 @@ import SocialIcons from '../modules/SocialIcons';
 
 const MainInfo = () => {
   return (
-    <section id="main__main-info">
+    <section id="main-info">
       <Container className="main-info">
         <div>
           <div className='button chat-button'>Hello I'm</div>

@@ -119,13 +119,12 @@ body {
 
     /* Main block with sections */
     #main {
-        @include respond(phone) {
-            section {
-                margin-bottom: $margin-bottom-medium;
-            }
+        section {
+            padding-top: 100px;
         }
+        
 
-        &__main-info {
+        #main-info {
             @include displayFlex(row, nowrap, center, center, center);
             
             padding: 15rem 0;
@@ -197,7 +196,7 @@ body {
             
         }
 
-        &__about {
+        #about {
             .about {
                 @include displayFlex(row, nowrap, center, flex-start, center);
 
@@ -227,7 +226,7 @@ body {
             
         }
 
-        &__skills {
+        #skills {
             .skills {
                 @include displayFlex(row, nowrap, center, space-between, flex-start);
                 
@@ -254,7 +253,7 @@ body {
             }
         }
 
-        &__experience {
+        #experience {
             .experience {
                 @include displayFlex(column, nowrap, center, space-between, flex-start);
 
@@ -274,16 +273,24 @@ body {
             }
         }
 
-        &__portfolio {
+        #portfolio {
             .portfolio {
                 .filter-block {
                     @include displayFlex(row, nowrap, center, space-between, center);
                     margin-bottom: $margin-bottom-medium;
+                    
                     .button {
                         margin: 0 0 2rem;
                         width: 15rem;
                         padding: 1rem 2rem;
-                        background-color: rgba($main-color-light, 0.1)
+                        background-color: rgba($main-color-light, 0.1);
+
+                        @include respond(phone) {
+                            width: 100%;
+                        }
+                    }
+                    @include respond(phone) {
+                        @include displayFlex(column, nowrap, center, space-between, center);
                     }
                 }
                 .items-block {
@@ -298,11 +305,11 @@ body {
             }
         }
 
-        &__blog {
+        #blog {
             @include displayFlex(row, nowrap, center, flex-start, flex-start);
         }
         
-        &__contact {
+        #contact {
             background: url('./media/map-color-overlay.png') no-repeat center;
             background-size: contain;
 

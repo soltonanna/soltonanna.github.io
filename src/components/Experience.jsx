@@ -5,7 +5,7 @@ import CardView from '../modules/CardView.jsx';
 
 function Experience() {
   return (
-    <section id="main__experience">
+    <section id="experience">
       <Container className="experience">
 
         <div className='work-experience'>

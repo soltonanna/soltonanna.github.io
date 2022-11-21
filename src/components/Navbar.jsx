@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import {Link} from 'react-scroll';
+//import { Link } from 'react-scroll';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -9,6 +11,7 @@ const Navbar = () => {
     const closeMenu = () => setClick(false);
 
     return (
+        <Router>
         <nav className='navbar'>
             <div className='hamburger' onClick={handleClick}>
                 {
@@ -19,30 +22,71 @@ const Navbar = () => {
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className='nav-item'>
-                    <Link to="main__main-info" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}> Main Info </Link>
+                    <HashLink 
+                        to="/#main-info"
+                        smooth={true}
+                        duration={800} 
+                        onClick={closeMenu}> 
+                            Main Info 
+                    </HashLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__about" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
-                        About
-                    </Link>
+                    <HashLink 
+                        to="/#about"
+                        smooth={true} 
+                        duration={800} 
+                        onClick={closeMenu}>
+                            About
+                    </HashLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__skills" spy={true} smooth={true} offset={-120} duration={500} onClick={closeMenu}> Skills </Link>
+                    <HashLink 
+                        to="/#skills"
+                        smooth={true}
+                        duration={800} 
+                        onClick={closeMenu}> 
+                            Skills 
+                    </HashLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__experience" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Experience </Link>
+                    <HashLink 
+                        to="/#experience"
+                        smooth={true}
+                        duration={800} 
+                        onClick={closeMenu}> 
+                        Experience 
+                    </HashLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__portfolio" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Portfolio</Link>
+                    <HashLink 
+                        to="/#portfolio"
+                        smooth={true}
+                        duration={800} 
+                        onClick={closeMenu}> 
+                        Portfolio
+                    </HashLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__blog" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}> Blog</Link>
+                    <HashLink 
+                        to="/#blog"
+                        smooth={true} 
+                        duration={800} 
+                        onClick={closeMenu}> 
+                            Blog
+                    </HashLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="main__contact" spy={true} smooth={true} offset={-70} duration={500} onClick={closeMenu}> Contact</Link>
+                    <HashLink 
+                        to="/#contact"
+                        smooth={true}
+                        duration={800} 
+                        onClick={closeMenu}> 
+                            Contact
+                    </HashLink>
                 </li>
             </ul>
         </nav>
+        </Router>
     )
 }
 export default Navbar;

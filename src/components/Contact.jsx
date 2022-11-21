@@ -5,7 +5,7 @@ import ContactInfo from '../modules/ContactInfo.jsx';
 
 const Contact = () => {
   return (
-    <section id='main__contact'>
+    <section id='contact'>
         <Container className="contact">
           <Title_Desc title='Contact Me' />
           <div className='contact__block'>

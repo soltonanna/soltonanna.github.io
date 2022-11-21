@@ -6,7 +6,7 @@ import RectProgressBar from '../modules/RectProgressBar.jsx';
 const Skills = () => {
 
   return (
-    <section id='main__skills'>
+    <section id='skills'>
       <Container className="skills">
           
           <div className='technical-skills'>

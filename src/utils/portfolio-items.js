@@ -19,7 +19,7 @@ export const portfolioItems = [
     },
     {
         id: `p_2`,
-        category: 'games',
+        category: 'apps',
         name: 'Pig Game',
         desc: 'The 2 players must roll dice! The first player who rich the 50 point in game will Win!',
         codeUrl: `${codeUrl}pig_game`,
