@@ -1,7 +1,8 @@
 import { 
     GuessNumberGame, 
     PigGame, 
-    MinesGame 
+    MinesGame,
+    NaturesSpa
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -34,5 +35,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}mines_game`,
         demoUrl: `${demoUrl}mines_game/`,
         imgUrl: MinesGame
+    },
+    {
+        id: `p_4`,
+        category: 'spa',
+        name: 'Natures Project',
+        desc: 'Simple template example.',
+        codeUrl: `${codeUrl}natures`,
+        demoUrl: `${demoUrl}natures/`,
+        imgUrl: NaturesSpa
     }
 ]

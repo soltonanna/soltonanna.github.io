@@ -2,6 +2,7 @@
 import GuessNumberGame from '../media/portfolio/GuessNumberGame.png';
 import PigGame from '../media/portfolio/PigGame.png';
 import MinesGame from '../media/portfolio/MinesGame.png';
+import NaturesSpa from '../media/portfolio/NaturesSpa.png';
 
 
 /** Blog Images */
@@ -16,6 +17,8 @@ export {
     GuessNumberGame,
     PigGame,
     MinesGame,
+    NaturesSpa,
+    
     GitIcon,
     CssCertificate,
 }
