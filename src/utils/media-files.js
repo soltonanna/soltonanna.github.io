@@ -3,6 +3,7 @@ import GuessNumberGame from '../media/portfolio/GuessNumberGame.png';
 import PigGame from '../media/portfolio/PigGame.png';
 import MinesGame from '../media/portfolio/MinesGame.png';
 import NaturesSpa from '../media/portfolio/NaturesSpa.png';
+import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
 
 
 /** Blog Images */
@@ -18,7 +19,7 @@ export {
     PigGame,
     MinesGame,
     NaturesSpa,
-    
+    AnimatedBlocks,
     GitIcon,
     CssCertificate,
 }

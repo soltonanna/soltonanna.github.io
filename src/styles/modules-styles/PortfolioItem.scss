@@ -1,10 +1,14 @@
 .portfolio-item {
-    width: 30.3%;
     overflow: hidden;
     margin: 0 10px 0 0;
     position: relative;
     transition: all 0.5s;
-    border-radius: $border-radius;
+
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
 
     @include respond(phone) {
         width: 48%;
@@ -14,10 +18,15 @@
         position: relative;
         display: block;
         width: 100%;
+        grid-row: 1 / -1;
+        grid-column: 1;
+        max-width: 100%;
+        display: block;
     }
 
     &__fig-caption {
         @include displayFlex(column, nowrap, center, center, center);
+        justify-self: start;
         opacity: 0;
         position: absolute;
         padding: 15px;
@@ -33,6 +42,7 @@
         .item-title {
             margin: 5px 0;
             cursor: pointer;
+            font-size: calc($button-font-size + 0.2rem);
         }
     }
     &:hover &__fig-caption {

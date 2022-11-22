@@ -32,20 +32,23 @@ const Portfolio = () => {
       <Container className="portfolio">
         <Title_Desc 
           title="Portfolio"
-          desc="Let me present you some of my works, included Single page Applications (SPA), some simple projects, modules and games. You can see Demo versions and code on github repositories."
+          desc="Let me present you some of my works. Here you can find some template examples, simple projects based on React or Vanilla JS, reusable modules, interactive and nice animations and small games. You can see Demo versions and codes on github repositories."
         />
         <div className='filter-block' >
           <Button onClick={handleCategoryChange} value='all' className='btn-1'>
-              All Categories
+            All Categories
           </Button>
-          <Button onClick={handleCategoryChange} value='spa' className='btn-1'>
-            Single Page App
+          <Button onClick={handleCategoryChange} value='temp' className='btn-1'>
+            Templates
           </Button>
           <Button onClick={handleCategoryChange} value='games' className='btn-1'>
             Games
           </Button>
           <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
             Apps
+          </Button>
+          <Button onClick={handleCategoryChange} value='anime' className='btn-1'>
+            Animation
           </Button>
           <Button onClick={handleCategoryChange} value='modules' className='btn-1'>
             Modules

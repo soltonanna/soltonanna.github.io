@@ -294,8 +294,8 @@ body {
                     }
                 }
                 .items-block {
-                    @include displayFlex(row, nowrap, center, flex-start, flex-start);
-                    
+                    column-count: 3;
+                    column-gap: 10px;
                     p {
                         text-align: center;
                         font-size: $desc-font-size;

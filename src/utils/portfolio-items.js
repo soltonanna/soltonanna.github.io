@@ -2,12 +2,14 @@ import {
     GuessNumberGame, 
     PigGame, 
     MinesGame,
-    NaturesSpa
+    NaturesSpa,
+    AnimatedBlocks
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
 const demoUrl = 'https://soltonanna.github.io/';
 
+// categories: all, temp, games, apps, anime, modules
 export const portfolioItems = [
     {
         id: `p_1`,
@@ -20,7 +22,7 @@ export const portfolioItems = [
     },
     {
         id: `p_2`,
-        category: 'apps',
+        category: 'games',
         name: 'Pig Game',
         desc: 'The 2 players must roll dice! The first player who rich the 50 point in game will Win!',
         codeUrl: `${codeUrl}pig_game`,
@@ -38,11 +40,20 @@ export const portfolioItems = [
     },
     {
         id: `p_4`,
-        category: 'spa',
-        name: 'Natures Project',
-        desc: 'Simple template example.',
+        category: 'temp',
+        name: 'Natures',
+        desc: '',
         codeUrl: `${codeUrl}natures`,
         demoUrl: `${demoUrl}natures/`,
         imgUrl: NaturesSpa
+    },
+    {
+        id: `p_5`,
+        category: 'anime',
+        name: 'Animated blocks',
+        desc: 'Here you can find some interesting animated blocks, which can use on your web sites.',
+        codeUrl: `${codeUrl}animated-blocks`,
+        demoUrl: `${demoUrl}animated-blocks/`,
+        imgUrl: AnimatedBlocks
     }
 ]
