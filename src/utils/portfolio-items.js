@@ -3,7 +3,8 @@ import {
     PigGame, 
     MinesGame,
     NaturesSpa,
-    AnimatedBlocks
+    AnimatedBlocks,
+    CountDownTimer
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -55,5 +56,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}animated-blocks`,
         demoUrl: `${demoUrl}animated-blocks/`,
         imgUrl: AnimatedBlocks
+    },
+    {
+        id: `p_6`,
+        category: 'modules',
+        name: 'CountDown Timer',
+        desc: 'Simple CountDown Timer example.',
+        codeUrl: `${codeUrl}countdown`,
+        demoUrl: `${demoUrl}countdown/`,
+        imgUrl: CountDownTimer
     }
 ]
