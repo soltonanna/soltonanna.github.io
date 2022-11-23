@@ -17,4 +17,10 @@
     line-height: 25px;
     font-size: $desc-font-size;
     margin-bottom: $margin-bottom-big;
+    text-indent: 5px;
+    p {
+        margin-bottom: 8px;
+        text-align: justify;
+        line-height: 28px;
+    }
 }

@@ -24,12 +24,25 @@ const About = () => {
   return (
     <section id='about'>
       <Container className="about">
-        <div className='about-image'></div>
         <div className='about-text'>
           <Title_Desc 
               title="About me"
-              desc="Hello, I'm Anahit, front-end web developer with more than 7 years experience. I have experience in web site design, building, testing and customization. Also I am good at"
+              desc={[
+                <p>My name is Anahit and I'm front-end web developer with more than 7 years of experience.</p>, 
+                <p>More than 5 years I worked with Content Management Systems (CMS) such a WordPress and Joomla.
+                I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience.
+                I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. </p>,  
+                <p>Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites.</p>,
+                <p>Now I'm working as JavaScript and React JS developer. I don't have a lot experience with React yet, but I'm learn quickly. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.</p>
+              ]}
+              
           />
+          
+          <Button onClick={downloadCvHandler}  className='download-cv btn-1'>
+            Download PDF <FaDownload />
+          </Button>
+        </div>
+        <div className='about-image'>
           <div className='program-items'>
             <ProgItem 
               title="HTML, HTML5"
@@ -101,9 +114,6 @@ const About = () => {
               title="Git Hooks (Husky)"
               url="https://typicode.github.io/husky/#/" />  
           </div>
-          <Button onClick={downloadCvHandler}  className='download-cv btn-1'>
-            Download PDF <FaDownload />
-          </Button>
         </div>
       </Container>
     </section>

@@ -198,17 +198,21 @@ body {
 
         #about {
             .about {
-                @include displayFlex(row, nowrap, center, flex-start, center);
+                @include displayFlex(row, nowrap, center,  space-between, stretch);
+
+                & > div {
+                    width: 49%;
+
+                    @include respond(phone) {
+                        width: 100%;
+                    }
+                }
 
                 .about-image {
-                    background: url('./media/about_me_1.webp') center no-repeat;
-                    background-size: contain;
-                    width: 50%; height: 500px;
-                    margin-right: 3rem;
-
-                    @include respond(tab-land) {
-                        height: 350px;
-                    }
+                    @include displayFlex(row, nowrap, center,  space-between, flex-start);
+                    background: url('./media/about_me_1.webp') no-repeat;
+                    background-position: bottom center;
+                    background-size: 85%;
 
                     @include respond(phone) {
                         display: none;
@@ -216,10 +220,8 @@ body {
                 }
 
                 .about-text {
-                    width: 55%;
-
-                    @include respond(phone) {
-                        width: 100%;
+                    .button {
+                        margin: 0;
                     }
                 }
             }
