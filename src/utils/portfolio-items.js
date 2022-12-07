@@ -4,7 +4,8 @@ import {
     MinesGame,
     NaturesSpa,
     AnimatedBlocks,
-    CountDownTimer
+    CountDownTimer,
+    BlogPosts
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -65,5 +66,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}countdown`,
         demoUrl: `${demoUrl}countdown/`,
         imgUrl: CountDownTimer
+    },
+    {
+        id: `p_7`,
+        category: 'apps',
+        name: 'Blog Posts',
+        desc: 'Blog Posts is a simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
+        codeUrl: `${codeUrl}blog-posts`,
+        demoUrl: `${demoUrl}blog-posts/`,
+        imgUrl: BlogPosts
     }
 ]

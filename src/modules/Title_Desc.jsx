@@ -4,9 +4,9 @@ const Title_Desc = ({title, desc}) => {
   return (
     <>
         <h1 className='title'>{title}</h1>
-        <p className='description'>{desc}</p>
+        <div className='description'>{desc}</div>
     </>
   )
 }
 
-export default Title_Desc
+export default Title_Desc;

@@ -3509,8 +3509,10 @@ const blogItems = [{
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AnimatedBlocks": () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__),
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_6__),
-/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_5__),
+/* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__),
+/* harmony export */   "CountDownTimer": () => (/* reexport default export from named module */ _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_8__),
+/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_7__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "NaturesSpa": () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__),
@@ -3521,9 +3523,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../media/portfolio/MinesGame.png */ "./src/media/portfolio/MinesGame.png");
 /* harmony import */ var _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../media/portfolio/NaturesSpa.png */ "./src/media/portfolio/NaturesSpa.png");
 /* harmony import */ var _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../media/portfolio/AnimatedBlocks.gif */ "./src/media/portfolio/AnimatedBlocks.gif");
-/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../media/portfolio/CountDownTimer.png */ "./src/media/portfolio/CountDownTimer.png");
+/* harmony import */ var _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../media/portfolio/PostsPage.png */ "./src/media/portfolio/PostsPage.png");
+/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /** Portfolio Images */
+
+
 
 
 
@@ -3596,6 +3602,22 @@ const portfolioItems = [{
   codeUrl: `${codeUrl}animated-blocks`,
   demoUrl: `${demoUrl}animated-blocks/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.AnimatedBlocks
+}, {
+  id: `p_6`,
+  category: 'modules',
+  name: 'CountDown Timer',
+  desc: 'Simple CountDown Timer example.',
+  codeUrl: `${codeUrl}countdown`,
+  demoUrl: `${demoUrl}countdown/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.CountDownTimer
+}, {
+  id: `p_6`,
+  category: 'apps',
+  name: 'Blog Posts',
+  desc: '"Blog Posts" simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
+  codeUrl: `${codeUrl}blog-posts`,
+  demoUrl: `${demoUrl}blog-posts/`,
+  imgUrl: TodoList
 }];
 
 /***/ }),
@@ -59652,6 +59674,17 @@ module.exports = __webpack_require__.p + "assets/AnimatedBlocks.gif";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/CountDownTimer.png":
+/*!************************************************!*\
+  !*** ./src/media/portfolio/CountDownTimer.png ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/CountDownTimer.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/GuessNumberGame.png":
 /*!*************************************************!*\
   !*** ./src/media/portfolio/GuessNumberGame.png ***!
@@ -59693,6 +59726,17 @@ module.exports = __webpack_require__.p + "assets/NaturesSpa.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/PigGame.png";
+
+/***/ }),
+
+/***/ "./src/media/portfolio/PostsPage.png":
+/*!*******************************************!*\
+  !*** ./src/media/portfolio/PostsPage.png ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/PostsPage.png";
 
 /***/ }),
 
@@ -59910,4 +59954,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.12c7cb15e9ade3b71c32.js.map
+//# sourceMappingURL=main.600b4208ba893fdfdd85.js.map

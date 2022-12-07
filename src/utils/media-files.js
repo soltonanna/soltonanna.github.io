@@ -5,6 +5,7 @@ import MinesGame from '../media/portfolio/MinesGame.png';
 import NaturesSpa from '../media/portfolio/NaturesSpa.png';
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
 import CountDownTimer from '../media/portfolio/CountDownTimer.png';
+import BlogPosts from '../media/portfolio/PostsPage.png';
 
 
 /** Blog Images */
@@ -22,6 +23,7 @@ export {
     NaturesSpa,
     AnimatedBlocks,
     CountDownTimer,
+    BlogPosts,
 
     GitIcon,
     CssCertificate,
