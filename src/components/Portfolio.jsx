@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import 'react-tabs/style/react-tabs.css';
+
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
 import Button from '../modules/Button.jsx';
+
 import { portfolioItems } from '../utils/portfolio-items.js';
 
 const Portfolio = () => {
@@ -53,6 +55,9 @@ const Portfolio = () => {
           <Button onClick={handleCategoryChange} value='modules' className='btn-1'>
             Modules
           </Button>
+          <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
+            WordPress
+          </Button>
         </div>
         
         <div className='items-block'>
@@ -65,9 +70,9 @@ const Portfolio = () => {
                 title={item.name}
                 desc={
                   <>
-                    <p> {item.desc}</p>
-                    <p> See <a href={item.codeUrl} target='_blank'>CODE</a></p>
-                    <p> See <a href={item.demoUrl} target='_blank'>DEMO</a></p>
+                    <p dangerouslySetInnerHTML={{__html: item.desc}} />
+                    {item.codeUrl && <p> See <a href={item.codeUrl} target='_blank'>CODE</a></p>}
+                    {item.demoUrl && <p> See <a href={item.demoUrl} target='_blank'>DEMO</a></p>}
                   </>
                 }
               />);

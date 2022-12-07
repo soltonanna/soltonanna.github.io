@@ -6,6 +6,9 @@ import NaturesSpa from '../media/portfolio/NaturesSpa.png';
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
 import CountDownTimer from '../media/portfolio/CountDownTimer.png';
 import BlogPosts from '../media/portfolio/PostsPage.png';
+import Volterman from '../media/portfolio/Volterman.png';
+import Maldek from '../media/portfolio/Maldek.png';
+import Hven from '../media/portfolio/Hven.png';
 
 
 /** Blog Images */
@@ -24,6 +27,9 @@ export {
     AnimatedBlocks,
     CountDownTimer,
     BlogPosts,
+    Volterman,
+    Maldek, 
+    Hven,
 
     GitIcon,
     CssCertificate,

@@ -21,7 +21,9 @@ const App = () => {
         <Skills />
         <Experience />
         <Portfolio />
-        <Blog />
+        {
+        // <Blog />
+        }
         <Contact />
       </main>
       <Footer id="footer" />

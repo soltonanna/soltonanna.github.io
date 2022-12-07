@@ -3466,7 +3466,7 @@ __webpack_require__.r(__webpack_exports__);
 const App = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_MainInfo_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_About_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Skills_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Experience_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Blog_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_MainInfo_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_About_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Skills_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Experience_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
     id: "footer"
   }));
 };
@@ -3511,12 +3511,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AnimatedBlocks": () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__),
 /* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__),
 /* harmony export */   "CountDownTimer": () => (/* reexport default export from named module */ _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__),
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_8__),
-/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_7__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_11__),
+/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_10__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
+/* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__),
+/* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__),
 /* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "NaturesSpa": () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__),
-/* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__)
+/* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__),
+/* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__)
 /* harmony export */ });
 /* harmony import */ var _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../media/portfolio/GuessNumberGame.png */ "./src/media/portfolio/GuessNumberGame.png");
 /* harmony import */ var _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../media/portfolio/PigGame.png */ "./src/media/portfolio/PigGame.png");
@@ -3525,9 +3528,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../media/portfolio/AnimatedBlocks.gif */ "./src/media/portfolio/AnimatedBlocks.gif");
 /* harmony import */ var _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../media/portfolio/CountDownTimer.png */ "./src/media/portfolio/CountDownTimer.png");
 /* harmony import */ var _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../media/portfolio/PostsPage.png */ "./src/media/portfolio/PostsPage.png");
-/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../media/portfolio/Volterman.png */ "./src/media/portfolio/Volterman.png");
+/* harmony import */ var _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/portfolio/Maldek.png */ "./src/media/portfolio/Maldek.png");
+/* harmony import */ var _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/Hven.png */ "./src/media/portfolio/Hven.png");
+/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /** Portfolio Images */
+
+
+
 
 
 
@@ -3561,7 +3570,7 @@ __webpack_require__.r(__webpack_exports__);
 const codeUrl = 'https://github.com/soltonanna/';
 const demoUrl = 'https://soltonanna.github.io/';
 
-// categories: all, temp, games, apps, anime, modules
+// categories: all, temp, games, apps, anime, modules, wps
 const portfolioItems = [{
   id: `p_1`,
   category: 'games',
@@ -3611,13 +3620,34 @@ const portfolioItems = [{
   demoUrl: `${demoUrl}countdown/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.CountDownTimer
 }, {
-  id: `p_6`,
+  id: `p_7`,
   category: 'apps',
   name: 'Blog Posts',
-  desc: '"Blog Posts" simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
+  desc: 'Blog Posts is a simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
   codeUrl: `${codeUrl}blog-posts`,
   demoUrl: `${demoUrl}blog-posts/`,
-  imgUrl: TodoList
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BlogPosts
+}, {
+  id: `p_8`,
+  category: 'wps',
+  name: 'Volterman',
+  desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+  demoUrl: `https://volterman.com/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Volterman
+}, {
+  id: `p_9`,
+  category: 'wps',
+  name: 'Maldek',
+  desc: "<div><ul><li>Built website using WordPress CMS, based on design provided by client.</li><li>Installed required plugins and additional coding to fit final design and functionality requirements under the supervision of a client.</li><li>Added all needed content including images, texts and URLs.</li></ul><div>",
+  demoUrl: `https://maldeks.org/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Maldek
+}, {
+  id: `p_11`,
+  category: 'wps',
+  name: 'HVEN',
+  desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+  demoUrl: `http://www.hven.am/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Hven
 }];
 
 /***/ }),
@@ -3670,7 +3700,15 @@ const About = () => {
     className: "about-text"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Title_Desc_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "About me",
-    desc: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "My name is Anahit and I'm front-end web developer with more than 7 years of experience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "More than 5 years I worked with Content Management Systems (CMS) such a WordPress and Joomla. I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Now I'm working as JavaScript and React JS developer. I don't have a lot experience with React yet, but I'm learn quickly. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.")]
+    desc: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p1"
+    }, "My name is Anahit and I'm front-end web developer with more than 7 years of experience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p2"
+    }, "More than 5 years I worked with Content Management Systems (CMS) such a WordPress and Joomla. I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p3"
+    }, "Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p4"
+    }, "Now I'm working as JavaScript and React JS developer. I don't have a lot experience with React yet, but I'm learn quickly. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.")]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: downloadCvHandler,
     className: "download-cv btn-1"
@@ -4257,17 +4295,25 @@ const Portfolio = () => {
     onClick: handleCategoryChange,
     value: "modules",
     className: "btn-1"
-  }, "Modules")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Modules"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Button_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    onClick: handleCategoryChange,
+    value: "wps",
+    className: "btn-1"
+  }, "WordPress")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "items-block"
   }, filteredList.length ? filteredList.map(item => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_PortfolioItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
       key: item.id,
       imgUrl: item.imgUrl,
       title: item.name,
-      desc: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " ", item.desc), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      desc: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+        dangerouslySetInnerHTML: {
+          __html: item.desc
+        }
+      }), item.codeUrl && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
         href: item.codeUrl,
         target: "_blank"
-      }, "CODE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      }, "CODE")), item.demoUrl && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " See ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
         href: item.demoUrl,
         target: "_blank"
       }, "DEMO")))
@@ -4810,7 +4856,7 @@ const Title_Desc = _ref => {
   } = _ref;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "title"
-  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "description"
   }, desc));
 };
@@ -59696,6 +59742,28 @@ module.exports = __webpack_require__.p + "assets/GuessNumberGame.png";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/Hven.png":
+/*!**************************************!*\
+  !*** ./src/media/portfolio/Hven.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/Hven.png";
+
+/***/ }),
+
+/***/ "./src/media/portfolio/Maldek.png":
+/*!****************************************!*\
+  !*** ./src/media/portfolio/Maldek.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/Maldek.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/MinesGame.png":
 /*!*******************************************!*\
   !*** ./src/media/portfolio/MinesGame.png ***!
@@ -59737,6 +59805,17 @@ module.exports = __webpack_require__.p + "assets/PigGame.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/PostsPage.png";
+
+/***/ }),
+
+/***/ "./src/media/portfolio/Volterman.png":
+/*!*******************************************!*\
+  !*** ./src/media/portfolio/Volterman.png ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/Volterman.png";
 
 /***/ }),
 
@@ -59954,4 +60033,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.600b4208ba893fdfdd85.js.map
+//# sourceMappingURL=main.8d43858d79eb0f139133.js.map

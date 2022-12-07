@@ -5,13 +5,16 @@ import {
     NaturesSpa,
     AnimatedBlocks,
     CountDownTimer,
-    BlogPosts
+    BlogPosts,
+    Volterman,
+    Maldek,
+    Hven
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
 const demoUrl = 'https://soltonanna.github.io/';
 
-// categories: all, temp, games, apps, anime, modules
+// categories: all, temp, games, apps, anime, modules, wps
 export const portfolioItems = [
     {
         id: `p_1`,
@@ -75,5 +78,29 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}blog-posts`,
         demoUrl: `${demoUrl}blog-posts/`,
         imgUrl: BlogPosts
+    },
+    {
+        id: `p_8`,
+        category: 'wps',
+        name: 'Volterman',
+        desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+        demoUrl: `https://volterman.com/`,
+        imgUrl: Volterman
+    },
+    {
+        id: `p_9`,
+        category: 'wps',
+        name: 'Maldek',
+        desc: "<div><ul><li>Built website using WordPress CMS, based on design provided by client.</li><li>Installed required plugins and additional coding to fit final design and functionality requirements under the supervision of a client.</li><li>Added all needed content including images, texts and URLs.</li></ul><div>",
+        demoUrl: `https://maldeks.org/`,
+        imgUrl: Maldek
+    },
+    {
+        id: `p_11`,
+        category: 'wps',
+        name: 'HVEN',
+        desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+        demoUrl: `http://www.hven.am/`,
+        imgUrl: Hven
     }
 ]
