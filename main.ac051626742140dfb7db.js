@@ -3611,13 +3611,13 @@ const portfolioItems = [{
   demoUrl: `${demoUrl}countdown/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.CountDownTimer
 }, {
-  id: `p_6`,
+  id: `p_7`,
   category: 'apps',
   name: 'Blog Posts',
-  desc: '"Blog Posts" simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
+  desc: 'Blog Posts is a simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
   codeUrl: `${codeUrl}blog-posts`,
   demoUrl: `${demoUrl}blog-posts/`,
-  imgUrl: TodoList
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BlogPosts
 }];
 
 /***/ }),
@@ -3670,7 +3670,15 @@ const About = () => {
     className: "about-text"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Title_Desc_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "About me",
-    desc: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "My name is Anahit and I'm front-end web developer with more than 7 years of experience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "More than 5 years I worked with Content Management Systems (CMS) such a WordPress and Joomla. I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Now I'm working as JavaScript and React JS developer. I don't have a lot experience with React yet, but I'm learn quickly. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.")]
+    desc: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p1"
+    }, "My name is Anahit and I'm front-end web developer with more than 7 years of experience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p2"
+    }, "More than 5 years I worked with Content Management Systems (CMS) such a WordPress and Joomla. I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p3"
+    }, "Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      key: "p4"
+    }, "Now I'm working as JavaScript and React JS developer. I don't have a lot experience with React yet, but I'm learn quickly. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.")]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: downloadCvHandler,
     className: "download-cv btn-1"
@@ -4810,7 +4818,7 @@ const Title_Desc = _ref => {
   } = _ref;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "title"
-  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "description"
   }, desc));
 };
@@ -59954,4 +59962,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.600b4208ba893fdfdd85.js.map
+//# sourceMappingURL=main.ac051626742140dfb7db.js.map
