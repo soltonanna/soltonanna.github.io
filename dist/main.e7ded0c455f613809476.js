@@ -4203,13 +4203,6 @@ const Navbar = () => {
   }, "Portfolio")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_3__.HashLink, {
-    to: "/#blog",
-    smooth: true,
-    duration: 800,
-    onClick: closeMenu
-  }, "Blog")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_3__.HashLink, {
     to: "/#contact",
     smooth: true,
     duration: 800,
@@ -60033,4 +60026,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.8d43858d79eb0f139133.js.map
+//# sourceMappingURL=main.e7ded0c455f613809476.js.map
