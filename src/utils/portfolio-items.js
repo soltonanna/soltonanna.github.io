@@ -8,7 +8,8 @@ import {
     BlogPosts,
     Volterman,
     Maldek,
-    Hven
+    Hven,
+    Weather
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -74,7 +75,7 @@ export const portfolioItems = [
         id: `p_7`,
         category: 'apps',
         name: 'Blog Posts',
-        desc: 'Blog Posts is a simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
+        desc: '<p>Blog Posts is a simple app example, using public API for show some posts with pagination. </p><p>Also you can add the new posts, delete them, sort or search.</p>',
         codeUrl: `${codeUrl}blog-posts`,
         demoUrl: `${demoUrl}blog-posts/`,
         imgUrl: BlogPosts
@@ -83,7 +84,7 @@ export const portfolioItems = [
         id: `p_8`,
         category: 'wps',
         name: 'Volterman',
-        desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+        desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul></div>',
         demoUrl: `https://volterman.com/`,
         imgUrl: Volterman
     },
@@ -91,7 +92,7 @@ export const portfolioItems = [
         id: `p_9`,
         category: 'wps',
         name: 'Maldek',
-        desc: "<div><ul><li>Built website using WordPress CMS, based on design provided by client.</li><li>Installed required plugins and additional coding to fit final design and functionality requirements under the supervision of a client.</li><li>Added all needed content including images, texts and URLs.</li></ul><div>",
+        desc: "<div><ul><li>Built website using WordPress CMS, based on design provided by client.</li><li>Installed required plugins and additional coding to fit final design and functionality requirements under the supervision of a client.</li><li>Added all needed content including images, texts and URLs.</li></ul></div>",
         demoUrl: `https://maldeks.org/`,
         imgUrl: Maldek
     },
@@ -99,8 +100,17 @@ export const portfolioItems = [
         id: `p_11`,
         category: 'wps',
         name: 'HVEN',
-        desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+        desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul></div>',
         demoUrl: `http://www.hven.am/`,
         imgUrl: Hven
+    },
+    {
+        id: `p_12`,
+        category: 'apps',
+        name: 'Weather',
+        desc: '<p>You can check weather of current location by coordinates, or search some location.</p>',
+        codeUrl: `${codeUrl}weather`,
+        demoUrl: `${demoUrl}weather/`,
+        imgUrl: Weather
     }
 ]

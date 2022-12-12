@@ -9,6 +9,7 @@ import BlogPosts from '../media/portfolio/PostsPage.png';
 import Volterman from '../media/portfolio/Volterman.png';
 import Maldek from '../media/portfolio/Maldek.png';
 import Hven from '../media/portfolio/Hven.png';
+import Weather from '../media/portfolio/WeatherApp.png';
 
 
 /** Blog Images */
@@ -30,6 +31,7 @@ export {
     Volterman,
     Maldek, 
     Hven,
+    Weather,
 
     GitIcon,
     CssCertificate,
