@@ -3511,15 +3511,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AnimatedBlocks": () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__),
 /* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__),
 /* harmony export */   "CountDownTimer": () => (/* reexport default export from named module */ _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__),
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_11__),
-/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_10__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_12__),
+/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_11__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__),
 /* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__),
 /* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "NaturesSpa": () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__),
 /* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__),
-/* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__)
+/* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__),
+/* harmony export */   "Weather": () => (/* reexport default export from named module */ _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__)
 /* harmony export */ });
 /* harmony import */ var _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../media/portfolio/GuessNumberGame.png */ "./src/media/portfolio/GuessNumberGame.png");
 /* harmony import */ var _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../media/portfolio/PigGame.png */ "./src/media/portfolio/PigGame.png");
@@ -3531,9 +3532,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../media/portfolio/Volterman.png */ "./src/media/portfolio/Volterman.png");
 /* harmony import */ var _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/portfolio/Maldek.png */ "./src/media/portfolio/Maldek.png");
 /* harmony import */ var _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/Hven.png */ "./src/media/portfolio/Hven.png");
-/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
+/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /** Portfolio Images */
+
 
 
 
@@ -3623,7 +3626,7 @@ const portfolioItems = [{
   id: `p_7`,
   category: 'apps',
   name: 'Blog Posts',
-  desc: 'Blog Posts is a simple app example, using public API for show some posts with pagination. Also you can add the new posts, delete them, sort or search.',
+  desc: '<p>Blog Posts is a simple app example, using public API for show some posts with pagination. </p><p>Also you can add the new posts, delete them, sort or search.</p>',
   codeUrl: `${codeUrl}blog-posts`,
   demoUrl: `${demoUrl}blog-posts/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BlogPosts
@@ -3631,23 +3634,31 @@ const portfolioItems = [{
   id: `p_8`,
   category: 'wps',
   name: 'Volterman',
-  desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+  desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul></div>',
   demoUrl: `https://volterman.com/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Volterman
 }, {
   id: `p_9`,
   category: 'wps',
   name: 'Maldek',
-  desc: "<div><ul><li>Built website using WordPress CMS, based on design provided by client.</li><li>Installed required plugins and additional coding to fit final design and functionality requirements under the supervision of a client.</li><li>Added all needed content including images, texts and URLs.</li></ul><div>",
+  desc: "<div><ul><li>Built website using WordPress CMS, based on design provided by client.</li><li>Installed required plugins and additional coding to fit final design and functionality requirements under the supervision of a client.</li><li>Added all needed content including images, texts and URLs.</li></ul></div>",
   demoUrl: `https://maldeks.org/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Maldek
 }, {
   id: `p_11`,
   category: 'wps',
   name: 'HVEN',
-  desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul><div>',
+  desc: '<div><ul><li>Collaborated with other WordPress developers working on this project</li><li>Updated website as instructed by the client to introduce new features and content.</li><li>Manage a user guide to help clients understand site features and management of the website</li></ul></div>',
   demoUrl: `http://www.hven.am/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Hven
+}, {
+  id: `p_12`,
+  category: 'apps',
+  name: 'Weather',
+  desc: '<p>You can check weather of current location by coordinates, or search some location.</p>',
+  codeUrl: `${codeUrl}weather`,
+  demoUrl: `${demoUrl}weather/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Weather
 }];
 
 /***/ }),
@@ -4044,7 +4055,7 @@ __webpack_require__.r(__webpack_exports__);
 const Footer = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All right reserved - S.Anahit \xA92022"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_SocialIcons_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All right reserved - S.Anahit \xA92022.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Last update: 12/12/2022"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_SocialIcons_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
@@ -59812,6 +59823,17 @@ module.exports = __webpack_require__.p + "assets/Volterman.png";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/WeatherApp.png":
+/*!********************************************!*\
+  !*** ./src/media/portfolio/WeatherApp.png ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/WeatherApp.png";
+
+/***/ }),
+
 /***/ "./src/fonts/Amsterdam.woff2":
 /*!***********************************!*\
   !*** ./src/fonts/Amsterdam.woff2 ***!
@@ -60026,4 +60048,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.e7ded0c455f613809476.js.map
+//# sourceMappingURL=main.996bbdb98a7739d98fb1.js.map
