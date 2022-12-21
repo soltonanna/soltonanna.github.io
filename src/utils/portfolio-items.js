@@ -9,7 +9,8 @@ import {
     Volterman,
     Maldek,
     Hven,
-    Weather
+    Weather,
+    BeerStore
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -112,5 +113,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}weather`,
         demoUrl: `${demoUrl}weather/`,
         imgUrl: Weather
+    },
+    {
+        id: `p_13`,
+        category: 'apps',
+        name: 'Beer Store',
+        desc: '<p>This is a web app where people can find out information and buy different kind of beers.</p>',
+        codeUrl: `${codeUrl}beer-store`,
+        demoUrl: `${demoUrl}beer-store/`,
+        imgUrl: BeerStore
     }
 ]

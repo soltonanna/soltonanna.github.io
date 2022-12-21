@@ -3509,10 +3509,11 @@ const blogItems = [{
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AnimatedBlocks": () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__),
+/* harmony export */   "BeerStore": () => (/* reexport default export from named module */ _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__),
 /* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__),
 /* harmony export */   "CountDownTimer": () => (/* reexport default export from named module */ _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__),
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_12__),
-/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_11__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_13__),
+/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_12__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__),
 /* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__),
@@ -3533,9 +3534,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/portfolio/Maldek.png */ "./src/media/portfolio/Maldek.png");
 /* harmony import */ var _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/Hven.png */ "./src/media/portfolio/Hven.png");
 /* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
-/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/portfolio/BeerStore.jpg */ "./src/media/portfolio/BeerStore.jpg");
+/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /** Portfolio Images */
+
 
 
 
@@ -3659,6 +3662,14 @@ const portfolioItems = [{
   codeUrl: `${codeUrl}weather`,
   demoUrl: `${demoUrl}weather/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Weather
+}, {
+  id: `p_13`,
+  category: 'apps',
+  name: 'Beer Store',
+  desc: '<p>This is a web app where people can find out information and buy different kind of beers.</p>',
+  codeUrl: `${codeUrl}beer-store`,
+  demoUrl: `${demoUrl}beer-store/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BeerStore
 }];
 
 /***/ }),
@@ -59724,6 +59735,17 @@ module.exports = __webpack_require__.p + "assets/AnimatedBlocks.gif";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/BeerStore.jpg":
+/*!*******************************************!*\
+  !*** ./src/media/portfolio/BeerStore.jpg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/BeerStore.jpg";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/CountDownTimer.png":
 /*!************************************************!*\
   !*** ./src/media/portfolio/CountDownTimer.png ***!
@@ -60048,4 +60070,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.996bbdb98a7739d98fb1.js.map
+//# sourceMappingURL=main.355ae2d1c1b005f49231.js.map

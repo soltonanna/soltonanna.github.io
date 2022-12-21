@@ -10,7 +10,7 @@ import Volterman from '../media/portfolio/Volterman.png';
 import Maldek from '../media/portfolio/Maldek.png';
 import Hven from '../media/portfolio/Hven.png';
 import Weather from '../media/portfolio/WeatherApp.png';
-
+import BeerStore from '../media/portfolio/BeerStore.jpg';
 
 /** Blog Images */
 import GitIcon from '../media/blog/git_icon.png';
@@ -32,6 +32,7 @@ export {
     Maldek, 
     Hven,
     Weather,
+    BeerStore,
 
     GitIcon,
     CssCertificate,
