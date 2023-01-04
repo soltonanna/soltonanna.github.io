@@ -3667,8 +3667,8 @@ const portfolioItems = [{
   category: 'apps',
   name: 'Beer Store',
   desc: '<p>This is a web app where people can find out information and buy different kind of beers.</p>',
-  codeUrl: `${codeUrl}beer-store`,
-  demoUrl: `${demoUrl}beer-store/`,
+  codeUrl: `${codeUrl}beer-store-app`,
+  demoUrl: `${demoUrl}beer-store-app/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BeerStore
 }];
 
@@ -60070,4 +60070,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.355ae2d1c1b005f49231.js.map
+//# sourceMappingURL=main.f7ae7237d90a91fa5a08.js.map

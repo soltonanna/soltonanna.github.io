@@ -119,8 +119,8 @@ export const portfolioItems = [
         category: 'apps',
         name: 'Beer Store',
         desc: '<p>This is a web app where people can find out information and buy different kind of beers.</p>',
-        codeUrl: `${codeUrl}beer-store`,
-        demoUrl: `${demoUrl}beer-store/`,
+        codeUrl: `${codeUrl}beer-store-app`,
+        demoUrl: `${demoUrl}beer-store-app/`,
         imgUrl: BeerStore
     }
 ]
