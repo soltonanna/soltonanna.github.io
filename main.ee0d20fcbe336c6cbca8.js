@@ -3680,7 +3680,7 @@ const portfolioItems = [{
   desc: '<p>Recipe application with custom recipe uploaded. Here you can search some interesting recipes, bookmark them or add your own ones.</p>',
   codeUrl: `${codeUrl}recipes`,
   demoUrl: `${demoUrl}recipes/`,
-  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BeerStore
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.Recipes
 }];
 
 /***/ }),
@@ -4077,7 +4077,7 @@ __webpack_require__.r(__webpack_exports__);
 const Footer = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All right reserved - S.Anahit \xA92022.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Last update: 12/12/2022"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_SocialIcons_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All right reserved - S.Anahit \xA92023.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Last update: 13/01/2023"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_SocialIcons_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
@@ -60092,4 +60092,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.e338e0d61e90e5b48255.js.map
+//# sourceMappingURL=main.ee0d20fcbe336c6cbca8.js.map
