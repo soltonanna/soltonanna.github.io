@@ -11,6 +11,7 @@ import Maldek from '../media/portfolio/Maldek.png';
 import Hven from '../media/portfolio/Hven.png';
 import Weather from '../media/portfolio/WeatherApp.png';
 import BeerStore from '../media/portfolio/BeerStore.jpg';
+import Recipes from '../media/portfolio/Recipes.png';
 
 /** Blog Images */
 import GitIcon from '../media/blog/git_icon.png';
@@ -33,6 +34,7 @@ export {
     Hven,
     Weather,
     BeerStore,
+    Recipes,
 
     GitIcon,
     CssCertificate,

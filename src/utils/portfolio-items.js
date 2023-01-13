@@ -10,7 +10,8 @@ import {
     Maldek,
     Hven,
     Weather,
-    BeerStore
+    BeerStore,
+    Recipes
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -122,5 +123,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}beer-store-app`,
         demoUrl: `${demoUrl}beer-store-app/`,
         imgUrl: BeerStore
+    },
+    {
+        id: `p_14`,
+        category: 'apps',
+        name: 'Recipes App',
+        desc: '<p>Recipe application with custom recipe uploaded. Here you can search some interesting recipes, bookmark them or add your own ones.</p>',
+        codeUrl: `${codeUrl}recipes`,
+        demoUrl: `${demoUrl}recipes/`,
+        imgUrl: Recipes
     }
 ]

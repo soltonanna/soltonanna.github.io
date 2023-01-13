@@ -3512,14 +3512,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "BeerStore": () => (/* reexport default export from named module */ _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__),
 /* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__),
 /* harmony export */   "CountDownTimer": () => (/* reexport default export from named module */ _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__),
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_13__),
-/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_12__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_14__),
+/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_13__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__),
 /* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__),
 /* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "NaturesSpa": () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__),
 /* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__),
+/* harmony export */   "Recipes": () => (/* reexport default export from named module */ _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__),
 /* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__),
 /* harmony export */   "Weather": () => (/* reexport default export from named module */ _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__)
 /* harmony export */ });
@@ -3535,9 +3536,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/Hven.png */ "./src/media/portfolio/Hven.png");
 /* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
 /* harmony import */ var _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/portfolio/BeerStore.jpg */ "./src/media/portfolio/BeerStore.jpg");
-/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/portfolio/Recipes.png */ "./src/media/portfolio/Recipes.png");
+/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /** Portfolio Images */
+
 
 
 
@@ -3669,6 +3672,14 @@ const portfolioItems = [{
   desc: '<p>This is a web app where people can find out information and buy different kind of beers.</p>',
   codeUrl: `${codeUrl}beer-store-app`,
   demoUrl: `${demoUrl}beer-store-app/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BeerStore
+}, {
+  id: `p_14`,
+  category: 'apps',
+  name: 'Recipes App',
+  desc: '<p>Recipe application with custom recipe uploaded. Here you can search some interesting recipes, bookmark them or add your own ones.</p>',
+  codeUrl: `${codeUrl}recipes`,
+  demoUrl: `${demoUrl}recipes/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.BeerStore
 }];
 
@@ -59834,6 +59845,17 @@ module.exports = __webpack_require__.p + "assets/PostsPage.png";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/Recipes.png":
+/*!*****************************************!*\
+  !*** ./src/media/portfolio/Recipes.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/Recipes.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/Volterman.png":
 /*!*******************************************!*\
   !*** ./src/media/portfolio/Volterman.png ***!
@@ -60070,4 +60092,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.f7ae7237d90a91fa5a08.js.map
+//# sourceMappingURL=main.e338e0d61e90e5b48255.js.map
