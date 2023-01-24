@@ -3490,11 +3490,23 @@ __webpack_require__.r(__webpack_exports__);
 const blogItems = [{
   id: `b_1`,
   category: 'other',
-  name: 'GIT',
-  date: '14.11.2022',
-  desc: "In this topic I've been collected some main information about Git. Why we used it ? And some more popular questions and answers on interview.",
-  moreDesc: "What Is Git and Why Is It Used?",
-  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.GitIcon
+  name: 'JS Fundamentals',
+  date: '24.01.2023',
+  desc: "In this topic you can find some useful information about JavaScript Fundamentals. Why we use JS, short history and some basic information",
+  moreDesc: `<div>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_0} target="_blank"><img src="${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_0}" alt="OOP screen 0"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_1} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_1} alt="OOP screen 1"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_2} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_2} alt="OOP screen 3"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_3} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_3} alt="OOP screen 4"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_4} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_4} alt="OOP screen 5"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_5} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_5} alt="OOP screen 6"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_6} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_6} alt="OOP screen 7"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_7} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_7} alt="OOP screen 8"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_8} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_8} alt="OOP screen 9"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_9} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_9} alt="OOP screen 10"/></a></p>
+            <p><a href=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_10} target="_blank"><img src=${_media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsF_10} alt="OOP screen 11"/></a></p>
+        </div>`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsFundMain
 }, {
   id: `b_2`,
   category: 'other',
@@ -3532,25 +3544,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "BeerStore": () => (/* reexport default export from named module */ _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__),
 /* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__),
 /* harmony export */   "CountDownTimer": () => (/* reexport default export from named module */ _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__),
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_26__),
-/* harmony export */   "GitIcon": () => (/* reexport default export from named module */ _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_13__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_37__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__),
+/* harmony export */   "JsF_0": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_0_png__WEBPACK_IMPORTED_MODULE_14__),
+/* harmony export */   "JsF_1": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_1_png__WEBPACK_IMPORTED_MODULE_15__),
+/* harmony export */   "JsF_10": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_10_png__WEBPACK_IMPORTED_MODULE_24__),
+/* harmony export */   "JsF_2": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_2_png__WEBPACK_IMPORTED_MODULE_16__),
+/* harmony export */   "JsF_3": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_3_png__WEBPACK_IMPORTED_MODULE_17__),
+/* harmony export */   "JsF_4": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_4_png__WEBPACK_IMPORTED_MODULE_18__),
+/* harmony export */   "JsF_5": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_5_png__WEBPACK_IMPORTED_MODULE_19__),
+/* harmony export */   "JsF_6": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_6_png__WEBPACK_IMPORTED_MODULE_20__),
+/* harmony export */   "JsF_7": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_7_png__WEBPACK_IMPORTED_MODULE_21__),
+/* harmony export */   "JsF_8": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_8_png__WEBPACK_IMPORTED_MODULE_22__),
+/* harmony export */   "JsF_9": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_screen_9_png__WEBPACK_IMPORTED_MODULE_23__),
+/* harmony export */   "JsFundMain": () => (/* reexport default export from named module */ _media_blog_js_fundamentals_jsf_main_png__WEBPACK_IMPORTED_MODULE_13__),
 /* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__),
 /* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "NaturesSpa": () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__),
-/* harmony export */   "OopMain": () => (/* reexport default export from named module */ _media_blog_oop_main_jpg__WEBPACK_IMPORTED_MODULE_14__),
-/* harmony export */   "Oop_0": () => (/* reexport default export from named module */ _media_blog_oop_screen_0_png__WEBPACK_IMPORTED_MODULE_15__),
-/* harmony export */   "Oop_1": () => (/* reexport default export from named module */ _media_blog_oop_screen_1_png__WEBPACK_IMPORTED_MODULE_16__),
-/* harmony export */   "Oop_10": () => (/* reexport default export from named module */ _media_blog_oop_screen_10_png__WEBPACK_IMPORTED_MODULE_25__),
-/* harmony export */   "Oop_2": () => (/* reexport default export from named module */ _media_blog_oop_screen_2_png__WEBPACK_IMPORTED_MODULE_17__),
-/* harmony export */   "Oop_3": () => (/* reexport default export from named module */ _media_blog_oop_screen_3_png__WEBPACK_IMPORTED_MODULE_18__),
-/* harmony export */   "Oop_4": () => (/* reexport default export from named module */ _media_blog_oop_screen_4_png__WEBPACK_IMPORTED_MODULE_19__),
-/* harmony export */   "Oop_5": () => (/* reexport default export from named module */ _media_blog_oop_screen_5_png__WEBPACK_IMPORTED_MODULE_20__),
-/* harmony export */   "Oop_6": () => (/* reexport default export from named module */ _media_blog_oop_screen_6_png__WEBPACK_IMPORTED_MODULE_21__),
-/* harmony export */   "Oop_7": () => (/* reexport default export from named module */ _media_blog_oop_screen_7_png__WEBPACK_IMPORTED_MODULE_22__),
-/* harmony export */   "Oop_8": () => (/* reexport default export from named module */ _media_blog_oop_screen_8_png__WEBPACK_IMPORTED_MODULE_23__),
-/* harmony export */   "Oop_9": () => (/* reexport default export from named module */ _media_blog_oop_screen_9_png__WEBPACK_IMPORTED_MODULE_24__),
+/* harmony export */   "OopMain": () => (/* reexport default export from named module */ _media_blog_oop_oop_main_jpg__WEBPACK_IMPORTED_MODULE_25__),
+/* harmony export */   "Oop_0": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_0_png__WEBPACK_IMPORTED_MODULE_26__),
+/* harmony export */   "Oop_1": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_1_png__WEBPACK_IMPORTED_MODULE_27__),
+/* harmony export */   "Oop_10": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_10_png__WEBPACK_IMPORTED_MODULE_36__),
+/* harmony export */   "Oop_2": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_2_png__WEBPACK_IMPORTED_MODULE_28__),
+/* harmony export */   "Oop_3": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_3_png__WEBPACK_IMPORTED_MODULE_29__),
+/* harmony export */   "Oop_4": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_4_png__WEBPACK_IMPORTED_MODULE_30__),
+/* harmony export */   "Oop_5": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_5_png__WEBPACK_IMPORTED_MODULE_31__),
+/* harmony export */   "Oop_6": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_6_png__WEBPACK_IMPORTED_MODULE_32__),
+/* harmony export */   "Oop_7": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_7_png__WEBPACK_IMPORTED_MODULE_33__),
+/* harmony export */   "Oop_8": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_8_png__WEBPACK_IMPORTED_MODULE_34__),
+/* harmony export */   "Oop_9": () => (/* reexport default export from named module */ _media_blog_oop_oop_screen_9_png__WEBPACK_IMPORTED_MODULE_35__),
 /* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__),
 /* harmony export */   "Recipes": () => (/* reexport default export from named module */ _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__),
 /* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__),
@@ -3569,20 +3592,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
 /* harmony import */ var _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/portfolio/BeerStore.jpg */ "./src/media/portfolio/BeerStore.jpg");
 /* harmony import */ var _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/portfolio/Recipes.png */ "./src/media/portfolio/Recipes.png");
-/* harmony import */ var _media_blog_git_icon_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/blog/git_icon.png */ "./src/media/blog/git_icon.png");
-/* harmony import */ var _media_blog_oop_main_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../media/blog/oop/main.jpg */ "./src/media/blog/oop/main.jpg");
-/* harmony import */ var _media_blog_oop_screen_0_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../media/blog/oop/screen_0.png */ "./src/media/blog/oop/screen_0.png");
-/* harmony import */ var _media_blog_oop_screen_1_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../media/blog/oop/screen_1.png */ "./src/media/blog/oop/screen_1.png");
-/* harmony import */ var _media_blog_oop_screen_2_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../media/blog/oop/screen_2.png */ "./src/media/blog/oop/screen_2.png");
-/* harmony import */ var _media_blog_oop_screen_3_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../media/blog/oop/screen_3.png */ "./src/media/blog/oop/screen_3.png");
-/* harmony import */ var _media_blog_oop_screen_4_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../media/blog/oop/screen_4.png */ "./src/media/blog/oop/screen_4.png");
-/* harmony import */ var _media_blog_oop_screen_5_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../media/blog/oop/screen_5.png */ "./src/media/blog/oop/screen_5.png");
-/* harmony import */ var _media_blog_oop_screen_6_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../media/blog/oop/screen_6.png */ "./src/media/blog/oop/screen_6.png");
-/* harmony import */ var _media_blog_oop_screen_7_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../media/blog/oop/screen_7.png */ "./src/media/blog/oop/screen_7.png");
-/* harmony import */ var _media_blog_oop_screen_8_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../media/blog/oop/screen_8.png */ "./src/media/blog/oop/screen_8.png");
-/* harmony import */ var _media_blog_oop_screen_9_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../media/blog/oop/screen_9.png */ "./src/media/blog/oop/screen_9.png");
-/* harmony import */ var _media_blog_oop_screen_10_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../media/blog/oop/screen_10.png */ "./src/media/blog/oop/screen_10.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_main_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_main.png */ "./src/media/blog/js-fundamentals/jsf_main.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_0_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_0.png */ "./src/media/blog/js-fundamentals/jsf_screen_0.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_1_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_1.png */ "./src/media/blog/js-fundamentals/jsf_screen_1.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_2_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_2.png */ "./src/media/blog/js-fundamentals/jsf_screen_2.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_3_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_3.png */ "./src/media/blog/js-fundamentals/jsf_screen_3.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_4_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_4.png */ "./src/media/blog/js-fundamentals/jsf_screen_4.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_5_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_5.png */ "./src/media/blog/js-fundamentals/jsf_screen_5.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_6_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_6.png */ "./src/media/blog/js-fundamentals/jsf_screen_6.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_7_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_7.png */ "./src/media/blog/js-fundamentals/jsf_screen_7.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_8_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_8.png */ "./src/media/blog/js-fundamentals/jsf_screen_8.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_9_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_9.png */ "./src/media/blog/js-fundamentals/jsf_screen_9.png");
+/* harmony import */ var _media_blog_js_fundamentals_jsf_screen_10_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../media/blog/js-fundamentals/jsf_screen_10.png */ "./src/media/blog/js-fundamentals/jsf_screen_10.png");
+/* harmony import */ var _media_blog_oop_oop_main_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../media/blog/oop/oop_main.jpg */ "./src/media/blog/oop/oop_main.jpg");
+/* harmony import */ var _media_blog_oop_oop_screen_0_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_0.png */ "./src/media/blog/oop/oop_screen_0.png");
+/* harmony import */ var _media_blog_oop_oop_screen_1_png__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_1.png */ "./src/media/blog/oop/oop_screen_1.png");
+/* harmony import */ var _media_blog_oop_oop_screen_2_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_2.png */ "./src/media/blog/oop/oop_screen_2.png");
+/* harmony import */ var _media_blog_oop_oop_screen_3_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_3.png */ "./src/media/blog/oop/oop_screen_3.png");
+/* harmony import */ var _media_blog_oop_oop_screen_4_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_4.png */ "./src/media/blog/oop/oop_screen_4.png");
+/* harmony import */ var _media_blog_oop_oop_screen_5_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_5.png */ "./src/media/blog/oop/oop_screen_5.png");
+/* harmony import */ var _media_blog_oop_oop_screen_6_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_6.png */ "./src/media/blog/oop/oop_screen_6.png");
+/* harmony import */ var _media_blog_oop_oop_screen_7_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_7.png */ "./src/media/blog/oop/oop_screen_7.png");
+/* harmony import */ var _media_blog_oop_oop_screen_8_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_8.png */ "./src/media/blog/oop/oop_screen_8.png");
+/* harmony import */ var _media_blog_oop_oop_screen_9_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_9.png */ "./src/media/blog/oop/oop_screen_9.png");
+/* harmony import */ var _media_blog_oop_oop_screen_10_png__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../media/blog/oop/oop_screen_10.png */ "./src/media/blog/oop/oop_screen_10.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /** Portfolio Images */
 
 
@@ -3599,6 +3633,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /** Blog Images */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3908,7 +3953,7 @@ const Blog = () => {
     className: "blog"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Title_Desc_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Blog",
-    desc: "Coming soon... Interesting articles and links from innovate and popular topics"
+    desc: "Interesting articles, screenshots and links from innovate and popular topics."
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "blog-items"
   }, _utils_blog_items_js__WEBPACK_IMPORTED_MODULE_4__.blogItems.map(item => {
@@ -4137,7 +4182,7 @@ __webpack_require__.r(__webpack_exports__);
 const Footer = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Container_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All right reserved - S.Anahit \xA92023.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Last update: 13/01/2023"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_SocialIcons_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All right reserved - S.Anahit \xA92023.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Last update: 24/01/2023"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_SocialIcons_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
@@ -59736,146 +59781,267 @@ module.exports = __webpack_require__.p + "assets/about_me_1.webp";
 
 /***/ }),
 
-/***/ "./src/media/blog/git_icon.png":
-/*!*************************************!*\
-  !*** ./src/media/blog/git_icon.png ***!
-  \*************************************/
+/***/ "./src/media/blog/js-fundamentals/jsf_main.png":
+/*!*****************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_main.png ***!
+  \*****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/git_icon.png";
+module.exports = __webpack_require__.p + "assets/jsf_main.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/main.jpg":
-/*!*************************************!*\
-  !*** ./src/media/blog/oop/main.jpg ***!
-  \*************************************/
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_0.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_0.png ***!
+  \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/main.jpg";
+module.exports = __webpack_require__.p + "assets/jsf_screen_0.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_0.png":
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_1.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_1.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_1.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_10.png":
+/*!**********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_10.png ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_10.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_2.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_2.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_2.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_3.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_3.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_3.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_4.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_4.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_4.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_5.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_5.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_5.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_6.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_6.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_6.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_7.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_7.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_7.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_8.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_8.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_8.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/js-fundamentals/jsf_screen_9.png":
+/*!*********************************************************!*\
+  !*** ./src/media/blog/js-fundamentals/jsf_screen_9.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/jsf_screen_9.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/oop/oop_main.jpg":
 /*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_0.png ***!
+  !*** ./src/media/blog/oop/oop_main.jpg ***!
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_0.png";
+module.exports = __webpack_require__.p + "assets/oop_main.jpg";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_1.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_1.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_0.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_0.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_1.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_0.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_10.png":
-/*!******************************************!*\
-  !*** ./src/media/blog/oop/screen_10.png ***!
-  \******************************************/
+/***/ "./src/media/blog/oop/oop_screen_1.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_1.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_10.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_1.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_2.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_2.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_10.png":
+/*!**********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_10.png ***!
+  \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_2.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_10.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_3.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_3.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_2.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_2.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_3.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_2.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_4.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_4.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_3.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_3.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_4.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_3.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_5.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_5.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_4.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_4.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_5.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_4.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_6.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_6.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_5.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_5.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_6.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_5.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_7.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_7.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_6.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_6.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_7.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_6.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_8.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_8.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_7.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_7.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_8.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_7.png";
 
 /***/ }),
 
-/***/ "./src/media/blog/oop/screen_9.png":
-/*!*****************************************!*\
-  !*** ./src/media/blog/oop/screen_9.png ***!
-  \*****************************************/
+/***/ "./src/media/blog/oop/oop_screen_8.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_8.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/screen_9.png";
+module.exports = __webpack_require__.p + "assets/oop_screen_8.png";
+
+/***/ }),
+
+/***/ "./src/media/blog/oop/oop_screen_9.png":
+/*!*********************************************!*\
+  !*** ./src/media/blog/oop/oop_screen_9.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/oop_screen_9.png";
 
 /***/ }),
 
@@ -60291,4 +60457,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.5b67d73f9cc5058fa1b7.js.map
+//# sourceMappingURL=main.53f785aa8adcbe283fcf.js.map

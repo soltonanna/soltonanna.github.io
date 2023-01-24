@@ -10,7 +10,7 @@ const Blog = () => {
       <Container className="blog">
         <Title_Desc 
             title='Blog'
-            desc="Coming soon... Interesting articles and links from innovate and popular topics"
+            desc="Interesting articles, screenshots and links from innovate and popular topics."
         />
         <div className='blog-items'>
           {
