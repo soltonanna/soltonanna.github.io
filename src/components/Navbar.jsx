@@ -66,7 +66,7 @@ const Navbar = () => {
                         Portfolio
                     </HashLink>
                 </li>
-                {/*
+                
                 <li className='nav-item'>
                     <HashLink 
                         to="/#blog"
@@ -75,8 +75,8 @@ const Navbar = () => {
                         onClick={closeMenu}> 
                             Blog
                     </HashLink>
-                </li>*/
-                }
+                </li>
+                
                 <li className='nav-item'>
                     <HashLink 
                         to="/#contact"

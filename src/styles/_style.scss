@@ -308,7 +308,20 @@ body {
         }
 
         #blog {
-            @include displayFlex(row, nowrap, center, flex-start, flex-start);
+           
+            //@include displayFlex(row, nowrap, center, flex-start, flex-start);
+            .blog { 
+                .blog-items {
+                    column-count: 3;
+                    column-gap: 10px;
+
+                    .card-view-img {
+                        max-width: 100%;
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
         }
         
         #contact {

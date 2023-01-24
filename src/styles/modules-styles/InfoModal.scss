@@ -1,5 +1,5 @@
 .modal-back {
-    width: 50%;
+    width: 60%;
     z-index: 999;
     position: fixed;
     padding: 30px;
@@ -9,7 +9,7 @@
     background-color: $main-color-darker;
 
     @include respond(tab-land) {
-        width: 70%;
+        width: 80%;
     }
     @include respond(phone) {
         width: 90%;
@@ -67,6 +67,10 @@
                 color: $color-white;
                 text-decoration: underline;
             }
+        }
+
+        img {
+            max-width: 95%;
         }
     }
     footer {

@@ -22,7 +22,9 @@ const Blog = () => {
                 title={item.name}
                 date={item.date}
                 desc={item.desc}
-                moreDesc={item.moreDesc}
+                moreDesc={
+                  <p dangerouslySetInnerHTML={{__html: item.moreDesc}} />
+                }
               />);
             })
           }
