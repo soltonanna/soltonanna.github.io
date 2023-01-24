@@ -1,5 +1,6 @@
 .modal-back {
-    width: 60%;
+    width: 80%;
+    height: 800px;
     z-index: 999;
     position: fixed;
     padding: 30px;
@@ -16,9 +17,10 @@
     }
 
     & > div {
-        max-height: 500px;
+        max-height: 100%;
         overflow-x: hidden;
         overflow-y: auto;
+        text-align: center;
 
         &::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgb($main-color-lighter, 0.2); 
