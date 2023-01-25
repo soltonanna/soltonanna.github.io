@@ -30,6 +30,7 @@
         font-weight: 700;
         min-height: 65px;
         width: 100%;
+        overflow: hidden;
 
         @include respond(tab-land) {
             min-height: 40px;
