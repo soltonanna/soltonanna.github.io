@@ -10,8 +10,13 @@
         padding: 10px;
         
         a {
+            &.btn-1 {
+                position: static;
+            }
             text-decoration: none;
             color: $color-white;
+            position: relative;
+            z-index: 9;
         }
     }
 }

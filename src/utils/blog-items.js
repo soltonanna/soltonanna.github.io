@@ -2,7 +2,9 @@ import {
     BlogJsFund, 
     BlogJsBehind,
     BlogArrays,
-    BlogJsOop 
+    BlogDom,
+    BlogModern,
+    BlogJsOop
 } from '../media/index.js';
 
 export const blogItems = [
@@ -10,7 +12,7 @@ export const blogItems = [
         id: `b_1`,
         category: 'other',
         name: 'JS Fundamentals',
-        date: '24.01.2023',
+        date: '20.01.2023',
         desc: "In this topic you can find some useful information about JavaScript Fundamentals. Why we use JS, short history and some basic information",
         moreDesc: `<div>
             <p><a href=${BlogJsFund.img0} target="_blank"><img src="${BlogJsFund.img0}" /></a></p>
@@ -33,7 +35,7 @@ export const blogItems = [
         id: `b_2`,
         category: 'other',
         name: 'JavaScript Behind the Scenes',
-        date: '25.01.2023',
+        date: '21.01.2023',
         desc: "In this topic you can see how JavaScript work behind the scene. Know about Event Loom, Hoisting and etc.",
         moreDesc: `<div>
             <p><a href=${BlogJsBehind.img1} target="_blank"><img src="${BlogJsBehind.img1}" /></a></p>
@@ -60,6 +62,8 @@ export const blogItems = [
             <p><a href=${BlogJsBehind.img22} target="_blank"><img src="${BlogJsBehind.img22}" /></a></p>
             <p><a href=${BlogJsBehind.img23} target="_blank"><img src="${BlogJsBehind.img23}" /></a></p>
             <p><a href=${BlogJsBehind.img24} target="_blank"><img src="${BlogJsBehind.img24}" /></a></p>
+            <p><a href=${BlogJsBehind.img25} target="_blank"><img src="${BlogJsBehind.img25}" /></a></p>
+            <p><a href=${BlogJsBehind.img25} target="_blank"><img src="${BlogJsBehind.img25}" /></a></p>
             <hr />
             <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
         </div>`,
@@ -69,7 +73,7 @@ export const blogItems = [
         id: `b_3`,
         category: 'other',
         name: 'Working with Arrays',
-        date: '25.01.2023',
+        date: '23.01.2023',
         desc: "Do you know why we using Arrays and which methods can we use? This topic help you find main information about them.",
         moreDesc: `<div>
             <p>One of the most commonly used objects in JavaScript is called an <span>Array</span>. An array is a data structure that contains a list of elements which store multiple values under a single variable. Arrays are considered to be special kinds of objects. </p>
@@ -91,8 +95,46 @@ export const blogItems = [
     {
         id: `b_4`,
         category: 'other',
+        name: 'DOM',
+        date: '24.01.2023',
+        desc: "We will learn what the DOM is, how to create it and how it can be modified using JavaScript.",
+        moreDesc: `<div>
+            <p><a href=${BlogDom.img1} target="_blank"><img src="${BlogDom.img1}" /></a></p>
+            <p><a href=${BlogDom.img2} target="_blank"><img src="${BlogDom.img2}" /></a></p>
+            <p><a href=${BlogDom.img3} target="_blank"><img src="${BlogDom.img3}" /></a></p>
+            <p><a href=${BlogDom.img4} target="_blank"><img src="${BlogDom.img4}" /></a></p>
+            <p><a href=${BlogDom.img5} target="_blank"><img src="${BlogDom.img5}" /></a></p>
+            <hr />
+            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
+        </div>`,
+        imgUrl: BlogDom.imgMain
+    },
+    {
+        id: `b_5`,
+        category: 'other',
+        name: 'Modern JavaScript',
+        date: '25.01.2023',
+        desc: "Modern JavaScript is a powerful server-side language as well.",
+        moreDesc: `<div>
+            <p><a href=${BlogModern.img1} target="_blank"><img src="${BlogModern.img1}" /></a></p>
+            <p><a href=${BlogModern.img2} target="_blank"><img src="${BlogModern.img2}" /></a></p>
+            <p><a href=${BlogModern.img3} target="_blank"><img src="${BlogModern.img3}" /></a></p>
+            <p><a href=${BlogModern.img4} target="_blank"><img src="${BlogModern.img4}" /></a></p>
+            <p><a href=${BlogModern.img5} target="_blank"><img src="${BlogModern.img5}" /></a></p>
+            <p><a href=${BlogModern.img6} target="_blank"><img src="${BlogModern.img6}" /></a></p>
+            <p><a href=${BlogModern.img7} target="_blank"><img src="${BlogModern.img7}" /></a></p>
+            <p><a href=${BlogModern.img8} target="_blank"><img src="${BlogModern.img8}" /></a></p>
+            <p><a href=${BlogModern.img9} target="_blank"><img src="${BlogModern.img9}" /></a></p>
+            <hr />
+            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
+        </div>`,
+        imgUrl: BlogModern.imgMain
+    },
+    {
+        id: `b_10`,
+        category: 'other',
         name: 'OOP',
-        date: '17.01.2023',
+        date: '15.01.2023',
         desc: "In this topic you can find some useful information about Object-oriented programming in Javascript",
         moreDesc: `<div>
             <p><a href=${BlogJsOop.img0} target="_blank"><img src="${BlogJsOop.img0}" /></a></p>

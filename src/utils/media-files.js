@@ -15,6 +15,7 @@ import Recipes from '../media/portfolio/Recipes.png';
 
 /* PDF*/
 import CssCertificate from '../media/pdf/AdvancedCSS_Certificate.pdf';
+import JsCertificate from '../media/pdf/CompleteJSCourse_Certificate.pdf';
 
 export {
     // Portfolio
@@ -34,4 +35,5 @@ export {
 
     // Other
     CssCertificate,
+    JsCertificate
 }

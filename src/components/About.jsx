@@ -5,7 +5,7 @@ import Title_Desc from '../modules/Title_Desc.jsx';
 import Button from '../modules/Button.jsx';
 import ProgItem from '../modules/ProgItem.jsx';
 import CvPdf from '../media/pdf/SultanovaAnahit_cv.pdf';
-import { CssCertificate } from '../utils/media-files.js';
+import { CssCertificate, JsCertificate } from '../utils/media-files.js';
 
 const About = () => {
 
@@ -60,7 +60,9 @@ const About = () => {
               url="https://getbootstrap.com/" />
             <ProgItem 
               title="JavaScript"
-              url="https://www.w3schools.com/js/" />
+              url="https://www.w3schools.com/js/" 
+              star={true}
+              starUrl={JsCertificate} />
             <ProgItem 
               title="jQuery"
               url="https://jquery.com/" />

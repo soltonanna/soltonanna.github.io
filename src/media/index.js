@@ -39,12 +39,38 @@ export const BlogJsBehind = {
     img22: require('./blog/js-behind-scene/bs_screen_22.png'),
     img23: require('./blog/js-behind-scene/bs_screen_23.png'),
     img24: require('./blog/js-behind-scene/bs_screen_24.png'),
+    img25: require('./blog/js-behind-scene/bs_screen_25.png'),
+    img26: require('./blog/js-behind-scene/bs_screen_26.png'),
 }
 
 export const BlogArrays = {
     imgMain: require('./blog/arrays/arr_main.jpg'),
     img1: require('./blog/arrays/arr_screen_1.png'),
+    img2: require('./blog/arrays/arr_screen_2.png'),
 }
+
+export const BlogDom = {
+    imgMain: require('./blog/dom/dom_main.jpg'),
+    img1: require('./blog/dom/dom_screen_1.png'),
+    img2: require('./blog/dom/dom_screen_2.png'),
+    img3: require('./blog/dom/dom_screen_3.png'),
+    img4: require('./blog/dom/dom_screen_4.png'),
+    img5: require('./blog/dom/dom_screen_5.png'),
+}
+
+export const BlogModern = {
+    imgMain: require('./blog/modern-js/mod_main.jpeg'),
+    img1: require('./blog/modern-js/mod_screen_1.png'),
+    img2: require('./blog/modern-js/mod_screen_2.png'),
+    img3: require('./blog/modern-js/mod_screen_3.png'),
+    img4: require('./blog/modern-js/mod_screen_4.png'),
+    img5: require('./blog/modern-js/mod_screen_5.png'),
+    img6: require('./blog/modern-js/mod_screen_6.png'),
+    img7: require('./blog/modern-js/mod_screen_7.png'),
+    img8: require('./blog/modern-js/mod_screen_8.png'),
+    img9: require('./blog/modern-js/mod_screen_9.png'),
+}
+
 
 export const BlogJsOop = {
     imgMain: require('./blog/oop/oop_main.jpg'),

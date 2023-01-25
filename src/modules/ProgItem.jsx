@@ -6,7 +6,7 @@ const ProgItem = ({title, url, star, starUrl}) => {
     url 
       ? ( <div className='prog-item'>
           <a href={url} target="_blank" className='btn-1' > { title }</a> 
-          { star && <a href={starUrl} target="_blank" > <FaCertificate /> </a> }
+          { star && <a href={starUrl} target="_blank"> <FaCertificate /> </a> }
       </div> ) 
       : (
         <div className='prog-item'> 
