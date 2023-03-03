@@ -14,13 +14,18 @@
 
 .description {
     font-weight: 500;
-    line-height: 25px;
+    line-height: 28px;
     font-size: $desc-font-size;
     margin-bottom: $margin-bottom-big;
     text-indent: 5px;
+
+    @include respond(phone) {
+        font-size: calc($desc-font-size + 0.5rem);
+        line-height: 25px;
+    }
+
     p {
         margin-bottom: 8px;
         text-align: justify;
-        line-height: 28px;
     }
 }

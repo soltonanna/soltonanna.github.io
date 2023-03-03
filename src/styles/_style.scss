@@ -298,6 +298,11 @@ body {
                 .items-block {
                     column-count: 3;
                     column-gap: 10px;
+
+                    @include respond(phone) {
+                        column-count: 1;
+                    }
+
                     p {
                         text-align: center;
                         font-size: $desc-font-size;
@@ -308,12 +313,14 @@ body {
         }
 
         #blog {
-           
-            //@include displayFlex(row, nowrap, center, flex-start, flex-start);
             .blog { 
                 .blog-items {
                     column-count: 3;
                     column-gap: 10px;
+
+                    @include respond(phone) {
+                        column-count: 1;
+                    }
 
                     .card-view-img {
                         max-width: 100%;

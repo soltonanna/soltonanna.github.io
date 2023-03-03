@@ -10,10 +10,6 @@
     margin-bottom: 10px;
     break-inside: avoid;
 
-    @include respond(phone) {
-        width: 48%;
-    }
-
     &__img {
         position: relative;
         display: block;
