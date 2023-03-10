@@ -131,7 +131,7 @@ function Experience() {
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Developed and modified themes and plugins for WordPress. <br/> The montht famous plugins that  I've been the part developing are: <a href='https://wordpress.org/plugins/form-maker/' target='_blank'>'Form Maker'</a> and <a href='https://wordpress.org/plugins/photo-gallery/' target='_blank'>'Photo Gallery'</a>. Information about all plugins you can find <a href='https://10web.io/wordpress-plugins/' target='_blank'>here</a>. </li>
+                    <li>Developed and modified themes and plugins for WordPress. <br/> The most famous plugins that  I've been the part developing are: <a href='https://wordpress.org/plugins/form-maker/' target='_blank'>'Form Maker'</a> and <a href='https://wordpress.org/plugins/photo-gallery/' target='_blank'>'Photo Gallery'</a>. Information about all plugins you can find <a href='https://10web.io/wordpress-plugins/' target='_blank'>here</a>. </li>
                     <li>Developed and modified templates and components for Joomla;</li>
                     <li>Worked closely with developers, designers, copywriters and other cross-functional teams to built more innovation plugins and services.</li>
                     <li>Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. </li>

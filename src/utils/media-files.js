@@ -12,6 +12,7 @@ import Hven from '../media/portfolio/Hven.png';
 import Weather from '../media/portfolio/WeatherApp.png';
 import BeerStore from '../media/portfolio/BeerStore.jpg';
 import Recipes from '../media/portfolio/Recipes.png';
+import FoodOrder from '../media/portfolio/FoodOrder.png';
 
 /* PDF*/
 import CssCertificate from '../media/pdf/AdvancedCSS_Certificate.pdf';
@@ -32,6 +33,7 @@ export {
     Weather,
     BeerStore,
     Recipes,
+    FoodOrder,
 
     // Other
     CssCertificate,

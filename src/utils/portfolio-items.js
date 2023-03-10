@@ -11,7 +11,8 @@ import {
     Hven,
     Weather,
     BeerStore,
-    Recipes
+    Recipes,
+    FoodOrder
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -132,5 +133,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}recipes`,
         demoUrl: `${demoUrl}recipes/`,
         imgUrl: Recipes
+    },
+    {
+        id: `p_15`,
+        category: 'apps',
+        name: 'Food Order App',
+        desc: '<p>"Food Order" is a simple web app, where you can choose and order some meals. </p>',
+        codeUrl: `${codeUrl}food-order`,
+        demoUrl: `${demoUrl}food-order/`,
+        imgUrl: FoodOrder
     }
 ]
