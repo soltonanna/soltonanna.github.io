@@ -3982,7 +3982,7 @@ const About = () => {
       key: "p3"
     }, "Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       key: "p4"
-    }, "Now I'm working as JavaScript and React JS developer. I don't have a lot experience with React yet, but I'm learn quickly. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.")]
+    }, "Now I'm working as JavaScript and React JS developer. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.")]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: downloadCvHandler,
     className: "download-cv btn-1"
@@ -61128,4 +61128,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.4c98b9179ccf17bad260.js.map
+//# sourceMappingURL=main.2305d48aa028bcc42e95.js.map
