@@ -33,7 +33,7 @@ const About = () => {
                 I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience.
                 I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. </p>,  
                 <p key="p3">Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites.</p>,
-                <p key="p4">Now I'm working as JavaScript and React JS developer. I don't have a lot experience with React yet, but I'm learn quickly. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.</p>
+                <p key="p4">Now I'm working as JavaScript and React JS developer. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.</p>
               ]}
           />
           
