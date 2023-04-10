@@ -4,7 +4,7 @@ import {
     MinesGame,
     NaturesSpa,
     AnimatedBlocks,
-    CountDownTimer,
+    //CountDownTimer,
     BlogPosts,
     Volterman,
     Maldek,
@@ -65,15 +65,15 @@ export const portfolioItems = [
         demoUrl: `${demoUrl}animated-blocks/`,
         imgUrl: AnimatedBlocks
     },
-    {
-        id: `p_6`,
-        category: 'modules',
-        name: 'CountDown Timer',
-        desc: 'Simple CountDown Timer example.',
-        codeUrl: `${codeUrl}countdown`,
-        demoUrl: `${demoUrl}countdown/`,
-        imgUrl: CountDownTimer
-    },
+    // {
+    //     id: `p_6`,
+    //     category: 'modules',
+    //     name: 'CountDown Timer',
+    //     desc: 'Simple CountDown Timer example.',
+    //     codeUrl: `${codeUrl}countdown`,
+    //     demoUrl: `${demoUrl}countdown/`,
+    //     imgUrl: CountDownTimer
+    // },
     {
         id: `p_7`,
         category: 'apps',

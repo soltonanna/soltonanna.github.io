@@ -4,7 +4,7 @@ import PigGame from '../media/portfolio/PigGame.png';
 import MinesGame from '../media/portfolio/MinesGame.png';
 import NaturesSpa from '../media/portfolio/NaturesSpa.png';
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
-import CountDownTimer from '../media/portfolio/CountDownTimer.png';
+//import CountDownTimer from '../media/portfolio/CountDownTimer.png';
 import BlogPosts from '../media/portfolio/PostsPage.png';
 import Volterman from '../media/portfolio/Volterman.png';
 import Maldek from '../media/portfolio/Maldek.png';
@@ -25,7 +25,7 @@ export {
     MinesGame,
     NaturesSpa,
     AnimatedBlocks,
-    CountDownTimer,
+    //CountDownTimer,
     BlogPosts,
     Volterman,
     Maldek, 
