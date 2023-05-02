@@ -21,7 +21,7 @@ function Experience() {
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Partnered with <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> company, developed on existing product called "UNDP", fixed 30+ bugs in a short time, added 6 new features. </li>
+                    <li>I collaborated with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> and worked on their existing product called "UNDP". In a short span of time, I was able to rectify over 30 bugs and also implemented new features to enhance the product</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
