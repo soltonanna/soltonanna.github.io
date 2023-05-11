@@ -18,7 +18,9 @@ const App = () => {
       <main id="main">
         <MainInfo />
         <About />
-        <Skills />
+        {
+         // <Skills />
+        }
         <Experience />
         <Portfolio />
         <Blog />

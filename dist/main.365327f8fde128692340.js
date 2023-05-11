@@ -3466,7 +3466,7 @@ __webpack_require__.r(__webpack_exports__);
 const App = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_MainInfo_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_About_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Skills_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Experience_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Blog_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_MainInfo_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_About_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Experience_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Blog_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Contact_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
     id: "footer"
   }));
 };
@@ -3740,45 +3740,48 @@ const blogItems = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AddCartRedux": () => (/* reexport default export from named module */ _media_portfolio_Add_to_Cart_Redux_png__WEBPACK_IMPORTED_MODULE_13__),
 /* harmony export */   "AnimatedBlocks": () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__),
-/* harmony export */   "BeerStore": () => (/* reexport default export from named module */ _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__),
-/* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__),
-/* harmony export */   "CountDownTimer": () => (/* reexport default export from named module */ _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__),
+/* harmony export */   "BeerStore": () => (/* reexport default export from named module */ _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_10__),
+/* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_5__),
 /* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_14__),
-/* harmony export */   "FoodOrder": () => (/* reexport default export from named module */ _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_13__),
+/* harmony export */   "FoodOrder": () => (/* reexport default export from named module */ _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_12__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
-/* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__),
+/* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_8__),
 /* harmony export */   "JsCertificate": () => (/* reexport default export from named module */ _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_15__),
-/* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__),
+/* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_7__),
 /* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "NaturesSpa": () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__),
 /* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__),
-/* harmony export */   "Recipes": () => (/* reexport default export from named module */ _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__),
-/* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__),
-/* harmony export */   "Weather": () => (/* reexport default export from named module */ _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__)
+/* harmony export */   "ReactCertificate": () => (/* reexport default export from named module */ _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_16__),
+/* harmony export */   "Recipes": () => (/* reexport default export from named module */ _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_11__),
+/* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_6__),
+/* harmony export */   "Weather": () => (/* reexport default export from named module */ _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_9__)
 /* harmony export */ });
 /* harmony import */ var _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../media/portfolio/GuessNumberGame.png */ "./src/media/portfolio/GuessNumberGame.png");
 /* harmony import */ var _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../media/portfolio/PigGame.png */ "./src/media/portfolio/PigGame.png");
 /* harmony import */ var _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../media/portfolio/MinesGame.png */ "./src/media/portfolio/MinesGame.png");
 /* harmony import */ var _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../media/portfolio/NaturesSpa.png */ "./src/media/portfolio/NaturesSpa.png");
 /* harmony import */ var _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../media/portfolio/AnimatedBlocks.gif */ "./src/media/portfolio/AnimatedBlocks.gif");
-/* harmony import */ var _media_portfolio_CountDownTimer_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../media/portfolio/CountDownTimer.png */ "./src/media/portfolio/CountDownTimer.png");
-/* harmony import */ var _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../media/portfolio/PostsPage.png */ "./src/media/portfolio/PostsPage.png");
-/* harmony import */ var _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../media/portfolio/Volterman.png */ "./src/media/portfolio/Volterman.png");
-/* harmony import */ var _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/portfolio/Maldek.png */ "./src/media/portfolio/Maldek.png");
-/* harmony import */ var _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/Hven.png */ "./src/media/portfolio/Hven.png");
-/* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
-/* harmony import */ var _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/portfolio/BeerStore.jpg */ "./src/media/portfolio/BeerStore.jpg");
-/* harmony import */ var _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/portfolio/Recipes.png */ "./src/media/portfolio/Recipes.png");
-/* harmony import */ var _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/portfolio/FoodOrder.png */ "./src/media/portfolio/FoodOrder.png");
+/* harmony import */ var _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../media/portfolio/PostsPage.png */ "./src/media/portfolio/PostsPage.png");
+/* harmony import */ var _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../media/portfolio/Volterman.png */ "./src/media/portfolio/Volterman.png");
+/* harmony import */ var _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../media/portfolio/Maldek.png */ "./src/media/portfolio/Maldek.png");
+/* harmony import */ var _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/portfolio/Hven.png */ "./src/media/portfolio/Hven.png");
+/* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
+/* harmony import */ var _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/BeerStore.jpg */ "./src/media/portfolio/BeerStore.jpg");
+/* harmony import */ var _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/portfolio/Recipes.png */ "./src/media/portfolio/Recipes.png");
+/* harmony import */ var _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/portfolio/FoodOrder.png */ "./src/media/portfolio/FoodOrder.png");
+/* harmony import */ var _media_portfolio_Add_to_Cart_Redux_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/portfolio/Add-to-Cart-Redux.png */ "./src/media/portfolio/Add-to-Cart-Redux.png");
 /* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
 /* harmony import */ var _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../media/pdf/CompleteJSCourse_Certificate.pdf */ "./src/media/pdf/CompleteJSCourse_Certificate.pdf");
+/* harmony import */ var _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../media/pdf/React_Certificate.pdf */ "./src/media/pdf/React_Certificate.pdf");
 /** Portfolio Images */
 
 
 
 
 
+//import CountDownTimer from '../media/portfolio/CountDownTimer.png';
 
 
 
@@ -3790,6 +3793,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* PDF*/
+
 
 
 
@@ -3853,15 +3857,17 @@ const portfolioItems = [{
   codeUrl: `${codeUrl}animated-blocks`,
   demoUrl: `${demoUrl}animated-blocks/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.AnimatedBlocks
-}, {
-  id: `p_6`,
-  category: 'modules',
-  name: 'CountDown Timer',
-  desc: 'Simple CountDown Timer example.',
-  codeUrl: `${codeUrl}countdown`,
-  demoUrl: `${demoUrl}countdown/`,
-  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.CountDownTimer
-}, {
+},
+// {
+//     id: `p_6`,
+//     category: 'modules',
+//     name: 'CountDown Timer',
+//     desc: 'Simple CountDown Timer example.',
+//     codeUrl: `${codeUrl}countdown`,
+//     demoUrl: `${demoUrl}countdown/`,
+//     imgUrl: CountDownTimer
+// },
+{
   id: `p_7`,
   category: 'apps',
   name: 'Blog Posts',
@@ -3922,6 +3928,14 @@ const portfolioItems = [{
   codeUrl: `${codeUrl}food-order`,
   demoUrl: `${demoUrl}food-order/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.FoodOrder
+}, {
+  id: `p_16`,
+  category: 'apps',
+  name: 'Add to Cart - Redux',
+  desc: "<p>This application is a straightforward implementation that allows users to add products to a cart using React and Redux. It utilizes Firebase's Realtime Database as the underlying database.</p>",
+  codeUrl: `${codeUrl}add-to-cart-redux`,
+  demoUrl: `${demoUrl}add-to-cart-redux/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.AddCartRedux
 }];
 
 /***/ }),
@@ -4017,7 +4031,9 @@ const About = () => {
     url: "https://www.w3schools.com/xml/ajax_intro.asp"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "React JS",
-    url: "https://reactjs.org/"
+    url: "https://reactjs.org/",
+    star: true,
+    starUrl: _utils_media_files_js__WEBPACK_IMPORTED_MODULE_6__.ReactCertificate
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "Redux",
     url: "https://redux.js.org/"
@@ -4191,10 +4207,10 @@ function Experience() {
     placeUrl: "",
     date: "Aug 2022 - now",
     desc: "Working as front-end React developer",
-    moreDesc: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Responsibilities:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Partnered with ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    moreDesc: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Responsibilities:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "I collaborated with the company ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
       href: "https://noorlogic.com/",
       target: "_blank"
-    }, "\"Noor Logic\""), " company, developed on existing product called \"UNDP\", fixed 30+ bugs in a short time, added 6 new features. ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Worked with:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "React, AntDesign, HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, REST APIs, webpack, Git, etc. "))
+    }, "\"Noor Logic\""), " and worked on their existing product called \"UNDP\". In a short span of time, I was able to rectify over 30 bugs and also implemented new features to enhance the product")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Worked with:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "React, AntDesign, HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, REST APIs, webpack, Git, etc. "))
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_CardView_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     title: "Frontend Web Developer",
     place: "BetInspire",
@@ -60738,6 +60754,17 @@ module.exports = __webpack_require__.p + "assets/CompleteJSCourse_Certificate.pd
 
 /***/ }),
 
+/***/ "./src/media/pdf/React_Certificate.pdf":
+/*!*********************************************!*\
+  !*** ./src/media/pdf/React_Certificate.pdf ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/React_Certificate.pdf";
+
+/***/ }),
+
 /***/ "./src/media/pdf/SultanovaAnahit_cv.pdf":
 /*!**********************************************!*\
   !*** ./src/media/pdf/SultanovaAnahit_cv.pdf ***!
@@ -60760,6 +60787,17 @@ module.exports = __webpack_require__.p + "assets/personal_image.jpeg";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/Add-to-Cart-Redux.png":
+/*!***************************************************!*\
+  !*** ./src/media/portfolio/Add-to-Cart-Redux.png ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/Add-to-Cart-Redux.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/AnimatedBlocks.gif":
 /*!************************************************!*\
   !*** ./src/media/portfolio/AnimatedBlocks.gif ***!
@@ -60779,17 +60817,6 @@ module.exports = __webpack_require__.p + "assets/AnimatedBlocks.gif";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/BeerStore.jpg";
-
-/***/ }),
-
-/***/ "./src/media/portfolio/CountDownTimer.png":
-/*!************************************************!*\
-  !*** ./src/media/portfolio/CountDownTimer.png ***!
-  \************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/CountDownTimer.png";
 
 /***/ }),
 
@@ -61128,4 +61155,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.3ad29711646c24937a90.js.map
+//# sourceMappingURL=main.365327f8fde128692340.js.map

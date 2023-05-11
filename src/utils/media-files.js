@@ -13,10 +13,12 @@ import Weather from '../media/portfolio/WeatherApp.png';
 import BeerStore from '../media/portfolio/BeerStore.jpg';
 import Recipes from '../media/portfolio/Recipes.png';
 import FoodOrder from '../media/portfolio/FoodOrder.png';
+import AddCartRedux from '../media/portfolio/Add-to-Cart-Redux.png';
 
 /* PDF*/
 import CssCertificate from '../media/pdf/AdvancedCSS_Certificate.pdf';
 import JsCertificate from '../media/pdf/CompleteJSCourse_Certificate.pdf';
+import ReactCertificate from '../media/pdf/React_Certificate.pdf';
 
 export {
     // Portfolio
@@ -34,8 +36,10 @@ export {
     BeerStore,
     Recipes,
     FoodOrder,
+    AddCartRedux,
 
     // Other
     CssCertificate,
-    JsCertificate
+    JsCertificate,
+    ReactCertificate
 }

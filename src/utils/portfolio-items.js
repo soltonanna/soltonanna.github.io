@@ -12,7 +12,8 @@ import {
     Weather,
     BeerStore,
     Recipes,
-    FoodOrder
+    FoodOrder,
+    AddCartRedux,
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -142,5 +143,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}food-order`,
         demoUrl: `${demoUrl}food-order/`,
         imgUrl: FoodOrder
+    },
+    {
+        id: `p_16`,
+        category: 'apps',
+        name: 'Add to Cart - Redux',
+        desc: "<p>This application is a straightforward implementation that allows users to add products to a cart using React and Redux. It utilizes Firebase's Realtime Database as the underlying database.</p>",
+        codeUrl: `${codeUrl}add-to-cart-redux`,
+        demoUrl: `${demoUrl}add-to-cart-redux/`,
+        imgUrl: AddCartRedux
     }
 ]
