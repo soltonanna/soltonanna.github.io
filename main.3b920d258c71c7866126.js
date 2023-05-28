@@ -3740,23 +3740,24 @@ const blogItems = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AddCartRedux": () => (/* reexport default export from named module */ _media_portfolio_Add_to_Cart_Redux_png__WEBPACK_IMPORTED_MODULE_13__),
+/* harmony export */   "AddCartRedux": () => (/* reexport default export from named module */ _media_portfolio_Add_to_Cart_Redux_png__WEBPACK_IMPORTED_MODULE_14__),
 /* harmony export */   "AnimatedBlocks": () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_4__),
-/* harmony export */   "BeerStore": () => (/* reexport default export from named module */ _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_10__),
+/* harmony export */   "BeerStore": () => (/* reexport default export from named module */ _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__),
 /* harmony export */   "BlogPosts": () => (/* reexport default export from named module */ _media_portfolio_PostsPage_png__WEBPACK_IMPORTED_MODULE_5__),
-/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_14__),
-/* harmony export */   "FoodOrder": () => (/* reexport default export from named module */ _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_12__),
+/* harmony export */   "CssCertificate": () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_15__),
+/* harmony export */   "FoodOrder": () => (/* reexport default export from named module */ _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_13__),
 /* harmony export */   "GuessNumberGame": () => (/* reexport default export from named module */ _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   "Hven": () => (/* reexport default export from named module */ _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_8__),
-/* harmony export */   "JsCertificate": () => (/* reexport default export from named module */ _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_15__),
+/* harmony export */   "JsCertificate": () => (/* reexport default export from named module */ _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_16__),
 /* harmony export */   "Maldek": () => (/* reexport default export from named module */ _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_7__),
 /* harmony export */   "MinesGame": () => (/* reexport default export from named module */ _media_portfolio_MinesGame_png__WEBPACK_IMPORTED_MODULE_2__),
 /* harmony export */   "NaturesSpa": () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_png__WEBPACK_IMPORTED_MODULE_3__),
 /* harmony export */   "PigGame": () => (/* reexport default export from named module */ _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__),
-/* harmony export */   "ReactCertificate": () => (/* reexport default export from named module */ _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_16__),
-/* harmony export */   "Recipes": () => (/* reexport default export from named module */ _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_11__),
+/* harmony export */   "ReactCertificate": () => (/* reexport default export from named module */ _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_17__),
+/* harmony export */   "Recipes": () => (/* reexport default export from named module */ _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__),
+/* harmony export */   "VStepanyan": () => (/* reexport default export from named module */ _media_portfolio_VahagnStepanyan_png__WEBPACK_IMPORTED_MODULE_9__),
 /* harmony export */   "Volterman": () => (/* reexport default export from named module */ _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_6__),
-/* harmony export */   "Weather": () => (/* reexport default export from named module */ _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_9__)
+/* harmony export */   "Weather": () => (/* reexport default export from named module */ _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__)
 /* harmony export */ });
 /* harmony import */ var _media_portfolio_GuessNumberGame_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../media/portfolio/GuessNumberGame.png */ "./src/media/portfolio/GuessNumberGame.png");
 /* harmony import */ var _media_portfolio_PigGame_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../media/portfolio/PigGame.png */ "./src/media/portfolio/PigGame.png");
@@ -3767,14 +3768,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_Volterman_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../media/portfolio/Volterman.png */ "./src/media/portfolio/Volterman.png");
 /* harmony import */ var _media_portfolio_Maldek_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../media/portfolio/Maldek.png */ "./src/media/portfolio/Maldek.png");
 /* harmony import */ var _media_portfolio_Hven_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../media/portfolio/Hven.png */ "./src/media/portfolio/Hven.png");
-/* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
-/* harmony import */ var _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/BeerStore.jpg */ "./src/media/portfolio/BeerStore.jpg");
-/* harmony import */ var _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/portfolio/Recipes.png */ "./src/media/portfolio/Recipes.png");
-/* harmony import */ var _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/portfolio/FoodOrder.png */ "./src/media/portfolio/FoodOrder.png");
-/* harmony import */ var _media_portfolio_Add_to_Cart_Redux_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/portfolio/Add-to-Cart-Redux.png */ "./src/media/portfolio/Add-to-Cart-Redux.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
-/* harmony import */ var _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../media/pdf/CompleteJSCourse_Certificate.pdf */ "./src/media/pdf/CompleteJSCourse_Certificate.pdf");
-/* harmony import */ var _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../media/pdf/React_Certificate.pdf */ "./src/media/pdf/React_Certificate.pdf");
+/* harmony import */ var _media_portfolio_VahagnStepanyan_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../media/portfolio/VahagnStepanyan.png */ "./src/media/portfolio/VahagnStepanyan.png");
+/* harmony import */ var _media_portfolio_WeatherApp_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../media/portfolio/WeatherApp.png */ "./src/media/portfolio/WeatherApp.png");
+/* harmony import */ var _media_portfolio_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../media/portfolio/BeerStore.jpg */ "./src/media/portfolio/BeerStore.jpg");
+/* harmony import */ var _media_portfolio_Recipes_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../media/portfolio/Recipes.png */ "./src/media/portfolio/Recipes.png");
+/* harmony import */ var _media_portfolio_FoodOrder_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../media/portfolio/FoodOrder.png */ "./src/media/portfolio/FoodOrder.png");
+/* harmony import */ var _media_portfolio_Add_to_Cart_Redux_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../media/portfolio/Add-to-Cart-Redux.png */ "./src/media/portfolio/Add-to-Cart-Redux.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../media/pdf/CompleteJSCourse_Certificate.pdf */ "./src/media/pdf/CompleteJSCourse_Certificate.pdf");
+/* harmony import */ var _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../media/pdf/React_Certificate.pdf */ "./src/media/pdf/React_Certificate.pdf");
 /** Portfolio Images */
 
 
@@ -3782,6 +3784,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 //import CountDownTimer from '../media/portfolio/CountDownTimer.png';
+
 
 
 
@@ -3932,10 +3935,17 @@ const portfolioItems = [{
   id: `p_16`,
   category: 'apps',
   name: 'Add to Cart - Redux',
-  desc: "<p>This application is a straightforward implementation that allows users to add products to a cart using React and Redux. It utilizes Firebase's Realtime Database as the underlying database.</p>",
+  desc: "<p>This application is a simple implementation that enables users to add products to a shopping cart. It is built using React and Redux. The application utilizes Firebase's Realtime Database as the backend database for storing and retrieving data.</p>",
   codeUrl: `${codeUrl}add-to-cart-redux`,
   demoUrl: `${demoUrl}add-to-cart-redux/`,
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.AddCartRedux
+}, {
+  id: `p_17`,
+  category: 'wps',
+  name: 'Vahagn Stepanyan',
+  desc: "<p>This is the official website of Vahagn Stepanyan, a music producer, arranger, and songwriter.</p>",
+  demoUrl: `https://vahagnstepanyan.com/`,
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.VStepanyan
 }];
 
 /***/ }),
@@ -3990,13 +4000,13 @@ const About = () => {
     title: "About me",
     desc: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       key: "p1"
-    }, "My name is Anahit and I'm front-end web developer with more than 7 years of experience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }, "I'm Anahit, a front-end web developer with over 9 years of experience in the field. Throughout my career, I have specialized in working with Content Management Systems (CMS) such as WordPress and Joomla for more than 7 years. As a full-stack developer, I have developed themes and plugins for WordPress, as well as templates and components for Joomla. My focus has always been on creating accessible, responsive, and functional user interfaces to ensure a seamless user experience across all devices. Additionally, I have expertise in building both simple websites and e-commerce stores using WordPress, employing a combination of templates, plugins, and tools like the Elementor page builder and E-Commerce plugins."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       key: "p2"
-    }, "More than 5 years I worked with Content Management Systems (CMS) such a WordPress and Joomla. I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }, "I also have a background in providing technical support, offering professional customer service and managing a high volume of tickets and email requests on a daily basis. I have successfully resolved over 3,000 bugs and other issues while working with live sites."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       key: "p3"
-    }, "Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }, "Currently, I am working as a JavaScript and React JS developer. I am passionate about my profession and strive to improve my skills every day. I also enjoy sharing my knowledge with others."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       key: "p4"
-    }, "Now I'm working as JavaScript and React JS developer. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.")]
+    }, "Feel free to reach out to me if you have any further questions or require my services.")]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onClick: downloadCvHandler,
     className: "download-cv btn-1"
@@ -4564,7 +4574,7 @@ const Portfolio = () => {
     className: "portfolio"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Title_Desc_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     title: "Portfolio",
-    desc: "Let me present you some of my works. Here you can find some template examples, simple projects based on React or Vanilla JS, reusable modules, interactive and nice animations and small games. You can see Demo versions and codes on github repositories."
+    desc: "Allow me to showcase some of my works. Here, you can explore a collection of template examples, simple projects built with React or Vanilla JS, reusable modules, interactive animations, and small games. You can view the demo versions and access the corresponding source codes on my GitHub repositories."
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "filter-block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_Button_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -60919,6 +60929,17 @@ module.exports = __webpack_require__.p + "assets/Recipes.png";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/VahagnStepanyan.png":
+/*!*************************************************!*\
+  !*** ./src/media/portfolio/VahagnStepanyan.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/VahagnStepanyan.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/Volterman.png":
 /*!*******************************************!*\
   !*** ./src/media/portfolio/Volterman.png ***!
@@ -61155,4 +61176,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.38d399fbbceb8a3e38d2.js.map
+//# sourceMappingURL=main.3b920d258c71c7866126.js.map
