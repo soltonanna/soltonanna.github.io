@@ -9,6 +9,8 @@ import BlogPosts from '../media/portfolio/PostsPage.png';
 import Volterman from '../media/portfolio/Volterman.png';
 import Maldek from '../media/portfolio/Maldek.png';
 import Hven from '../media/portfolio/Hven.png';
+import VStepanyan from '../media/portfolio/VahagnStepanyan.png';
+
 import Weather from '../media/portfolio/WeatherApp.png';
 import BeerStore from '../media/portfolio/BeerStore.jpg';
 import Recipes from '../media/portfolio/Recipes.png';
@@ -32,6 +34,7 @@ export {
     Volterman,
     Maldek, 
     Hven,
+    VStepanyan,
     Weather,
     BeerStore,
     Recipes,

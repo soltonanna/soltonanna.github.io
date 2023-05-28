@@ -9,6 +9,7 @@ import {
     Volterman,
     Maldek,
     Hven,
+    VStepanyan,
     Weather,
     BeerStore,
     Recipes,
@@ -148,9 +149,18 @@ export const portfolioItems = [
         id: `p_16`,
         category: 'apps',
         name: 'Add to Cart - Redux',
-        desc: "<p>This application is a straightforward implementation that allows users to add products to a cart using React and Redux. It utilizes Firebase's Realtime Database as the underlying database.</p>",
+        desc: "<p>This application is a simple implementation that enables users to add products to a shopping cart. It is built using React and Redux. The application utilizes Firebase's Realtime Database as the backend database for storing and retrieving data.</p>",
         codeUrl: `${codeUrl}add-to-cart-redux`,
         demoUrl: `${demoUrl}add-to-cart-redux/`,
         imgUrl: AddCartRedux
+    }
+    ,
+    {
+        id: `p_17`,
+        category: 'wps',
+        name: 'Vahagn Stepanyan',
+        desc: "<p>This is the official website of Vahagn Stepanyan, a music producer, arranger, and songwriter.</p>",
+        demoUrl: `https://vahagnstepanyan.com/`,
+        imgUrl: VStepanyan
     }
 ]

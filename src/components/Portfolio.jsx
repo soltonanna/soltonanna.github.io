@@ -34,7 +34,7 @@ const Portfolio = () => {
       <Container className="portfolio">
         <Title_Desc 
           title="Portfolio"
-          desc="Let me present you some of my works. Here you can find some template examples, simple projects based on React or Vanilla JS, reusable modules, interactive and nice animations and small games. You can see Demo versions and codes on github repositories."
+          desc="Allow me to showcase some of my works. Here, you can explore a collection of template examples, simple projects built with React or Vanilla JS, reusable modules, interactive animations, and small games. You can view the demo versions and access the corresponding source codes on my GitHub repositories."
         />
         <div className='filter-block' >
           <Button onClick={handleCategoryChange} value='all' className='btn-1'>

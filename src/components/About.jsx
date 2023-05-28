@@ -28,12 +28,10 @@ const About = () => {
           <Title_Desc 
               title="About me"
               desc={[
-                <p key="p1">My name is Anahit and I'm front-end web developer with more than 7 years of experience.</p>, 
-                <p key="p2">More than 5 years I worked with Content Management Systems (CMS) such a WordPress and Joomla.
-                I worked as full stack developer and developed themes and plugins for WordPress, also templates and components for Joomla. Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience.
-                I also have experience in creating both simple websites and online stores built on WordPress. Used simple templates and plugins, also Elementor page builder plugin and E-Commerce. </p>,  
-                <p key="p3">Have experience with providing technical support. Provided professional customer service, managing 20+ tickets and email requests a day. Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites.</p>,
-                <p key="p4">Now I'm working as JavaScript and React JS developer. I very like my profession, that why I try improve my skills every single day!! And like to share my knowledge with others.</p>
+                <p key="p1">I'm Anahit, a front-end web developer with over 9 years of experience in the field. Throughout my career, I have specialized in working with Content Management Systems (CMS) such as WordPress and Joomla for more than 7 years. As a full-stack developer, I have developed themes and plugins for WordPress, as well as templates and components for Joomla. My focus has always been on creating accessible, responsive, and functional user interfaces to ensure a seamless user experience across all devices. Additionally, I have expertise in building both simple websites and e-commerce stores using WordPress, employing a combination of templates, plugins, and tools like the Elementor page builder and E-Commerce plugins.</p>, 
+                <p key="p2">I also have a background in providing technical support, offering professional customer service and managing a high volume of tickets and email requests on a daily basis. I have successfully resolved over 3,000 bugs and other issues while working with live sites.</p>,  
+                <p key="p3">Currently, I am working as a JavaScript and React JS developer. I am passionate about my profession and strive to improve my skills every day. I also enjoy sharing my knowledge with others.</p>,
+                <p key="p4">Feel free to reach out to me if you have any further questions or require my services.</p>,
               ]}
           />
           
