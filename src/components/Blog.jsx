@@ -12,7 +12,8 @@ const Blog = () => {
             title='Blog'
             desc="Interesting articles, screenshots and links from innovate and popular topics."
         />
-        <div className='blog-items'>
+        <p>Coming soon....</p>
+        {/* <div className='blog-items'>
           {
             blogItems.map(item => {
               return (
@@ -28,7 +29,7 @@ const Blog = () => {
               />);
             })
           }
-        </div>
+        </div> */}
       </Container>
     </section>    
   )

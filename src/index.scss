@@ -5,6 +5,9 @@
 @import './styles/style';
 @import './styles/animations';
 
+@import './styles/sections/header.scss';
+
+
 @import './styles/modules-styles/Container.scss';
 @import './styles/modules-styles/CardView.scss';
 @import './styles/modules-styles/Title_Desc.scss';
@@ -15,3 +18,4 @@
 @import './styles/modules-styles/PortfolioItem.scss';
 @import './styles/modules-styles/SocialIcons.scss';
 @import './styles/modules-styles/Button.scss';
+@import './styles/modules-styles/Navigation.scss'

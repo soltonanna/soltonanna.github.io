@@ -52,11 +52,8 @@ const Portfolio = () => {
           <Button onClick={handleCategoryChange} value='anime' className='btn-1'>
             Animation
           </Button>
-          <Button onClick={handleCategoryChange} value='modules' className='btn-1'>
-            Modules
-          </Button>
           <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
-            WordPress
+            WordPress / Shopify
           </Button>
         </div>
         

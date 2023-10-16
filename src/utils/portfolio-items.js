@@ -10,6 +10,9 @@ import {
     Maldek,
     Hven,
     VStepanyan,
+    Jtrain,
+    Byrobynblair,
+    ArmeniansUnified,
     Weather,
     BeerStore,
     Recipes,
@@ -153,8 +156,7 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}add-to-cart-redux`,
         demoUrl: `${demoUrl}add-to-cart-redux/`,
         imgUrl: AddCartRedux
-    }
-    ,
+    },
     {
         id: `p_17`,
         category: 'wps',
@@ -162,5 +164,30 @@ export const portfolioItems = [
         desc: "<p>This is the official website of Vahagn Stepanyan, a music producer, arranger, and songwriter.</p>",
         demoUrl: `https://vahagnstepanyan.com/`,
         imgUrl: VStepanyan
+    },
+    {
+        id: `p_18`,
+        category: 'wps',
+        name: 'Jtrain',
+        desc: "<p>J Train Wellness is a unique personal training gym that focuses on overall well-being.</p>",
+        demoUrl: `https://jtrainwellness.com/`,
+        imgUrl: Jtrain
+    },
+    {
+        id: `p_19`,
+        category: 'wps',
+        name: 'Byrobynblair',
+        desc: "<p>A customizable vessel designed to display your sweetest desires, each piece of art is a cheeky nod to self-control, how and when we indulge, and the idea that life should be filled with sweet things.</p>",
+        demoUrl: `https://byrobynblair.com/`,
+        imgUrl: Byrobynblair
+    }
+    ,
+    {
+        id: `p_20`,
+        category: 'wps',
+        name: 'ArmeniansUnified',
+        desc: "<p>A non-profit that works on improving the lives in Armenia through health, vocational training, and advancing the companies to improve the economy</p>",
+        demoUrl: `https://armeniansunified.org/`,
+        imgUrl: ArmeniansUnified
     }
 ]

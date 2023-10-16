@@ -37,102 +37,27 @@ body {
 #root {
     height: 100vh;
 
-    /* Header, Navbar */
-    header {
+    .page {
+        position: relative;
         width: 100%;
-        position: fixed;
-        top: 0; left: 0;
-        z-index: 10;
-        overflow: hidden;
-        transition: .3s ease-in;        
-        background-color: #100e17;
-        
-
-        @include respond(tab-port) {
-            max-width: 100%;
-            background-color: $dark-transparent9;
-        }
-        
-        .header {
-            margin-bottom: 0;
-            /* Navbar */
-            .navbar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 10px auto;
-                height: 100%;
-                padding: 0 1rem;
-
-                @include respond(tab-port) {
-                    max-width: 100%;
-                }
-
-                .nav-menu {
-                    width: 100%; 
-                    display: flex;
-                    justify-content: space-between;
-                    list-style: none;
-                    
-                    @include respond(tab-port) {
-                        position: fixed;
-                        left: -100%; top: 90px;
-                        flex-direction: column;
-                        background-color: rgba(0,0,0,.9);
-                        height: 90vh;
-                        z-index: 999;
-                        text-align: center;
-                        transition: .3s;
-                        
-                        &.active {
-                            left: 0; top: 50px;
-                        }
-                    }
-
-                    .nav-item {
-                        padding: 1rem;
-                        font-weight: 500;
-                        cursor: pointer;
-
-                        @include respond(tab-port) {
-                            margin: 1.5rem 0;
-                        }
-                        a {
-                            color:$color-white;
-                            font-weight: 500;
-                            text-decoration: none;
-                            
-                            @include liner-gradient;
-                        }
-                    }
-                }
-                .hamburger {
-                    display: none;
-                    @include respond(tab-port) {
-                        display: block;
-                    }
-                } 
-            } 
-        }
-          
+        height: 100%;
     }
 
     /* Main block with sections */
-    #main {
+    main {
+        margin-left: 22rem;
         section {
             padding-top: 100px;
         }
         
-
         #main-info {
             @include displayFlex(row, nowrap, center, center, center);
-            
-            padding: 15rem 0;
+        
+            min-height: 97vh;
             position: relative;
-            background: url('./media/Homepage_back_1.jpg') no-repeat center center;
+            background: url('./media/Homepage_back_5.jpg') no-repeat center bottom;
             background-size: cover;
             transition: all 1.5s;
-            clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
             
             @include respond(tab-port) {
                 clip-path: none;
@@ -179,14 +104,34 @@ body {
                     word-spacing: 5px;
                     font-size: $main-desc-font-size;
                 }
+
+                .typewriter {
+                    position: relative;
+                    display: table;
+                    &:after {
+                        content: '|';
+                        position: absolute;
+                        right: 0;
+                        color: $color-white;
+                        background-color: $dark-transparent9;
+                        width: 100%;
+                        animation:  typing 3s steps(25) alternate infinite;
+                    }
+                    @keyframes typing {
+                        to {
+                            width: 0%;
+                        }
+                    }
+                }
                 
                 .personal-image {
                     border-radius: 50%;
                     border: 15px solid $dark-transparent9;
                     width: 350px; height: 300px;
-                    background: url('./media/personal_image.jpeg') 100% 50% no-repeat;
+                    background: url('./media/personal_photo.jpg') 100% 50% no-repeat;
                     background-size: 110%;
-
+                    display: none;
+                    
                     @include respond(tab-land) {
                         width: 225px;
                         height: 225px;
@@ -201,27 +146,32 @@ body {
                 @include displayFlex(row, nowrap, center,  space-between, stretch);
 
                 & > div {
-                    width: 49%;
+                    width: 47%;
 
                     @include respond(phone) {
                         width: 100%;
                     }
                 }
 
-                .about-image {
-                    @include displayFlex(row, nowrap, center,  space-between, flex-start);
-                    background: url('./media/about_me_1.webp') no-repeat;
-                    background-position: bottom center;
-                    background-size: 85%;
+                .about-text {
+                    p {
+                        font-size: 18px;
+                    }
+                    a {
+                        color: #fff;
 
-                    @include respond(phone) {
-                        display: none;
+                        &:hover {
+                            color: #06799F;
+                        }
+                    }
+                    .button {
+                        margin: 0;
                     }
                 }
 
-                .about-text {
-                    .button {
-                        margin: 0;
+                .about-skills {
+                    p {
+
                     }
                 }
             }
@@ -392,6 +342,8 @@ body {
         .footer {
             @include displayFlex(row, nowrap, center, space-between, center);
             color: $color-white;
+            font-size: 12px;
+            line-height: 22px;
         }
     }
 }

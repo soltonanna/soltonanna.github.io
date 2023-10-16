@@ -12,16 +12,38 @@ function Experience() {
           <Title_Desc title="Work Experience" />
           <div className='cards'>
             <CardView 
+              title='Web Developer'
+              place='Brainstormtech'
+              placeUrl='https://brainstormtech.io/'
+              date='Jun 2023 - Present'
+              desc='Working as fullstack web developer' 
+              moreDesc={
+                <>
+                  <h3>Responsibilities:</h3>
+                  <ul>
+                    <li>Designing and implementing new features and functionality</li>
+                    <li>Ensuring high performance and availability, and managing all technical aspects of the CMS</li>
+                    <li>Document processes and code in a clear, comprehensive and organized manner and in line with product and engineering standards.</li>
+                    <li>Helping formulate an effective, responsive design.</li>
+                  </ul>
+                  <br/>
+                  <h3>Worked with:</h3>
+                  <p>React, AntDesign, Wordpress, Shopify, HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, REST APIs, webpack, Gulp, Git, etc. </p>
+                </>
+              }
+            />
+
+            <CardView 
               title='Freelancer'
               place='Freelance'
               placeUrl=''
-              date='Aug 2022 - now'
+              date='Sep 2022 - Apr 2023'
               desc='Working as front-end React developer' 
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>I collaborated with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> and worked on their existing product called "UNDP". In a short span of time, I was able to rectify over 30 bugs and also implemented new features to enhance the product</li>
+                    <li>I collaborated with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> and worked on their existing product called "UNDP". In a short span of time, I was able to rectify over 60 bugs and also implemented new features to enhance the product.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>

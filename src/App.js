@@ -13,21 +13,19 @@ import Footer from './components/Footer.jsx';
 
 const App = () => {
   return (
-    <>
+    <div className='page'>
       <Header />
-      <main id="main">
+      <main>
         <MainInfo />
         <About />
-        {
-         // <Skills />
-        }
+        {/* <Skills /> */}
         <Experience />
         <Portfolio />
         <Blog />
         <Contact />
       </main>
       <Footer id="footer" />
-    </>
+    </div>
     
   )
 }

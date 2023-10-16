@@ -55,6 +55,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
     align-items: $flAAtimes;
 }
 
+@mixin fonts($color, $size, $weight, $line-height, $decor) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    text-decoration: $decor;
+}
+
 /* Hover Effect_1 (add under-border and change color of text */
 @mixin liner-gradient {
     background-image: linear-gradient(

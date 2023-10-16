@@ -1,0 +1,99 @@
+.page header {
+        position: fixed;
+        width: 22rem;
+        top: 0;  bottom: 0;
+        padding: 10px 0 0;
+        background-color: #fff;
+        overflow: hidden;
+        z-index: 11;
+        border-right: 1rem solid $main-color;
+        
+        * {
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+        }
+
+        .header-content {
+                position: relative;
+                margin: 0 auto;
+                min-height: 100%;
+                padding-bottom: 50px;
+                padding-left: 0;
+                padding-right: 0;
+
+                .personal-photo {
+                        position: relative;
+                        margin: 1rem auto;
+                        max-width: 110px;
+                        text-align: center;
+                        z-index: 0;
+
+                        img {
+                                width: 100px;
+                                height: 100px;
+                                max-height: 100px;
+                        }
+                }
+
+                .main-title-block {
+                        position: relative;
+                        z-index: 1;
+                        margin: 20px 20px 10px;
+                        text-align: center;
+
+                        .main-title {
+                                font-size: 25px;
+                                font-weight: 600;
+                                font-style: normal;
+                                line-height: 1.2em;
+                                color: #333333;
+                                letter-spacing: 0px;
+                                margin: 20px 0 10px 0;
+                        }
+                        .main-role {
+                                font-size: 14px;
+                                font-weight: 600;
+                                font-style: normal;
+                                line-height: 1.2em;
+                                color: #333333;  
+                        }
+                        .social-icons {
+                                margin-top: 20px;
+                                margin-bottom: 0;
+
+                                
+                                svg { width: 15px;}
+
+                                a:nth-child(2) {
+                                        svg { width: 10px;}
+                                }
+
+                                * {
+                                        color:#06799F;
+                                        font-size: 15px;
+                                }
+                        }
+
+                }
+
+                .copyrights {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 1rem;
+                        left: 0; right: 0;
+                        padding: 1rem 1.5rem 1rem;
+                        line-height: 14px;
+                        font-size: 12px;
+                        text-align: center;
+                        color: #aeaeae;
+                }
+        }
+        
+}
+
+.mobile-header {
+        display: none;
+}

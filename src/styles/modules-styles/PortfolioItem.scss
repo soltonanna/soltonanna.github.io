@@ -9,6 +9,7 @@
     grid-template-rows: 1fr auto;
     margin-bottom: 10px;
     break-inside: avoid;
+    max-height: 250px;
 
     &__img {
         position: relative;

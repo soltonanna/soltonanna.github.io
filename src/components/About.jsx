@@ -28,10 +28,11 @@ const About = () => {
           <Title_Desc 
               title="About me"
               desc={[
-                <p key="p1">I'm Anahit, a front-end web developer with over 9 years of experience in the field. Throughout my career, I have specialized in working with Content Management Systems (CMS) such as WordPress and Joomla for more than 7 years. As a full-stack developer, I have developed themes and plugins for WordPress, as well as templates and components for Joomla. My focus has always been on creating accessible, responsive, and functional user interfaces to ensure a seamless user experience across all devices. Additionally, I have expertise in building both simple websites and e-commerce stores using WordPress, employing a combination of templates, plugins, and tools like the Elementor page builder and E-Commerce plugins.</p>, 
-                <p key="p2">I also have a background in providing technical support, offering professional customer service and managing a high volume of tickets and email requests on a daily basis. I have successfully resolved over 3,000 bugs and other issues while working with live sites.</p>,  
-                <p key="p3">Currently, I am working as a JavaScript and React JS developer. I am passionate about my profession and strive to improve my skills every day. I also enjoy sharing my knowledge with others.</p>,
-                <p key="p4">Feel free to reach out to me if you have any further questions or require my services.</p>,
+                <p key="p1">I have been working as a web developer since 2014. I hold a degree in Computer Systems and Informatics (Information Technologies and Automation) from the <a href='https://polytech.am/en/institutes/institute-of-information-and-telecommunication-technologies-and-electronics/institute/' target='_blank'>State Engineering University of Armenia (SEUA)</a>. Throughout my professional journey, I've gained diverse experience in web development.</p>, 
+                <p key="p2">I've built websites using a variety of platforms, including React, WordPress, Shopify, and Joomla. Furthermore, I've developed plugins and themes for these platforms. As a technical customer specialist, I've honed my problem-solving skills and can effectively bridge the gap between technology and customer needs.</p>,  
+                <p key="p3">My expertise extends to both frontend and backend development. I'm well-versed in PHP and MySQL as a full stack developer, and I have a solid grasp of frontend technologies such as JavaScript, HTML, and CSS. My experience encompasses different work arrangements, from full-time and part-time roles to freelancing, allowing me to adapt to various work environments.</p>,
+                <p key="p4">In addition to my technical skills, I possess a strong command of languages, including English at a B1/B2 level, as well as a good knowledge of Russian and Armenian. This linguistic versatility enables me to effectively communicate with a diverse audience.</p>,
+                <p key="p5">On a personal note, I have a deep passion for reading, watching movies, painting, and hiking, which enriches my life beyond the world of web development.</p>,
               ]}
           />
           
@@ -40,8 +41,10 @@ const About = () => {
           </Button>
         </div>
         
-        <div className='about-image'>
+        <div className='about-skills'>
           <div className='program-items'>
+            <h2>Technical Skills</h2>
+            <p>Here, I've highlighted additional significant technologies and programming languages that I am experienced with. The items marked with stars indicate areas where I hold certificates – simply click on them to view the details.</p>
             <ProgItem 
               title="HTML, HTML5"
               url="https://www.w3schools.com/html/" /> 
@@ -115,6 +118,19 @@ const About = () => {
             <ProgItem 
               title="Git Hooks (Husky)"
               url="https://typicode.github.io/husky/#/" />  
+            
+            <br/><br/><br/>
+            
+            <h2>Language Skills</h2>
+            <ProgItem 
+              title="English"
+              url="#" />
+            <ProgItem 
+              title="Russian"
+              url="#" />
+            <ProgItem 
+              title="Armenian"
+              url="#" />
           </div>
         </div>
       </Container>

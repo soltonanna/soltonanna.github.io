@@ -10,6 +10,9 @@ import Volterman from '../media/portfolio/Volterman.png';
 import Maldek from '../media/portfolio/Maldek.png';
 import Hven from '../media/portfolio/Hven.png';
 import VStepanyan from '../media/portfolio/VahagnStepanyan.png';
+import Jtrain from '../media/portfolio/Jtrainwellness.png';
+import Byrobynblair from '../media/portfolio/byrobinblair.png';
+import ArmeniansUnified from '../media/portfolio/armeniansunified.png';
 
 import Weather from '../media/portfolio/WeatherApp.png';
 import BeerStore from '../media/portfolio/BeerStore.jpg';
@@ -35,6 +38,9 @@ export {
     Maldek, 
     Hven,
     VStepanyan,
+    Jtrain,
+    Byrobynblair,
+    ArmeniansUnified,
     Weather,
     BeerStore,
     Recipes,

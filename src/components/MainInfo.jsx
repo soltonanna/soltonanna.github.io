@@ -9,12 +9,11 @@ const MainInfo = () => {
     <section id="main-info">
       <Container className="main-info">
         <div>
-          <div className='button chat-button'>Hello I'm</div>
           <Title_Desc 
-            title="Sultanova Anahit"
+            title="Hi! I'm Sultanova Anahit"
             desc="Front-end Web developer"
           />
-          <ContactInfo size='18' />
+          {/* <ContactInfo size='18' /> */}
           <SocialIcons />
         </div>
         <div className='personal-image'></div>
