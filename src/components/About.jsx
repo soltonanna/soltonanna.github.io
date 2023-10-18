@@ -43,8 +43,19 @@ const About = () => {
         
         <div className='about-skills'>
           <div className='program-items'>
-            <h2>Technical Skills</h2>
-            <p>Here, I've highlighted additional significant technologies and programming languages that I am experienced with. The items marked with stars indicate areas where I hold certificates – simply click on them to view the details.</p>
+            {/* <h2>Technical Skills</h2> */}
+            {/* <p>Here, I've highlighted additional significant technologies and programming languages that I am experienced with. The items marked with stars indicate areas where I hold certificates – simply click on them to view the details.</p> */}
+            <p>Front-end Web Development Skills:</p>
+            <ProgItem 
+              title="JavaScript"
+              url="https://www.w3schools.com/js/" 
+              star={true}
+              starUrl={JsCertificate} />
+            <ProgItem 
+              title="React JS"
+              url="https://reactjs.org/"
+              star={true}
+              starUrl={ReactCertificate} />
             <ProgItem 
               title="HTML, HTML5"
               url="https://www.w3schools.com/html/" /> 
@@ -60,10 +71,8 @@ const About = () => {
               title="Bootstrap"
               url="https://getbootstrap.com/" />
             <ProgItem 
-              title="JavaScript"
-              url="https://www.w3schools.com/js/" 
-              star={true}
-              starUrl={JsCertificate} />
+              title="AntDesign"
+              url="https://ant.design/" /> 
             <ProgItem 
               title="jQuery"
               url="https://jquery.com/" />
@@ -71,25 +80,16 @@ const About = () => {
               title="AJAX"
               url="https://www.w3schools.com/xml/ajax_intro.asp" />
             <ProgItem 
-              title="React JS"
-              url="https://reactjs.org/"
-              star={true}
-              starUrl={ReactCertificate} />
-            <ProgItem 
               title="Redux"
               url="https://redux.js.org/" />
             <ProgItem 
               title="TypeScript"
               url="https://www.typescriptlang.org/" />
             <ProgItem 
-              title="RESTful API"
-              url="https://aws.amazon.com/what-is/restful-api/" />
-            <ProgItem 
-              title="WordPress"
-              url="https://wordpress.org/download/" />
-            <ProgItem 
-              title="Joomla!"
-              url="https://www.joomla.org/" />
+              title="Figma"
+              url="https://www.figma.com/" />
+
+            <p>Back-end Web Development Skills:</p>
             <ProgItem 
               title="PHP"
               url="https://www.php.net/" />
@@ -97,9 +97,19 @@ const About = () => {
               title="MySQL"
               url="https://www.mysql.com/" />
             <ProgItem 
-              title="Figma"
-              url="https://www.figma.com/" />
-              <br/>
+              title="RESTful API"
+              url="https://aws.amazon.com/what-is/restful-api/" />
+            <ProgItem 
+              title="WordPress"
+              url="https://wordpress.org/download/" />
+            <ProgItem 
+              title="Shopify"
+              url="https://www.shopify.com/" />
+            <ProgItem 
+              title="Joomla!"
+              url="https://www.joomla.org/" /> 
+
+            <p>Development Tools Skills:</p>
             <ProgItem 
               title="Git (Git GUI, GitHub)"
               url="https://git-scm.com/" />
@@ -109,6 +119,9 @@ const About = () => {
             <ProgItem 
               title="Webpack"
               url="https://webpack.js.org/" />
+            <ProgItem 
+              title="Gulp"
+              url="https://gulpjs.com/" />  
             <ProgItem 
               title="Eslint"
               url="https://eslint.org/" />
@@ -121,7 +134,7 @@ const About = () => {
             
             <br/><br/><br/>
             
-            <h2>Language Skills</h2>
+            <h2>Language Skills:</h2>
             <ProgItem 
               title="English"
               url="#" />
