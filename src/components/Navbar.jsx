@@ -1,88 +1,83 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import React, { useState, useEffect } from 'react';
+import { Link, scrollSpy } from 'react-scroll';
 
 const Navbar = () => {
-    // const [click, setClick] = useState(false);
-    
-    // const handleClick = () => setClick(!click);
-    // const closeMenu = () => setClick(false);
+  const [activeItem, setActiveItem] = useState('main-info');
 
-    //onClick={closeMenu}
+  useEffect(() => {
+    // Initialize scrollSpy when the component mounts
+    scrollSpy.update();
 
-    return (
-        <Router>
-        <nav className='navbar'>
-            {/* <div className='hamburger' onClick={handleClick}>
-                {
-                    click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
-                    : (<FaBars size={30} style={{ color: '#ffffff' }} />)
-                }
-            </div> */}
+    // Add a scroll event listener to handle scroll-based activation
+    const handleScroll = () => {
+      const scrollOffset = 200; // You can adjust this value as needed
+      const scrollY = window.scrollY;
 
-            <ul className="nav-menu">
-                <li className='nav-item'>
-                    <HashLink 
-                        to="/#main-info"
-                        smooth={true}
-                        duration={800} > 
-                            Main Info 
-                    </HashLink>
-                </li>
-                <li className='nav-item'>
-                    <HashLink 
-                        to="/#about"
-                        smooth={true} 
-                        duration={800} >
-                            About
-                    </HashLink>
-                </li>
-                {/* <li className='nav-item'>
-                    <HashLink 
-                        to="/#skills"
-                        smooth={true}
-                        duration={800} > 
-                            Skills 
-                    </HashLink>
-                </li> */}
-                <li className='nav-item'>
-                    <HashLink 
-                        to="/#experience"
-                        smooth={true}
-                        duration={800} > 
-                        Experience 
-                    </HashLink>
-                </li>
-                <li className='nav-item'>
-                    <HashLink 
-                        to="/#portfolio"
-                        smooth={true}
-                        duration={800} > 
-                        Portfolio
-                    </HashLink>
-                </li>
-                
-                <li className='nav-item'>
-                    <HashLink 
-                        to="/#blog"
-                        smooth={true} 
-                        duration={800} > 
-                            Blog
-                    </HashLink>
-                </li>
-                
-                <li className='nav-item'>
-                    <HashLink 
-                        to="/#contact"
-                        smooth={true}
-                        duration={800} > 
-                            Contact
-                    </HashLink>
-                </li>
-            </ul>
-        </nav>
-        </Router>
-    )
-}
+      // Calculate which section is currently in view
+      const sections = ['main-info', 'about', 'experience', 'portfolio', 'blog', 'contact'];
+      let newActiveItem = activeItem;
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const sectionTop = element.offsetTop - scrollOffset;
+          const sectionBottom = sectionTop + element.clientHeight;
+
+          if (scrollY >= sectionTop && scrollY < sectionBottom) {
+            newActiveItem = section;
+          }
+        }
+      });
+
+      // Update the active item
+      setActiveItem(newActiveItem);
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [activeItem]);
+
+  return (
+    <nav className="navbar">
+      <ul className="nav-menu">
+        <li className={activeItem === 'main-info' ? 'nav-item active' : 'nav-item'}>
+          <Link to="main-info" spy={true} smooth={true} duration={800}>
+            Main Info
+          </Link>
+        </li>
+        <li className={activeItem === 'about' ? 'nav-item active' : 'nav-item'}>
+          <Link to="about" spy={true} smooth={true} duration={800}>
+            About
+          </Link>
+        </li>
+        <li className={activeItem === 'experience' ? 'nav-item active' : 'nav-item'}>
+          <Link to="experience" spy={true} smooth={true} duration={800}>
+            Experience
+          </Link>
+        </li>
+        <li className={activeItem === 'portfolio' ? 'nav-item active' : 'nav-item'}>
+          <Link to="portfolio" spy={true} smooth={true} duration={800}>
+            Portfolio
+          </Link>
+        </li>
+        <li className={activeItem === 'blog' ? 'nav-item active' : 'nav-item'}>
+          <Link to="blog" spy={true} smooth={true} duration={800}>
+            Blog
+          </Link>
+        </li>
+        <li className={activeItem === 'contact' ? 'nav-item active' : 'nav-item'}>
+          <Link to="contact" spy={true} smooth={true} duration={800}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
 export default Navbar;

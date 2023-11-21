@@ -34,7 +34,7 @@
     "react-icons": "latest",
     "react-loading": "latest",
     "react-router-hash-link": "latest",
-    "react-scroll": "latest",
+    "react-scroll": "^1.9.0",
     "react-tabs": "latest",
     "sass": "latest",
     "sass-loader": "latest",

@@ -37,13 +37,14 @@ function Experience() {
               title='Freelancer'
               place='Freelance'
               placeUrl=''
-              date='Sep 2022 - Apr 2023'
+              date='Sep 2022 - Present'
               desc='Working as front-end React developer' 
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>I collaborated with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> and worked on their existing product called "UNDP". In a short span of time, I was able to rectify over 60 bugs and also implemented new features to enhance the product.</li>
+                    <li>I collaborating with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> to enhance their existing product known as "UNDP." My work involved identifying areas for improvement, and implementing React-based solutions to enhance its functionality and user experience.</li>
+                    <li>Additionally, I engaged in several freelance projects, all centered around React development. My responsibilities included building user interfaces, handling state management, and ensuring the seamless flow of data within the applications.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>

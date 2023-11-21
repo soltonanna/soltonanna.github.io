@@ -1,15 +1,17 @@
 .portfolio-item {
     overflow: hidden;
-    margin: 0 10px 0 0;
     position: relative;
     transition: all 0.5s;
 
     margin: 0;
     display: grid;
     grid-template-rows: 1fr auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     break-inside: avoid;
-    max-height: 250px;
+    max-height: 300px;
+    min-height: 200px;
+    border: 1px solid $main-color;
+
 
     &__img {
         position: relative;
@@ -19,6 +21,8 @@
         grid-column: 1;
         max-width: 100%;
         display: block;
+        transform: scale(1);
+        transition: all .3s ease-in-out;
     }
 
     &__fig-caption {
@@ -30,20 +34,42 @@
         height: 100%;
         width: 100%;
         top: auto; left: 0;
-        color: #fff;
+        color: $color-white;
         bottom: 0;
         z-index: 10;
         transition: all 0.5s;
         
-        svg,
         .item-title {
-            margin: 5px 0;
             cursor: pointer;
             font-size: calc($button-font-size + 0.2rem);
         }
+
+        .more-icons {
+            @include displayFlex(row, nowrap, center, center, center);
+            a {
+                cursor: pointer;
+                margin: 10px;
+                color: $color-white;
+
+                &:nth-child(2) svg {
+                    font-size: calc($button-font-size + 0.1rem);
+                } 
+                &:nth-child(3) svg {
+                    font-size: calc($button-font-size + 0.4rem);
+                } 
+                svg {
+                    font-size: calc($button-font-size + 0.2rem);
+                }
+            }
+        }
     }
+    
     &:hover &__fig-caption {
         opacity: 1;
-        background: rgba($main-color, .7);
+        background: rgba($main-color, .5);
+    }
+
+    &:hover &__img {
+        transform: scale(1.1);
     }
 }

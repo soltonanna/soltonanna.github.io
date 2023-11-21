@@ -1,41 +1,25 @@
 .page header {
-        position: fixed;
-        width: 22rem;
-        top: 0;  bottom: 0;
-        padding: 10px 0 0;
-        background-color: #fff;
-        overflow: hidden;
-        z-index: 11;
-        border-right: 1rem solid $main-color;
-        
-        * {
-                -webkit-transition: all 0.2s ease-in-out;
-                -moz-transition: all 0.2s ease-in-out;
-                -o-transition: all 0.2s ease-in-out;
-                -ms-transition: all 0.2s ease-in-out;
-                transition: all 0.2s ease-in-out;
-        }
-
-        .header-content {
-                position: relative;
-                margin: 0 auto;
-                min-height: 100%;
-                padding-bottom: 50px;
-                padding-left: 0;
-                padding-right: 0;
-
-                .personal-photo {
-                        position: relative;
-                        margin: 1rem auto;
-                        max-width: 110px;
-                        text-align: center;
-                        z-index: 0;
-
-                        img {
-                                width: 100px;
-                                height: 100px;
-                                max-height: 100px;
-                        }
+        .header-content.for-desktop {
+                position: fixed;
+                width: 200px;
+                top: 0;  bottom: 0;
+                padding: 10px 0 0;
+                background-color: #fff;
+                overflow: hidden;
+                z-index: 11;
+                border-right: 1rem solid $main-color;
+                @include displayFlex(column, nowrap, flex-start, flex-start, flex-start);
+                
+                @include respond(tab-port) {
+                        display: none;
+                }
+                
+                * {
+                        -webkit-transition: all 0.2s ease-in-out;
+                        -moz-transition: all 0.2s ease-in-out;
+                        -o-transition: all 0.2s ease-in-out;
+                        -ms-transition: all 0.2s ease-in-out;
+                        transition: all 0.2s ease-in-out;
                 }
 
                 .main-title-block {
@@ -70,6 +54,9 @@
                                 a:nth-child(2) {
                                         svg { width: 10px;}
                                 }
+                                a:nth-child(3) {
+                                        svg { width: 20px;}
+                                }
 
                                 * {
                                         color:#06799F;
@@ -92,8 +79,12 @@
                 }
         }
         
+        .header-content.for-mobile {
+                display: none;
+
+                @include respond(tab-port) {
+                        display: block;
+                }
+        }
 }
 
-.mobile-header {
-        display: none;
-}

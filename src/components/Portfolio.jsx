@@ -40,21 +40,22 @@ const Portfolio = () => {
           <Button onClick={handleCategoryChange} value='all' className='btn-1'>
             All Categories
           </Button>
+          <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
+            Apps
+          </Button>
+          <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
+            WordPress
+          </Button>
           <Button onClick={handleCategoryChange} value='temp' className='btn-1'>
             Templates
           </Button>
           <Button onClick={handleCategoryChange} value='games' className='btn-1'>
             Games
           </Button>
-          <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
-            Apps
-          </Button>
           <Button onClick={handleCategoryChange} value='anime' className='btn-1'>
             Animation
           </Button>
-          <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
-            WordPress / Shopify
-          </Button>
+          
         </div>
         
         <div className='items-block'>
@@ -65,13 +66,8 @@ const Portfolio = () => {
                 key={item.id}
                 imgUrl={item.imgUrl}
                 title={item.name}
-                desc={
-                  <>
-                    <p dangerouslySetInnerHTML={{__html: item.desc}} />
-                    {item.codeUrl && <p> See <a href={item.codeUrl} target='_blank'>CODE</a></p>}
-                    {item.demoUrl && <p> See <a href={item.demoUrl} target='_blank'>DEMO</a></p>}
-                  </>
-                }
+                demoUrl={item.demoUrl}
+                codeUrl={item.codeUrl}
               />);
             }) : <p>No items yet...</p>
           }

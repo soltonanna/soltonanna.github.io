@@ -43,8 +43,6 @@ const About = () => {
         
         <div className='about-skills'>
           <div className='program-items'>
-            {/* <h2>Technical Skills</h2> */}
-            {/* <p>Here, I've highlighted additional significant technologies and programming languages that I am experienced with. The items marked with stars indicate areas where I hold certificates – simply click on them to view the details.</p> */}
             <p>Front-end Web Development Skills:</p>
             <ProgItem 
               title="JavaScript"

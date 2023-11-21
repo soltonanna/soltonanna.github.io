@@ -1,34 +1,18 @@
-import React, {useState} from 'react';
-import { FaEye } from 'react-icons/fa';
-import { InfoModal} from '../modules/InfoModal.jsx';
+import React from 'react';
+import { FaEye, FaLink, FaGit } from 'react-icons/fa';
 
-const PortfolioItem = ({imgUrl, title, desc}) => {
-
-  const [infoModal, setInfoModal] = useState(false);
-
-  const showModalHandler = (e) => {
-    e.preventDefault();
-    setInfoModal(true)
-  };
-  
-  const infoModalHandler = (e) => {
-    e.preventDefault();
-    setInfoModal(false)
-  }
-
+const PortfolioItem = ({imgUrl, title, demoUrl, codeUrl}) => {
+  console.log(codeUrl)
   return (
     <figure className='portfolio-item'>
         <img src={imgUrl} alt={title} className='portfolio-item__img' />
         <figcaption className='portfolio-item__fig-caption'>
-            <FaEye onClick={showModalHandler} />
-            <h2 className='item-title' onClick={showModalHandler}> {title} </h2>
-            { infoModal && 
-              <InfoModal 
-                title = {title} 
-                message = {desc}
-                onConfirm = { infoModalHandler }
-              /> 
-            }
+            <div className='more-icons'>
+              <a href={imgUrl} target="_blank"><FaEye  /></a>
+              { demoUrl && <a href={demoUrl} target='_blank'><FaLink /></a> }
+              { codeUrl && <a href={codeUrl} target='_blank'><FaGit /></a> }
+            </div>
+            <h2 className='item-title'> {title} </h2>
         </figcaption>
     </figure>
   )

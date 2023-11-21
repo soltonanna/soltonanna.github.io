@@ -45,7 +45,13 @@ body {
 
     /* Main block with sections */
     main {
-        margin-left: 22rem;
+        width: 100%;
+        margin-left: 200px;
+
+        @include respond(tab-port) {
+            margin-left: 0;
+        }
+
         section {
             padding-top: 100px;
         }
