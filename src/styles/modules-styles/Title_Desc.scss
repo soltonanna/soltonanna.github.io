@@ -1,9 +1,5 @@
 .title {
-    font-family: 'Roboto Serif', serif;
-    font-weight: 800;
     word-spacing: 8px;
-    letter-spacing: 2px;
-    font-size: $title-font-size;
     margin-bottom: $margin-bottom-small;
 
     @include respond(phone) {
@@ -13,16 +9,7 @@
 }
 
 .description {
-    font-weight: 500;
-    line-height: 28px;
-    font-size: $desc-font-size;
     margin-bottom: $margin-bottom-big;
-    text-indent: 5px;
-
-    @include respond(phone) {
-        font-size: calc($desc-font-size + 0.5rem);
-        line-height: 25px;
-    }
 
     p {
         margin-bottom: 8px;

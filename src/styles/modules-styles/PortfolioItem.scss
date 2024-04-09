@@ -11,7 +11,7 @@
     max-height: 300px;
     min-height: 200px;
     border: 1px solid $main-color;
-
+    position: relative;
 
     &__img {
         position: relative;
@@ -28,20 +28,17 @@
     &__fig-caption {
         @include displayFlex(column, nowrap, center, center, center);
         justify-self: start;
-        opacity: 0;
         position: absolute;
-        padding: 15px;
-        height: 100%;
-        width: 100%;
-        top: auto; left: 0;
         color: $color-white;
-        bottom: 0;
+        padding: 15px;
+        width: 95%; 
+        height: 94%;
         z-index: 10;
-        transition: all 0.5s;
+        opacity: 0;
+        transition: opacity 0.5s;
         
         .item-title {
             cursor: pointer;
-            font-size: calc($button-font-size + 0.2rem);
         }
 
         .more-icons {
@@ -66,10 +63,8 @@
     
     &:hover &__fig-caption {
         opacity: 1;
-        background: rgba($main-color, .5);
-    }
-
-    &:hover &__img {
-        transform: scale(1.1);
+        background: rgba($main-color, 0.8);
+        
+        @include absCenter();
     }
 }

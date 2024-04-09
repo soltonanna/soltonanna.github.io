@@ -9,69 +9,86 @@ import Button from '../modules/Button.jsx';
 import { portfolioItems } from '../utils/portfolio-items.js';
 
 const Portfolio = () => {
-  const [portfolioList, sePortfolioList] = useState([]);
+  const [portfolioList, setPortfolioList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
+  const [loadMore, setLoadMore] = useState(false);
   
   useEffect(() => {
-    sePortfolioList(portfolioItems);
+    setPortfolioList(portfolioItems);
   }, []);
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   }
 
+  const loadMoreHandler = (event) => {
+    event.preventDefault();
+    setLoadMore(!loadMore);
+  }
+
   function getFilteredList() {
     if (!selectedCategory || selectedCategory === 'all') {
       return portfolioList;
     }
-    
+    setLoadMore(false);
     return portfolioList.filter((item) => item.category === selectedCategory);
+    
   }
-  var filteredList = useMemo(getFilteredList, [selectedCategory, portfolioList]);
+  let filteredList = useMemo(getFilteredList, [selectedCategory, portfolioList]);
 
   return (
     <section id='portfolio'>
       <Container className="portfolio">
         <Title_Desc 
           title="Portfolio"
-          desc="Allow me to showcase some of my works. Here, you can explore a collection of template examples, simple projects built with React or Vanilla JS, reusable modules, interactive animations, and small games. You can view the demo versions and access the corresponding source codes on my GitHub repositories."
+          desc="Let me present a selection of my projects. You'll find a variety of examples including template designs, projects crafted with React or Vanilla JS, reusable modules, interactive animations, small-scale games, and websites developed using WordPress. Feel free to explore the demo versions and access the corresponding source codes available on my GitHub repositories."
         />
-        <div className='filter-block' >
-          <Button onClick={handleCategoryChange} value='all' className='btn-1'>
-            All Categories
-          </Button>
-          <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
-            Apps
-          </Button>
-          <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
-            WordPress
-          </Button>
-          <Button onClick={handleCategoryChange} value='temp' className='btn-1'>
-            Templates
-          </Button>
-          <Button onClick={handleCategoryChange} value='games' className='btn-1'>
-            Games
-          </Button>
-          <Button onClick={handleCategoryChange} value='anime' className='btn-1'>
-            Animation
-          </Button>
+        <div className='for-mobile-view'>
+          <div className='filter-block' >
+            <Button onClick={handleCategoryChange} value='all' className='btn-1'>
+              All Categories
+            </Button>
+            <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
+              Apps
+            </Button>
+            <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
+              WordPress
+            </Button>
+            <Button onClick={handleCategoryChange} value='temp' className='btn-1'>
+              Templates
+            </Button>
+            <Button onClick={handleCategoryChange} value='games' className='btn-1'>
+              Games
+            </Button>
+            <Button onClick={handleCategoryChange} value='anime' className='btn-1'>
+              Animation
+            </Button>
+            
+          </div>
           
+          <div className={`items-block ${loadMore ? 'active' : ''}`}>
+            {
+              filteredList.length ? filteredList.map(item => {
+                return (
+                <PortfolioItem 
+                  key={item.id}
+                  imgUrl={item.imgUrl}
+                  title={item.name}
+                  demoUrl={item.demoUrl}
+                  codeUrl={item.codeUrl}
+                />);
+              }) : <p>No items yet...</p>
+            }
+          </div>
         </div>
+        {
+          filteredList.length > 6 && (
+            <Button className="load-more" onClick={loadMoreHandler}>
+             {!loadMore ? "Load More" : "Close" }
+            </Button>
+          )
+        }
         
-        <div className='items-block'>
-          {
-            filteredList.length ? filteredList.map(item => {
-              return (
-              <PortfolioItem 
-                key={item.id}
-                imgUrl={item.imgUrl}
-                title={item.name}
-                demoUrl={item.demoUrl}
-                codeUrl={item.codeUrl}
-              />);
-            }) : <p>No items yet...</p>
-          }
-        </div>
       </Container>
     </section>
   )

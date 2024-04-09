@@ -3,8 +3,8 @@ import React from 'react';
 const Title_Desc = ({title, desc}) => {
   return (
     <>
-        <h1 className='title'>{title}</h1>
-        <div className='description'>{desc}</div>
+        { title && <h2 className='title'>{title}</h2> }
+        { desc && <div className='description'>{desc}</div> }
     </>
   )
 }

@@ -50,20 +50,20 @@ const About = () => {
               star={true}
               starUrl={JsCertificate} />
             <ProgItem 
-              title="React JS"
+              title="React.js"
               url="https://reactjs.org/"
               star={true}
               starUrl={ReactCertificate} />
             <ProgItem 
-              title="HTML, HTML5"
+              title="HTML/HTML5"
               url="https://www.w3schools.com/html/" /> 
             <ProgItem 
-              title="CSS, CSS3"
+              title="CSS/CSS3"
               url="https://www.w3schools.com/css/" 
               star={true}
               starUrl={CssCertificate} /> 
             <ProgItem 
-              title="Sass, Less"
+              title="Sass/Less"
               url="https://sass-lang.com/" /> 
             <ProgItem 
               title="Bootstrap"
@@ -92,6 +92,9 @@ const About = () => {
               title="PHP"
               url="https://www.php.net/" />
             <ProgItem 
+              title="Node.js"
+              url="https://nodejs.org/docs/latest/api/" />
+            <ProgItem 
               title="MySQL"
               url="https://www.mysql.com/" />
             <ProgItem 
@@ -103,17 +106,16 @@ const About = () => {
             <ProgItem 
               title="Shopify"
               url="https://www.shopify.com/" />
-            <ProgItem 
-              title="Joomla!"
-              url="https://www.joomla.org/" /> 
 
-            <p>Development Tools Skills:</p>
+            <p>Version Controls:</p>
             <ProgItem 
               title="Git (Git GUI, GitHub)"
               url="https://git-scm.com/" />
             <ProgItem 
-              title="Jira"
-              url="https://www.atlassian.com/software/jira" />
+              title="Git Hooks (Husky)"
+              url="https://typicode.github.io/husky/#/" /> 
+
+            <p>Build Tools and Task Runners:</p>
             <ProgItem 
               title="Webpack"
               url="https://webpack.js.org/" />
@@ -126,13 +128,15 @@ const About = () => {
             <ProgItem 
               title="Airbnb"
               url="https://airbnb.io/javascript/react/" />
+
+            <p>Project Management:</p>
             <ProgItem 
-              title="Git Hooks (Husky)"
-              url="https://typicode.github.io/husky/#/" />  
+              title="Jira"
+              url="https://www.atlassian.com/software/jira" />
             
-            <br/><br/><br/>
+            <br/><br/>
             
-            <h2>Language Skills:</h2>
+            <h3>Language Skills:</h3>
             <ProgItem 
               title="English"
               url="#" />
@@ -141,6 +145,18 @@ const About = () => {
               url="#" />
             <ProgItem 
               title="Armenian"
+              url="#" />
+
+            <br/><br/>
+            <h3>Hobbies & Interests:</h3>
+            <ProgItem 
+              title="Reading"
+              url="#" />
+            <ProgItem 
+              title="Hiking / Mountain hiking"
+              url="#" />
+            <ProgItem 
+              title="Music / Movies"
               url="#" />
           </div>
         </div>

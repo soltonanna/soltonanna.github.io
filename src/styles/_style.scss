@@ -6,30 +6,14 @@
     box-sizing: inherit;
 }
 
-html {
-    font-size: 62.5%;
-
-    @include respond(tab-land) {
-        font-size: 56.25%; 
-    }
-
-    @include respond(tab-port) {
-        font-size: 50%;
-    }
-    
-    @include respond(big-desktop) {
-        font-size: 75%; 
-    }
-}
-
 body {
     overflow-x: hidden;
     box-sizing: border-box;
-    background-color: #100e17;
-    color: $color-white;
+    background-color: $color-white; //#100e17
+    color: $color-black;
 
     font-family: 'Roboto', sans-serif;
-    font-size: $default-font-size;
+    font-size: var(--paragraph-font-size);
     font-weight: 400;
 }
 
@@ -46,33 +30,36 @@ body {
     /* Main block with sections */
     main {
         width: 100%;
-        margin-left: 200px;
+        margin-left: 100px;
 
         @include respond(tab-port) {
-            margin-left: 0;
+            margin: 0 auto;
+            width: 100%;
         }
 
         section {
-            padding-top: 100px;
+            @include displayFlex(column, nowrap, center, center, center);
+            padding: 2rem 0;
+            min-height: 100vh;
+
+            @include respond(tab-port) {
+                min-height: max-content;
+                padding: 2rem 0 0;
+            }
         }
         
         #main-info {
             @include displayFlex(row, nowrap, center, center, center);
-        
-            min-height: 97vh;
             position: relative;
             background: url('./media/Homepage_back_5.jpg') no-repeat center bottom;
             background-size: cover;
             transition: all 1.5s;
             
             @include respond(tab-port) {
+                @include displayFlex(row, nowrap, flex-start, flex-start, flex-start);
                 clip-path: none;
-                height: 50vh;
-            }
-
-            @include respond(phone) {
-                height: 85vh;
-                padding: 25rem 0 15rem;
+                min-height: 45vh;
+                padding-top: 120px;
             }
 
             &:after {
@@ -85,86 +72,51 @@ body {
             }
 
             .main-info {
-                @include displayFlex(row, nowrap, center, space-around, center);
+                @include displayFlex(row, nowrap, center, flex-end, center);
 
-                @include respond(phone) {
-                    @include displayFlex(column-reverse, nowrap, center, center, center);
+                @include respond(tab-port) {
+                    @include displayFlex(row, nowrap, flex-start, flex-start, flex-start);
                 }
 
                 & > div:nth-child(1) {
-                    width: 90%;
-                }
-
-                .chat-button {
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                    border-bottom-right-radius: 20px;
-                    border-bottom-left-radius: 0px;
+                    width: max-content;
                 }
                 
-                .title {
-                    font-size: calc($title-font-size + 0.5rem);
+                h1 {
+                    color: $color-white;
                 }
-                .description {
-                    font-family: 'Roboto Serif', serif;
+
+                .position {
                     word-spacing: 5px;
-                    font-size: $main-desc-font-size;
-                }
-
-                .typewriter {
-                    position: relative;
-                    display: table;
-                    &:after {
-                        content: '|';
-                        position: absolute;
-                        right: 0;
-                        color: $color-white;
-                        background-color: $dark-transparent9;
-                        width: 100%;
-                        animation:  typing 3s steps(25) alternate infinite;
-                    }
-                    @keyframes typing {
-                        to {
-                            width: 0%;
-                        }
-                    }
-                }
-                
-                .personal-image {
-                    border-radius: 50%;
-                    border: 15px solid $dark-transparent9;
-                    width: 350px; height: 300px;
-                    background: url('./media/personal_photo.jpg') 100% 50% no-repeat;
-                    background-size: 110%;
-                    display: none;
-                    
-                    @include respond(tab-land) {
-                        width: 225px;
-                        height: 225px;
-                    }
+                    color: $color-white;
+                    font-family: "Merienda", cursive;
+                    margin: $margin-bottom-medium 0;
+                    font-size: var(--h3-font-size);
                 }
             }
-            
         }
 
         #about {
             .about {
                 @include displayFlex(row, nowrap, center,  space-between, stretch);
 
+                @include respond(tab-port) {
+                    @include displayFlex(column, nowrap, center,  center, center);
+                    width: 100%;
+                }
+
                 & > div {
                     width: 47%;
 
-                    @include respond(phone) {
+                    @include respond(tab-port) {
                         width: 100%;
                     }
                 }
 
                 .about-text {
-                    p {
-                        font-size: 18px;
-                    }
+
                     a {
-                        color: #fff;
+                        color: $color-black;
 
                         &:hover {
                             color: #06799F;
@@ -188,8 +140,9 @@ body {
             .skills {
                 @include displayFlex(row, nowrap, center, space-between, flex-start);
                 
-                @include respond(phone) {
+                @include respond(tab-port) {
                     @include displayFlex(column, nowrap, center, space-between, flex-start);
+                    width: 100%;
                 }
 
                 & > div {
@@ -205,7 +158,7 @@ body {
                     font-weight: 400;
                     letter-spacing: 1px;
                     margin-top: 40px;
-                    color: $color-white;
+                    color: $color-black;
                 }
                 
             }
@@ -214,6 +167,10 @@ body {
         #experience {
             .experience {
                 @include displayFlex(column, nowrap, center, space-between, flex-start);
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
 
                 .education,
                 .work-experience {
@@ -233,43 +190,79 @@ body {
 
         #portfolio {
             .portfolio {
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
+                .for-mobile-view {
+                    @include respond(tab-port) {
+                        @include displayGrid(1fr 2.5fr, 1fr, start, start, stretch, stretch);
+                        column-gap: 24px;
+                    }
+                }
+
                 .filter-block {
                     @include displayFlex(row, nowrap, center, space-between, center);
                     margin-bottom: $margin-bottom-medium;
+
+                    @include respond(tab-port) {
+                        @include displayFlex(column, nowrap, flex-start, flex-start, flex-start);
+                        width: max-content;
+                    }
                     
                     .button {
-                        margin: 0 0 2rem;
                         width: 15rem;
+                        margin: 0 0 2rem;
                         padding: 1rem 2rem;
+                        color: $color-black;
                         background-color: rgba($main-color-light, 0.1);
 
-                        @include respond(phone) {
+                        @include respond(tab-port) {
                             width: 100%;
+                            margin: 0 0 10px;
                         }
-                    }
-                    @include respond(phone) {
-                        @include displayFlex(column, nowrap, center, space-between, center);
                     }
                 }
                 .items-block {
+                    margin-bottom: $margin-bottom-medium;
                     column-count: 3;
                     column-gap: 10px;
+                    max-height: 625px;
+                    overflow: hidden;
+
+                    @include respond(tab-port) {
+                        column-count: 2;
+                        column-gap: 5px;
+                        row-gap: 10px;
+                    }
 
                     @include respond(phone) {
                         column-count: 1;
                     }
 
+                    &.active {
+                        max-height: max-content;
+                        overflow: visible;
+                    }
+
                     p {
                         text-align: center;
-                        font-size: $desc-font-size;
                         width: 100%;
                     }
+                }
+                .load-more {
+                    margin: 1.5rem auto $margin-bottom-medium;
+                    display: block;
                 }
             }
         }
 
         #blog {
             .blog { 
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
                 .blog-items {
                     column-count: 3;
                     column-gap: 10px;
@@ -287,10 +280,82 @@ body {
                 }
             }
         }
+
+        #reviews {
+            .reviews {
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
+                .splide {
+                    .splide__arrows {
+
+                    }
+                    .splide__track {
+                        ul.splide__list {
+                            li.splide__slide {
+                                @include displayFlex(row, nowrap, center, space-between, center);
+                                background-color: rgba($main-color-light, 0.1);
+                                padding: 5rem;
+                                gap: 2rem;
+
+                                @include respond(phone) {
+                                    @include displayFlex(column, nowrap, flex-start, flex-start, flex-start);
+                                    text-align: center;
+                                    padding: 2rem 5rem ;
+                                }
+                                &.is-active {
+                                    
+                                }
+
+                                img {
+                                    max-width: 150px;
+                                    height: 150px;
+                                    border-radius: 50%;
+                                    object-fit: cover;
+
+                                    @include respond(phone) {
+                                        margin: 0 auto;
+                                    }
+                                }
+                                .review-text {
+                                    & > div {
+                                        margin-bottom: $margin-bottom-small;
+                                        width: 90%;
+
+                                        @include respond(phone) {
+                                            width: 90%;
+                                        }
+                                    }
+                                    h5 {
+                                        margin-bottom: 0.2rem;
+                                    }
+                                    & > p {
+                                        font-style: italic;
+                                        color: $main-color;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                    .splide__pagination {
+                        .splide__pagination__page {
+                            background: $color-gray;
+
+                            &.is-active {
+                                background: $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         
         #contact {
             background: url('./media/map-color-overlay.png') no-repeat center;
+            background-color: $color-black;
             background-size: contain;
+            min-height: max-content;
 
             .contact {                  
                 &__block {
@@ -312,6 +377,9 @@ body {
     
                             @include respond(tab-land) {
                                 width: 90%;
+                            }
+                            @include respond(tab-port) {
+                                width: 100%;
                             }
 
                             &:hover svg {
@@ -347,8 +415,7 @@ body {
     footer {
         .footer {
             @include displayFlex(row, nowrap, center, space-between, center);
-            color: $color-white;
-            font-size: 12px;
+            color: $color-black;
             line-height: 22px;
         }
     }

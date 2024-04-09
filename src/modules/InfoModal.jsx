@@ -17,7 +17,7 @@ const ModalBackdrop = (props) => {
                     <div> { props.message } </div>
                 </main>
                 <footer>
-                    <Button onClick = { props.onConfirm } className='btn-1'>Ok</Button>
+                    <Button onClick={ props.onConfirm } className='btn-1'>Ok</Button>
                 </footer>
             </div>
         </div>

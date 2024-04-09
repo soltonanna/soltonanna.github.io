@@ -4,21 +4,20 @@ import {
     MinesGame,
     NaturesSpa,
     AnimatedBlocks,
-    BlogPosts,
-    Volterman,
     Maldek,
-    Hven,
     VStepanyan,
     Jtrain,
     Byrobynblair,
     VenutiMyoka,
     TKT,
+    Prosky,
+    EllenNielsen,
     ArmeniansUnified,
+    AmericanSavings,
     Weather,
     BeerStore,
     Recipes,
     FoodOrder,
-    AddCartRedux,
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -28,7 +27,7 @@ const demoUrl = 'https://soltonanna.github.io/';
 export const portfolioItems = [
     // Games
     {
-        id: `p_1`,
+        id: `p_g1`,
         category: 'games',
         name: 'Pig Game',
         codeUrl: `${codeUrl}pig_game`,
@@ -36,16 +35,24 @@ export const portfolioItems = [
         imgUrl: PigGame
     },
     {
-        id: `p_2`,
+        id: `p_g2`,
         category: 'games',
         name: 'Mines',
         codeUrl: `${codeUrl}mines_game`,
         demoUrl: `${demoUrl}mines_game/`,
         imgUrl: MinesGame
     },
+    {
+        id: `p_g3`,
+        category: 'games',
+        name: 'Guess number',
+        codeUrl: `${codeUrl}guess-my-number`,
+        demoUrl: `${demoUrl}guess-my-number/`,
+        imgUrl: GuessNumberGame
+    },
     // Templates
     {
-        id: `p_3`,
+        id: `p_t1`,
         category: 'temp',
         name: 'Natures',
         codeUrl: `${codeUrl}natures`,
@@ -54,7 +61,7 @@ export const portfolioItems = [
     },
     //Animations
     {
-        id: `p_4`,
+        id: `p_a1`,
         category: 'anime',
         name: 'Animated blocks',
         codeUrl: `${codeUrl}animated-blocks`,
@@ -63,57 +70,78 @@ export const portfolioItems = [
     },
     // Wordpress Sites
     {
-        id: `p_5`,
+        id: `p_w1`,
         category: 'wps',
         name: 'Vahagn Stepanyan',
         demoUrl: `https://vahagnstepanyan.com/`,
         imgUrl: VStepanyan
     },
     {
-        id: `p_6`,
+        id: `p_w2`,
         category: 'wps',
         name: 'Jtrain',
         demoUrl: `https://jtrainwellness.com/`,
         imgUrl: Jtrain
     },
     {
-        id: `p_7`,
+        id: `p_w3`,
         category: 'wps',
         name: 'Maldek',
         demoUrl: `https://maldeks.org/`,
         imgUrl: Maldek
     },
     {
-        id: `p_9`,
+        id: `p_w4`,
+        category: 'wps',
+        name: 'American Savings Loans',
+        demoUrl: `https://americansavingsloans.com/`,
+        imgUrl: AmericanSavings
+    },
+    {
+        id: `p_w5`,
         category: 'wps',
         name: 'Byrobynblair',
         demoUrl: `https://byrobynblair.com/`,
         imgUrl: Byrobynblair
     },
     {
-        id:`p_10`,
+        id:`p_w6`,
         category: 'wps',
         name: 'VenutiMyoka',
         demoUrl: `https://venutimayoka.com/`,
         imgUrl: VenutiMyoka
     },
     {
-        id:`p_11`,
+        id:`p_w7`,
         category: 'wps',
         name: 'Trager, Kevy & Trager Group',
         demoUrl: `http://tktcpa.com/`,
         imgUrl: TKT
     },
     {
-        id: `p_12`,
+        id: `p_w8`,
         category: 'wps',
         name: 'ArmeniansUnified',
         demoUrl: `https://armeniansunified.org/`,
         imgUrl: ArmeniansUnified
     },
+    {
+        id: `p_w9`,
+        category: 'wps',
+        name: 'Prosky & Rosenfeld CPA',
+        demoUrl: `https://prcpallp.com/`,
+        imgUrl: Prosky
+    },
+    {
+        id: `p_w10`,
+        category: 'wps',
+        name: 'Ellen Nielsen',
+        demoUrl: `https://en-enterprises.com/`,
+        imgUrl: EllenNielsen
+    },
     // React Apps
     {
-        id: `p_15`,
+        id: `p_r1`,
         category: 'apps',
         name: 'Recipes App',
         codeUrl: `${codeUrl}recipes`,
@@ -121,7 +149,7 @@ export const portfolioItems = [
         imgUrl: Recipes
     },
     {
-        id: `p_14`,
+        id: `p_r2`,
         category: 'apps',
         name: 'Beer Store',
         codeUrl: `${codeUrl}beer-store-app`,
@@ -129,7 +157,7 @@ export const portfolioItems = [
         imgUrl: BeerStore
     },
     {
-        id: `p_16`,
+        id: `p_r3`,
         category: 'apps',
         name: 'Food Order App',
         codeUrl: `${codeUrl}food-order`,
@@ -137,7 +165,7 @@ export const portfolioItems = [
         imgUrl: FoodOrder
     },
     {
-        id: `p_13`,
+        id: `p_r4`,
         category: 'apps',
         name: 'Weather',
         codeUrl: `${codeUrl}weather`,
@@ -145,144 +173,3 @@ export const portfolioItems = [
         imgUrl: Weather
     },
 ];
-
-export const portfolioItemsOld = [
-    {
-        id: `p_1`,
-        category: 'games',
-        name: 'Guess number',
-        codeUrl: `${codeUrl}guess-my-number`,
-        demoUrl: `${demoUrl}guess-my-number/`,
-        imgUrl: GuessNumberGame
-    },
-    {
-        id: `p_2`,
-        category: 'games',
-        name: 'Pig Game',
-        codeUrl: `${codeUrl}pig_game`,
-        demoUrl: `${demoUrl}pig_game/`,
-        imgUrl: PigGame
-    },
-    {
-        id: `p_3`,
-        category: 'games',
-        name: 'Mines',
-        codeUrl: `${codeUrl}mines_game`,
-        demoUrl: `${demoUrl}mines_game/`,
-        imgUrl: MinesGame
-    },
-    {
-        id: `p_4`,
-        category: 'temp',
-        name: 'Natures',
-        codeUrl: `${codeUrl}natures`,
-        demoUrl: `${demoUrl}natures/`,
-        imgUrl: NaturesSpa
-    },
-    {
-        id: `p_5`,
-        category: 'anime',
-        name: 'Animated blocks',
-        codeUrl: `${codeUrl}animated-blocks`,
-        demoUrl: `${demoUrl}animated-blocks/`,
-        imgUrl: AnimatedBlocks
-    },
-    {
-        id: `p_7`,
-        category: 'apps',
-        name: 'Blog Posts',
-        codeUrl: `${codeUrl}blog-posts`,
-        demoUrl: `${demoUrl}blog-posts/`,
-        imgUrl: BlogPosts
-    },
-    {
-        id: `p_8`,
-        category: 'wps',
-        name: 'Volterman',
-        demoUrl: `https://volterman.com/`,
-        imgUrl: Volterman
-    },
-    {
-        id: `p_9`,
-        category: 'wps',
-        name: 'Maldek',
-        demoUrl: `https://maldeks.org/`,
-        imgUrl: Maldek
-    },
-    {
-        id: `p_11`,
-        category: 'wps',
-        name: 'HVEN',
-        demoUrl: `http://www.hven.am/`,
-        imgUrl: Hven
-    },
-    {
-        id: `p_12`,
-        category: 'apps',
-        name: 'Weather',
-        codeUrl: `${codeUrl}weather`,
-        demoUrl: `${demoUrl}weather/`,
-        imgUrl: Weather
-    },
-    {
-        id: `p_13`,
-        category: 'apps',
-        name: 'Beer Store',
-        codeUrl: `${codeUrl}beer-store-app`,
-        demoUrl: `${demoUrl}beer-store-app/`,
-        imgUrl: BeerStore
-    },
-    {
-        id: `p_14`,
-        category: 'apps',
-        name: 'Recipes App',
-        codeUrl: `${codeUrl}recipes`,
-        demoUrl: `${demoUrl}recipes/`,
-        imgUrl: Recipes
-    },
-    {
-        id: `p_15`,
-        category: 'apps',
-        name: 'Food Order App',
-        codeUrl: `${codeUrl}food-order`,
-        demoUrl: `${demoUrl}food-order/`,
-        imgUrl: FoodOrder
-    },
-    {
-        id: `p_16`,
-        category: 'apps',
-        name: 'Add to Cart - Redux',
-        codeUrl: `${codeUrl}add-to-cart-redux`,
-        demoUrl: `${demoUrl}add-to-cart-redux/`,
-        imgUrl: AddCartRedux
-    },
-    {
-        id: `p_17`,
-        category: 'wps',
-        name: 'Vahagn Stepanyan',
-        demoUrl: `https://vahagnstepanyan.com/`,
-        imgUrl: VStepanyan
-    },
-    {
-        id: `p_18`,
-        category: 'wps',
-        name: 'Jtrain',
-        demoUrl: `https://jtrainwellness.com/`,
-        imgUrl: Jtrain
-    },
-    {
-        id: `p_19`,
-        category: 'wps',
-        name: 'Byrobynblair',
-        demoUrl: `https://byrobynblair.com/`,
-        imgUrl: Byrobynblair
-    }
-    ,
-    {
-        id: `p_20`,
-        category: 'wps',
-        name: 'ArmeniansUnified',
-        demoUrl: `https://armeniansunified.org/`,
-        imgUrl: ArmeniansUnified
-    }
-]

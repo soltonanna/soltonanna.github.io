@@ -1,16 +1,130 @@
-@font-face {
-    font-family: 'Amsterdam';
-    src: url('fonts/Amsterdam.woff2') format('woff2');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&family=Roboto:wght@400;500;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Code+Pro:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Serif', serif;
-
-font-family: 'Righteous', cursive;
-font-family: 'Source Code Pro', monospace;
+font-family: "Merienda", cursive;
 */
+
+
+:root {
+    --h1-font-size: 5rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 1.5rem;
+
+    --subtitle-font-size: 1.25rem;
+    --paragraph-font-size: 1.1rem;
+    --link-font-size: 1.1rem;
+    --button-font-size: 1.1rem;
+}
+
+@include respond(tab-port) {
+    :root {
+        --h1-font-size: 4rem;
+        --h2-font-size: 2.3rem;
+        --h3-font-size: 1.2rem;
+    
+        --subtitle-font-size: 1.1rem;
+        --paragraph-font-size: 1rem;
+        --link-font-size: 1rem;
+        --button-font-size: 1rem;
+    }
+}
+
+@include respond(phone) {
+    :root {
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.1rem;
+    
+        --subtitle-font-size: 1rem;
+        --paragraph-font-size: 0.85rem;
+        --link-font-size: 0.85rem;
+        --button-font-size: 0.85rem;
+    }
+}
+
+h1 {
+    font-family: "Merienda", cursive;
+    font-size: var(--h1-font-size);
+    line-height: 67px;
+    font-weight: 700;
+    font-style: normal;
+
+    @include respond(tab-port) {
+        line-height: 38px;
+    }
+    @include respond(phone) {
+        line-height: normal;
+    }
+}
+
+h2 {
+    font-family: "Merienda", cursive;
+    font-size: var(--h2-font-size);
+    line-height: 48px;
+    font-weight: 600;
+    font-style: normal;
+
+    @include respond(tab-port) {
+        line-height: 38px;
+    }
+    @include respond(phone) {
+        line-height: normal;
+    }
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--h3-font-size);
+    line-height: 35px;
+    font-weight: 600;
+    font-style: normal;
+
+    @include respond(tab-port) {
+        line-height: 30px;
+    }
+    @include respond(phone) {
+        line-height: normal;
+    }
+}
+
+p, div, input, textarea, select {
+    font-size: var(--paragraph-font-size);
+    line-height: 25px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+
+    @include respond(tab-port) {
+        line-height: 22px;
+    }
+    @include respond(phone) {
+        line-height: normal;
+    }
+}
+
+.subtitle {
+    font-size: var(--subtitle-font-size);
+    line-height: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-size: var(--link-font-size);
+    line-height: 25px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+
+    @include respond(tab-port) {
+        line-height: 22px;
+    }
+    @include respond(phone) {
+        line-height: normal;
+    }
+}

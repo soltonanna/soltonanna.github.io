@@ -17,6 +17,9 @@
     "@babel/polyfill": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
+    "@fortawesome/fontawesome-svg-core": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@fortawesome/react-fontawesome": "latest",
     "babel-loader": "latest",
     "css-loader": "latest",
     "gh-pages": "latest",
@@ -42,5 +45,8 @@
     "webpack": "latest",
     "webpack-cli": "latest",
     "webpack-dev-server": "latest"
+  },
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.12"
   }
 }

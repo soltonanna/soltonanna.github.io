@@ -20,7 +20,7 @@ const CardViewImg = ({title, imgUrl, date, desc, moreDesc}) => {
     <div className='card-view-img'>
         <div className='card-view-img__header'>
             <img className='cv-image' src={imgUrl} alt={title} />
-            <p className='cv-title'> {title} </p>
+            <p className='cv-title subtitle'> {title} </p>
         </div>
         <div className='card-view-img__date'> 
           Post on <span>{date}</span> by <span>S.Anahit</span> 

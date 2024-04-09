@@ -8,13 +8,10 @@ const MainInfo = () => {
     <section id="main-info">
       <Container className="main-info">
         <div>
-          <Title_Desc 
-            title="Hi! I'm Sultanova Anahit"
-            desc="Front-end Web developer"
-          />
+          <h1>Sultanova Anahit</h1>
+          <div className='position'>I'm a Front-end, Web developer</div>
           <SocialIcons />
         </div>
-        <div className='personal-image'></div>
       </Container>
     </section>
   )

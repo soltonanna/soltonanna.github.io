@@ -14,7 +14,7 @@ const Navbar = () => {
       const scrollY = window.scrollY;
 
       // Calculate which section is currently in view
-      const sections = ['main-info', 'about', 'experience', 'portfolio', 'blog', 'contact'];
+      const sections = ['main-info', 'about', 'experience', 'portfolio', 'reviews', 'blog', 'contact'];
       let newActiveItem = activeItem;
 
       sections.forEach((section) => {
@@ -47,22 +47,27 @@ const Navbar = () => {
       <ul className="nav-menu">
         <li className={activeItem === 'main-info' ? 'nav-item active' : 'nav-item'}>
           <Link to="main-info" spy={true} smooth={true} duration={800}>
-            Main Info
+            Home
           </Link>
         </li>
         <li className={activeItem === 'about' ? 'nav-item active' : 'nav-item'}>
           <Link to="about" spy={true} smooth={true} duration={800}>
-            About
+            About Me
           </Link>
         </li>
         <li className={activeItem === 'experience' ? 'nav-item active' : 'nav-item'}>
           <Link to="experience" spy={true} smooth={true} duration={800}>
-            Experience
+            Resume
           </Link>
         </li>
         <li className={activeItem === 'portfolio' ? 'nav-item active' : 'nav-item'}>
           <Link to="portfolio" spy={true} smooth={true} duration={800}>
             Portfolio
+          </Link>
+        </li>
+        <li className={activeItem === 'reviews' ? 'nav-item active' : 'nav-item'}>
+          <Link to="reviews" spy={true} smooth={true} duration={800}>
+            Reviews
           </Link>
         </li>
         <li className={activeItem === 'blog' ? 'nav-item active' : 'nav-item'}>

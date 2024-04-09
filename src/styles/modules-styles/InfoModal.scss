@@ -55,10 +55,7 @@
         }
 
         p, li {
-            line-height: 27px;
             margin-bottom: 10px;
-            text-indent: 10px;
-            font-size: calc($desc-font-size + 0.1rem);
         }
 
         a {
@@ -79,7 +76,6 @@
         span {
             font-family: 'Source Code Pro';
             color: $main-color-light;
-            font-size: calc($desc-font-size + 0.2rem);
             font-weight: 900;
         }
         code {

@@ -1,16 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SocialIcons from '../modules/SocialIcons.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Navbar from './Navbar.jsx';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
-const Header = (props) => {
+const Header = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <>
       <header>
-          <div className="header-content for-desktop">
+          <div className={`header-content for-desktop ${isMobileMenuOpen ? 'visible' : 'hidden'}`}>
             <div className="main-title-block">
-              <div className="main-title">Anahit Sultanova</div>
-              <p className='main-role'>Front-end Web developer</p>
+              <h3 className="main-title">Sultanova Anahit</h3>
+              <p className='main-role'>Front-end, Web developer</p>
               <SocialIcons />
             </div>
 
@@ -19,24 +27,18 @@ const Header = (props) => {
             <SocialIcons />
 
             <div className="copyrights">
-              All right reserved - S.Anahit ©2023. <br /><br />
-              Last update: 26/10/2023
+              All right reserved - S.Anahit ©2024. <br /><br />
+              Last update: 10/04/2024
             </div>
           </div>
 
-          <div className="header-content for-mobile">
-            <div className="mobile-logo-container">
-              <div className="mobile-header-image">
-                <a href="#">
-                    
-                </a>
-              </div>
-              <div className="mobile-site-title"><a href="#">Alex Smith</a></div>
-            </div>
-
-            <a className="menu-toggle mobile-visible">
-              <i className="fa fa-bars"></i>
-            </a>
+          <div className={`header-content for-mobile container`}>
+              <h3><span>Sultanova Anahit</span> / Front-end, Web developer</h3>
+              <button className="menu-toggle mobile-visible" onClick={toggleMobileMenu}>
+                {isMobileMenuOpen ? 
+                <FaTimes size={30} className="icon" /> : 
+                <FaBars size={30} className="icon" />}
+              </button>
           </div>
       </header>
     </>

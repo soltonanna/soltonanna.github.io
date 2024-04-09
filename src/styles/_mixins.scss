@@ -36,6 +36,17 @@
     align-items: $flAAtimes;
 }
 
+@mixin displayGrid($templateCol, $templateRow, $flAAtimes, $flJContent, $flAContent, $flJItems) {
+    display: grid; 
+    grid-template-columns: $templateCol; 
+    grid-template-rows: $templateRow; 
+
+    align-content: $flAAtimes;
+    justify-content: $flJContent;
+    align-items: $flAContent;
+    justify-items: $flJItems;
+}
+
 @mixin fonts($color, $size, $weight, $line-height, $decor) {
     color: $color;
     font-size: $size;

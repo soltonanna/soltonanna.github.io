@@ -1,26 +1,35 @@
 /** Portfolio Images */
-import GuessNumberGame from '../media/portfolio/GuessNumberGame.jpg';
-import PigGame from '../media/portfolio/PigGame.jpg';
-import MinesGame from '../media/portfolio/MinesGame.jpg';
-import NaturesSpa from '../media/portfolio/NaturesSpa.jpg';
-import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
-//import CountDownTimer from '../media/portfolio/CountDownTimer.jpg';
-import BlogPosts from '../media/portfolio/PostsPage.jpg';
-import Volterman from '../media/portfolio/Volterman.jpg';
-import Maldek from '../media/portfolio/Maldek.jpg';
-import Hven from '../media/portfolio/Hven.jpg';
-import VStepanyan from '../media/portfolio/VahagnStepanyan.jpg';
-import Jtrain from '../media/portfolio/Jtrainwellness.jpg';
-import Byrobynblair from '../media/portfolio/byrobinblair.jpg';
-import VenutiMyoka from '../media/portfolio/VenutiMyoka.jpg';
-import TKT from '../media/portfolio/TKT.jpg';
-import ArmeniansUnified from '../media/portfolio/armeniansunified.jpg';
+/** WP */
+import Maldek from '../media/portfolio/wp/Maldek.jpg';
+import Hven from '../media/portfolio/wp/Hven.jpg';
+import VStepanyan from '../media/portfolio/wp/VahagnStepanyan.jpg';
+import Jtrain from '../media/portfolio/wp/Jtrainwellness.jpg';
+import Byrobynblair from '../media/portfolio/wp/byrobinblair.jpg';
+import VenutiMyoka from '../media/portfolio/wp/VenutiMyoka.jpg';
+import TKT from '../media/portfolio/wp/TKT.jpg';
+import ArmeniansUnified from '../media/portfolio/wp/armeniansunified.jpg';
+import AmericanSavings from '../media/portfolio/wp/american-savings.jpg';
+import Prosky from '../media/portfolio/wp/prosky.jpg';
+import EllenNielsen from '../media/portfolio/wp/EllenNielsen.jpg';
 
-import Weather from '../media/portfolio/WeatherApp.jpg';
-import BeerStore from '../media/portfolio/BeerStore.jpg';
-import Recipes from '../media/portfolio/Recipes.jpg';
-import FoodOrder from '../media/portfolio/FoodOrder.jpg';
-import AddCartRedux from '../media/portfolio/Add-to-Cart-Redux.jpg';
+/** GAMES */
+import GuessNumberGame from '../media/portfolio/games/GuessNumberGame.jpg';
+import PigGame from '../media/portfolio/games/PigGame.jpg';
+import MinesGame from '../media/portfolio/games/MinesGame.jpg';
+
+/** APPS */
+import BlogPosts from '../media/portfolio/apps/PostsPage.jpg';
+import Weather from '../media/portfolio/apps/WeatherApp.jpg';
+import BeerStore from '../media/portfolio/apps/BeerStore.jpg';
+import Recipes from '../media/portfolio/apps/Recipes.jpg';
+import FoodOrder from '../media/portfolio/apps/FoodOrder.jpg';
+import AddCartRedux from '../media/portfolio/apps/Add-to-Cart-Redux.jpg';
+
+/** Animations */
+import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
+
+/** Templates */
+import NaturesSpa from '../media/portfolio/NaturesSpa.jpg';
 
 /* PDF*/
 import CssCertificate from '../media/pdf/AdvancedCSS_Certificate.pdf';
@@ -34,9 +43,7 @@ export {
     MinesGame,
     NaturesSpa,
     AnimatedBlocks,
-    //CountDownTimer,
     BlogPosts,
-    Volterman,
     Maldek, 
     Hven,
     VStepanyan,
@@ -44,7 +51,10 @@ export {
     Byrobynblair,
     VenutiMyoka,
     TKT,
+    Prosky,
+    EllenNielsen,
     ArmeniansUnified,
+    AmericanSavings,
     Weather,
     BeerStore,
     Recipes,

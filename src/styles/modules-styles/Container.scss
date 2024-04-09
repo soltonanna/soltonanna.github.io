@@ -4,13 +4,19 @@
     z-index: 1;
     width: 65vw;
     max-width: 1800px;
-    margin-bottom: $margin-bottom-big;
+
 
     @include respond(tab-land) {
-        width: 80vw;
+        width: 80%;
     }
 
     @include respond(tab-port) {
-        width: 95vw;
+        width: 95%;
+        padding: 1.5rem 2.5rem;
+    }
+
+    @include respond(tab-port) {
+        width: 99%;
+        padding: 1rem 1.5rem;
     }
 }

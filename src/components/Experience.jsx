@@ -16,7 +16,11 @@ function Experience() {
               place='Brainstormtech'
               placeUrl='https://brainstormtech.io/'
               date='Jun 2023 - Present'
-              desc='Working as fullstack web developer' 
+              desc="I've developed 5 WordPress projects from inception to completion and provided support
+              for an additional 6 projects..." 
+              fullDesc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects, involving customization, new features and troubleshooting.
+              Adept at optimizing website performance, successfully elevating page load scores from
+              >50% to 95% and more through meticulous enhancements."
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
@@ -34,66 +38,77 @@ function Experience() {
             />
 
             <CardView 
-              title='Freelancer'
+              title='Web Developer, Front-end developer'
               place='Freelance'
               placeUrl=''
               date='Sep 2022 - Present'
-              desc='Working as front-end React developer' 
+              desc="I've independently developed 4 WordPress websites while contributing to a significant
+              React JS application..."
+              fullDesc="I've independently developed 4 WordPress websites while contributing to a significant React JS application, where I've been implemented new features and resolved bugs to enhance functionality."
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>I collaborating with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> to enhance their existing product known as "UNDP." My work involved identifying areas for improvement, and implementing React-based solutions to enhance its functionality and user experience.</li>
-                    <li>Additionally, I engaged in several freelance projects, all centered around React development. My responsibilities included building user interfaces, handling state management, and ensuring the seamless flow of data within the applications.</li>
+                    <li>I collaborating with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> to enhance their existing product known as "UNDP." My work involved identifying areas for improvement, and implementing ReactJS-based solutions to enhance its functionality and user experience.</li>
+                    <li>Additionally, I engaged in several freelance projects, all centered around ReactJS development. My responsibilities included building user interfaces, handling state management, and ensuring the seamless flow of data within the applications.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
-                  <p>React, AntDesign, HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, REST APIs, webpack, Git, etc. </p>
+                  <p>ReactJS, AntDesign, HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, REST APIs, webpack, Git, etc. </p>
                 </>
               }
             />
+
             <CardView 
-              title='Frontend Web Developer'
+              title='Front-end developer'
               place='BetInspire'
               placeUrl='https://www.betinspire.com/'
               date='Apr 2022 - Aug 2022 · 4 month'
-              desc='Changing and improving of existing platform functionality, development web sites frontend, bug fixes, adding the new features.'
+              desc="I've been responsible for changing and improving existing platform functionality, developing website frontend, conducting bug fixes, and adding new features."
             />
+
             <CardView 
               title='Professional development'
               place='Career Break'
               placeUrl=''
               date='Jan 2022 - Apr 2022 · 4 month'
-              desc='Continued improved front-end skills. Decided get deep knowledge exactly on front-end. Want to continue my career particular in JavaScript and React JS.'
+              desc="During my career break, I concentrated on honing my frontend skills. I enrolled in a course on Udemy..."
+              fullDesc="During my career break, I concentrated on honing my frontend skills. I enrolled in a course on Udemy, where I focused on advancing my proficiency in JavaScript and React, as well as strengthening my grasp of fundamental frontend concepts. "
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Got new course from Udemy for improve my skills: <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/' target='_blank'>React - The Complete Guide (incl Hooks, React Router, Redux);</a> 
+                    <li>I completed the course <a href='https://www.udemy.com/course/the-complete-javascript-course/' target='_blank'>"The Complete JavaScript Course 2024: From Zero to Expert!" on Udemy to enhance my skills on full JavaScript;</a> 
+                    </li>
+                    <li>I completed the course <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/' target='_blank'>"ReactJS - The Complete Guide (incl Hooks, React Router, Redux)" on Udemy to enhance my skills on ReactJS;</a> 
+                    </li>
+                    <li>I completed the course <a href='https://www.udemy.com/course/advanced-css-and-sass/?couponCode=ACCAGE0923' target='_blank'>"Advanced CSS and Sass: Flexbox, Grid, Animations and More!" on Udemy to enhance my skills;</a> 
                     </li>
                     <li>Developed some SPA and small projects with HTML, CSS, Vanilla JS and React (can see them on Portfolio section).</li>
                     <li>Researched and monitored technologies and best practices for code standards. Watched videos, read documentations and researched forums.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
-                  <p>HTML/HTML5, CSS/CSS3, Sass, Bootstrap, JavaScript, React, REST APIs, webpack, Git, etc. </p>
+                  <p>HTML/HTML5, CSS/CSS3, Sass, Bootstrap, JavaScript, React, Redux, REST APIs, webpack, Git, etc. </p>
                 </>
               }
             />
+
             <CardView 
               title='Full Stack Engineer'
               place='10Web.io'
               placeUrl='https://10web.io/'
               date='Aug 2020 - Jan 2022 · 1 year 6 month'
-              desc='Worked as full stack mid level developer with Wordpress. Developed, modified, tested and fixed plugins and services (worked remote / full day)'
+              desc="I've worked as full-stack developer proficient in WordPress, where I've developed, modified, and tested ..."
+              fullDesc="I've worked as full-stack developer proficient in WordPress, where I've developed, modified, and tested plugins and services. I've honed my skills in agile methodologies, teamwork, and customer service."
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Worked as a part of 5-person team and also worked closely with the other team-developers, designers, copywriters, managers and other cross-functional teams to improve and good modified plugins and services.</li>
-                    <li>Worked in an agile environment with daily morning stand-ups, kept track of tasks/bugs in projects, and conducted 2 hours of sprint planning and sprint retrospectives per week.</li>
-                    <li>Participated in product releases and code reviews with 2 senior developers and team lead.</li>
-                    <li>Provided professional customer service, managing 7+ tickets and email requests a day. </li>
+                    <li>Collaborating within a dynamic 5-person team, I closely interacted with fellow developers, designers, copywriters, managers, and other cross-functional teams to enhance and refine plugins and services.</li>
+                    <li>Operating within an agile framework, my routine comprised daily morning stand-ups, meticulous task/bug tracking, and conducting two hours of sprint planning and retrospectives weekly.</li>
+                    <li>I actively contributed to product releases and engaged in code reviews alongside two senior developers and the team lead.</li>
+                    <li>Additionally, I prioritized delivering professional customer service, efficiently managing over 7+ tickets and email requests daily.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
@@ -101,19 +116,19 @@ function Experience() {
                 </>
               }
             />
+
             <CardView 
               title='Maternity leave'
               place='Career Break'
               placeUrl=''
               date='Aug 2019 - Aug 2020 · 1 year'
-              desc='Improved some front-end skills and built 3 web sites based on Wordpress.' 
+              desc='Enhanced my frontend skills and created three websites using WordPress.' 
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Got courses from Udemy for improve my skills: <br/> 1. <a href='https://www.udemy.com/course/the-complete-javascript-course/' target='_blank'>The Complete JavaScript Course 2023: From Zero to Expert!</a>;<br/> 2. <a href='https://www.udemy.com/course/advanced-css-and-sass/' target='_blank'>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a>;</li>
-                    <li>Partnered with <a href='https://vtgsoftware.com/' target='_blank'>"VTG Software"</a> company for built, modified and optimized 3 web sites based on Wordpress (worked remote): <br/>
-                    1. <a href='https://volterman.com/' target='_blank'>Volterman</a>; <br/> 2. <a href='https://maldeks.org/' target='_blank'>Maldeks</a>; <br/> 3. <a href='https://vahagnstepanyan.com/' target='_blank'>Vahagn Stepanyan</a> </li>
+                    <li>Collaborated with <a href='https://vtgsoftware.com/' target='_blank'>"VTG Software"</a> company on a freelance basis to develop, customize, and optimize three websites using WordPress.<br/><br/>
+                    1. <a href='https://volterman.com/' target='_blank'>Volterman</a> <br/> <br/>2. <a href='https://maldeks.org/' target='_blank'>Maldeks</a> <br/><br/> 3. <a href='https://vahagnstepanyan.com/' target='_blank'>Vahagn Stepanyan</a> </li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
@@ -121,22 +136,22 @@ function Experience() {
                 </>
               }
             />
+
             <CardView 
               title='Tech Support specialist'
               place='10Web.io'
               placeUrl='https://10web.io/'
               date='Dec 2017 - Aug 2019 · 1 year 9 month'
-              desc='Worked as tech support specialist and team lead.'
+              desc="I've served as a tech support specialist and team lead, overseeing the resolution of technical issues and ..."
+              fullDesc="I've served as a tech support specialist and team lead, overseeing the resolution of technical issues and leading a team of junior developers."
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Provided technical support for over 50+ Premium Plugins and Extensions. </li>
-                    <li>Provided professional customer service, managing 20+ tickets and email requests a day. </li>
-                    <li>Lead and managed a team of 4 junior developers, developed documentations and provide trainings to teach them company standards, services and plugins functionality and code standards. </li>
-                    <li>Lead daily standup meetings for monitoring problems and prioritizing tasks.</li>
-                    <li>Besides bugs and conflicts fast fixing, monitored users feedbacks and open tasks for new features or bug fixes.</li>
-                    <li>Lead troubleshooting, fixed 3.000+ bugs and other issues, worked with live sites. </li>
+                    <li>I've worked as a tech support specialist and team lead, where I've been responsible for providing technical support for over 50+ Premium Plugins and Extensions, addressing 20+ tickets and email requests daily with a focus on professional customer service.</li>
+                    <li>In my role as team lead, I've led and managed a team of 4 junior developers, developing documentations and providing trainings to ensure adherence to company standards, services, and plugin functionality and code standards.</li>
+                    <li>Additionally, I've led daily standup meetings to monitor problems and prioritize tasks, while actively engaging with user feedback and open tasks for new features or bug fixes.</li>
+                    <li>Over the course of my tenure, I've successfully troubleshooted and resolved over 3,000+ bugs and other issues, demonstrating proficiency in handling live site challenges.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
@@ -144,22 +159,22 @@ function Experience() {
                 </>
               }
             />
+
             <CardView 
               title='Full Stack Engineer'
               place='Web-Dorado'
               placeUrl='https://web-dorado.com/'
               date='Jun 2014 - Dec 2017 · 3 year 7 month'
-              desc='Worked full stack developer with Wordpress and Joomla. Developed, modified, tested and fixed plugins and themes.'
+              desc="I've served as a full-stack developer specializing in WordPress and Joomla, contributing to the development,..."
+              fullDesc="I've served as a full-stack developer specializing in WordPress and Joomla, contributing to the development, modification, and enhancement of plugins, themes, and templates."
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Developed and modified themes and plugins for WordPress. <br/> The most famous plugins that  I've been the part developing are: <a href='https://wordpress.org/plugins/form-maker/' target='_blank'>'Form Maker'</a> and <a href='https://wordpress.org/plugins/photo-gallery/' target='_blank'>'Photo Gallery'</a>. Information about all plugins you can find <a href='https://10web.io/wordpress-plugins/' target='_blank'>here</a>. </li>
-                    <li>Developed and modified templates and components for Joomla;</li>
-                    <li>Worked closely with developers, designers, copywriters and other cross-functional teams to built more innovation plugins and services.</li>
-                    <li>Created accessible, responsive and functional user interfaces to allow users on any device to have the same perfect user experience. </li>
-                    <li>Worked as customer support tech specialist for help users fix bugs and conflict with the other plugins, themes. Added some new features based on users feedback.</li>
-                    <li>Designed, coded and modified 10+ web sites based on Wordpress and Joomla.</li>
+                    <li>I've worked as a full-stack developer, focusing on WordPress and Joomla platforms, where I've played a pivotal role in developing, modifying, testing, and fixing plugins, themes, templates, and components. Notably, I've contributed to the development and modification of prominent plugins such as <a href='https://wordpress.org/plugins/form-maker/' target='_blank'>'Form Maker'</a> and <a href='https://wordpress.org/plugins/photo-gallery/' target='_blank'>'Photo Gallery'</a>.</li>
+                    <li>I've had closely collaborating with developers, designers, copywriters, and other cross-functional teams to innovate and improve plugins and services. </li>
+                    <li>I've also served as a customer support tech specialist, assisting users in resolving bugs and conflicts with other plugins and themes, and incorporating new features based on user feedback. </li>
+                    <li>Furthermore, I've designed, coded, and modified over 10 websites utilizing WordPress and Joomla.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
@@ -168,26 +183,28 @@ function Experience() {
               }
             />
             <CardView 
-              title='Front-end development teacher'
+              title='Frontend Instruction Specialist'
               place='Optimum IT Center'
               placeUrl='https://yellow.place/en/optimum-it-center-yerevan-armenia'
               date='Oct 2015 - Jun 2016 · 9 month'
-              desc="Taught HTML, CSS and 'Javascript for beginners'. I had 2 groups with 6-8 members. Developed documentations and slides to teach mentioned technologies." 
+              desc="As a frontend teacher, I instructed two groups of 6-8 members each on HTML, CSS, and
+              JavaScript for beginners, utilizing tailored documentations and slides for effective teaching." 
             />
             <CardView 
               title='Software Testing Manager'
               place='VxSoft'
               placeUrl='https://www.vxsoft.com/am/'
               date='Dec 2013 - Apr 2014 · 5 month'
-              desc='Worked as QA and customer support specialist.' 
+              desc="I've served as a QA and customer support specialist, focusing on document automation and ..."
+              fullDesc="I've served as a QA and customer support specialist, focusing on document automation and providing training for Register Offices."
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>Monitored, created and populated QA sheets with designers and managers.</li>
-                    <li>Worked with documents automatization of Birth, Death and Marriage registration.</li>
-                    <li>Provided trainings for continues documents automatization in Register Offices over the Yerevan.</li>
-                    <li>Worked as customer specialist in call center.</li>
+                    <li>I've worked extensively as a QA and customer support specialist, where my responsibilities included monitoring, creating, and populating QA sheets in collaboration with designers and managers.</li>
+                    <li>One of my notable projects involved document automation for Birth, Death, and Marriage registration, where I facilitated the development and implementation of automated processes.</li>
+                    <li>I provided training sessions aimed at continuing document automation in Register Offices throughout Yerevan. </li>
+                    <li>I gained valuable experience as a customer specialist in a call center environment, where I provided timely and effective support to customers.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
@@ -206,7 +223,7 @@ function Experience() {
               place='Optimum IT Center'
               placeUrl='https://yellow.place/en/optimum-it-center-yerevan-armenia'
               date='Sep 2013 - May 2014'
-              desc='Studied web technologies like HTML, CSS, PHP, MySQL, Wordpress.' 
+              desc='Learned web technologies such as HTML, CSS, PHP, MySQL, and WordPress.' 
             />
             <CardView 
               title='Computer Systems and Informatics'
