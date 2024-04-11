@@ -12,6 +12,7 @@ import {
     TKT,
     Prosky,
     EllenNielsen,
+    MedQA,
     ArmeniansUnified,
     AmericanSavings,
     Weather,
@@ -25,49 +26,6 @@ const demoUrl = 'https://soltonanna.github.io/';
 
 // categories: all, temp, games, apps, anime, modules, wps
 export const portfolioItems = [
-    // Games
-    {
-        id: `p_g1`,
-        category: 'games',
-        name: 'Pig Game',
-        codeUrl: `${codeUrl}pig_game`,
-        demoUrl: `${demoUrl}pig_game/`,
-        imgUrl: PigGame
-    },
-    {
-        id: `p_g2`,
-        category: 'games',
-        name: 'Mines',
-        codeUrl: `${codeUrl}mines_game`,
-        demoUrl: `${demoUrl}mines_game/`,
-        imgUrl: MinesGame
-    },
-    {
-        id: `p_g3`,
-        category: 'games',
-        name: 'Guess number',
-        codeUrl: `${codeUrl}guess-my-number`,
-        demoUrl: `${demoUrl}guess-my-number/`,
-        imgUrl: GuessNumberGame
-    },
-    // Templates
-    {
-        id: `p_t1`,
-        category: 'temp',
-        name: 'Natures',
-        codeUrl: `${codeUrl}natures`,
-        demoUrl: `${demoUrl}natures/`,
-        imgUrl: NaturesSpa
-    },
-    //Animations
-    {
-        id: `p_a1`,
-        category: 'anime',
-        name: 'Animated blocks',
-        codeUrl: `${codeUrl}animated-blocks`,
-        demoUrl: `${demoUrl}animated-blocks/`,
-        imgUrl: AnimatedBlocks
-    },
     // Wordpress Sites
     {
         id: `p_w1`,
@@ -139,6 +97,13 @@ export const portfolioItems = [
         demoUrl: `https://en-enterprises.com/`,
         imgUrl: EllenNielsen
     },
+    {
+        id: `p_w11`,
+        category: 'wps',
+        name: 'Med QA',
+        demoUrl: `https://med-qa.com/`,
+        imgUrl: MedQA
+    },
     // React Apps
     {
         id: `p_r1`,
@@ -172,4 +137,47 @@ export const portfolioItems = [
         demoUrl: `${demoUrl}weather/`,
         imgUrl: Weather
     },
+    // Games
+    {
+        id: `p_g1`,
+        category: 'games',
+        name: 'Pig Game',
+        codeUrl: `${codeUrl}pig_game`,
+        demoUrl: `${demoUrl}pig_game/`,
+        imgUrl: PigGame
+    },
+    {
+        id: `p_g2`,
+        category: 'games',
+        name: 'Mines',
+        codeUrl: `${codeUrl}mines_game`,
+        demoUrl: `${demoUrl}mines_game/`,
+        imgUrl: MinesGame
+    },
+    {
+        id: `p_g3`,
+        category: 'games',
+        name: 'Guess number',
+        codeUrl: `${codeUrl}guess-my-number`,
+        demoUrl: `${demoUrl}guess-my-number/`,
+        imgUrl: GuessNumberGame
+    },
+    // Templates
+    {
+        id: `p_t1`,
+        category: 'temp',
+        name: 'Natures',
+        codeUrl: `${codeUrl}natures`,
+        demoUrl: `${demoUrl}natures/`,
+        imgUrl: NaturesSpa
+    },
+    //Animations
+    {
+        id: `p_a1`,
+        category: 'anime',
+        name: 'Animated blocks',
+        codeUrl: `${codeUrl}animated-blocks`,
+        demoUrl: `${demoUrl}animated-blocks/`,
+        imgUrl: AnimatedBlocks
+    }
 ];

@@ -11,6 +11,7 @@ import ArmeniansUnified from '../media/portfolio/wp/armeniansunified.jpg';
 import AmericanSavings from '../media/portfolio/wp/american-savings.jpg';
 import Prosky from '../media/portfolio/wp/prosky.jpg';
 import EllenNielsen from '../media/portfolio/wp/EllenNielsen.jpg';
+import MedQA from '../media/portfolio/wp/MedQA.jpg';
 
 /** GAMES */
 import GuessNumberGame from '../media/portfolio/games/GuessNumberGame.jpg';
@@ -53,6 +54,7 @@ export {
     TKT,
     Prosky,
     EllenNielsen,
+    MedQA,
     ArmeniansUnified,
     AmericanSavings,
     Weather,

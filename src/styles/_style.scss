@@ -257,25 +257,20 @@ body {
             }
         }
 
-        #blog {
-            .blog { 
+        #services {
+            .services {
+                @include displayFlex(column, nowrap, center, space-between, flex-start);
+
                 @include respond(tab-port) {
                     width: 100%;
                 }
 
-                .blog-items {
-                    column-count: 3;
-                    column-gap: 10px;
+                .cards {
+                    @include displayFlex(row, wrap, center, space-between, flex-start);
+                    margin-top: 2rem;
 
                     @include respond(phone) {
-                        column-count: 1;
-                    }
-
-                    .card-view-img {
-                        max-width: 100%;
-                        width: 100%;
-                        margin: 0;
-                        margin-bottom: 1rem;
+                        @include displayFlex(column, nowrap, center, space-between, center);
                     }
                 }
             }
@@ -351,6 +346,31 @@ body {
             }
         }
         
+        #blog {
+            .blog { 
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
+                .blog-items {
+                    column-count: 3;
+                    column-gap: 10px;
+
+                    @include respond(phone) {
+                        column-count: 1;
+                    }
+
+                    .card-view-img {
+                        max-width: 100%;
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+
         #contact {
             background: url('./media/map-color-overlay.png') no-repeat center;
             background-color: $color-black;

@@ -16,11 +16,8 @@ function Experience() {
               place='Brainstormtech'
               placeUrl='https://brainstormtech.io/'
               date='Jun 2023 - Present'
-              desc="I've developed 5 WordPress projects from inception to completion and provided support
-              for an additional 6 projects..." 
-              fullDesc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects, involving customization, new features and troubleshooting.
-              Adept at optimizing website performance, successfully elevating page load scores from
-              >50% to 95% and more through meticulous enhancements."
+              desc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects..." 
+              fullDesc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects, involving customization, new features and troubleshooting. Adept at optimizing website performance, successfully elevating page load scores from >50% to 95% and more through meticulous enhancements."
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
@@ -42,8 +39,7 @@ function Experience() {
               place='Freelance'
               placeUrl=''
               date='Sep 2022 - Present'
-              desc="I've independently developed 4 WordPress websites while contributing to a significant
-              React JS application..."
+              desc="I've independently developed 4 WordPress websites while contributing to a significant React JS application..."
               fullDesc="I've independently developed 4 WordPress websites while contributing to a significant React JS application, where I've been implemented new features and resolved bugs to enhance functionality."
               moreDesc={
                 <>
@@ -182,6 +178,7 @@ function Experience() {
                 </>
               }
             />
+
             <CardView 
               title='Frontend Instruction Specialist'
               place='Optimum IT Center'
@@ -190,6 +187,7 @@ function Experience() {
               desc="As a frontend teacher, I instructed two groups of 6-8 members each on HTML, CSS, and
               JavaScript for beginners, utilizing tailored documentations and slides for effective teaching." 
             />
+
             <CardView 
               title='Software Testing Manager'
               place='VxSoft'
