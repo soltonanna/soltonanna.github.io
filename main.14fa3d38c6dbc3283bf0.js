@@ -4006,9 +4006,6 @@ const About = () => {
     title: "PHP",
     url: "https://www.php.net/"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Node.js",
-    url: "https://nodejs.org/docs/latest/api/"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "MySQL",
     url: "https://www.mysql.com/"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -4023,9 +4020,6 @@ const About = () => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Version Controls:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "Git (Git GUI, GitHub)",
     url: "https://git-scm.com/"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Git Hooks (Husky)",
-    url: "https://typicode.github.io/husky/#/"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build Tools and Task Runners:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_ProgItem_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "Webpack",
     url: "https://webpack.js.org/"
@@ -66129,4 +66123,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.59866d4c5df9591007bb.js.map
+//# sourceMappingURL=main.14fa3d38c6dbc3283bf0.js.map
