@@ -91,9 +91,9 @@ const About = () => {
             <ProgItem 
               title="PHP"
               url="https://www.php.net/" />
-            <ProgItem 
+            {/* <ProgItem 
               title="Node.js"
-              url="https://nodejs.org/docs/latest/api/" />
+              url="https://nodejs.org/docs/latest/api/" /> */}
             <ProgItem 
               title="MySQL"
               url="https://www.mysql.com/" />
@@ -111,9 +111,9 @@ const About = () => {
             <ProgItem 
               title="Git (Git GUI, GitHub)"
               url="https://git-scm.com/" />
-            <ProgItem 
+            {/* <ProgItem 
               title="Git Hooks (Husky)"
-              url="https://typicode.github.io/husky/#/" /> 
+              url="https://typicode.github.io/husky/#/" />  */}
 
             <p>Build Tools and Task Runners:</p>
             <ProgItem 
