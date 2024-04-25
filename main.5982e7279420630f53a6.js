@@ -3865,7 +3865,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _media_reviews_Vahagn_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../media/reviews/Vahagn.jpg */ "./src/media/reviews/Vahagn.jpg");
 /* harmony import */ var _media_reviews_Ani_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../media/reviews/Ani.jpg */ "./src/media/reviews/Ani.jpg");
-/* harmony import */ var _media_reviews_noImg_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../media/reviews/noImg.png */ "./src/media/reviews/noImg.png");
+/* harmony import */ var _media_reviews_Gayane_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../media/reviews/Gayane.jpeg */ "./src/media/reviews/Gayane.jpeg");
+/* harmony import */ var _media_reviews_noImg_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../media/reviews/noImg.png */ "./src/media/reviews/noImg.png");
+
 
 
 
@@ -3883,10 +3885,16 @@ const reviewItems = [{
   imgUrl: _media_reviews_Ani_jpg__WEBPACK_IMPORTED_MODULE_1__
 }, {
   id: `r_3`,
-  name: 'Dawm Mundo',
+  name: 'Dawm Mundo / "Brainstorm Technologies"',
   position: 'Project and Operations Management Professional',
-  review: "I’ve worked with Anahit on developing several websites using WordPress. She is a skilled developer who goes above and beyond my expectations. She delivers the product on time and in excellent quality. She will turn any UI designs into reality and is very accommodating. Each time I work with her, she exceeds my expectations. She is also an excellent English speaker and fun to work with.",
-  imgUrl: _media_reviews_noImg_png__WEBPACK_IMPORTED_MODULE_2__
+  review: "I've worked with Anahit on developing several websites using WordPress. She is a skilled developer who goes above and beyond my expectations. She delivers the product on time and in excellent quality. She will turn any UI designs into reality and is very accommodating. Each time I work with her, she exceeds my expectations. She is also an excellent English speaker and fun to work with.",
+  imgUrl: _media_reviews_noImg_png__WEBPACK_IMPORTED_MODULE_3__
+}, {
+  id: `r_4`,
+  name: 'Gayane Kyatikyan / "VTG Software"',
+  position: 'Project and Operations Management Professional',
+  review: "For our company was a very pleasant to have you in our team for a while to develop the current project. Here are the skills you've demonstrated: a great understanding of the product, creativity and problem-solving,  attention to detail, leadership on this project, ability to work well with the team members and stakeholders, great communication skills and provide clear explanations,  dedication and hard work, consistently meets or exceeds our quality standards, a great attitude and positive energy, ability to work independently and meet deadlines, your ideas and suggestions are always insightful and valuable, work ethic, attention to user experience and user interface is impressive.",
+  imgUrl: _media_reviews_Gayane_jpeg__WEBPACK_IMPORTED_MODULE_2__
 }];
 
 /***/ }),
@@ -62786,6 +62794,17 @@ module.exports = __webpack_require__.p + "assets/Ani.jpg";
 
 /***/ }),
 
+/***/ "./src/media/reviews/Gayane.jpeg":
+/*!***************************************!*\
+  !*** ./src/media/reviews/Gayane.jpeg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/Gayane.jpeg";
+
+/***/ }),
+
 /***/ "./src/media/reviews/Vahagn.jpg":
 /*!**************************************!*\
   !*** ./src/media/reviews/Vahagn.jpg ***!
@@ -66123,4 +66142,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.14fa3d38c6dbc3283bf0.js.map
+//# sourceMappingURL=main.5982e7279420630f53a6.js.map
