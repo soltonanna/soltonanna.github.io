@@ -25,6 +25,7 @@ import BeerStore from '../media/portfolio/apps/BeerStore.jpg';
 import Recipes from '../media/portfolio/apps/Recipes.jpg';
 import FoodOrder from '../media/portfolio/apps/FoodOrder.jpg';
 import AddCartRedux from '../media/portfolio/apps/Add-to-Cart-Redux.jpg';
+import TicTacToe from '../media/portfolio/apps/TicTacToe.png';
 
 /** Animations */
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
@@ -62,7 +63,7 @@ export {
     Recipes,
     FoodOrder,
     AddCartRedux,
-
+    TicTacToe,
     // Other
     CssCertificate,
     JsCertificate,

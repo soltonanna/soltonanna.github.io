@@ -19,6 +19,7 @@ import {
     BeerStore,
     Recipes,
     FoodOrder,
+    TicTacToe
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -141,13 +142,21 @@ export const portfolioItems = [
     {
         id: `p_g1`,
         category: 'games',
+        name: 'Tic-Tac-Toe',
+        codeUrl: `${codeUrl}react-tic-tac-toe`,
+        demoUrl: `${demoUrl}react-tic-tac-toe/`,
+        imgUrl: TicTacToe
+    },
+    {
+        id: `p_g2`,
+        category: 'games',
         name: 'Pig Game',
         codeUrl: `${codeUrl}pig_game`,
         demoUrl: `${demoUrl}pig_game/`,
         imgUrl: PigGame
     },
     {
-        id: `p_g2`,
+        id: `p_g3`,
         category: 'games',
         name: 'Mines',
         codeUrl: `${codeUrl}mines_game`,
@@ -155,7 +164,7 @@ export const portfolioItems = [
         imgUrl: MinesGame
     },
     {
-        id: `p_g3`,
+        id: `p_g4`,
         category: 'games',
         name: 'Guess number',
         codeUrl: `${codeUrl}guess-my-number`,

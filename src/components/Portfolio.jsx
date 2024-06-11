@@ -49,7 +49,7 @@ const Portfolio = () => {
               All Categories
             </Button>
             <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
-              Apps
+              React Apps
             </Button>
             <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
               WordPress
