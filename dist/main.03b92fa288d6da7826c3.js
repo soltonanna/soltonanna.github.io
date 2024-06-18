@@ -3508,25 +3508,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AddCartRedux: () => (/* reexport default export from named module */ _media_portfolio_apps_Add_to_Cart_Redux_jpg__WEBPACK_IMPORTED_MODULE_20__),
 /* harmony export */   AmericanSavings: () => (/* reexport default export from named module */ _media_portfolio_wp_american_savings_jpg__WEBPACK_IMPORTED_MODULE_8__),
-/* harmony export */   AnimatedBlocks: () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_23__),
+/* harmony export */   AnimatedBlocks: () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_24__),
 /* harmony export */   ArmeniansUnified: () => (/* reexport default export from named module */ _media_portfolio_wp_armeniansunified_jpg__WEBPACK_IMPORTED_MODULE_7__),
 /* harmony export */   BeerStore: () => (/* reexport default export from named module */ _media_portfolio_apps_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_17__),
 /* harmony export */   BlogPosts: () => (/* reexport default export from named module */ _media_portfolio_apps_PostsPage_jpg__WEBPACK_IMPORTED_MODULE_15__),
 /* harmony export */   Byrobynblair: () => (/* reexport default export from named module */ _media_portfolio_wp_byrobinblair_jpg__WEBPACK_IMPORTED_MODULE_4__),
-/* harmony export */   CssCertificate: () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_25__),
+/* harmony export */   CssCertificate: () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_26__),
+/* harmony export */   ElegantShop: () => (/* reexport default export from named module */ _media_portfolio_apps_elegant_shop_png__WEBPACK_IMPORTED_MODULE_23__),
 /* harmony export */   EllenNielsen: () => (/* reexport default export from named module */ _media_portfolio_wp_EllenNielsen_jpg__WEBPACK_IMPORTED_MODULE_10__),
 /* harmony export */   FoodOrder: () => (/* reexport default export from named module */ _media_portfolio_apps_FoodOrder_jpg__WEBPACK_IMPORTED_MODULE_19__),
 /* harmony export */   GuessNumberGame: () => (/* reexport default export from named module */ _media_portfolio_games_GuessNumberGame_jpg__WEBPACK_IMPORTED_MODULE_12__),
 /* harmony export */   Hven: () => (/* reexport default export from named module */ _media_portfolio_wp_Hven_jpg__WEBPACK_IMPORTED_MODULE_1__),
-/* harmony export */   JsCertificate: () => (/* reexport default export from named module */ _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_26__),
+/* harmony export */   JsCertificate: () => (/* reexport default export from named module */ _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_27__),
 /* harmony export */   Jtrain: () => (/* reexport default export from named module */ _media_portfolio_wp_Jtrainwellness_jpg__WEBPACK_IMPORTED_MODULE_3__),
 /* harmony export */   Maldek: () => (/* reexport default export from named module */ _media_portfolio_wp_Maldek_jpg__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   MedQA: () => (/* reexport default export from named module */ _media_portfolio_wp_MedQA_jpg__WEBPACK_IMPORTED_MODULE_11__),
 /* harmony export */   MinesGame: () => (/* reexport default export from named module */ _media_portfolio_games_MinesGame_jpg__WEBPACK_IMPORTED_MODULE_14__),
-/* harmony export */   NaturesSpa: () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_24__),
+/* harmony export */   NaturesSpa: () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_25__),
 /* harmony export */   PigGame: () => (/* reexport default export from named module */ _media_portfolio_games_PigGame_jpg__WEBPACK_IMPORTED_MODULE_13__),
 /* harmony export */   Prosky: () => (/* reexport default export from named module */ _media_portfolio_wp_prosky_jpg__WEBPACK_IMPORTED_MODULE_9__),
-/* harmony export */   ReactCertificate: () => (/* reexport default export from named module */ _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_27__),
+/* harmony export */   ReactCertificate: () => (/* reexport default export from named module */ _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_28__),
 /* harmony export */   Recipes: () => (/* reexport default export from named module */ _media_portfolio_apps_Recipes_jpg__WEBPACK_IMPORTED_MODULE_18__),
 /* harmony export */   StopCountdown: () => (/* reexport default export from named module */ _media_portfolio_games_countdown_png__WEBPACK_IMPORTED_MODULE_22__),
 /* harmony export */   TKT: () => (/* reexport default export from named module */ _media_portfolio_wp_TKT_jpg__WEBPACK_IMPORTED_MODULE_6__),
@@ -3558,11 +3559,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_apps_Add_to_Cart_Redux_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../media/portfolio/apps/Add-to-Cart-Redux.jpg */ "./src/media/portfolio/apps/Add-to-Cart-Redux.jpg");
 /* harmony import */ var _media_portfolio_apps_TicTacToe_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../media/portfolio/apps/TicTacToe.png */ "./src/media/portfolio/apps/TicTacToe.png");
 /* harmony import */ var _media_portfolio_games_countdown_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../media/portfolio/games/countdown.png */ "./src/media/portfolio/games/countdown.png");
-/* harmony import */ var _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../media/portfolio/AnimatedBlocks.gif */ "./src/media/portfolio/AnimatedBlocks.gif");
-/* harmony import */ var _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../media/portfolio/NaturesSpa.jpg */ "./src/media/portfolio/NaturesSpa.jpg");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
-/* harmony import */ var _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../media/pdf/CompleteJSCourse_Certificate.pdf */ "./src/media/pdf/CompleteJSCourse_Certificate.pdf");
-/* harmony import */ var _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../media/pdf/React_Certificate.pdf */ "./src/media/pdf/React_Certificate.pdf");
+/* harmony import */ var _media_portfolio_apps_elegant_shop_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../media/portfolio/apps/elegant-shop.png */ "./src/media/portfolio/apps/elegant-shop.png");
+/* harmony import */ var _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../media/portfolio/AnimatedBlocks.gif */ "./src/media/portfolio/AnimatedBlocks.gif");
+/* harmony import */ var _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../media/portfolio/NaturesSpa.jpg */ "./src/media/portfolio/NaturesSpa.jpg");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../media/pdf/CompleteJSCourse_Certificate.pdf */ "./src/media/pdf/CompleteJSCourse_Certificate.pdf");
+/* harmony import */ var _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../media/pdf/React_Certificate.pdf */ "./src/media/pdf/React_Certificate.pdf");
 /** Portfolio Images */
 /** WP */
 
@@ -3584,6 +3586,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /** APPS */
+
 
 
 
@@ -3711,12 +3714,19 @@ var portfolioItems = [
 }, {
   id: "p_r3",
   category: 'apps',
+  name: 'Elegant Shop',
+  codeUrl: "".concat(codeUrl, "elegant-shop"),
+  demoUrl: "".concat(demoUrl, "elegant-shop/"),
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.ElegantShop
+}, {
+  id: "p_r4",
+  category: 'apps',
   name: 'Food Order App',
   codeUrl: "".concat(codeUrl, "food-order"),
   demoUrl: "".concat(demoUrl, "food-order/"),
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.FoodOrder
 }, {
-  id: "p_r4",
+  id: "p_r5",
   category: 'apps',
   name: 'Weather',
   codeUrl: "".concat(codeUrl, "weather"),
@@ -62621,6 +62631,17 @@ module.exports = __webpack_require__.p + "assets/WeatherApp.jpg";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/apps/elegant-shop.png":
+/*!***************************************************!*\
+  !*** ./src/media/portfolio/apps/elegant-shop.png ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/elegant-shop.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/games/GuessNumberGame.jpg":
 /*!*******************************************************!*\
   !*** ./src/media/portfolio/games/GuessNumberGame.jpg ***!
@@ -66156,4 +66177,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.e34fff8168dd29e349cf.js.map
+//# sourceMappingURL=main.03b92fa288d6da7826c3.js.map

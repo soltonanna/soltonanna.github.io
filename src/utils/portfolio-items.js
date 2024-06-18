@@ -20,7 +20,8 @@ import {
     Recipes,
     FoodOrder,
     TicTacToe,
-    StopCountdown
+    StopCountdown,
+    ElegantShop
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -126,13 +127,21 @@ export const portfolioItems = [
     {
         id: `p_r3`,
         category: 'apps',
+        name: 'Elegant Shop',
+        codeUrl: `${codeUrl}elegant-shop`,
+        demoUrl: `${demoUrl}elegant-shop/`,
+        imgUrl: ElegantShop
+    },
+    {
+        id: `p_r4`,
+        category: 'apps',
         name: 'Food Order App',
         codeUrl: `${codeUrl}food-order`,
         demoUrl: `${demoUrl}food-order/`,
         imgUrl: FoodOrder
     },
     {
-        id: `p_r4`,
+        id: `p_r5`,
         category: 'apps',
         name: 'Weather',
         codeUrl: `${codeUrl}weather`,

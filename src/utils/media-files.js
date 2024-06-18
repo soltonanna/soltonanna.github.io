@@ -27,6 +27,7 @@ import FoodOrder from '../media/portfolio/apps/FoodOrder.jpg';
 import AddCartRedux from '../media/portfolio/apps/Add-to-Cart-Redux.jpg';
 import TicTacToe from '../media/portfolio/apps/TicTacToe.png';
 import StopCountdown from '../media/portfolio/games/countdown.png';
+import ElegantShop from '../media/portfolio/apps/elegant-shop.png';
 
 /** Animations */
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
@@ -66,6 +67,7 @@ export {
     AddCartRedux,
     TicTacToe,
     StopCountdown,
+    ElegantShop,
     // Other
     CssCertificate,
     JsCertificate,
