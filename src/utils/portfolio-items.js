@@ -21,7 +21,8 @@ import {
     FoodOrder,
     TicTacToe,
     StopCountdown,
-    ElegantShop
+    ElegantShop,
+    Nexter
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -198,6 +199,15 @@ export const portfolioItems = [
         demoUrl: `${demoUrl}natures/`,
         imgUrl: NaturesSpa
     },
+    {
+        id: `p_t2`,
+        category: 'temp',
+        name: 'Nexter-Realtors Company',
+        codeUrl: `${codeUrl}nexter-template`,
+        demoUrl: `${demoUrl}nexter-template/`,
+        imgUrl: Nexter
+    },
+    
     //Animations
     {
         id: `p_a1`,

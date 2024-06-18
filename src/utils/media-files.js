@@ -34,6 +34,7 @@ import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
 
 /** Templates */
 import NaturesSpa from '../media/portfolio/NaturesSpa.jpg';
+import Nexter from '../media/portfolio/Nexter.png';
 
 /* PDF*/
 import CssCertificate from '../media/pdf/AdvancedCSS_Certificate.pdf';
@@ -68,6 +69,7 @@ export {
     TicTacToe,
     StopCountdown,
     ElegantShop,
+    Nexter,
     // Other
     CssCertificate,
     JsCertificate,
