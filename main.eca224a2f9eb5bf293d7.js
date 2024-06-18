@@ -3782,7 +3782,7 @@ var portfolioItems = [
   demoUrl: "".concat(demoUrl, "natures/"),
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.NaturesSpa
 }, {
-  id: "p_t1",
+  id: "p_t2",
   category: 'temp',
   name: 'Nexter-Realtors Company',
   codeUrl: "".concat(codeUrl, "nexter-template"),
@@ -66198,4 +66198,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.2b3f48e18207fdb6b6c2.js.map
+//# sourceMappingURL=main.eca224a2f9eb5bf293d7.js.map
