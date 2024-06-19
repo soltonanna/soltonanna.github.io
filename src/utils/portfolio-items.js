@@ -23,7 +23,8 @@ import {
     TicTacToe,
     StopCountdown,
     ElegantShop,
-    Nexter
+    Nexter,
+    TravelingGallery
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -149,6 +150,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}weather`,
         demoUrl: `${demoUrl}weather/`,
         imgUrl: Weather
+    },
+    {
+        id: `p_r6`,
+        category: 'apps',
+        name: 'Traveling Gallery',
+        codeUrl: `${codeUrl}traveling-gallery`,
+        demoUrl: `${demoUrl}traveling-gallery/`,
+        imgUrl: TravelingGallery
     },
     // Games
     {
