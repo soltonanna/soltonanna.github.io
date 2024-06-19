@@ -80,7 +80,7 @@
 .card-view-img {
     max-width: 33%;
     min-width: 33%;
-    min-height: 220px;
+    min-height: 520px;
     margin-top: 2.5rem;
 
     &__header {
@@ -93,7 +93,8 @@
     }
     &__date { 
         span {
-            color: $color-white;
+            //color: $color-white;
+            font-weight: 700;
         }
     }
 
