@@ -4,6 +4,7 @@ import {
     MinesGame,
     NaturesSpa,
     AnimatedBlocks,
+    AnimatedTexts,
     Maldek,
     VStepanyan,
     Jtrain,
@@ -216,5 +217,13 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}animated-blocks`,
         demoUrl: `${demoUrl}animated-blocks/`,
         imgUrl: AnimatedBlocks
+    },
+    {
+        id: `p_a2`,
+        category: 'anime',
+        name: 'Animated texts',
+        codeUrl: `${codeUrl}animated-texts`,
+        demoUrl: `${demoUrl}animated-texts/`,
+        imgUrl: AnimatedTexts
     }
 ];

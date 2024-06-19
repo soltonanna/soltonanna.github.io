@@ -31,6 +31,7 @@ import ElegantShop from '../media/portfolio/apps/elegant-shop.png';
 
 /** Animations */
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
+import AnimatedTexts from '../media/portfolio/AnimatedTexts.gif';
 
 /** Templates */
 import NaturesSpa from '../media/portfolio/NaturesSpa.jpg';
@@ -48,6 +49,7 @@ export {
     MinesGame,
     NaturesSpa,
     AnimatedBlocks,
+    AnimatedTexts,
     BlogPosts,
     Maldek, 
     Hven,
