@@ -24,7 +24,8 @@ import {
     StopCountdown,
     ElegantShop,
     Nexter,
-    TravelingGallery
+    TravelingGallery,
+    SimpleQuiz
 } from './media-files.js';
 
 const codeUrl = 'https://github.com/soltonanna/';
@@ -158,6 +159,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}traveling-gallery`,
         demoUrl: `${demoUrl}traveling-gallery/`,
         imgUrl: TravelingGallery
+    },
+    {
+        id: `p_r7`,
+        category: 'apps',
+        name: 'Simple Quiz',
+        codeUrl: `${codeUrl}simple-quiz`,
+        demoUrl: `${demoUrl}simple-quiz/`,
+        imgUrl: SimpleQuiz
     },
     // Games
     {
