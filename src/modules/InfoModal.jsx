@@ -8,7 +8,7 @@ const Backdrop = (props) => {
  
 const ModalBackdrop = (props) => {
     return (
-        <div className='modal-back'> 
+        <div className={`${props.addClass ? 'scrolling' : '' } modal-back`}> 
             <div>
                 <header >
                     <h2> { props.title } </h2>
@@ -36,9 +36,11 @@ export const InfoModal = (props) => {
         {
             ReactDOM.createPortal(
                 <ModalBackdrop 
-                title = { props.title }
-                message = { props.message }
-                onConfirm = { props.onConfirm } />,
+                    title = { props.title }
+                    message = { props.message }
+                    onConfirm = { props.onConfirm }
+                    addClass = { props.addClass } 
+                />,
                 document.getElementById('modal-root') 
             )
         }

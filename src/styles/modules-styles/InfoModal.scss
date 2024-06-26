@@ -1,6 +1,6 @@
 .modal-back {
     width: 60%;
-    height: 90vh;
+    height: max-content;
     max-height: 90vh;
     z-index: 999;
     position: fixed;
@@ -11,6 +11,9 @@
     background-color: $main-color-darker;
     overflow: hidden;
 
+    &.scrolling {
+        height: 90vh;
+    }
     @include respond(tab-land) {
         width: 80%;
     }

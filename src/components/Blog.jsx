@@ -22,6 +22,7 @@ const Blog = () => {
                 title={item.name}
                 date={item.date}
                 desc={item.desc}
+                addClass={true}
                 moreDesc={
                   <p dangerouslySetInnerHTML={{__html: item.moreDesc}} />
                 }

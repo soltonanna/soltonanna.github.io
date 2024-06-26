@@ -55,6 +55,9 @@ const About = () => {
               star={true}
               starUrl={ReactCertificate} />
             <ProgItem 
+              title="Next.js"
+              url="https://nextjs.org/" />
+            <ProgItem 
               title="HTML/HTML5"
               url="https://www.w3schools.com/html/" /> 
             <ProgItem 
@@ -65,6 +68,9 @@ const About = () => {
             <ProgItem 
               title="Sass/Less"
               url="https://sass-lang.com/" /> 
+            <ProgItem 
+              title="TailWind CSS"
+              url="https://tailwindcss.com/" /> 
             <ProgItem 
               title="Bootstrap"
               url="https://getbootstrap.com/" />

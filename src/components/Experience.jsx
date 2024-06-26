@@ -11,6 +11,30 @@ function Experience() {
         <div className='work-experience'>
           <Title_Desc title="Work Experience" />
           <div className='cards'>
+
+            <CardView 
+              title='Web Developer, Front-end developer'
+              place='Freelance'
+              placeUrl=''
+              date='Sep 2019 - Present'
+              desc="As React JS and Wordpress developer, I specialize in bug fixing, performance optimization, and feature enhancements. My hands-on experience ... "
+              fullDesc="As React JS and Wordpress developer, I specialize in bug fixing, performance optimization, and feature enhancements. My hands-on experience includes creating dynamic and responsive web applications."
+              moreDesc={
+                <>
+                  <h3>Responsibilities:</h3>
+                  <ul>
+                    <li>As React JS developer, I specialize in bug fixing, performance optimization, and feature enhancements. My hands-on experience includes creating dynamic and responsive web applications.</li>
+                    <li>I collaborating with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> to enhance their existing product known as "UNDP." My work involved identifying areas for improvement, and implementing ReactJS-based solutions to enhance its functionality and user experience.</li>
+                    <li>Additionally, I engaged in several freelance projects, all centered around ReactJS development. My responsibilities included building user interfaces, handling state management, and ensuring the seamless flow of data within the applications.</li>
+                    <li>As an independent WordPress developer, I have successfully developed over 10 websites, utilizing popular builders like Elementor and Divi, and crafting custom themes with the ACF plugin. My expertise extends to comprehensive hosting and domain configurations, optimizing sites for faster loading times, and implementing effective SEO strategies to enhance online visibility.</li>
+                  </ul>
+                  <br/>
+                  <h3>Worked with:</h3>
+                  <p>ReactJS, JavaScript, HTML, CSS, Sass, Redux, Next.js, Tailwind CSS, AntDesign, jQuery, REST APIs, Webpack, Git, Wordpress, PHP, etc. </p>
+                </>
+              }
+            />
+
             <CardView 
               title='Web Developer'
               place='Brainstormtech'
@@ -30,27 +54,6 @@ function Experience() {
                   <br/>
                   <h3>Worked with:</h3>
                   <p>React, AntDesign, Wordpress, Shopify, HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, REST APIs, webpack, Gulp, Git, etc. </p>
-                </>
-              }
-            />
-
-            <CardView 
-              title='Web Developer, Front-end developer'
-              place='Freelance'
-              placeUrl=''
-              date='Sep 2022 - Present'
-              desc="I've independently developed 4 WordPress websites while contributing to a significant React JS application..."
-              fullDesc="I've independently developed 4 WordPress websites while contributing to a significant React JS application, where I've been implemented new features and resolved bugs to enhance functionality."
-              moreDesc={
-                <>
-                  <h3>Responsibilities:</h3>
-                  <ul>
-                    <li>I collaborating with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> to enhance their existing product known as "UNDP." My work involved identifying areas for improvement, and implementing ReactJS-based solutions to enhance its functionality and user experience.</li>
-                    <li>Additionally, I engaged in several freelance projects, all centered around ReactJS development. My responsibilities included building user interfaces, handling state management, and ensuring the seamless flow of data within the applications.</li>
-                  </ul>
-                  <br/>
-                  <h3>Worked with:</h3>
-                  <p>ReactJS, AntDesign, HTML, CSS, Sass, Bootstrap, JavaScript, jQuery, REST APIs, webpack, Git, etc. </p>
                 </>
               }
             />

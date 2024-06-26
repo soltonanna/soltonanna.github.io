@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { InfoModal } from '../modules/InfoModal.jsx';
 import Button from '../modules/Button.jsx';
 
-const CardViewImg = ({title, imgUrl, date, desc, moreDesc}) => {
+const CardViewImg = ({ title, imgUrl, date, desc, moreDesc, addClass}) => {
 
   const [infoModal, setInfoModal] = useState(false);
 
@@ -29,9 +29,10 @@ const CardViewImg = ({title, imgUrl, date, desc, moreDesc}) => {
         { moreDesc && <Button onClick={showModalHandler}>Read More</Button> }
         { infoModal && 
             <InfoModal 
-               title = {title} 
-               message = {moreDesc}
-               onConfirm = { infoModalHandler }
+              title = {title} 
+              message = {moreDesc}
+              addClass={addClass}
+              onConfirm = { infoModalHandler }
             /> 
          }
     </div>

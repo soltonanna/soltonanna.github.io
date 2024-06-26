@@ -156,7 +156,8 @@ export const portfolioItems = [
         id: `p_r6`,
         category: 'apps',
         name: 'Traveling Gallery',
-        codeUrl: `${codeUrl}traveling-gallery`,
+        //codeUrl: `${codeUrl}traveling-gallery`,
+        codeUrl: `${codeUrl}traveling-gallery-fetching-data`,
         demoUrl: `${demoUrl}traveling-gallery/`,
         imgUrl: TravelingGallery
     },
