@@ -4713,7 +4713,9 @@ var Reviews = function Reviews() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_splidejs_react_splide__WEBPACK_IMPORTED_MODULE_2__.Splide, {
     "aria-label": "My Favorite Images"
   }, _utils_review_items__WEBPACK_IMPORTED_MODULE_5__.reviewItems.map(function (singleReview) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_splidejs_react_splide__WEBPACK_IMPORTED_MODULE_2__.SplideSlide, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_splidejs_react_splide__WEBPACK_IMPORTED_MODULE_2__.SplideSlide, {
+      key: singleReview.name
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       src: singleReview.imgUrl,
       alt: singleReview.name
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -66290,4 +66292,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.60997ba94845d320dce1.js.map
+//# sourceMappingURL=main.298d0af786b8478be593.js.map

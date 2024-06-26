@@ -21,7 +21,7 @@ const Reviews = () => {
             <Splide aria-label="My Favorite Images">
               {
                 reviewItems.map((singleReview) => (
-                  <SplideSlide>
+                  <SplideSlide key={singleReview.name}>
                     <img src={singleReview.imgUrl} alt={singleReview.name} />
                  
                     <div className='review-text'>
