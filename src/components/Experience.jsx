@@ -13,7 +13,7 @@ function Experience() {
           <div className='cards'>
 
             <CardView 
-              title='Web Developer, Front-end developer'
+              title='Freelancer as React JS and Wordpress developer'
               place='Freelance'
               placeUrl=''
               date='Sep 2019 - Present'
@@ -22,11 +22,17 @@ function Experience() {
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
+                  <p><b>As React JS developer:</b></p>
                   <ul>
-                    <li>As React JS developer, I specialize in bug fixing, performance optimization, and feature enhancements. My hands-on experience includes creating dynamic and responsive web applications.</li>
+                    <li>I've been refactoring and implementing reusable components that have resulted in significant increases in page load speed and user engagement.</li>
+                    <li>Utilized Redux for state management, resulting in reduction in code complexity and increase in team productivity.</li>
+                    <li>Collaborated with back-end developers to integrate RESTful APIs, optimizing data flow and user interactions.</li>
+                    <li>I specialize in bug fixing, performance optimization, and feature enhancements. My hands-on experience includes creating dynamic and responsive web applications.</li>
                     <li>I collaborating with the company <a href='https://noorlogic.com/' target='_blank'>"Noor Logic"</a> to enhance their existing product known as "UNDP." My work involved identifying areas for improvement, and implementing ReactJS-based solutions to enhance its functionality and user experience.</li>
-                    <li>Additionally, I engaged in several freelance projects, all centered around ReactJS development. My responsibilities included building user interfaces, handling state management, and ensuring the seamless flow of data within the applications.</li>
-                    <li>As an independent WordPress developer, I have successfully developed over 10 websites, utilizing popular builders like Elementor and Divi, and crafting custom themes with the ACF plugin. My expertise extends to comprehensive hosting and domain configurations, optimizing sites for faster loading times, and implementing effective SEO strategies to enhance online visibility.</li>
+                  </ul>
+                  <p><b>As an independent WordPress developer:</b></p>
+                  <ul>
+                    <li>I have successfully developed over 10 websites, utilizing popular builders like Elementor and Divi, and crafting custom themes with the ACF plugin. My expertise extends to comprehensive hosting and domain configurations, optimizing sites for faster loading times, and implementing effective SEO strategies to enhance online visibility.</li>
                   </ul>
                   <br/>
                   <h3>Worked with:</h3>
