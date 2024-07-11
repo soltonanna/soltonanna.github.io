@@ -23,32 +23,40 @@
 
     & > div {
         max-height: 98%;
-        height: 98%;
-        overflow-y: scroll;
-        overflow-x: hidden;
-
-        &::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgb($main-color-lighter, 0.2); 
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-thumb {
-            border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 6px rgba($main-color-light, 0.5); 
-        }
-        &::-webkit-scrollbar {
-            width: 12px;
-        }
     }
 
     header {
         color: $main-color-light;
         margin-bottom: $margin-bottom-medium;
+        
+        h2 {
+            @include respond(tab-port) {
+                font-size: 1.3rem !important;
+            }
+        }
     }
 
     main {
         color: $color-white;
         margin-bottom: $margin-bottom-medium;
         
+        & > div {
+            height: 350px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgb($main-color-lighter, 0.2); 
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba($main-color-light, 0.5); 
+            }
+            &::-webkit-scrollbar {
+                width: 12px;
+            }
+        }
         ul, li {
             list-style-position: inside;
             list-style-type: square;

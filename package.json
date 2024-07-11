@@ -47,6 +47,7 @@
     "webpack-dev-server": "latest"
   },
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12"
+    "@splidejs/react-splide": "^0.7.12",
+    "framer-motion": "^11.3.0"
   }
 }
