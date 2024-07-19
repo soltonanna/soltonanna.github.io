@@ -17,7 +17,7 @@ function Experience() {
               place='Freelance'
               placeUrl=''
               date='Sep 2019 - Present'
-              desc="As React JS and Wordpress developer, I specialize in bug fixing, performance optimization, and feature enhancements. My hands-on experience ... "
+              desc="As React JS and Wordpress developer, I specialize in bug fixing, performance optimization, and feature enhancements... "
               fullDesc="As React JS and Wordpress developer, I specialize in bug fixing, performance optimization, and feature enhancements. My hands-on experience includes creating dynamic and responsive web applications."
               moreDesc={
                 <>
@@ -45,7 +45,7 @@ function Experience() {
               title='Web Developer'
               place='Brainstormtech'
               placeUrl='https://brainstormtech.io/'
-              date='Jun 2023 - Present'
+              date='Jun 2023 - Jun 2024'
               desc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects..." 
               fullDesc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects, involving customization, new features and troubleshooting. Adept at optimizing website performance, successfully elevating page load scores from >50% to 95% and more through meticulous enhancements."
               moreDesc={

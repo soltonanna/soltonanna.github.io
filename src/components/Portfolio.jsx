@@ -46,10 +46,10 @@ const Portfolio = () => {
         <div className='for-mobile-view'>
           <div className='filter-block' >
             <Button onClick={handleCategoryChange} value='all' className='btn-1'>
-              All Categories
+              All 
             </Button>
             <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
-              React Apps
+              JS / React JS Apps
             </Button>
             <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
               WordPress
