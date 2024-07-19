@@ -29,7 +29,7 @@ import TicTacToe from '../media/portfolio/apps/TicTacToe.png';
 import StopCountdown from '../media/portfolio/games/countdown.png';
 import ElegantShop from '../media/portfolio/apps/elegant-shop.png';
 import TravelingGallery from '../media/portfolio/apps/traveling-gallery.jpg';
-import SimpleQuiz from '../media/portfolio/apps/quiz-screen.png';
+import SimpleQuiz from '../media/portfolio/apps/quiz-screen.jpg';
 
 /** Animations */
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
