@@ -30,6 +30,7 @@ import StopCountdown from '../media/portfolio/games/countdown.png';
 import ElegantShop from '../media/portfolio/apps/elegant-shop.png';
 import TravelingGallery from '../media/portfolio/apps/traveling-gallery.jpg';
 import SimpleQuiz from '../media/portfolio/apps/quiz-screen.jpg';
+import JsExamples from '../media/portfolio/apps/JsExamples.png';
 
 /** Animations */
 import AnimatedBlocks from '../media/portfolio/AnimatedBlocks.gif';
@@ -71,6 +72,7 @@ export {
     FoodOrder,
     AddCartRedux,
     TicTacToe,
+    JsExamples,
     StopCountdown,
     ElegantShop,
     Nexter,

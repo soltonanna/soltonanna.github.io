@@ -21,6 +21,7 @@ import {
     Recipes,
     FoodOrder,
     TicTacToe,
+    JsExamples,
     StopCountdown,
     ElegantShop,
     Nexter,
@@ -131,10 +132,10 @@ export const portfolioItems = [
     {
         id: `p_r3`,
         category: 'apps',
-        name: 'Elegant Shop',
-        codeUrl: `${codeUrl}elegant-shop`,
-        demoUrl: `${demoUrl}elegant-shop/`,
-        imgUrl: ElegantShop
+        name: 'JS Info and Exercises',
+        codeUrl: `${codeUrl}javascript_exercises`,
+        demoUrl: `${demoUrl}javascript_exercises/`,
+        imgUrl: JsExamples
     },
     {
         id: `p_r4`,
@@ -168,6 +169,14 @@ export const portfolioItems = [
         codeUrl: `${codeUrl}simple-quiz`,
         demoUrl: `${demoUrl}simple-quiz/`,
         imgUrl: SimpleQuiz
+    },
+    {
+        id: `p_r8`,
+        category: 'apps',
+        name: 'Elegant Shop',
+        codeUrl: `${codeUrl}elegant-shop`,
+        demoUrl: `${demoUrl}elegant-shop/`,
+        imgUrl: ElegantShop
     },
     // Games
     {
