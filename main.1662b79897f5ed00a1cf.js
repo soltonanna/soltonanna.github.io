@@ -3060,28 +3060,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AddCartRedux: () => (/* reexport default export from named module */ _media_portfolio_apps_Add_to_Cart_Redux_jpg__WEBPACK_IMPORTED_MODULE_20__),
 /* harmony export */   AmericanSavings: () => (/* reexport default export from named module */ _media_portfolio_wp_american_savings_jpg__WEBPACK_IMPORTED_MODULE_8__),
-/* harmony export */   AnimatedBlocks: () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_26__),
-/* harmony export */   AnimatedTexts: () => (/* reexport default export from named module */ _media_portfolio_AnimatedTexts_gif__WEBPACK_IMPORTED_MODULE_27__),
+/* harmony export */   AnimatedBlocks: () => (/* reexport default export from named module */ _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_27__),
+/* harmony export */   AnimatedTexts: () => (/* reexport default export from named module */ _media_portfolio_AnimatedTexts_gif__WEBPACK_IMPORTED_MODULE_28__),
 /* harmony export */   ArmeniansUnified: () => (/* reexport default export from named module */ _media_portfolio_wp_armeniansunified_jpg__WEBPACK_IMPORTED_MODULE_7__),
 /* harmony export */   BeerStore: () => (/* reexport default export from named module */ _media_portfolio_apps_BeerStore_jpg__WEBPACK_IMPORTED_MODULE_17__),
 /* harmony export */   BlogPosts: () => (/* reexport default export from named module */ _media_portfolio_apps_PostsPage_jpg__WEBPACK_IMPORTED_MODULE_15__),
 /* harmony export */   Byrobynblair: () => (/* reexport default export from named module */ _media_portfolio_wp_byrobinblair_jpg__WEBPACK_IMPORTED_MODULE_4__),
-/* harmony export */   CssCertificate: () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_30__),
+/* harmony export */   CssCertificate: () => (/* reexport default export from named module */ _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_31__),
 /* harmony export */   ElegantShop: () => (/* reexport default export from named module */ _media_portfolio_apps_elegant_shop_png__WEBPACK_IMPORTED_MODULE_23__),
 /* harmony export */   EllenNielsen: () => (/* reexport default export from named module */ _media_portfolio_wp_EllenNielsen_jpg__WEBPACK_IMPORTED_MODULE_10__),
 /* harmony export */   FoodOrder: () => (/* reexport default export from named module */ _media_portfolio_apps_FoodOrder_jpg__WEBPACK_IMPORTED_MODULE_19__),
 /* harmony export */   GuessNumberGame: () => (/* reexport default export from named module */ _media_portfolio_games_GuessNumberGame_jpg__WEBPACK_IMPORTED_MODULE_12__),
 /* harmony export */   Hven: () => (/* reexport default export from named module */ _media_portfolio_wp_Hven_jpg__WEBPACK_IMPORTED_MODULE_1__),
-/* harmony export */   JsCertificate: () => (/* reexport default export from named module */ _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_31__),
+/* harmony export */   JsCertificate: () => (/* reexport default export from named module */ _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_32__),
+/* harmony export */   JsExamples: () => (/* reexport default export from named module */ _media_portfolio_apps_JsExamples_png__WEBPACK_IMPORTED_MODULE_26__),
 /* harmony export */   Jtrain: () => (/* reexport default export from named module */ _media_portfolio_wp_Jtrainwellness_jpg__WEBPACK_IMPORTED_MODULE_3__),
 /* harmony export */   Maldek: () => (/* reexport default export from named module */ _media_portfolio_wp_Maldek_jpg__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   MedQA: () => (/* reexport default export from named module */ _media_portfolio_wp_MedQA_jpg__WEBPACK_IMPORTED_MODULE_11__),
 /* harmony export */   MinesGame: () => (/* reexport default export from named module */ _media_portfolio_games_MinesGame_jpg__WEBPACK_IMPORTED_MODULE_14__),
-/* harmony export */   NaturesSpa: () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_28__),
-/* harmony export */   Nexter: () => (/* reexport default export from named module */ _media_portfolio_Nexter_png__WEBPACK_IMPORTED_MODULE_29__),
+/* harmony export */   NaturesSpa: () => (/* reexport default export from named module */ _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_29__),
+/* harmony export */   Nexter: () => (/* reexport default export from named module */ _media_portfolio_Nexter_png__WEBPACK_IMPORTED_MODULE_30__),
 /* harmony export */   PigGame: () => (/* reexport default export from named module */ _media_portfolio_games_PigGame_jpg__WEBPACK_IMPORTED_MODULE_13__),
 /* harmony export */   Prosky: () => (/* reexport default export from named module */ _media_portfolio_wp_prosky_jpg__WEBPACK_IMPORTED_MODULE_9__),
-/* harmony export */   ReactCertificate: () => (/* reexport default export from named module */ _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_32__),
+/* harmony export */   ReactCertificate: () => (/* reexport default export from named module */ _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_33__),
 /* harmony export */   Recipes: () => (/* reexport default export from named module */ _media_portfolio_apps_Recipes_jpg__WEBPACK_IMPORTED_MODULE_18__),
 /* harmony export */   SimpleQuiz: () => (/* reexport default export from named module */ _media_portfolio_apps_quiz_screen_jpg__WEBPACK_IMPORTED_MODULE_25__),
 /* harmony export */   StopCountdown: () => (/* reexport default export from named module */ _media_portfolio_games_countdown_png__WEBPACK_IMPORTED_MODULE_22__),
@@ -3118,13 +3119,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _media_portfolio_apps_elegant_shop_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../media/portfolio/apps/elegant-shop.png */ "./src/media/portfolio/apps/elegant-shop.png");
 /* harmony import */ var _media_portfolio_apps_traveling_gallery_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../media/portfolio/apps/traveling-gallery.jpg */ "./src/media/portfolio/apps/traveling-gallery.jpg");
 /* harmony import */ var _media_portfolio_apps_quiz_screen_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../media/portfolio/apps/quiz-screen.jpg */ "./src/media/portfolio/apps/quiz-screen.jpg");
-/* harmony import */ var _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../media/portfolio/AnimatedBlocks.gif */ "./src/media/portfolio/AnimatedBlocks.gif");
-/* harmony import */ var _media_portfolio_AnimatedTexts_gif__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../media/portfolio/AnimatedTexts.gif */ "./src/media/portfolio/AnimatedTexts.gif");
-/* harmony import */ var _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../media/portfolio/NaturesSpa.jpg */ "./src/media/portfolio/NaturesSpa.jpg");
-/* harmony import */ var _media_portfolio_Nexter_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../media/portfolio/Nexter.png */ "./src/media/portfolio/Nexter.png");
-/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
-/* harmony import */ var _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../media/pdf/CompleteJSCourse_Certificate.pdf */ "./src/media/pdf/CompleteJSCourse_Certificate.pdf");
-/* harmony import */ var _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../media/pdf/React_Certificate.pdf */ "./src/media/pdf/React_Certificate.pdf");
+/* harmony import */ var _media_portfolio_apps_JsExamples_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../media/portfolio/apps/JsExamples.png */ "./src/media/portfolio/apps/JsExamples.png");
+/* harmony import */ var _media_portfolio_AnimatedBlocks_gif__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../media/portfolio/AnimatedBlocks.gif */ "./src/media/portfolio/AnimatedBlocks.gif");
+/* harmony import */ var _media_portfolio_AnimatedTexts_gif__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../media/portfolio/AnimatedTexts.gif */ "./src/media/portfolio/AnimatedTexts.gif");
+/* harmony import */ var _media_portfolio_NaturesSpa_jpg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../media/portfolio/NaturesSpa.jpg */ "./src/media/portfolio/NaturesSpa.jpg");
+/* harmony import */ var _media_portfolio_Nexter_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../media/portfolio/Nexter.png */ "./src/media/portfolio/Nexter.png");
+/* harmony import */ var _media_pdf_AdvancedCSS_Certificate_pdf__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../media/pdf/AdvancedCSS_Certificate.pdf */ "./src/media/pdf/AdvancedCSS_Certificate.pdf");
+/* harmony import */ var _media_pdf_CompleteJSCourse_Certificate_pdf__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../media/pdf/CompleteJSCourse_Certificate.pdf */ "./src/media/pdf/CompleteJSCourse_Certificate.pdf");
+/* harmony import */ var _media_pdf_React_Certificate_pdf__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../media/pdf/React_Certificate.pdf */ "./src/media/pdf/React_Certificate.pdf");
 /** Portfolio Images */
 /** WP */
 
@@ -3146,6 +3148,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /** APPS */
+
 
 
 
@@ -3278,10 +3281,10 @@ var portfolioItems = [
 }, {
   id: "p_r3",
   category: 'apps',
-  name: 'Elegant Shop',
-  codeUrl: "".concat(codeUrl, "elegant-shop"),
-  demoUrl: "".concat(demoUrl, "elegant-shop/"),
-  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.ElegantShop
+  name: 'JS Info and Exercises',
+  codeUrl: "".concat(codeUrl, "javascript_exercises"),
+  demoUrl: "".concat(demoUrl, "javascript_exercises/"),
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.JsExamples
 }, {
   id: "p_r4",
   category: 'apps',
@@ -3311,6 +3314,13 @@ var portfolioItems = [
   codeUrl: "".concat(codeUrl, "simple-quiz"),
   demoUrl: "".concat(demoUrl, "simple-quiz/"),
   imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.SimpleQuiz
+}, {
+  id: "p_r8",
+  category: 'apps',
+  name: 'Elegant Shop',
+  codeUrl: "".concat(codeUrl, "elegant-shop"),
+  demoUrl: "".concat(demoUrl, "elegant-shop/"),
+  imgUrl: _media_files_js__WEBPACK_IMPORTED_MODULE_0__.ElegantShop
 },
 // Games
 {
@@ -63635,6 +63645,17 @@ module.exports = __webpack_require__.p + "assets/FoodOrder.jpg";
 
 /***/ }),
 
+/***/ "./src/media/portfolio/apps/JsExamples.png":
+/*!*************************************************!*\
+  !*** ./src/media/portfolio/apps/JsExamples.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/JsExamples.png";
+
+/***/ }),
+
 /***/ "./src/media/portfolio/apps/PostsPage.jpg":
 /*!************************************************!*\
   !*** ./src/media/portfolio/apps/PostsPage.jpg ***!
@@ -78764,4 +78785,4 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /******/ })()
 ;
-//# sourceMappingURL=main.1ec0a061cbf742342001.js.map
+//# sourceMappingURL=main.1662b79897f5ed00a1cf.js.map
