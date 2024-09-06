@@ -214,6 +214,9 @@ body {
                         @include displayFlex(column, nowrap, flex-start, flex-start, flex-start);
                         width: max-content;
                     }
+                    @include respond(phone) {
+                        width: auto;
+                    }
                     
                     .button {
                         width: max-content;

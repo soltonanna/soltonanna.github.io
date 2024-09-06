@@ -19,7 +19,8 @@ import {
     Weather,
     BeerStore,
     Recipes,
-    FoodOrder,
+    FoodOrder1,
+    //FoodOrder2,
     TicTacToe,
     JsExamples,
     StopCountdown,
@@ -140,13 +141,21 @@ export const portfolioItems = [
     {
         id: `p_r4`,
         category: 'apps',
-        name: 'Food Order App',
-        codeUrl: `${codeUrl}food-order`,
-        demoUrl: `${demoUrl}food-order/`,
-        imgUrl: FoodOrder
+        name: 'Food Order App 1',
+        codeUrl: `${codeUrl}food-order-application`,
+        demoUrl: ``,
+        imgUrl: FoodOrder1
     },
+    // {
+    //     id: `p_r5`,
+    //     category: 'apps',
+    //     name: 'Food Order App 2',
+    //     codeUrl: `${codeUrl}food-order`,
+    //     demoUrl: `${demoUrl}food-order/`,
+    //     imgUrl: FoodOrder2
+    // },
     {
-        id: `p_r5`,
+        id: `p_r6`,
         category: 'apps',
         name: 'Weather',
         codeUrl: `${codeUrl}weather`,
@@ -154,7 +163,7 @@ export const portfolioItems = [
         imgUrl: Weather
     },
     {
-        id: `p_r6`,
+        id: `p_r7`,
         category: 'apps',
         name: 'Traveling Gallery',
         //codeUrl: `${codeUrl}traveling-gallery`,
@@ -163,7 +172,7 @@ export const portfolioItems = [
         imgUrl: TravelingGallery
     },
     {
-        id: `p_r7`,
+        id: `p_r8`,
         category: 'apps',
         name: 'Simple Quiz',
         codeUrl: `${codeUrl}simple-quiz`,
@@ -171,7 +180,7 @@ export const portfolioItems = [
         imgUrl: SimpleQuiz
     },
     {
-        id: `p_r8`,
+        id: `p_r9`,
         category: 'apps',
         name: 'Elegant Shop',
         codeUrl: `${codeUrl}elegant-shop`,

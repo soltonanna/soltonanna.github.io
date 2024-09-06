@@ -23,7 +23,8 @@ import BlogPosts from '../media/portfolio/apps/PostsPage.jpg';
 import Weather from '../media/portfolio/apps/WeatherApp.jpg';
 import BeerStore from '../media/portfolio/apps/BeerStore.jpg';
 import Recipes from '../media/portfolio/apps/Recipes.jpg';
-import FoodOrder from '../media/portfolio/apps/FoodOrder.jpg';
+import FoodOrder1 from '../media/portfolio/apps/FoodOrder1App.jpg'
+import FoodOrder2 from '../media/portfolio/apps/FoodOrder.jpg';
 import AddCartRedux from '../media/portfolio/apps/Add-to-Cart-Redux.jpg';
 import TicTacToe from '../media/portfolio/apps/TicTacToe.png';
 import StopCountdown from '../media/portfolio/games/countdown.png';
@@ -69,7 +70,8 @@ export {
     Weather,
     BeerStore,
     Recipes,
-    FoodOrder,
+    FoodOrder1,
+    //FoodOrder2,
     AddCartRedux,
     TicTacToe,
     JsExamples,
