@@ -42,10 +42,10 @@ function Experience() {
             />
 
             <CardView 
-              title='Web Developer'
+              title='Full stack web developer'
               place='Brainstormtech'
               placeUrl='https://brainstormtech.io/'
-              date='Jun 2023 - Jun 2024'
+              date='Jun 2023 - Jun 2024 · 1 year'
               desc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects..." 
               fullDesc="I've developed 5 WordPress projects from inception to completion and provided support for an additional 6 projects, involving customization, new features and troubleshooting. Adept at optimizing website performance, successfully elevating page load scores from >50% to 95% and more through meticulous enhancements."
               moreDesc={
@@ -65,11 +65,43 @@ function Experience() {
             />
 
             <CardView 
-              title='Front-end developer'
+              title='Frontend ( React JS ) developer'
+              place='NoorLogic LLC'
+              placeUrl='https://noorlogic.com/'
+              date='Sep 2022 - Jun 2023 · 10 month'
+              desc="As a React JS developer, I worked on the 'Workspace Collaboration Tool' project, focusing on adding new features, fixing bugs, and ..." 
+              fullDesc="As a React JS developer, I worked on the 'Workspace Collaboration Tool' project, focusing on adding new features, fixing bugs, and improving design based on Figma prototypes. Ensured seamless user experience and performance optimization across different browsers and devices."
+              moreDesc={
+                <>
+                  <h3>Responsibilities:</h3>
+                  <ul>
+                    <li>As a React JS developer, I worked on the <a href="https://noorlogic.com/portfolio/workspace-collaboration-tool" target='blank'>'Workspace Collaboration Tool'</a> project, focusing on adding new features, fixing bugs, and improving design based on Figma prototypes. Ensured seamless user experience and performance optimization across different browsers and devices.</li>
+                  </ul>
+                  <br/>
+                  <h3>Worked with:</h3>
+                  <p>React Js, JavaScript, AntDesign, HTML5, CSS, Sass, REST APIs, Webpack, Git, etc. </p>
+                </>
+              }
+            />
+
+            <CardView 
+              title='Frontend ( JavaScript ) developer'
               place='BetInspire'
               placeUrl='https://www.betinspire.com/'
               date='Apr 2022 - Aug 2022 · 4 month'
-              desc="I've been responsible for changing and improving existing platform functionality, developing website frontend, conducting bug fixes, and adding new features."
+              desc="I've been responsible for changing and improving existing iGaming platform functionality, developing website frontend, conducting bug fixes, and... "
+              moreDesc={
+                <>
+                  <h3>Responsibilities:</h3>
+                  <ul>
+                    <li>I've been responsible for changing and improving existing <a href="https://www.betinspire.com/igaming-platform/" target='_blank'>iGaming platform</a> functionality, developing website frontends, conducting bug fixes, and adding new features.</li>
+                    <li>Developed and maintained several web applications for various clients, ensuring responsiveness and cross-browser compatibility.</li>
+                  </ul>
+                  <br/>
+                  <h3>Worked with:</h3>
+                  <p>JavaScript, AntDesign, HTML5, CSS, Sass, REST APIs, Webpack, Git, etc. </p>
+                </>
+              }
             />
 
             <CardView 
@@ -77,18 +109,19 @@ function Experience() {
               place='Career Break'
               placeUrl=''
               date='Jan 2022 - Apr 2022 · 4 month'
-              desc="During my career break, I concentrated on honing my frontend skills. I enrolled in a course on Udemy..."
-              fullDesc="During my career break, I concentrated on honing my frontend skills. I enrolled in a course on Udemy, where I focused on advancing my proficiency in JavaScript and React, as well as strengthening my grasp of fundamental frontend concepts. "
+              desc="During my career break, I concentrated on honing my frontend skills. I enrolled in a courses on Udemy..."
+              fullDesc="During my career break, I concentrated on honing my frontend skills. I enrolled in a courses on Udemy, where I focused on advancing my proficiency in JavaScript and React, as well as strengthening my grasp of fundamental frontend concepts. "
               moreDesc={
                 <>
                   <h3>Responsibilities:</h3>
                   <ul>
-                    <li>I completed the course <a href='https://www.udemy.com/course/the-complete-javascript-course/' target='_blank'>"The Complete JavaScript Course 2024: From Zero to Expert!" on Udemy to enhance my skills on full JavaScript;</a> 
+                    <li>I've completed the course <a href='https://www.udemy.com/course/the-complete-javascript-course/' target='_blank'> "The Complete JavaScript Course 2024: From Zero to Expert!" on Udemy to enhance my skills on full JavaScript;</a> 
                     </li>
-                    <li>I completed the course <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/' target='_blank'>"ReactJS - The Complete Guide (incl Hooks, React Router, Redux)" on Udemy to enhance my skills on ReactJS;</a> 
+                    <li>I've completed the course <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/' target='_blank'> "ReactJS - The Complete Guide (incl Hooks, React Router, Redux)" on Udemy to enhance my skills on ReactJS;</a> 
                     </li>
-                    <li>I completed the course <a href='https://www.udemy.com/course/advanced-css-and-sass/?couponCode=ACCAGE0923' target='_blank'>"Advanced CSS and Sass: Flexbox, Grid, Animations and More!" on Udemy to enhance my skills;</a> 
+                    <li>I've completed the course <a href='https://www.udemy.com/course/advanced-css-and-sass/?couponCode=ACCAGE0923' target='_blank'> "Advanced CSS and Sass: Flexbox, Grid, Animations and More!" on Udemy to enhance my skills;</a> 
                     </li>
+                    <li>I've completed the course<a href="https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/" target='_blank'> Creative Advanced CSS & JavaScript Animations</a></li>
                     <li>Developed some SPA and small projects with HTML, CSS, Vanilla JS and React (can see them on Portfolio section).</li>
                     <li>Researched and monitored technologies and best practices for code standards. Watched videos, read documentations and researched forums.</li>
                   </ul>

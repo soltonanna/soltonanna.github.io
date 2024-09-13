@@ -26,7 +26,7 @@ const Header = () => {
 
           <div className="copyrights">
             All right reserved: <br/> S.Anahit ©2024. <br /><br />
-            Last update: <br/> 19-Jul-2024
+            Last update: <br/> 13-Sep-2024
           </div>
         </div>
 

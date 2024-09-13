@@ -14,6 +14,24 @@
     &.scrolling {
         min-height: 90vh;
         height: 90vh;
+
+        & > div {
+            max-height: 85%;
+            min-height: 85%;
+            height: 85%;
+        }
+
+        main {
+            height: 95%;
+            min-height: 95%;
+            max-height: 95%;
+
+            & > div {
+                height: 95%;
+                min-height: 95%;
+                max-height: 95%;
+            }
+        }
     }
     @include respond(tab-land) {
         width: 80%;
