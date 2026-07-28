@@ -27,7 +27,7 @@ const MainInfo = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            I'm a Front-end, Web developer
+            I'm a Web developer
           </motion.div>
 
           <SocialIcons />

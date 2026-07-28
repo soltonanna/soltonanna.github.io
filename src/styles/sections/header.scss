@@ -1,17 +1,32 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+$sidebar-width: 200px;
+$sidebar-transition: transform 0.35s ease, left 0.35s ease;
+
 .page header {
   .header-content.for-desktop {
     position: fixed;
-    width: 200px;
+    width: $sidebar-width;
     z-index: 11;
     overflow: hidden;
     padding: 10px 0 0;
     top: 0; bottom: 0;
+    left: 0;
     background-color: $color-white;
     border-right: 0.5rem solid $main-color;
+    transform: translateX(0);
+    transition: $sidebar-transition;
     @include displayFlex(column, nowrap, flex-start, flex-start, flex-start);
+
+    &.is-closed {
+      transform: translateX(-100%);
+    }
 
     @include respond(tab-port) {
       display: none;
+      transform: none;
+      transition: none;
 
       &.hidden {
         display: none;
@@ -68,7 +83,7 @@
 
         a:nth-child(2) {
           svg {
-            width: 10px;
+            width: 18px;
           }
         }
         a:nth-child(3) {
@@ -94,6 +109,43 @@
       text-align: center;
       color: #aeaeae;
       font-size: 14px;
+    }
+  }
+
+  .sidebar-toggle {
+    position: fixed;
+    top: 5%;
+    left: $sidebar-width;
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 56px;
+    padding: 0;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: $main-color;
+    color: $color-white;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: left 0.35s ease, background-color 0.2s ease;
+
+    &:hover {
+      background-color: $main-color-dark;
+    }
+
+    .icon {
+      color: $color-white;
+      pointer-events: none;
+    }
+
+    &.is-closed {
+      left: 0;
+    }
+
+    @include respond(tab-port) {
+      display: none;
     }
   }
 

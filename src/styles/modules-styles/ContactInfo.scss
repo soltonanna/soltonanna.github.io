@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .contact-info {
     position: relative;
     margin-bottom: $margin-bottom-medium;

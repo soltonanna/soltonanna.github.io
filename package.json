@@ -5,10 +5,10 @@
   "main": "babel.config.js",
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "start": "set NODE_ENV=development&&webpack serve",
-    "build-dev": "set NODE_ENV=development&&webpack",
-    "build-prod": "set NODE_ENV=production&&webpack",
-    "clean": "rd /s /q dist"
+    "start": "NODE_ENV=development webpack serve",
+    "build-dev": "NODE_ENV=development webpack",
+    "build-prod": "NODE_ENV=production webpack",
+    "clean": "rm -rf dist"
   },
   "author": "Sultanova Anahit",
   "license": "ISC",
@@ -27,7 +27,6 @@
     "html-webpack-plugin": "latest",
     "image-webpack-loader": "latest",
     "mini-css-extract-plugin": "latest",
-    "node-sass": "latest",
     "postcss": "latest",
     "postcss-loader": "latest",
     "postcss-preset-env": "latest",

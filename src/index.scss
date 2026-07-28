@@ -1,21 +1,17 @@
-//@import './libs/normalize';
-@import './styles/variables';
-@import './styles/mixins';
-@import './styles/fonts';
-@import './styles/style';
-@import './styles/animations';
+@use './styles/fonts';
+@use './styles/style';
+@use './styles/animations';
 
-@import './styles/sections/header.scss';
+@use './styles/sections/header';
 
-
-@import './styles/modules-styles/Container.scss';
-@import './styles/modules-styles/CardView.scss';
-@import './styles/modules-styles/Title_Desc.scss';
-@import './styles/modules-styles/ContactInfo.scss';
-@import './styles/modules-styles/RectProgressBar.scss';
-@import './styles/modules-styles/ProgItem.scss';
-@import './styles/modules-styles/InfoModal.scss';
-@import './styles/modules-styles/PortfolioItem.scss';
-@import './styles/modules-styles/SocialIcons.scss';
-@import './styles/modules-styles/Button.scss';
-@import './styles/modules-styles/Navigation.scss'
+@use './styles/modules-styles/Container';
+@use './styles/modules-styles/CardView';
+@use './styles/modules-styles/Title_Desc';
+@use './styles/modules-styles/ContactInfo';
+@use './styles/modules-styles/RectProgressBar';
+@use './styles/modules-styles/ProgItem';
+@use './styles/modules-styles/InfoModal';
+@use './styles/modules-styles/PortfolioItem';
+@use './styles/modules-styles/SocialIcons';
+@use './styles/modules-styles/Button';
+@use './styles/modules-styles/Navigation';

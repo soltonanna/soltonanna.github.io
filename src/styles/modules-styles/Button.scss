@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .button {
     background-color: $main-color;
     font-size: var(--button-font-size);

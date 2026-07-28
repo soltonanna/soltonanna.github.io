@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .title {
     word-spacing: 8px;
     margin-bottom: $margin-bottom-small;

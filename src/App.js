@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header.jsx';
 
 import MainInfo from './components/MainInfo.jsx';
@@ -12,9 +12,15 @@ import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
 const App = () => {
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setSidebarOpen((prev) => !prev);
+  };
+
   return (
-    <div className='page'>
-      <Header />
+    <div className={`page ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+      <Header isSidebarOpen={isSidebarOpen} onToggleSidebar={toggleSidebar} />
       <main>
         <MainInfo />
         <About />

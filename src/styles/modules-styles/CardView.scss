@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .card-view,
 .card-view-img {
     padding: 20px;

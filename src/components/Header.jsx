@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import SocialIcons from '../modules/SocialIcons.jsx';
 import Navbar from './Navbar.jsx';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const Header = () => {
+const Header = ({ isSidebarOpen = true, onToggleSidebar }) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -13,22 +13,35 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="header-content for-desktop">
+        <div
+          className={`header-content for-desktop ${
+            isSidebarOpen ? 'is-open' : 'is-closed'
+          }`}
+        >
           <div className="main-title-block">
             <h3 className="main-title">Sultanova Anahit</h3>
-            <p className="main-role">Front-end, Web developer</p>
+            <p className="main-role">Web developer</p>
             <SocialIcons />
           </div>
 
           <Navbar />
 
           <SocialIcons />
-
-          <div className="copyrights">
-            All right reserved: <br/> S.Anahit ©2024. <br /><br />
-            Last update: <br/> 13-Sep-2024
-          </div>
         </div>
+
+        <button
+          type="button"
+          className={`sidebar-toggle ${isSidebarOpen ? 'is-open' : 'is-closed'}`}
+          onClick={onToggleSidebar}
+          aria-label={isSidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
+          aria-expanded={isSidebarOpen}
+        >
+          {isSidebarOpen ? (
+            <FaChevronLeft size={14} className="icon" />
+          ) : (
+            <FaChevronRight size={14} className="icon" />
+          )}
+        </button>
 
         <div className="header-content for-mobile container">
           <h3><span>Sultanova Anahit</span> / Front-end, Web developer</h3>

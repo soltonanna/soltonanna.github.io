@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .navbar {
     @include displayFlex(column, wrap, center, flex-start, center);
     margin: 2rem 0 4rem;
