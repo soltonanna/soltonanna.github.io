@@ -1,0 +1,194 @@
+@use '../abstracts/breakpoints' as *;
+
+.hero {
+  position: relative;
+  padding-block: 40px 72px;
+
+  @include up(md) {
+    padding-block: 96px 112px;
+  }
+
+  @include up(lg) {
+    display: flex;
+    align-items: center;
+    min-height: min(100vh, 900px);
+    padding-block: 96px;
+  }
+
+  &__inner {
+    display: grid;
+    gap: 40px;
+
+    @include up(lg) {
+      grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr);
+      align-items: end;
+      gap: 56px;
+    }
+  }
+
+  &__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 32px;
+    padding: 0 14px 0 10px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--ink-soft);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+  }
+
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+
+  &__title {
+    margin-top: 28px;
+    font-size: var(--fs-display);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+
+    em {
+      display: block;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      padding-right: 0.08em;
+    }
+
+    @include up(sm) {
+      em {
+        display: inline;
+      }
+    }
+  }
+
+  &__lead {
+    margin-top: 24px;
+    max-width: 30ch;
+    color: var(--muted);
+    font-size: var(--fs-lead);
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+  }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 32px;
+
+    .button {
+      padding-inline: 14px;
+    }
+
+    @include up(sm) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      .button {
+        padding-inline: 22px;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 28px;
+  }
+}
+
+/* Profile facts card */
+.profile-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+
+  @include up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include up(lg) {
+    grid-template-columns: 1fr;
+    padding: 8px 24px;
+  }
+
+  &__row {
+    display: grid;
+    gap: 4px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+
+    &:nth-child(odd) {
+      border-right: 1px solid var(--line);
+    }
+
+    &:nth-last-child(-n + 2) {
+      border-bottom: 0;
+    }
+
+    @include up(md) {
+      &:nth-child(odd) {
+        border-right: 0;
+      }
+
+      &:not(:nth-child(3n)) {
+        border-right: 1px solid var(--line);
+      }
+
+      &:nth-last-child(-n + 3) {
+        border-bottom: 0;
+      }
+    }
+
+    @include up(lg) {
+      grid-template-columns: 96px 1fr;
+      gap: 16px;
+      align-items: baseline;
+      padding: 16px 0;
+
+      &:not(:nth-child(3n)) {
+        border-right: 0;
+      }
+
+      &:nth-child(n) {
+        border-bottom: 1px solid var(--line);
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  dt {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  dd {
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    line-height: 1.4;
+
+    @include up(lg) {
+      font-size: 0.9375rem;
+    }
+  }
+}

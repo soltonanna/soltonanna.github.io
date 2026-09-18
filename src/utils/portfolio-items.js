@@ -14,6 +14,8 @@ import {
     Prosky,
     EllenNielsen,
     MedQA,
+    CentralHotel,
+    CampTumo,
     ArmeniansUnified,
     AmericanSavings,
     Weather,
@@ -33,9 +35,23 @@ import {
 const codeUrl = 'https://github.com/soltonanna/';
 const demoUrl = 'https://soltonanna.github.io/';
 
-// categories: all, temp, games, apps, anime, modules, wps
+// categories: all, apps, wps, shopify, temp, games, anime
 export const portfolioItems = [
-    // Wordpress Sites
+    // WordPress sites (live, newest first)
+    {
+        id: `p_w13`,
+        category: 'wps',
+        name: 'Camp TUMO',
+        demoUrl: `https://camptumo.com/`,
+        imgUrl: CampTumo
+    },
+    {
+        id: `p_w12`,
+        category: 'wps',
+        name: 'Central Hotel Yerevan',
+        demoUrl: `https://centralhotel.am/`,
+        imgUrl: CentralHotel
+    },
     {
         id: `p_w1`,
         category: 'wps',
@@ -46,14 +62,14 @@ export const portfolioItems = [
     {
         id: `p_w2`,
         category: 'wps',
-        name: 'Jtrain',
+        name: 'JTrain Wellness',
         demoUrl: `https://jtrainwellness.com/`,
         imgUrl: Jtrain
     },
     {
         id: `p_w3`,
         category: 'wps',
-        name: 'Maldek',
+        name: 'Maldeks',
         demoUrl: `https://maldeks.org/`,
         imgUrl: Maldek
     },
@@ -65,16 +81,9 @@ export const portfolioItems = [
         imgUrl: AmericanSavings
     },
     {
-        id: `p_w5`,
-        category: 'wps',
-        name: 'Byrobynblair',
-        demoUrl: `https://byrobynblair.com/`,
-        imgUrl: Byrobynblair
-    },
-    {
         id:`p_w6`,
         category: 'wps',
-        name: 'VenutiMyoka',
+        name: 'Venuti Mayoka',
         demoUrl: `https://venutimayoka.com/`,
         imgUrl: VenutiMyoka
     },
@@ -88,7 +97,7 @@ export const portfolioItems = [
     {
         id: `p_w8`,
         category: 'wps',
-        name: 'ArmeniansUnified',
+        name: 'Armenians Unified',
         demoUrl: `https://armeniansunified.org/`,
         imgUrl: ArmeniansUnified
     },
@@ -112,6 +121,14 @@ export const portfolioItems = [
         name: 'Med QA',
         demoUrl: `https://med-qa.com/`,
         imgUrl: MedQA
+    },
+    // Shopify stores
+    {
+        id: `p_s1`,
+        category: 'shopify',
+        name: 'By Robyn Blair',
+        demoUrl: `https://byrobynblair.com/`,
+        imgUrl: Byrobynblair
     },
     // React Apps
     {
@@ -223,7 +240,7 @@ export const portfolioItems = [
     {
         id: `p_g5`,
         category: 'games',
-        name: 'Guess number',
+        name: 'Guess My Number',
         codeUrl: `${codeUrl}guess-my-number`,
         demoUrl: `${demoUrl}guess-my-number/`,
         imgUrl: GuessNumberGame
@@ -232,7 +249,7 @@ export const portfolioItems = [
     {
         id: `p_t1`,
         category: 'temp',
-        name: 'Natures',
+        name: 'Natures Spa',
         codeUrl: `${codeUrl}natures`,
         demoUrl: `${demoUrl}natures/`,
         imgUrl: NaturesSpa

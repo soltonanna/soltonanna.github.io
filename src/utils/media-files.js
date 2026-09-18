@@ -12,6 +12,8 @@ import AmericanSavings from '../media/portfolio/wp/american-savings.jpg';
 import Prosky from '../media/portfolio/wp/prosky.jpg';
 import EllenNielsen from '../media/portfolio/wp/EllenNielsen.jpg';
 import MedQA from '../media/portfolio/wp/MedQA.jpg';
+import CentralHotel from '../media/portfolio/wp/CentralHotel.jpg';
+import CampTumo from '../media/portfolio/wp/CampTumo.jpg';
 
 /** GAMES */
 import GuessNumberGame from '../media/portfolio/games/GuessNumberGame.jpg';
@@ -65,6 +67,8 @@ export {
     Prosky,
     EllenNielsen,
     MedQA,
+    CentralHotel,
+    CampTumo,
     ArmeniansUnified,
     AmericanSavings,
     Weather,

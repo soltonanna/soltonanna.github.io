@@ -17,10 +17,11 @@ Single-page React application that presents professional profile, experience, po
 |------|----------------|
 | UI | React 18 (`react`, `react-dom`) |
 | Build | Webpack 5, Webpack Dev Server, Babel (`@babel/preset-env`, `@babel/preset-react`) |
-| Styles | Sass/SCSS, CSS Modules-style partials, PostCSS (`postcss-preset-env`), `mini-css-extract-plugin` |
-| Animation / UX | Framer Motion, React Scroll, React Router Hash Link |
+| Styles | Sass/SCSS design system (tokens → base → layout → components → sections), mobile-first, PostCSS (`postcss-preset-env`), `mini-css-extract-plugin` |
+| Fonts | Self-hosted via Fontsource: Geist, Geist Mono, Instrument Serif |
+| Animation / UX | Framer Motion (subtle reveals, respects reduced motion), native smooth scroll + IntersectionObserver scroll-spy |
 | UI helpers | React Icons, Font Awesome React, React Tabs, React Loading, React Copy to Clipboard |
-| Carousel | Splide (`@splidejs/react-splide`) |
+| Carousel | Custom scroll-snap `Carousel` module (no dependency) |
 | Deploy | `gh-pages` → GitHub Pages |
 | Polyfill | `@babel/polyfill` |
 
@@ -39,9 +40,10 @@ soltonanna.github.io/
 │   ├── index.scss          # Global styles entry
 │   ├── App.js              # Page layout / section composition
 │   ├── components/         # Page sections (Header, About, Experience, …)
-│   ├── modules/            # Reusable UI pieces (Button, CardView, Modal, …)
-│   ├── styles/             # SCSS variables, mixins, animations, section/module styles
-│   ├── utils/              # Static data (portfolio, blog, reviews, media paths)
+│   ├── modules/            # Reusable UI (Button, TimelineItem, ServiceCard, PortfolioItem, Carousel, InfoModal, Reveal, …)
+│   ├── hooks/              # useScrollSpy, useLockBodyScroll, useEscape, useDetails, useStoredState
+│   ├── styles/             # abstracts/ base/ layout/ components/ sections/ (legacy partials in styles/_*.scss and modules-styles/ are unused)
+│   ├── utils/              # Static data (portfolio, blog, reviews, skills, nav items, media paths) + helpers
 │   ├── media/              # Images, PDF, favicons
 │   ├── fonts/              # Custom fonts
 │   └── libs/               # e.g. normalize.css

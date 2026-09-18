@@ -1,0 +1,42 @@
+@use '../abstracts/breakpoints' as *;
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  a {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--muted);
+    font-size: 1rem;
+    transition: color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease),
+      border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+
+    @include hover {
+      color: var(--ink);
+      background: var(--surface-muted);
+    }
+  }
+
+  &--outline {
+    gap: 8px;
+
+    a {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+
+      @include hover {
+        border-color: var(--ink);
+        background: var(--surface);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

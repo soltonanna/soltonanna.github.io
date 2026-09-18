@@ -1,0 +1,60 @@
+@use '../abstracts/breakpoints' as *;
+
+.page {
+  --rail-current: 0px;
+  position: relative;
+  min-height: 100vh;
+
+  @include up(lg) {
+    --rail-current: var(--rail-w);
+
+    &.sidebar-closed {
+      --rail-current: var(--rail-w-collapsed);
+    }
+  }
+
+  &__content {
+    padding-top: var(--topbar-h);
+    transition: padding-left var(--dur) var(--ease);
+
+    @include up(lg) {
+      padding-top: 0;
+      padding-left: var(--rail-current);
+    }
+  }
+}
+
+.section {
+  position: relative;
+  padding-block: var(--section-space);
+
+  & + & {
+    .container::before {
+      content: '';
+      position: absolute;
+      top: calc(var(--section-space) * -1);
+      left: var(--gutter);
+      right: var(--gutter);
+      height: 1px;
+      background: var(--line);
+    }
+  }
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--ink);
+  color: var(--bg);
+  font-size: var(--fs-sm);
+  transform: translateY(-200%);
+  transition: transform var(--dur-fast) var(--ease);
+
+  &:focus {
+    transform: none;
+  }
+}

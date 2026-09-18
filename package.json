@@ -17,6 +17,9 @@
     "@babel/polyfill": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
     "@fortawesome/fontawesome-svg-core": "latest",
     "@fortawesome/free-solid-svg-icons": "latest",
     "@fortawesome/react-fontawesome": "latest",
@@ -36,7 +39,6 @@
     "react-icons": "latest",
     "react-loading": "latest",
     "react-router-hash-link": "latest",
-    "react-scroll": "^1.9.0",
     "react-tabs": "latest",
     "sass": "latest",
     "sass-loader": "latest",
@@ -46,7 +48,6 @@
     "webpack-dev-server": "latest"
   },
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
     "framer-motion": "^11.3.0"
   }
 }

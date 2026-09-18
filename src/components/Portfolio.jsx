@@ -1,97 +1,104 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import 'react-tabs/style/react-tabs.css';
+import React, { useMemo, useState } from 'react';
+import { FiChevronDown } from 'react-icons/fi';
 
 import Container from '../modules/Container.jsx';
 import Title_Desc from '../modules/Title_Desc.jsx';
 import PortfolioItem from '../modules/PortfolioItem.jsx';
 import Button from '../modules/Button.jsx';
+import Reveal from '../modules/Reveal.jsx';
 
 import { portfolioItems } from '../utils/portfolio-items.js';
+import { portfolioCategories, categoryLabel } from '../utils/portfolio-categories.js';
+import { sectionIndex } from '../utils/nav-items.js';
+
+const VISIBLE_ITEMS = 6;
 
 const Portfolio = () => {
-  const [portfolioList, setPortfolioList] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState();
+  const [selectedCategory, setSelectedCategory] = useState('all');
   const [loadMore, setLoadMore] = useState(false);
-  
-  useEffect(() => {
-    setPortfolioList(portfolioItems);
+
+  const counts = useMemo(() => {
+    const result = { all: portfolioItems.length };
+    portfolioItems.forEach((item) => {
+      result[item.category] = (result[item.category] || 0) + 1;
+    });
+    return result;
   }, []);
 
-  const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
-  }
+  const filteredList = useMemo(
+    () =>
+      selectedCategory === 'all'
+        ? portfolioItems
+        : portfolioItems.filter((item) => item.category === selectedCategory),
+    [selectedCategory]
+  );
 
-  const loadMoreHandler = (event) => {
-    event.preventDefault();
-    setLoadMore(!loadMore);
-  }
-
-  function getFilteredList() {
-    if (!selectedCategory || selectedCategory === 'all') {
-      return portfolioList;
-    }
+  const handleCategoryChange = (value) => {
+    setSelectedCategory(value);
     setLoadMore(false);
-    return portfolioList.filter((item) => item.category === selectedCategory);
-    
-  }
-  let filteredList = useMemo(getFilteredList, [selectedCategory, portfolioList]);
+  };
+
+  const hasMore = filteredList.length > VISIBLE_ITEMS;
 
   return (
-    <section id='portfolio'>
+    <section id='portfolio' className='section section--portfolio'>
       <Container className="portfolio">
-        <Title_Desc 
-          title="Portfolio"
-          desc="Let me present a selection of my projects. You'll find a variety of examples including template designs, projects crafted with React or Vanilla JS, reusable modules, interactive animations, small-scale games, and websites developed using WordPress. Feel free to explore the demo versions and access the corresponding source codes available on my GitHub repositories."
-        />
-        <div className='for-mobile-view'>
-          <div className='filter-block' >
-            <Button onClick={handleCategoryChange} value='all' className='btn-1'>
-              All 
-            </Button>
-            <Button onClick={handleCategoryChange} value='apps' className='btn-1'>
-              JS / React JS Apps
-            </Button>
-            <Button onClick={handleCategoryChange} value='wps' className='btn-1'>
-              WordPress
-            </Button>
-            <Button onClick={handleCategoryChange} value='temp' className='btn-1'>
-              Templates
-            </Button>
-            <Button onClick={handleCategoryChange} value='games' className='btn-1'>
-              Games
-            </Button>
-            <Button onClick={handleCategoryChange} value='anime' className='btn-1'>
-              Animation
-            </Button>
-            
-          </div>
-          
-          <div className={`items-block ${loadMore ? 'active' : ''}`}>
-            {
-              filteredList.length ? filteredList.map(item => {
-                return (
-                <PortfolioItem 
-                  key={item.id}
-                  imgUrl={item.imgUrl}
-                  title={item.name}
-                  demoUrl={item.demoUrl}
-                  codeUrl={item.codeUrl}
-                />);
-              }) : <p>No items yet...</p>
-            }
-          </div>
+        <div className='portfolio__head'>
+          <Title_Desc
+            index={sectionIndex('portfolio')}
+            eyebrow="Portfolio"
+            title="Portfolio"
+            desc="Two kinds of work live here. Live websites are real products I built or improved for clients and employers, either as the sole developer (freelance or in-house) or as part of a team. Pet projects are React and JavaScript apps, games, templates and animations I built to practice specific skills during my training, or just out of curiosity. Open any project to see it live, and check the source code on GitHub where it's available."
+          />
         </div>
-        {
-          filteredList.length > 6 && (
-            <Button className="load-more" onClick={loadMoreHandler}>
-             {!loadMore ? "Load More" : "Close" }
+
+        <div className='filter-bar' role='toolbar' aria-label='Filter projects'>
+          {portfolioCategories.map(({ value, label }) => (
+            <button
+              key={value}
+              type='button'
+              className={`filter-chip ${selectedCategory === value ? 'is-active' : ''}`}
+              aria-pressed={selectedCategory === value}
+              onClick={() => handleCategoryChange(value)}
+            >
+              {label}
+              <span className='filter-chip__count'>{counts[value] || 0}</span>
+            </button>
+          ))}
+        </div>
+
+        <Reveal key={selectedCategory} className={`project-grid ${hasMore && !loadMore ? 'is-limited' : ''}`}>
+          {filteredList.length ? (
+            filteredList.map((item) => (
+              <PortfolioItem
+                key={item.id}
+                imgUrl={item.imgUrl}
+                title={item.name}
+                demoUrl={item.demoUrl}
+                codeUrl={item.codeUrl}
+                category={categoryLabel(item.category)}
+              />
+            ))
+          ) : (
+            <p className='empty-state'>No projects in this category yet.</p>
+          )}
+        </Reveal>
+
+        {hasMore && (
+          <div className='portfolio__more'>
+            <Button
+              variant='secondary'
+              onClick={() => setLoadMore((v) => !v)}
+              aria-expanded={loadMore}
+              icon={<FiChevronDown aria-hidden="true" style={{ transform: loadMore ? 'rotate(180deg)' : 'none' }} />}
+            >
+              {!loadMore ? 'Show all projects' : 'Show less'}
             </Button>
-          )
-        }
-        
+          </div>
+        )}
       </Container>
     </section>
-  )
-}
+  );
+};
 
 export default Portfolio;

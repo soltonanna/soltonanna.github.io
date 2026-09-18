@@ -1,0 +1,164 @@
+@use '../abstracts/breakpoints' as *;
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease), box-shadow var(--dur) var(--ease);
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &__icon {
+    display: inline-flex;
+    font-size: 1.05em;
+    transition: transform var(--dur) var(--ease);
+
+    svg {
+      transition: transform var(--dur) var(--ease);
+    }
+  }
+
+  @include hover {
+    .button__icon {
+      transform: translate(2px, 0);
+    }
+  }
+
+  &--md {
+    height: 46px;
+    padding-inline: 20px;
+    font-size: 0.9375rem;
+  }
+
+  &--sm {
+    height: 38px;
+    padding-inline: 14px;
+    font-size: var(--fs-sm);
+  }
+
+  &--primary {
+    background: var(--ink);
+    color: var(--bg);
+
+    @include hover {
+      background: #000;
+      box-shadow: 0 8px 20px -10px rgba(18, 20, 23, 0.55);
+    }
+  }
+
+  &--secondary {
+    background: var(--surface);
+    border-color: var(--line);
+    color: var(--ink);
+    box-shadow: var(--shadow-sm);
+
+    @include hover {
+      border-color: var(--line-strong);
+    }
+  }
+
+  &--ghost {
+    color: var(--ink);
+
+    @include hover {
+      background: var(--surface-muted);
+    }
+  }
+}
+
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  transition: color var(--dur-fast) var(--ease);
+
+  svg {
+    font-size: 0.95em;
+    transition: transform var(--dur) var(--ease);
+  }
+
+  @include hover {
+    color: var(--ink);
+  }
+
+  &--strong {
+    color: var(--ink);
+
+    @include hover {
+      color: var(--accent);
+
+      svg {
+        transform: translate(2px, -2px);
+      }
+    }
+  }
+}
+
+.icon-button {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--ink);
+  font-size: 1.125rem;
+  transition: background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease),
+    opacity var(--dur-fast) var(--ease);
+
+  @include hover {
+    background: var(--surface-muted);
+  }
+
+  &--outline {
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  &:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+}
+
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding-inline: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--ink);
+  transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+
+  @include hover {
+    border-color: var(--ink);
+  }
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 20px;
+  margin-top: 14px;
+}

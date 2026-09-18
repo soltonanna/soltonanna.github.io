@@ -1,17 +1,27 @@
-@use './styles/fonts';
-@use './styles/style';
-@use './styles/animations';
+// Design system
+@use './styles/base/tokens';
+@use './styles/base/base';
 
-@use './styles/sections/header';
+// Layout
+@use './styles/layout/container';
+@use './styles/layout/page';
+@use './styles/layout/header';
 
-@use './styles/modules-styles/Container';
-@use './styles/modules-styles/CardView';
-@use './styles/modules-styles/Title_Desc';
-@use './styles/modules-styles/ContactInfo';
-@use './styles/modules-styles/RectProgressBar';
-@use './styles/modules-styles/ProgItem';
-@use './styles/modules-styles/InfoModal';
-@use './styles/modules-styles/PortfolioItem';
-@use './styles/modules-styles/SocialIcons';
-@use './styles/modules-styles/Button';
-@use './styles/modules-styles/Navigation';
+// Components
+@use './styles/components/button';
+@use './styles/components/section-heading';
+@use './styles/components/chip';
+@use './styles/components/social';
+@use './styles/components/modal';
+@use './styles/components/carousel';
+
+// Sections
+@use './styles/sections/hero';
+@use './styles/sections/about';
+@use './styles/sections/resume';
+@use './styles/sections/portfolio';
+@use './styles/sections/services';
+@use './styles/sections/reviews';
+@use './styles/sections/blog';
+@use './styles/sections/contact';
+@use './styles/sections/footer';

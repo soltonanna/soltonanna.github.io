@@ -1,0 +1,237 @@
+@use '../abstracts/breakpoints' as *;
+
+.resume {
+  display: grid;
+  gap: 72px;
+
+  &__block {
+    @include up(xl) {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+      gap: 48px;
+    }
+  }
+
+  &__aside {
+    @include up(xl) {
+      .section-heading {
+        position: sticky;
+        top: 32px;
+      }
+    }
+  }
+
+  &__block--education .section-heading__title {
+    font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+  }
+}
+
+.timeline {
+  &__list {
+    position: relative;
+    display: grid;
+
+    @include down(md) {
+      &.is-collapsed > .timeline-item:nth-child(n + 5) {
+        display: none;
+      }
+    }
+  }
+
+  &__more {
+    margin-top: 20px;
+    width: 100%;
+
+    @include up(md) {
+      display: none !important;
+    }
+  }
+
+  &--compact .timeline__list {
+    @include up(md) {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+  }
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  padding: 0 0 36px 28px;
+
+  /* rail line */
+  &::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    bottom: -6px;
+    width: 1px;
+    background: var(--line);
+  }
+
+  /* node */
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 1.5px solid var(--line-strong);
+    transition: border-color var(--dur) var(--ease), background-color var(--dur) var(--ease);
+  }
+
+  &:last-child::before {
+    display: none;
+  }
+
+  &:first-child::after {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+
+  @include up(md) {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 32px;
+    padding: 0 0 44px;
+
+    &::before {
+      left: 180px + 16px;
+    }
+
+    &::after {
+      left: 180px + 12px;
+    }
+  }
+
+  @include hover {
+    &::after {
+      border-color: var(--ink);
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    line-height: 1.5;
+    color: var(--muted);
+
+    @include up(md) {
+      flex-direction: column;
+      padding-top: 2px;
+    }
+  }
+
+  &__period {
+    color: var(--ink-soft);
+  }
+
+  &__duration {
+    color: var(--muted);
+
+    @include down(md) {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        margin: 0 10px 0 0;
+        border-radius: 50%;
+        background: currentColor;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__body {
+    min-width: 0;
+
+    @include up(md) {
+      padding-left: 20px;
+    }
+  }
+
+  &__title {
+    font-size: var(--fs-h3);
+    font-weight: 550;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+  }
+
+  &__place {
+    margin-top: 4px;
+    font-size: var(--fs-sm);
+    color: var(--accent);
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      font-weight: 500;
+
+      svg {
+        transition: transform var(--dur) var(--ease);
+      }
+
+      @include hover {
+        color: var(--accent-strong);
+
+        svg {
+          transform: translate(2px, -2px);
+        }
+      }
+    }
+
+    span {
+      color: var(--muted);
+    }
+  }
+
+  &__desc {
+    margin-top: 12px;
+    max-width: 64ch;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+}
+
+/* Education cards */
+.timeline--compact .timeline-item {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  grid-template-columns: 1fr;
+  gap: 10px;
+
+  & + .timeline-item {
+    margin-top: 12px;
+
+    @include up(md) {
+      margin-top: 0;
+    }
+  }
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  .timeline-item__meta {
+    flex-direction: row;
+  }
+
+  .timeline-item__body {
+    padding-left: 0;
+  }
+}

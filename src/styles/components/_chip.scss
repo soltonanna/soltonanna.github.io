@@ -1,0 +1,121 @@
+@use '../abstracts/breakpoints' as *;
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  font-size: var(--fs-sm);
+  line-height: 1;
+  color: var(--ink-soft);
+  transition: border-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding-inline: 12px;
+  }
+
+  a.chip__label {
+    @include hover {
+      color: var(--ink);
+    }
+  }
+
+  @include hover {
+    border-color: var(--line-strong);
+  }
+
+  &--certified {
+    .chip__label {
+      padding-right: 6px;
+    }
+  }
+
+  &__badge {
+    display: inline-grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.8125rem;
+    transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+
+    @include hover {
+      background: var(--accent);
+      color: #fff;
+    }
+  }
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 8px 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+
+  &__count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 24px;
+    height: 22px;
+    padding-inline: 6px;
+    border-radius: var(--radius-pill);
+    background: var(--surface-muted);
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+  }
+
+  @include hover {
+    border-color: var(--line-strong);
+    color: var(--ink);
+  }
+
+  &.is-active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg);
+
+    .filter-chip__count {
+      background: rgba(255, 255, 255, 0.14);
+      color: var(--bg);
+    }
+  }
+}
+
+.price-pill {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding-inline: 12px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}

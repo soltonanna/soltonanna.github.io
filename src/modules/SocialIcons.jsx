@@ -1,20 +1,22 @@
 import React from 'react';
-import { FaLinkedinIn, FaTelegramPlane, FaGit } from 'react-icons/fa';
+import { FaLinkedinIn, FaTelegramPlane, FaGithub } from 'react-icons/fa';
 
-const SocialIcons = () => {
-  return (
-    <div className='social-icons'>
-        <a href='https://www.linkedin.com/in/anahit-sultanova-8323a0a4/' target='_blank'>
-            <FaLinkedinIn size={22} />
+export const socialLinks = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anahit-sultanova-8323a0a4/', Icon: FaLinkedinIn },
+  { label: 'Telegram', href: 'https://t.me/soltonanna', Icon: FaTelegramPlane },
+  { label: 'GitHub', href: 'https://github.com/soltonanna', Icon: FaGithub },
+];
+
+const SocialIcons = ({ className = '', variant = 'default' }) => (
+  <ul className={`social-icons social-icons--${variant} ${className}`.trim()}>
+    {socialLinks.map(({ label, href, Icon }) => (
+      <li key={label}>
+        <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label}>
+          <Icon aria-hidden="true" />
         </a>
-        <a href='https://t.me/soltonanna' target='_blank'>
-            <FaTelegramPlane size={20} />
-        </a>
-        <a href='https://github.com/soltonanna' target='_blank'>
-            <FaGit size={22} />
-        </a>
-    </div>
-  )
-}
+      </li>
+    ))}
+  </ul>
+);
 
 export default SocialIcons;

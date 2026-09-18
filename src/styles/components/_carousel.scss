@@ -1,0 +1,98 @@
+@use '../abstracts/breakpoints' as *;
+
+.carousel {
+  &__track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 88%;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    align-items: start;
+    scrollbar-width: none;
+    border-radius: var(--radius-lg);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include up(md) {
+      grid-auto-columns: 100%;
+      gap: 24px;
+    }
+  }
+
+  &__slide {
+    scroll-snap-align: start;
+    display: flex;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  &__dots {
+    display: flex;
+    gap: 6px;
+    flex: 1;
+  }
+
+  &__dot {
+    width: 18px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--line-strong);
+    transition: width var(--dur) var(--ease), background-color var(--dur) var(--ease);
+
+    &.is-active {
+      width: 36px;
+      background: var(--ink);
+    }
+  }
+
+  &__count {
+    display: none;
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--muted);
+
+    @include up(md) {
+      display: inline;
+    }
+  }
+
+  &__arrows {
+    display: none;
+    gap: 8px;
+
+    @include up(md) {
+      display: flex;
+    }
+  }
+}
+
+/* Desktop: show every slide at once as a two-column masonry */
+.carousel--masonry-lg {
+  @include up(lg) {
+    .carousel__track {
+      display: block;
+      columns: 2;
+      column-gap: 24px;
+      overflow: visible;
+      border-radius: 0;
+    }
+
+    .carousel__slide {
+      break-inside: avoid;
+      margin-bottom: 24px;
+    }
+
+    .carousel__controls {
+      display: none;
+    }
+  }
+}

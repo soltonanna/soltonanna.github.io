@@ -1,42 +1,42 @@
-import React, { useState } from 'react';
-import { InfoModal } from '../modules/InfoModal.jsx';
-import Button from '../modules/Button.jsx';
+import React from 'react';
+import { FiArrowUpRight } from 'react-icons/fi';
+import { InfoModal } from './InfoModal.jsx';
+import useDetails from '../hooks/useDetails';
 
-const CardViewImg = ({ title, imgUrl, date, desc, moreDesc, addClass}) => {
+/** Blog post card: whole card opens the post dialog. */
+const CardViewImg = ({ title, imgUrl, date, desc, moreDesc, addClass }) => {
+  const { modalOpen, openModal, closeModal } = useDetails();
 
-  const [infoModal, setInfoModal] = useState(false);
-
-  const showModalHandler = (e) => {
-    e.preventDefault();
-    setInfoModal(true)
-  };
-  
-  const infoModalHandler = (e) => {
-    e.preventDefault();
-    setInfoModal(false)
-  }
-  
   return (
-    <div className='card-view-img'>
-        <div className='card-view-img__header'>
-            <img className='cv-image' src={imgUrl} alt={title} />
-            <p className='cv-title subtitle'> {title} </p>
-        </div>
-        <div className='card-view-img__date'> 
-          Post on <span>{date}</span> by <span>S.Anahit</span> 
-        </div>
-        <div className='card-view-img__desc'> {desc} </div>
-        { moreDesc && <Button onClick={showModalHandler}>Read More</Button> }
-        { infoModal && 
-            <InfoModal 
-              title = {title} 
-              message = {moreDesc}
-              addClass={addClass}
-              onConfirm = { infoModalHandler }
-            /> 
-         }
-    </div>
-  )
-}
+    <article className="post-card">
+      <div className="post-card__media">
+        <img src={imgUrl} alt="" loading="lazy" decoding="async" />
+      </div>
+      <div className="post-card__body">
+        <p className="post-card__meta">
+          <time>{date}</time> <span aria-hidden="true">·</span> by S.Anahit
+        </p>
+        <h3 className="post-card__title">
+          {moreDesc ? (
+            <button type="button" className="post-card__link" onClick={openModal}>
+              {title}
+            </button>
+          ) : (
+            title
+          )}
+        </h3>
+        <p className="post-card__desc">{desc}</p>
+        {moreDesc && (
+          <span className="post-card__more" aria-hidden="true">
+            Read More <FiArrowUpRight />
+          </span>
+        )}
+      </div>
+      {modalOpen && (
+        <InfoModal title={title} message={moreDesc} addClass={addClass} onConfirm={closeModal} />
+      )}
+    </article>
+  );
+};
 
 export default CardViewImg;

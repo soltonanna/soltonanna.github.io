@@ -1,19 +1,23 @@
-import React from 'react';;
+import React from 'react';
 
 import Container from '../modules/Container';
 import Title_Desc from '../modules/Title_Desc';
-import CardView from '../modules/CardView';
+import ServiceCard from '../modules/ServiceCard';
+import Reveal from '../modules/Reveal';
+import { sectionIndex } from '../utils/nav-items.js';
 
 const Services = () => {
   return (
-    <section id='services'>
+    <section id='services' className='section section--services'>
         <Container className='services'>
             <Title_Desc 
+            index={sectionIndex('services')}
+            eyebrow="Services"
             title="Services"
             desc=""
             />
-            <div className='cards'>
-                <CardView 
+            <Reveal className='services__grid'>
+                <ServiceCard 
                     title='WordPress Development from Scratch'
                     place='$20 per hour'
                     placeUrl=''
@@ -53,7 +57,7 @@ const Services = () => {
                         </>
                     }
                 />
-                <CardView 
+                <ServiceCard 
                     title='WordPress Support & Maintenance'
                     place='$20 per hour'
                     placeUrl=''
@@ -90,7 +94,7 @@ const Services = () => {
                         </>
                     }
                 />
-                <CardView 
+                <ServiceCard 
                     title='Website Optimization'
                     place='$15 per hour'
                     placeUrl=''
@@ -127,7 +131,7 @@ const Services = () => {
                         </>
                     }
                 />
-                <CardView 
+                <ServiceCard 
                     title='AI-driven Content Creation'
                     place='$25 per hour'
                     placeUrl=''
@@ -156,7 +160,7 @@ const Services = () => {
                         </>
                     }
                 />
-            </div>
+            </Reveal>
         </Container>
     </section>
   )

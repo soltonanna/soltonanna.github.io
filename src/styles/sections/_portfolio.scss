@@ -1,0 +1,163 @@
+@use '../abstracts/breakpoints' as *;
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+
+  @include down(md) {
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-inline: var(--gutter);
+    margin-inline: calc(var(--gutter) * -1);
+    padding-bottom: 4px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @include up(md) {
+    flex-wrap: wrap;
+  }
+}
+
+.project-grid {
+  @include snap-row(80%);
+
+  @include up(sm) {
+    grid-auto-columns: 48%;
+  }
+
+  @include up(md) {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+
+    &.is-limited > .project-card:nth-child(n + 7) {
+      display: none;
+    }
+  }
+
+  @include up(xl) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .empty-state {
+    color: var(--muted);
+  }
+}
+
+.portfolio__more {
+  display: none;
+  justify-content: center;
+  margin-top: 36px;
+
+  @include up(md) {
+    display: flex;
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  overflow: hidden;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
+
+  @include hover {
+    transform: translateY(-3px);
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow-md);
+
+    .project-card__media img {
+      transform: scale(1.025);
+    }
+
+    .project-card__preview {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  &__media {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 10;
+    margin: 8px 8px 0;
+    border-radius: calc(var(--radius-lg) - 8px);
+    background: var(--surface-muted);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 400ms var(--ease);
+    }
+  }
+
+  &__preview {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--ink);
+    box-shadow: var(--shadow-sm);
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+
+    @media (hover: none) {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px 18px 18px;
+  }
+
+  &__category {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-top: 6px;
+    font-size: 1.0625rem;
+    font-weight: 550;
+    letter-spacing: -0.015em;
+  }
+
+  &__links {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 16px;
+
+    &:empty {
+      display: none;
+    }
+  }
+}
