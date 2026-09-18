@@ -11,6 +11,7 @@ import Blog from './components/Blog.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import LanguageSwitcher from './modules/LanguageSwitcher.jsx';
+import ThemeToggle from './modules/ThemeToggle.jsx';
 
 import useScrollSpy from './hooks/useScrollSpy';
 import useStoredState from './hooks/useStoredState';
@@ -30,7 +31,10 @@ const App = () => {
     <div className={`page ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
       <a className="skip-link" href="#about">{t.header.skipToContent}</a>
       <Header activeId={activeId} isSidebarOpen={isSidebarOpen} onToggleSidebar={toggleSidebar} />
-      <LanguageSwitcher variant="floating" />
+      <div className="site-controls">
+        <LanguageSwitcher variant="floating" />
+        <ThemeToggle />
+      </div>
       <div className="page__content">
         <main>
           <MainInfo />

@@ -15,10 +15,31 @@
   --accent-strong: #075870;
   --accent-soft: #e2eef1;
 
+  --on-accent: #ffffff;
+  --primary-hover: #000000;
+  --primary-hover-shadow: 0 8px 20px -10px rgba(18, 20, 23, 0.55);
+
+  /* Translucent surfaces (sticky bars, floating controls, image overlays) */
+  --topbar-glass: rgba(247, 246, 242, 0.86);
+  --glass: rgba(255, 255, 255, 0.9);
+  --glass-strong: rgba(255, 255, 255, 0.92);
+  --inverse-soft: rgba(255, 255, 255, 0.14);
+  --backdrop: rgba(17, 19, 22, 0.48);
+
+  /* Dark "contact" panel - stays dark in both themes */
   --dark: #111316;
   --dark-raised: #1a1d21;
   --dark-line: #2a2e34;
+  --dark-line-strong: #454a52;
   --dark-muted: #9aa1a9;
+  --dark-ink: #f3f2ee;
+  --dark-accent: #7cc3d8;
+  --dark-soft: rgba(255, 255, 255, 0.06);
+  --dark-hover: rgba(255, 255, 255, 0.04);
+  --dark-border: transparent;
+
+  --toast-bg: #f3f2ee;
+  --toast-ink: #121417;
 
   /* Typography */
   --font-sans: 'Geist Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -45,6 +66,8 @@
   --shadow-md: 0 1px 2px rgba(18, 20, 23, 0.04), 0 12px 32px -16px rgba(18, 20, 23, 0.18);
   --shadow-lg: 0 24px 64px -24px rgba(18, 20, 23, 0.35);
 
+  color-scheme: light;
+
   /* Motion */
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   --dur-fast: 150ms;
@@ -63,4 +86,68 @@
   @include up(xl) {
     --gutter: 56px;
   }
+}
+
+/*
+ * Dark theme.
+ * Applied when <html data-theme="dark"> (set by ThemeContext / the inline script in index.html),
+ * or - without JS - when the OS prefers dark and the user hasn't picked light explicitly.
+ */
+@mixin dark-theme {
+  color-scheme: dark;
+
+  --bg: #0f1113;
+  --surface: #171a1e;
+  --surface-muted: #1f2327;
+  --ink: #eceae4;
+  --ink-soft: #c4c7cc;
+  --muted: #8e949c;
+  --line: #262a2f;
+  --line-strong: #383d44;
+
+  --accent: #5bbad6;
+  --accent-strong: #8ed0e3;
+  --accent-soft: #12303a;
+  --on-accent: #0b1417;
+  --primary-hover: #ffffff;
+  --primary-hover-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.8);
+
+  --topbar-glass: rgba(15, 17, 19, 0.82);
+  --glass: rgba(23, 26, 30, 0.88);
+  --glass-strong: rgba(23, 26, 30, 0.9);
+  --inverse-soft: rgba(15, 17, 19, 0.16);
+  --backdrop: rgba(0, 0, 0, 0.64);
+
+  --dark: #15181c;
+  --dark-raised: #1c2025;
+  --dark-line: #2b3036;
+  --dark-line-strong: #454b53;
+  --dark-border: #23272c;
+
+  --toast-bg: #eceae4;
+  --toast-ink: #0f1113;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px -16px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 24px 64px -24px rgba(0, 0, 0, 0.85);
+}
+
+:root[data-theme='dark'] {
+  @include dark-theme;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    @include dark-theme;
+  }
+}
+
+/* Smooth color crossfade while switching themes (class added briefly by ThemeContext). */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 300ms ease, border-color 300ms ease, color 300ms ease, fill 300ms ease,
+    box-shadow 300ms ease !important;
+  transition-delay: 0s !important;
 }

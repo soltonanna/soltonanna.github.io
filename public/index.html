@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f6f2">
+    <script>
+        // Apply the saved (or OS) theme before first paint to avoid a light/dark flash.
+        (function () {
+            var theme;
+            try { theme = localStorage.getItem('theme'); } catch (e) {}
+            if (theme !== 'light' && theme !== 'dark') {
+                theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <link rel="icon" href="../src/media/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="../src/media/favicon.png" type="image/png" />
     <title>Anahit Sultanova — Full-Stack Web Developer (React, TypeScript, WordPress)</title>

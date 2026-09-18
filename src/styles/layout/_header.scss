@@ -223,7 +223,7 @@
   transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
 
   &.is-raised {
-    background: rgba(247, 246, 242, 0.86);
+    background: var(--topbar-glass);
     border-bottom-color: var(--line);
     -webkit-backdrop-filter: saturate(160%) blur(14px);
     backdrop-filter: saturate(160%) blur(14px);

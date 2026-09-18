@@ -16,6 +16,8 @@ const en = {
   },
 
   common: {
+    switchToDark: 'Switch to dark mode',
+    switchToLight: 'Switch to light mode',
     language: 'Language',
     downloadCv: 'Download CV',
     downloadCvTitle: 'Download CV (PDF)',

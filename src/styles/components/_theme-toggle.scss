@@ -1,0 +1,81 @@
+@use '../abstracts/breakpoints' as *;
+
+/*
+ * Theme (light / dark) toggle.
+ * Desktop: part of .site-controls (fixed top-right, same row as the language switcher).
+ * Mobile: inside .topbar__actions next to the inline language switcher.
+ */
+.site-controls {
+  display: none;
+
+  @include up(lg) {
+    position: fixed;
+    top: 24px;
+    right: var(--gutter);
+    z-index: 50;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.theme-toggle {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--glass);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  backdrop-filter: saturate(160%) blur(12px);
+  box-shadow: var(--shadow-sm);
+  color: var(--ink);
+  overflow: hidden;
+  transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease);
+
+  @include focus-ring;
+
+  @include hover {
+    border-color: var(--line-strong);
+    background: var(--surface);
+  }
+
+  &__icon {
+    grid-area: 1 / 1;
+    font-size: 1rem;
+    transition: transform 400ms var(--ease), opacity var(--dur) var(--ease);
+  }
+
+  /* Light mode shows the moon (switch to dark), dark mode shows the sun. */
+  &.is-light &__icon--sun,
+  &.is-dark &__icon--moon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+  }
+
+  &.is-dark &__icon--sun {
+    color: var(--accent-strong);
+  }
+
+  @include reduced-motion {
+    &__icon {
+      transition: none;
+    }
+  }
+}
+
+/* Mobile top bar */
+.topbar__theme {
+  width: 34px;
+  height: 34px;
+  box-shadow: none;
+  background: var(--surface);
+
+  .theme-toggle__icon {
+    font-size: 0.9375rem;
+  }
+}

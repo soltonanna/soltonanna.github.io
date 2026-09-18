@@ -15,6 +15,8 @@ const hy = {
   },
 
   common: {
+    switchToDark: 'Միացնել մուգ ռեժիմը',
+    switchToLight: 'Միացնել բաց ռեժիմը',
     language: 'Լեզու',
     downloadCv: 'Ներբեռնել CV-ն',
     downloadCvTitle: 'Ներբեռնել CV-ն (PDF)',

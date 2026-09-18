@@ -13,6 +13,8 @@ const ru = {
   },
 
   common: {
+    switchToDark: 'Включить тёмную тему',
+    switchToLight: 'Включить светлую тему',
     language: 'Язык',
     downloadCv: 'Скачать резюме',
     downloadCvTitle: 'Скачать резюме (PDF)',

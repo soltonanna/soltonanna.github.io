@@ -6,6 +6,7 @@ import Navbar from './Navbar.jsx';
 import useLockBodyScroll from '../hooks/useLockBodyScroll';
 import useEscape from '../hooks/useEscape';
 import LanguageSwitcher from '../modules/LanguageSwitcher.jsx';
+import ThemeToggle from '../modules/ThemeToggle.jsx';
 import { downloadCv } from '../utils/download-cv.js';
 import { useT } from '../i18n/LanguageContext.jsx';
 
@@ -84,6 +85,7 @@ const Header = ({ activeId, isSidebarOpen = true, onToggleSidebar }) => {
         </div>
         <div className="topbar__actions">
         <LanguageSwitcher variant="inline" className="topbar__lang" />
+        <ThemeToggle className="topbar__theme" />
         <button
           type="button"
           className={`menu-toggle ${isMobileMenuOpen ? 'is-open' : ''}`}

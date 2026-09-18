@@ -11,10 +11,13 @@ import './index.scss';
 
 import App from './App';
 import { LanguageProvider } from './i18n/LanguageContext.jsx';
+import { ThemeProvider } from './theme/ThemeContext.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <LanguageProvider>
-    <App />
-  </LanguageProvider>
+  <ThemeProvider>
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
+  </ThemeProvider>
 );

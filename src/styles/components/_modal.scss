@@ -28,7 +28,7 @@
   &__backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(17, 19, 22, 0.48);
+    background: var(--backdrop);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     animation: modal-fade var(--dur) var(--ease);

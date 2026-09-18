@@ -3,8 +3,9 @@
 .section--contact {
   margin: 0 12px;
   border-radius: var(--radius-lg);
+  border: 1px solid var(--dark-border);
   background: var(--dark);
-  color: #f3f2ee;
+  color: var(--dark-ink);
 
   @include up(md) {
     margin: 0 16px;
@@ -20,7 +21,7 @@
   }
 
   .section-heading__index {
-    color: #7cc3d8;
+    color: var(--dark-accent);
 
     &::after {
       background: var(--dark-line);
@@ -35,10 +36,10 @@
   .social-icons--outline a {
     background: transparent;
     border-color: var(--dark-line);
-    color: #f3f2ee;
+    color: var(--dark-ink);
 
     @include hover {
-      border-color: #f3f2ee;
+      border-color: var(--dark-ink);
       background: transparent;
     }
   }
@@ -83,7 +84,7 @@
   transition: border-color var(--dur) var(--ease);
 
   @include hover {
-    border-color: #454a52;
+    border-color: var(--dark-line-strong);
   }
 
   &__main {
@@ -104,7 +105,7 @@
 
     @include hover {
       .contact-tile__copy {
-        color: #f3f2ee;
+        color: var(--dark-ink);
       }
     }
   }
@@ -121,8 +122,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.06);
-    color: #7cc3d8;
+    background: var(--dark-soft);
+    color: var(--dark-accent);
     font-size: 1.05rem;
   }
 
@@ -167,8 +168,8 @@
     transition: color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
 
     @include hover {
-      color: #f3f2ee;
-      background: rgba(255, 255, 255, 0.04);
+      color: var(--dark-ink);
+      background: var(--dark-hover);
     }
   }
 }
@@ -183,8 +184,8 @@
   gap: 8px;
   padding: 10px 16px;
   border-radius: var(--radius-pill);
-  background: #f3f2ee;
-  color: var(--ink);
+  background: var(--toast-bg);
+  color: var(--toast-ink);
   font-size: var(--fs-sm);
   font-weight: 500;
   box-shadow: var(--shadow-lg);

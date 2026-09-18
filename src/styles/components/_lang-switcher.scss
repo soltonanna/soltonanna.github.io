@@ -2,21 +2,14 @@
 
 /*
  * Language switcher.
- * --floating (desktop ≥ lg): fixed top-right. Segmented ENG / РУС / ՀԱՅ over the hero,
+ * --floating (desktop ≥ lg): inside .site-controls, fixed top-right next to the theme toggle. Segmented ENG / РУС / ՀԱՅ over the hero,
  *   after scroll (.is-compact) a pill with the current language + dropdown.
  * --inline (mobile top bar): compact segmented buttons.
  */
 .lang-switcher {
+  /* Positioned by .site-controls (see _theme-toggle.scss), which sits fixed top-right. */
   &--floating {
-    display: none;
-
-    @include up(lg) {
-      display: block;
-      position: fixed;
-      top: 24px;
-      right: var(--gutter);
-      z-index: 50;
-    }
+    position: relative;
   }
 
   /* ---------- Segmented (top of page) ---------- */
@@ -77,7 +70,7 @@
     padding: 0 10px 0 12px;
     border: 1px solid var(--line);
     border-radius: var(--radius-pill);
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--glass);
     -webkit-backdrop-filter: saturate(160%) blur(12px);
     backdrop-filter: saturate(160%) blur(12px);
     box-shadow: var(--shadow-md);

@@ -55,7 +55,7 @@
 
     @include hover {
       background: var(--accent);
-      color: #fff;
+      color: var(--on-accent);
     }
   }
 }
@@ -100,7 +100,7 @@
     color: var(--bg);
 
     .filter-chip__count {
-      background: rgba(255, 255, 255, 0.14);
+      background: var(--inverse-soft);
       color: var(--bg);
     }
   }
