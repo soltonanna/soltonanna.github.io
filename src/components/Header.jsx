@@ -5,10 +5,12 @@ import Button from '../modules/Button.jsx';
 import Navbar from './Navbar.jsx';
 import useLockBodyScroll from '../hooks/useLockBodyScroll';
 import useEscape from '../hooks/useEscape';
+import LanguageSwitcher from '../modules/LanguageSwitcher.jsx';
 import { downloadCv } from '../utils/download-cv.js';
+import { useT } from '../i18n/LanguageContext.jsx';
 
-const Monogram = () => (
-  <a href="#main-info" className="monogram" aria-label="Sultanova Anahit — back to top">SA</a>
+const Monogram = ({ label }) => (
+  <a href="#main-info" className="monogram" aria-label={label}>SA</a>
 );
 
 /**
@@ -16,6 +18,7 @@ const Monogram = () => (
  * Mobile/tablet: compact top bar + full-screen menu sheet.
  */
 const Header = ({ activeId, isSidebarOpen = true, onToggleSidebar }) => {
+  const t = useT();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
 
@@ -36,10 +39,10 @@ const Header = ({ activeId, isSidebarOpen = true, onToggleSidebar }) => {
       {/* Desktop rail */}
       <aside className={`rail ${isSidebarOpen ? 'is-open' : 'is-collapsed'}`}>
         <div className="rail__top">
-          <Monogram />
+          <Monogram label={t.header.backToTop} />
           <div className="rail__identity">
-            <p className="rail__name">Sultanova Anahit</p>
-            <p className="rail__role">Full-Stack Developer</p>
+            <p className="rail__name">{t.header.name}</p>
+            <p className="rail__role">{t.header.role}</p>
           </div>
         </div>
 
@@ -53,19 +56,19 @@ const Header = ({ activeId, isSidebarOpen = true, onToggleSidebar }) => {
             className="rail__cv"
             onClick={downloadCv}
             icon={<FiDownload aria-hidden="true" />}
-            title="Download CV (PDF)"
+            title={t.common.downloadCvTitle}
           >
-            Download CV
+            {t.common.downloadCv}
           </Button>
           <button
             type="button"
             className="rail__toggle"
             onClick={onToggleSidebar}
-            aria-label={isSidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
+            aria-label={isSidebarOpen ? t.header.collapseSidebar : t.header.expandSidebar}
             aria-expanded={isSidebarOpen}
           >
             {isSidebarOpen ? <FiChevronsLeft aria-hidden="true" /> : <FiChevronsRight aria-hidden="true" />}
-            <span className="rail__toggle-label">Collapse</span>
+            <span className="rail__toggle-label">{t.header.collapse}</span>
           </button>
         </div>
       </aside>
@@ -73,30 +76,33 @@ const Header = ({ activeId, isSidebarOpen = true, onToggleSidebar }) => {
       {/* Mobile top bar */}
       <div className={`topbar ${isScrolled || isMobileMenuOpen ? 'is-raised' : ''} ${isMobileMenuOpen ? 'is-menu-open' : ''}`}>
         <div className="topbar__brand">
-          <Monogram />
+          <Monogram label={t.header.backToTop} />
           <p className="topbar__title">
-            <span>Sultanova Anahit</span>
-            <span className="topbar__role">Full-Stack Web Developer</span>
+            <span>{t.header.name}</span>
+            <span className="topbar__role">{t.header.roleLong}</span>
           </p>
         </div>
+        <div className="topbar__actions">
+        <LanguageSwitcher variant="inline" className="topbar__lang" />
         <button
           type="button"
           className={`menu-toggle ${isMobileMenuOpen ? 'is-open' : ''}`}
           onClick={() => setMobileMenuOpen((open) => !open)}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-menu"
-          aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isMobileMenuOpen ? t.header.closeMenu : t.header.openMenu}
         >
           <span />
           <span />
         </button>
+        </div>
       </div>
 
       <div id="mobile-menu" className={`mobile-menu ${isMobileMenuOpen ? 'is-open' : ''}`} inert={!isMobileMenuOpen}>
         <Navbar activeId={activeId} onNavigate={closeMenu} className="mobile-menu__nav" />
         <div className="mobile-menu__footer">
           <Button variant="primary" onClick={downloadCv} icon={<FiDownload aria-hidden="true" />}>
-            Download CV
+            {t.common.downloadCv}
           </Button>
           <SocialIcons variant="outline" />
         </div>

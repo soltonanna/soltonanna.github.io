@@ -10,6 +10,11 @@ import '../public/index.html';
 import './index.scss';
 
 import App from './App';
+import { LanguageProvider } from './i18n/LanguageContext.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(
+  <LanguageProvider>
+    <App />
+  </LanguageProvider>
+);

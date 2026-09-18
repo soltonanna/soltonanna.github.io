@@ -3,8 +3,11 @@ import { CssCertificate, JsCertificate, ReactCertificate } from './media-files.j
 // Skill groups rendered in the About section.
 // Names follow the exact spelling used in job posts, so recruiters and ATS parsers match them.
 // `certificate` links a skill to its course certificate (PDF).
+// Group titles are translated in i18n/locales/*.jsx (`about.groups[id]`),
+// translated skill names (if any) in `about.skillNames`.
 export const skillGroups = [
   {
+    id: "frontend",
     title: "Frontend",
     items: [
       { title: "JavaScript (ES6+)", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", certificate: JsCertificate },
@@ -23,6 +26,7 @@ export const skillGroups = [
     ],
   },
   {
+    id: "backend",
     title: "Backend & Data",
     items: [
       { title: "PHP", url: "https://www.php.net/" },
@@ -33,6 +37,7 @@ export const skillGroups = [
     ],
   },
   {
+    id: "tools",
     title: "Tools & Workflow",
     items: [
       { title: "Git & GitHub", url: "https://github.com/" },
@@ -47,6 +52,7 @@ export const skillGroups = [
     ],
   },
   {
+    id: "ai",
     title: "AI-Assisted Development",
     items: [
       { title: "Claude", url: "https://claude.ai/" },
@@ -58,6 +64,7 @@ export const skillGroups = [
   },
   {
     // Roadmap: move a skill up into its group once you've used it in a real project.
+    id: "learning",
     title: "Currently Learning",
     items: [
       { title: "Node.js", url: "https://nodejs.org/" },
@@ -74,8 +81,10 @@ export const skillGroups = [
   },
 ];
 
+// Personal groups: item texts come from i18n (`about.personal[id]`).
 export const personalGroups = [
   {
+    id: "languages",
     title: "Languages",
     items: [
       { title: "English (B1–B2)" },
@@ -84,6 +93,7 @@ export const personalGroups = [
     ],
   },
   {
+    id: "interests",
     title: "Interests",
     items: [
       { title: "Reading" },

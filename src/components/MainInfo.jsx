@@ -7,19 +7,19 @@ import SocialIcons from '../modules/SocialIcons';
 import Button from '../modules/Button';
 import { downloadCv } from '../utils/download-cv.js';
 import { portfolioItems } from '../utils/portfolio-items.js';
+import { useT } from '../i18n/LanguageContext.jsx';
 
 // Recruiter-scannable facts: role, seniority, stack, location, languages, proof.
-const profile = [
-  { label: 'Role', value: 'Full-Stack Web Developer' },
-  { label: 'Experience', value: '10+ years (since 2014)' },
-  { label: 'Stack', value: 'React · TypeScript · PHP · WordPress' },
-  { label: 'Based in', value: 'Yerevan, Armenia · Remote' },
-  { label: 'Languages', value: 'English · Russian · Armenian' },
-  { label: 'Projects', value: `${portfolioItems.length} in portfolio` },
-];
+// Texts live in i18n/locales/*.jsx (`hero.profile`).
+const profileKeys = ['role', 'experience', 'stack', 'location', 'languages', 'projects'];
 
 const MainInfo = () => {
+  const t = useT();
   const reduce = useReducedMotion();
+  const profile = profileKeys.map((key) => {
+    const { label, value } = t.hero.profile[key];
+    return { label, value: typeof value === 'function' ? value(portfolioItems.length) : value };
+  });
   const fadeUp = (delay = 0) =>
     reduce
       ? {}
@@ -35,23 +35,23 @@ const MainInfo = () => {
         <div className="hero__content">
           <motion.p className="hero__eyebrow" {...fadeUp(0)}>
             <span className="hero__dot" aria-hidden="true" />
-            Full-Stack Web Developer
+            {t.hero.eyebrow}
           </motion.p>
 
           <motion.h1 className="hero__title" {...fadeUp(0.05)}>
-            Sultanova <em>Anahit</em>
+            {t.hero.firstName} <em>{t.hero.lastName}</em>
           </motion.h1>
 
           <motion.p className="hero__lead" {...fadeUp(0.1)}>
-            I build fast, reliable web apps with React and TypeScript, backed by 10+&nbsp;years of full-stack experience with PHP and WordPress.
+            {t.hero.lead}
           </motion.p>
 
           <motion.div className="hero__actions" {...fadeUp(0.15)}>
             <Button href="#portfolio" variant="primary" icon={<FiArrowDownRight aria-hidden="true" />}>
-              View projects
+              {t.hero.viewProjects}
             </Button>
             <Button variant="secondary" onClick={downloadCv} icon={<FiDownload aria-hidden="true" />}>
-              Download CV
+              {t.common.downloadCv}
             </Button>
           </motion.div>
 

@@ -7,35 +7,43 @@ import Reveal from '../modules/Reveal';
 
 import { reviewItems } from '../utils/review-items';
 import { sectionIndex } from '../utils/nav-items.js';
+import { useT } from '../i18n/LanguageContext.jsx';
 
-const Reviews = () => (
+const Reviews = () => {
+  const t = useT();
+  const tx = t.reviews;
+  return (
   <section id="reviews" className="section section--reviews">
     <Container className="reviews">
       <Title_Desc
         index={sectionIndex('reviews')}
-        eyebrow="Reviews"
-        title="Reviews"
-        desc="Explore the feedback from my satisfied clients, showcasing their experiences with my web development services."
+        eyebrow={tx.eyebrow}
+        title={tx.title}
+        desc={tx.desc}
       />
       <Reveal>
-        <Carousel label="Client reviews" className="carousel--masonry-lg">
-          {reviewItems.map((singleReview) => (
+        <Carousel label={tx.carouselLabel} className="carousel--masonry-lg">
+          {reviewItems.map((singleReview) => {
+            const text = tx.items[singleReview.id] || singleReview;
+            return (
             <figure className="review" key={singleReview.id}>
               <span className="review__mark" aria-hidden="true">“</span>
-              <blockquote className="review__quote">{singleReview.review}</blockquote>
+              <blockquote className="review__quote">{text.review}</blockquote>
               <figcaption className="review__author">
                 <img src={singleReview.imgUrl} alt={singleReview.name} loading="lazy" />
                 <span>
                   <strong>{singleReview.name}</strong>
-                  <span>{singleReview.position}</span>
+                  <span>{text.position}</span>
                 </span>
               </figcaption>
             </figure>
-          ))}
+            );
+          })}
         </Carousel>
       </Reveal>
     </Container>
   </section>
-);
+  );
+};
 
 export default Reviews;

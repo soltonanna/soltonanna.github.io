@@ -2,9 +2,11 @@ import React from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { InfoModal } from './InfoModal.jsx';
 import useDetails from '../hooks/useDetails';
+import { useT } from '../i18n/LanguageContext.jsx';
 
 /** Blog post card: whole card opens the post dialog. */
 const CardViewImg = ({ title, imgUrl, date, desc, moreDesc, addClass }) => {
+  const t = useT();
   const { modalOpen, openModal, closeModal } = useDetails();
 
   return (
@@ -14,7 +16,7 @@ const CardViewImg = ({ title, imgUrl, date, desc, moreDesc, addClass }) => {
       </div>
       <div className="post-card__body">
         <p className="post-card__meta">
-          <time>{date}</time> <span aria-hidden="true">·</span> by S.Anahit
+          <time>{date}</time> <span aria-hidden="true">·</span> {t.blog.by}
         </p>
         <h3 className="post-card__title">
           {moreDesc ? (
@@ -28,7 +30,7 @@ const CardViewImg = ({ title, imgUrl, date, desc, moreDesc, addClass }) => {
         <p className="post-card__desc">{desc}</p>
         {moreDesc && (
           <span className="post-card__more" aria-hidden="true">
-            Read More <FiArrowUpRight />
+            {t.common.readMore} <FiArrowUpRight />
           </span>
         )}
       </div>

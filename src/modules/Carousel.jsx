@@ -1,8 +1,10 @@
 import React, { Children, useCallback, useEffect, useRef, useState } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
+import { useT } from '../i18n/LanguageContext.jsx';
 
 /** Lightweight scroll-snap carousel with arrows and dots (no dependencies). */
 const Carousel = ({ children, label, className = '' }) => {
+  const t = useT();
   const trackRef = useRef(null);
   const [active, setActive] = useState(0);
   const count = Children.count(children);
@@ -50,7 +52,7 @@ const Carousel = ({ children, label, className = '' }) => {
             className="carousel__slide"
             role="group"
             aria-roledescription="slide"
-            aria-label={`${i + 1} of ${count}`}
+            aria-label={t.common.slideOf(i + 1, count)}
           >
             {child}
           </div>
@@ -64,7 +66,7 @@ const Carousel = ({ children, label, className = '' }) => {
               key={i}
               type="button"
               className={`carousel__dot ${i === active ? 'is-active' : ''}`}
-              aria-label={`Go to slide ${i + 1}`}
+              aria-label={t.common.goToSlide(i + 1)}
               aria-current={i === active}
               onClick={() => goTo(i)}
             />
@@ -74,10 +76,10 @@ const Carousel = ({ children, label, className = '' }) => {
           {String(active + 1).padStart(2, '0')} / {String(count).padStart(2, '0')}
         </span>
         <div className="carousel__arrows">
-          <button type="button" className="icon-button icon-button--outline" onClick={() => goTo(active - 1)} disabled={active === 0} aria-label="Previous">
+          <button type="button" className="icon-button icon-button--outline" onClick={() => goTo(active - 1)} disabled={active === 0} aria-label={t.common.previous}>
             <FiArrowLeft />
           </button>
-          <button type="button" className="icon-button icon-button--outline" onClick={() => goTo(active + 1)} disabled={active >= count - 1} aria-label="Next">
+          <button type="button" className="icon-button icon-button--outline" onClick={() => goTo(active + 1)} disabled={active >= count - 1} aria-label={t.common.next}>
             <FiArrowRight />
           </button>
         </div>

@@ -1,3 +1,4 @@
+// Labels are translated in i18n/locales/*.jsx (`portfolio.categories`); `label` here is the English fallback.
 export const portfolioCategories = [
   { value: 'all', label: 'All' },
   { value: 'apps', label: 'React & JS Apps' },

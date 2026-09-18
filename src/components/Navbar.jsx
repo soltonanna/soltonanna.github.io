@@ -1,10 +1,14 @@
 import React from 'react';
 import { navItems } from '../utils/nav-items.js';
+import { useT } from '../i18n/LanguageContext.jsx';
 
-const Navbar = ({ activeId, onNavigate, className = '', collapsed = false }) => (
-  <nav className={`navbar ${className}`.trim()} aria-label="Sections">
+const Navbar = ({ activeId, onNavigate, className = '', collapsed = false }) => {
+  const t = useT();
+  return (
+  <nav className={`navbar ${className}`.trim()} aria-label={t.header.sections}>
     <ol className="navbar__list">
-      {navItems.map(({ id, label }, i) => {
+      {navItems.map(({ id }, i) => {
+        const label = t.nav[id];
         const isActive = activeId === id;
         return (
           <li key={id} className={`navbar__item ${isActive ? 'is-active' : ''}`}>
@@ -23,6 +27,7 @@ const Navbar = ({ activeId, onNavigate, className = '', collapsed = false }) => 
       })}
     </ol>
   </nav>
-);
+  );
+};
 
 export default Navbar;

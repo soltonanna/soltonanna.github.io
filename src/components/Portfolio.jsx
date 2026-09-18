@@ -8,12 +8,16 @@ import Button from '../modules/Button.jsx';
 import Reveal from '../modules/Reveal.jsx';
 
 import { portfolioItems } from '../utils/portfolio-items.js';
-import { portfolioCategories, categoryLabel } from '../utils/portfolio-categories.js';
+import { portfolioCategories } from '../utils/portfolio-categories.js';
 import { sectionIndex } from '../utils/nav-items.js';
+import { useT } from '../i18n/LanguageContext.jsx';
 
 const VISIBLE_ITEMS = 6;
 
 const Portfolio = () => {
+  const t = useT();
+  const tx = t.portfolio;
+  const categoryLabel = (value) => tx.categories[value] ?? '';
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [loadMore, setLoadMore] = useState(false);
 
@@ -46,14 +50,14 @@ const Portfolio = () => {
         <div className='portfolio__head'>
           <Title_Desc
             index={sectionIndex('portfolio')}
-            eyebrow="Portfolio"
-            title="Portfolio"
-            desc="Two kinds of work live here. Live websites are real products I built or improved for clients and employers, either as the sole developer (freelance or in-house) or as part of a team. Pet projects are React and JavaScript apps, games, templates and animations I built to practice specific skills during my training, or just out of curiosity. Open any project to see it live, and check the source code on GitHub where it's available."
+            eyebrow={tx.eyebrow}
+            title={tx.title}
+            desc={tx.desc}
           />
         </div>
 
-        <div className='filter-bar' role='toolbar' aria-label='Filter projects'>
-          {portfolioCategories.map(({ value, label }) => (
+        <div className='filter-bar' role='toolbar' aria-label={tx.filterLabel}>
+          {portfolioCategories.map(({ value }) => (
             <button
               key={value}
               type='button'
@@ -61,7 +65,7 @@ const Portfolio = () => {
               aria-pressed={selectedCategory === value}
               onClick={() => handleCategoryChange(value)}
             >
-              {label}
+              {categoryLabel(value)}
               <span className='filter-chip__count'>{counts[value] || 0}</span>
             </button>
           ))}
@@ -80,7 +84,7 @@ const Portfolio = () => {
               />
             ))
           ) : (
-            <p className='empty-state'>No projects in this category yet.</p>
+            <p className='empty-state'>{tx.empty}</p>
           )}
         </Reveal>
 
@@ -92,7 +96,7 @@ const Portfolio = () => {
               aria-expanded={loadMore}
               icon={<FiChevronDown aria-hidden="true" style={{ transform: loadMore ? 'rotate(180deg)' : 'none' }} />}
             >
-              {!loadMore ? 'Show all projects' : 'Show less'}
+              {!loadMore ? tx.showAll : tx.showLess}
             </Button>
           </div>
         )}

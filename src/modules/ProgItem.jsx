@@ -1,8 +1,11 @@
 import React from 'react';
 import { FiAward } from 'react-icons/fi';
+import { useT } from '../i18n/LanguageContext.jsx';
 
 /** Skill chip. Optional `url` (reference link) and `starUrl` (certificate PDF). */
-const ProgItem = ({ title, url, star, starUrl }) => (
+const ProgItem = ({ title, url, star, starUrl }) => {
+  const t = useT();
+  return (
   <li className={`chip ${star ? 'chip--certified' : ''}`}>
     {url && url !== '#' ? (
       <a className="chip__label" href={url} target="_blank" rel="noopener noreferrer">{title}</a>
@@ -15,13 +18,14 @@ const ProgItem = ({ title, url, star, starUrl }) => (
         href={starUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`${title} certificate`}
-        title="Certificate"
+        aria-label={t.common.certificateOf(title)}
+        title={t.common.certificate}
       >
         <FiAward aria-hidden="true" />
       </a>
     )}
   </li>
-);
+  );
+};
 
 export default ProgItem;

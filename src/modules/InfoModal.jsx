@@ -4,6 +4,7 @@ import { FiX } from 'react-icons/fi';
 import Button from './Button';
 import useLockBodyScroll from '../hooks/useLockBodyScroll';
 import useEscape from '../hooks/useEscape';
+import { useT } from '../i18n/LanguageContext.jsx';
 
 /**
  * Accessible dialog rendered in #modal-root.
@@ -11,6 +12,7 @@ import useEscape from '../hooks/useEscape';
  * `addClass` = wide variant (used for blog posts with screenshots).
  */
 export const InfoModal = ({ title, message, onConfirm, addClass }) => {
+  const t = useT();
   const titleId = useId();
   const closeRef = useRef(null);
   const close = useCallback((event) => onConfirm(event || { preventDefault() {} }), [onConfirm]);
@@ -32,13 +34,13 @@ export const InfoModal = ({ title, message, onConfirm, addClass }) => {
       <div className="modal__panel" role="dialog" aria-modal="true" aria-labelledby={titleId}>
         <header className="modal__header">
           <h2 id={titleId} className="modal__title">{title}</h2>
-          <button ref={closeRef} type="button" className="icon-button" onClick={close} aria-label="Close">
+          <button ref={closeRef} type="button" className="icon-button" onClick={close} aria-label={t.common.close}>
             <FiX />
           </button>
         </header>
         <div className="modal__body prose">{message}</div>
         <footer className="modal__footer">
-          <Button onClick={close} variant="secondary">Got It !</Button>
+          <Button onClick={close} variant="secondary">{t.common.gotIt}</Button>
         </footer>
       </div>
     </div>,

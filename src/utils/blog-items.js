@@ -7,6 +7,14 @@ import {
     BlogJsOop
 } from '../media/index.js';
 
+// `name`, `desc` and the optional `intro` text are translated in i18n/locales/*.jsx (`blog.posts[id]`);
+// `name` / `desc` here are the English fallback. `moreDesc` holds language-independent
+// content (screenshots, code). The "Resources" link is added by components/Blog.jsx.
+export const BLOG_RESOURCE = {
+    url: 'https://www.udemy.com/course/the-complete-javascript-course/',
+    title: 'The Complete JavaScript Course 2023: From Zero to Expert! (Author: Jonas Schmedtmann)',
+};
+
 export const blogItems = [
     {
         id: `b_1`,
@@ -26,8 +34,6 @@ export const blogItems = [
             <p><a href=${BlogJsFund.img8} target="_blank"><img src=${BlogJsFund.img8} /></a></p>
             <p><a href=${BlogJsFund.img9} target="_blank"><img src=${BlogJsFund.img9} /></a></p>
             <p><a href=${BlogJsFund.img10} target="_blank"><img src=${BlogJsFund.img10} /></a></p>
-            <hr />
-            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
         </div>`,
         imgUrl: BlogJsFund.imgMain
     },
@@ -64,8 +70,6 @@ export const blogItems = [
             <p><a href=${BlogJsBehind.img24} target="_blank"><img src="${BlogJsBehind.img24}" /></a></p>
             <p><a href=${BlogJsBehind.img25} target="_blank"><img src="${BlogJsBehind.img25}" /></a></p>
             <p><a href=${BlogJsBehind.img25} target="_blank"><img src="${BlogJsBehind.img25}" /></a></p>
-            <hr />
-            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
         </div>`,
         imgUrl: BlogJsBehind.imgMain
     },
@@ -76,9 +80,6 @@ export const blogItems = [
         date: '17.06.2024',
         desc: "Do you know why we using Arrays and which methods can we use? This topic help you find main information about them.",
         moreDesc: `<div>
-            <p>One of the most commonly used objects in JavaScript is called an <span>Array</span>. An array is a data structure that contains a list of elements which store multiple values under a single variable. Arrays are considered to be special kinds of objects. </p>
-            <p>In JavaScript, arrays use numbered indexes. Whereas, objects are used as named indexes.</p>
-            <p>Array items — also known as array elements — are nothing more than the items stored inside an array. Items in an array can be of any object or data type that JavaScript supports, including strings to integers and booleans.</p>
             <code>const cars = ["Saab", "Volvo", "BMW"];</code>
             <code>const cars = [];
             cars[0]= "Saab";
@@ -87,8 +88,6 @@ export const blogItems = [
             <code>const cars = new Array("Saab", "Volvo", "BMW");</code>
             <hr />
             <p><a href=${BlogArrays.img1} target="_blank"><img src="${BlogArrays.img1}" /></a></p>
-            <hr />
-            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
         </div>`,
         imgUrl: BlogArrays.imgMain
     },
@@ -104,8 +103,6 @@ export const blogItems = [
             <p><a href=${BlogDom.img3} target="_blank"><img src="${BlogDom.img3}" /></a></p>
             <p><a href=${BlogDom.img4} target="_blank"><img src="${BlogDom.img4}" /></a></p>
             <p><a href=${BlogDom.img5} target="_blank"><img src="${BlogDom.img5}" /></a></p>
-            <hr />
-            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
         </div>`,
         imgUrl: BlogDom.imgMain
     },
@@ -125,8 +122,6 @@ export const blogItems = [
             <p><a href=${BlogModern.img7} target="_blank"><img src="${BlogModern.img7}" /></a></p>
             <p><a href=${BlogModern.img8} target="_blank"><img src="${BlogModern.img8}" /></a></p>
             <p><a href=${BlogModern.img9} target="_blank"><img src="${BlogModern.img9}" /></a></p>
-            <hr />
-            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
         </div>`,
         imgUrl: BlogModern.imgMain
     },
@@ -148,8 +143,6 @@ export const blogItems = [
             <p><a href=${BlogJsOop.img8} target="_blank"><img src=${BlogJsOop.img8} /></a></p>
             <p><a href=${BlogJsOop.img9} target="_blank"><img src=${BlogJsOop.img9} ></a></p>
             <p><a href=${BlogJsOop.img10} target="_blank"><img src=${BlogJsOop.img10} /></a></p>
-            <hr />
-            <p>Resources: <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert! (Author:Jonas Schmedtmann)</a></p>
         </div>`,
         imgUrl: BlogJsOop.imgMain
     },

@@ -3,6 +3,8 @@ import AS from '../media/reviews/Ani.jpg';
 import Gayane from '../media/reviews/Gayane.jpeg'
 import NoImg from '../media/reviews/noImg.png';
 
+// `position` and `review` are translated in i18n/locales/*.jsx (`reviews.items[id]`);
+// the values here are the English fallback.
 export const reviewItems = [
     {
         id: `r_1`,
