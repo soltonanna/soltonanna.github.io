@@ -341,131 +341,118 @@ const en = {
   services: {
     eyebrow: 'Services',
     title: 'Services',
+    desc: 'Remote freelance work for clients worldwide. Rates are hourly; for projects with a clear scope I can also quote a fixed price.',
     workflow: 'Workflow:',
     openSheet: '(Open on Excel)',
-    // Order matches the cards; `sheet` links live in components/Services.jsx
+    howIWorkTitle: 'How I work',
+    // Shared "How I work" list shown at the end of every card's modal. `price` = the card's rate.
+    howIWork: (price) => (
+      <ul>
+        <li><b>Rate: </b>{price}. For fixed-scope projects I send a time and cost range before we start.</li>
+        <li><b>Availability: </b>Monday–Saturday, 10:00–19:00 Yerevan time (GMT+4). I reply within one working day.</li>
+        <li><b>Transparent time tracking: </b>I track every task in <a href='https://clockify.me/' {...ext}>Clockify</a> in a separate project for each client. You can see the tasks and time spent at any moment and get a detailed report every month.</li>
+        <li><b>Meetings count too: </b>Calls and discussions about your project are tracked as tasks, so nothing is hidden.</li>
+        <li><b>Payment: </b>at the beginning of each month.</li>
+        <li><b>Contact: </b>email <a href='mailto:sultanova.anahit92@gmail.com'>sultanova.anahit92@gmail.com</a> or Telegram <a href='https://t.me/soltonanna' {...ext}>@soltonanna</a>.</li>
+      </ul>
+    ),
+    // `id` links a card to its workflow sheet in components/Services.jsx
     items: [
       {
-        title: 'WordPress Development from Scratch',
-        price: '$20 per hour',
-        desc: 'I craft fully customized websites from scratch using WordPress, ensuring every element aligns with your unique vision and needs.',
+        id: 'wordpress',
+        title: 'Custom WordPress Development',
+        price: '$30 / hour',
+        desc: 'Custom themes and plugins built from your design — fast, easy for your team to edit, and free of page-builder bloat.',
         fullDesc: '',
         more: (
           <ul>
-            <li><b>WordPress Website Development: </b>
-            I specialize in creating websites using the WordPress Content Management System (CMS). Whether you need a personal blog, business website, or an e-commerce platform, I've got you covered.</li>
-            <li><b>Flexible Design Options: </b>
-            I can work with various Page Builders like <a href='https://elementor.com/' {...ext}>"Elementor"</a> or <a href='https://www.elegantthemes.com/gallery/divi/' {...ext}>"Divi"</a> to bring your vision to life. Alternatively, you can choose a template from <a href='https://themeforest.net/' {...ext}>"Envato Market,"</a> and I'll customize it according to your preferences, incorporating your images, text, and other content.</li>
-            <li><b>Optimized Solutions: </b>
-            For optimal performance and efficiency, I recommend using the <a href='https://www.advancedcustomfields.com/' {...ext}>Advanced Custom Fields (ACF)</a> plugin and creating a custom theme. This approach ensures that your website is lightweight and tailored exactly to your needs, without unnecessary functionalities.</li>
-            <li><b>Plugin Integration & Management: </b>
-            I integrate and manage a variety of plugins to add diverse functionalities to your website, including <a href='https://wordpress.org/plugins/contact-form-7/' {...ext}>"Contact form"</a>, galleries, <a href='https://wordpress.org/plugins/popup-maker/' {...ext}>"Popup Maker"</a>, SEO optimization with <a href='https://yoast.com/' {...ext}>"Yoast SEO"</a>, <a href='https://wordpress.org/plugins/updraftplus/' {...ext}>"UpdraftPlus"</a> backups, caching, and more. While I primarily utilize <b>FREE</b> plugins, in some cases, depending on specific user needs, a <b>PRO</b> plugin may be required. Rest assured, you'll always be informed about any premium plugin usage.</li>
-            <li><b>Custom Design Integration: </b>
-            If you have a specific design or a Figma template in mind, I can build your website from scratch based on those specifications.</li>
-            <li><b>Collaborative Process: </b>
-            To get started, simply provide me hosting and domain. After website installation I'll need necessary materials such as email, logo, images, and text. I'll take care of the rest, keeping you updated throughout the process.</li>
-            <li><b>Efficient Time Tracking: </b>
-            I use the <a href='https://app.clockify.me/tracker' {...ext}>Clockify App</a> to track time accurately for each project. Additionally, I open a new separate project for each client, providing you with access to the project details. This allows you to see the number of tasks completed and the time spent on each one, ensuring transparency and accountability throughout the project. You'll also receive a detailed report at the end of each month for further clarity.</li>
-            <li><b>Meeting and Discussion Tracking: </b>
-            All meetings and discussions regarding your website project are tracked as tasks to ensure that every aspect of our collaboration is accounted for and transparent.</li>
-            <li><b>Transparent Pricing: </b>
-            My rate is <b><i>$20 per hour</i></b>, with availability six days a week from <b><i>10:00 to 19:00 (GMT+4)</i></b>. You can trust that you're getting quality work at a fair price.</li>
-            <li><b>Price Estimation Process: </b>
-            To provide you with an accurate price estimation, I'll need some information about the structure of your website, including the number of pages, types of content, desired functionality (which may require plugins or custom code), and any animations or special features you have in mind. Based on this information, I'll give you an approximate range of both time and price for the project. Please note that the actual time and cost may vary depending on the complexity and any changes during the process.</li>
-            <li><b>Convenient Payment Options: </b>
-            I prefer to receive payment at the beginning of each month, giving you peace of mind and ensuring a smooth workflow.</li>
-            <li><b>Comprehensive Support: </b>
-            Once the project is completed, I can offer training sessions or provide documentation with images and videos, empowering you to manage your website independently. Additionally, I offer ongoing support for updates and adding new content as needed.</li>
-            <li><b>Communication Channels: </b>
-            For easy communication, feel free to reach out to me via Gmail at [<a href='mailto:sultanova.anahit92@gmail.com'>sultanova.anahit92@gmail.com</a>] or on Telegram at [<a href='https://t.me/soltonanna' {...ext}>@soltonanna</a>]. I'm available to chat and share content related to your website project.</li>
+            <li><b>From design to launch: </b>I turn your Figma design into a custom, responsive WordPress website that looks right on every screen size. No design yet? We can start from a ready-made theme or reference sites.</li>
+            <li><b>Easy content editing: </b>Custom Gutenberg blocks and <a href='https://www.advancedcustomfields.com/' {...ext}>ACF</a> fields, so your team can update pages without touching code or breaking the layout.</li>
+            <li><b>Custom plugins & integrations: </b>Forms, bookings, custom post types, payment systems and third-party APIs, built as clean, documented plugins.</li>
+            <li><b>WooCommerce: </b>Online stores with custom product pages, checkout changes, payment and shipping setup.</li>
+            <li><b>Page builders when they fit: </b>Elementor or Divi if you want to edit pages visually. I'll tell you honestly when a custom theme is the better choice.</li>
+            <li><b>Multilingual sites & Multisite: </b>WPML, Polylang and WordPress Multisite.</li>
+            <li><b>Getting an estimate: </b>Send me the list of pages, the features you need and a design (or example sites), and I'll reply with a time and cost range.</li>
           </ul>
         ),
       },
       {
-        title: 'WordPress Support & Maintenance',
-        price: '$20 per hour',
-        desc: 'I provide comprehensive support for existing WordPress websites, handling everything from functional and...',
-        fullDesc: 'I provide comprehensive support for existing WordPress websites, handling everything from functional and design updates to adding new features, ensuring your site remains up-to-date and competitive.',
+        id: 'support',
+        title: 'WordPress Support & Care Plans',
+        price: '$25 / hour',
+        desc: 'Updates, backups, security, bug fixes and new features for your existing site — hourly or as a monthly plan.',
+        fullDesc: '',
         more: (
           <ul>
-            <li><b>Comprehensive Support: </b>
-            I provide ongoing support for existing WordPress websites, ensuring they remain functional, secure, and up-to-date.</li>
-            <li><b>Functional and Design Updates: </b>
-            Whether it's fixing bugs, optimizing performance, or refreshing the design, I handle all updates to keep your website running smoothly and looking its best.</li>
-            <li><b>Adding New Features: </b>
-            Need to integrate new functionalities or plugins? I've got you covered. From e-commerce solutions to contact forms, I can enhance your website with the latest features to meet your evolving needs.</li>
-            <li><b>Security Maintenance: </b>
-            Security is paramount. I implement measures to safeguard your website against threats, ensuring peace of mind for you and your visitors.</li>
-            <li><b>Regular Backups: </b>
-            I regularly backup your website's data to prevent data loss and enable quick recovery in case of emergencies.</li>
-            <li><b>Plugin and Theme Updates: </b>
-            I manage all plugin and theme updates to ensure compatibility and optimize performance.</li>
-            <li><b>Performance Optimization: </b>
-            I conduct regular performance audits and optimizations to ensure your website loads quickly and efficiently.</li>
-            <li><b>Transparent Communication: </b>
-            I maintain open communication throughout the process, providing updates on maintenance tasks and addressing any concerns promptly.</li>
-            <li><b>Flexible Pricing: </b>
-            My rate is $20 per hour, with availability six days a week from 10:00 to 19:00 (GMT+4). You can trust that you're getting quality work at a fair price.</li>
-            <li><b>Efficient Time Tracking: </b>
-            I use the <a href='https://app.clockify.me/tracker' {...ext}>Clockify App</a> to track time accurately for each project. Additionally, I open a new separate project for each client, providing you with access to the project details. This allows you to see the number of tasks completed and the time spent on each one, ensuring transparency and accountability throughout the project. You'll also receive a detailed report at the end of each month for further clarity.</li>
-            <li><b>Communication Channels: </b>
-            For easy communication, feel free to reach out to me via Gmail at [<a href='mailto:sultanova.anahit92@gmail.com'>sultanova.anahit92@gmail.com</a>] or on Telegram at [<a href='https://t.me/soltonanna' {...ext}>@soltonanna</a>]. I'm available to chat and share content related to your website project.</li>
+            <li><b>Monthly care plan: </b>A fixed number of hours each month for updates, backups, monitoring and small changes. Hours you don't use can go to improvements.</li>
+            <li><b>Safe updates: </b>WordPress core, theme and plugin updates are tested on a staging copy first, so your live site doesn't break.</li>
+            <li><b>Security & backups: </b>Site hardening, malware scans and cleanup, automatic off-site backups and fast restore if something goes wrong.</li>
+            <li><b>Bug fixing: </b>PHP errors, broken layouts, plugin conflicts. I've fixed 3,000+ issues on live WordPress sites.</li>
+            <li><b>New features & content: </b>New pages, sections, forms and plugins as your business grows.</li>
+            <li><b>Taking over a site: </b>Got a site from another developer? I'll review it, document how it works and clean it up.</li>
           </ul>
         ),
       },
       {
-        title: 'Website Optimization',
-        price: '$15 per hour',
-        desc: 'I specialize in optimizing websites to enhance their loading speed and overall efficiency, providing...',
-        fullDesc: "I specialize in optimizing websites to enhance their loading speed and overall efficiency, providing a seamless browsing experience for your visitors while boosting your site's search engine rankings.",
+        id: 'speed',
+        title: 'Speed, SEO & Accessibility',
+        price: '$30 / hour',
+        desc: 'Faster pages, better Core Web Vitals and search rankings, and a site that is easier for everyone to use.',
+        fullDesc: '',
         more: (
           <ul>
-            <li><b>Speed and Efficiency: </b>
-            I specialize in optimizing websites to improve loading speed and overall efficiency, ensuring a seamless browsing experience for your visitors.</li>
-            <li><b>Enhanced Performance: </b>
-            By fine-tuning various elements of your website, I elevate its performance to meet the demands of modern online users.</li>
-            <li><b>Search Engine Rankings: </b>
-            A faster website not only pleases visitors but also impresses search engines. I optimize your site to improve its search engine rankings, increasing its visibility and reach.</li>
-            <li><b>Content Optimization: </b>
-            Content plays a crucial role in website optimization. I optimize your content for both users and search engines, ensuring maximum impact.</li>
-            <li><b>Image Compression: </b>
-            Large images can slow down a website. I implement image compression techniques to reduce file sizes without compromising quality, improving loading times.</li>
-            <li><b>Caching Strategies: </b>
-            Utilizing caching strategies, I enhance your website's speed by storing frequently accessed data, reducing server load and improving response times.</li>
-            <li><b>Mobile Optimization: </b>
-            With the increasing use of mobile devices, I optimize your website for mobile responsiveness, ensuring a consistent and user-friendly experience across all devices.</li>
-            <li><b>Transparent Reporting: </b>
-            Throughout the optimization process, I provide transparent reporting, keeping you informed about the progress and results achieved.</li>
-            <li><b>Flexible Pricing: </b>
-            My rate is $15 per hour, with availability six days a week from 10:00 to 19:00 (GMT+4). You can trust that you're getting quality work at a fair price.</li>
-            <li><b>Efficient Time Tracking: </b>
-            I use the <a href='https://app.clockify.me/tracker' {...ext}>Clockify App</a> to track time accurately for each project. Additionally, I open a new separate project for each client, providing you with access to the project details. This allows you to see the number of tasks completed and the time spent on each one, ensuring transparency and accountability throughout the project. You'll also receive a detailed report at the end of each month for further clarity.</li>
-            <li><b>Communication Channels: </b>
-            For easy communication, feel free to reach out to me via Gmail at [<a href='mailto:sultanova.anahit92@gmail.com'>sultanova.anahit92@gmail.com</a>] or on Telegram at [<a href='https://t.me/soltonanna' {...ext}>@soltonanna</a>]. I'm available to chat and share content related to your website project.</li>
+            <li><b>Core Web Vitals: </b>I measure your pages with PageSpeed Insights and Lighthouse and fix what slows them down (LCP, INP, CLS).</li>
+            <li><b>Lighter pages: </b>Image compression and WebP/AVIF, lazy loading, removing unused CSS, JavaScript and plugins, caching and CDN setup.</li>
+            <li><b>Technical SEO: </b>Clean HTML structure, meta tags, schema markup, sitemaps, redirects and Google Search Console setup.</li>
+            <li><b>Accessibility: </b>Color contrast, alt text, keyboard navigation and form labels based on WCAG. This matters more now that the European Accessibility Act applies to many businesses selling in the EU.</li>
+            <li><b>Before & after report: </b>You get the scores before and after the work, plus a list of everything that was changed.</li>
           </ul>
         ),
       },
       {
-        title: 'AI-driven Content Creation',
-        price: '$25 per hour',
-        desc: 'Utilizing cutting-edge AI technology, I streamline content creation by generating engaging text and ...',
-        fullDesc: 'Utilizing cutting-edge AI technology, I streamline content creation by generating engaging text and sourcing high-quality images, ensuring your website stands out with captivating visuals and compelling copy.',
+        id: 'react',
+        title: 'React & Headless WordPress',
+        price: '$35 / hour',
+        desc: 'Modern front-ends in React and TypeScript — standalone web apps or fast headless sites powered by your WordPress content.',
+        fullDesc: '',
         more: (
           <ul>
-            <li><b>Cutting-Edge AI Technology: </b>
-            Harnessing the power of advanced AI technology, I revolutionize content creation, delivering engaging text and stunning visuals with unparalleled efficiency.</li>
-            <li><b>Engaging Text: </b>
-            Captivate your audience with captivating copy crafted by AI. From blog posts to product descriptions, I ensure your content resonates with your audience and drives engagement.</li>
-            <li><b>Consistent Tone and Style: </b>
-            Maintain a consistent tone and style across all your content with AI-generated text, providing a cohesive experience for your audience and reinforcing your brand identity.</li>
-            <li><b>Continuous Improvement: </b>
-            I stay updated with the latest advancements in AI technology, continuously refining my processes to deliver even better results for your content creation needs.</li>
-            <li><b>Flexible Pricing: </b>
-            My rate is $25 per hour, with availability six days a week from 10:00 to 19:00 (GMT+4). You can trust that you're getting quality work at a fair price.</li>
-            <li><b>Efficient Time Tracking: </b>
-            I use the <a href='https://app.clockify.me/tracker' {...ext}>Clockify App</a> to track time accurately for each project. Additionally, I open a new separate project for each client, providing you with access to the project details. This allows you to see the number of tasks completed and the time spent on each one, ensuring transparency and accountability throughout the project. You'll also receive a detailed report at the end of each month for further clarity.</li>
-            <li><b>Communication Channels: </b>
-            For easy communication, feel free to reach out to me via Gmail at [<a href='mailto:sultanova.anahit92@gmail.com'>sultanova.anahit92@gmail.com</a>] or on Telegram at [<a href='https://t.me/soltonanna' {...ext}>@soltonanna</a>]. I'm available to chat and share content related to your website project.</li>
+            <li><b>React & TypeScript apps: </b>Single-page apps, dashboards and interactive interfaces built from reusable components.</li>
+            <li><b>Headless WordPress: </b>Your team keeps the WordPress admin they know, and visitors get a fast React / Next.js front-end that reads content through the REST API.</li>
+            <li><b>Existing projects: </b>New features, bug fixes and refactoring in React codebases.</li>
+            <li><b>Clean, responsive UI: </b>Semantic HTML, SCSS or Tailwind CSS, responsive from mobile to desktop.</li>
+            <li><b>API integration: </b>Connecting your front-end to REST APIs and third-party services.</li>
+            <li><b>Git workflow: </b>Code lives in your repository, with clear commits and pull requests.</li>
+          </ul>
+        ),
+      },
+      {
+        id: 'shopify',
+        title: 'Shopify Store Customization',
+        price: '$30 / hour',
+        desc: 'Theme customization, custom sections and store setup, so your Shopify store looks and sells the way you want.',
+        fullDesc: '',
+        more: (
+          <ul>
+            <li><b>Theme customization: </b>I adapt any Online Store 2.0 theme to your brand with Liquid, CSS and JavaScript.</li>
+            <li><b>Custom sections & blocks: </b>Reusable sections your team can arrange in the theme editor without code.</li>
+            <li><b>Store setup: </b>Products, collections, navigation, payments, shipping and the apps you really need.</li>
+            <li><b>Fixes & speed: </b>Removing leftover app code, fixing layout bugs and improving the mobile experience.</li>
+          </ul>
+        ),
+      },
+      {
+        id: 'ai',
+        title: 'AI Features & Content for Websites',
+        price: '$30 / hour',
+        desc: 'Chat assistants, automations and AI-assisted content workflows that save your team time.',
+        fullDesc: '',
+        more: (
+          <ul>
+            <li><b>AI chat assistant: </b>A chatbot on your site that answers visitors' questions using your own content — FAQ, services, products.</li>
+            <li><b>Automations: </b>Connect your forms, email and CRM to AI services (OpenAI, Claude) with tools like Zapier, Make or n8n.</li>
+            <li><b>AI-assisted content: </b>Drafts and translations of pages, product descriptions and image alt text, always reviewed by a person before publishing.</li>
+            <li><b>AI in WordPress: </b>Setting up AI plugins, or a small custom integration built for your specific task.</li>
           </ul>
         ),
       },
